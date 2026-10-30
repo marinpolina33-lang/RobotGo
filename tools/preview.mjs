@@ -7,7 +7,7 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const dist=path.join(root,'dist');
 if(!fs.existsSync(path.join(dist,'index.html')))throw new Error('Run node tools/build.mjs first.');
 const hosting=JSON.parse(fs.readFileSync(path.join(root,'config/hosting.json'),'utf8'));
-const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml','.webp':'image/webp','.png':'image/png','.jpg':'image/jpeg','.mp4':'video/mp4','.txt':'text/plain; charset=utf-8','.ico':'image/x-icon'};
+const mime={'.html':'text/html; charset=utf-8','.xml':'application/xml; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml','.webp':'image/webp','.png':'image/png','.jpg':'image/jpeg','.mp4':'video/mp4','.txt':'text/plain; charset=utf-8','.ico':'image/x-icon'};
 function reply404(req,res){res.writeHead(404,{'Content-Type':'text/html; charset=utf-8'});if(req.method==='HEAD')res.end();else fs.createReadStream(path.join(dist,'404.html')).pipe(res);}
 const server=http.createServer((req,res)=>{
  for(const[k,v]of Object.entries(hosting.headers))res.setHeader(k,v);
