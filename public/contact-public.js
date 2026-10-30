@@ -28,9 +28,10 @@
   const phone=digits(str('phoneNumber'));
   if(phone){const p=text('p',ro?'Telefon: ':'Phone: '),a=text('a',phone);a.href='tel:'+phone;p.append(a);section.append(p);}
   for(const [key,labelRo,labelEn]of [['address','Adresă','Address'],['vatId','Cod fiscal','Tax ID'],['registrationNo','Înregistrare','Registration'],['openingHours','Program','Opening hours']]){
-   if(str(key))section.append(text('p',(ro?labelRo:labelEn)+': '+str(key)));
+   if(str(key))section.append(text('p',(ro?labelRo:labelEn)+': '+(key==='openingHours'&&!ro&&str('openingHoursEn')?str('openingHoursEn'):str(key))));
   }
-  section.append(text('p',ro?'Date publice de contact. Demo-ul pregătește cereri; trimiterea automată nu este activată.':'Public contact details. The demo prepares requests; automatic sending is not enabled.','muted'));
+  section.append(text('p',ro?'Persoane fizice și juridice · Oferte în EUR · Transport inclus în prețul ofertat · Plată prin transfer bancar, conform ofertei acceptate.':'Individuals and businesses · Quotes in EUR · Transport included in the quoted price · Payment by bank transfer under the accepted quote.'));
+  section.append(text('p',ro?'Trimite solicitarea prin email sau WhatsApp. Disponibilitatea, termenul și tratamentul TVA se precizează în ofertă.':'Send your request by email or WhatsApp. Availability, timing and VAT treatment are specified in the quote.','muted'));
   const wrap=main.querySelector('.wrap');if(!wrap)return;
   const grid=wrap.querySelector('.guide-grid');if(grid)grid.before(section);else wrap.append(section);
  }
