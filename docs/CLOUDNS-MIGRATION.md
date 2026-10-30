@@ -60,3 +60,19 @@ Codul RobotGo din `main` rămâne PREVIEW / DEMO și conține `noindex`; transfe
 - Workflow GitHub folosește `contents: read` și doar comenzi DNS/HTTP de citire.
 - În această pregătire nu s-a creat zona ClouDNS și nu s-a schimbat nimic la RoTLD, Render sau Cloudflare.
 - În GitHub există un vechi Pull Request Draft pentru DigitalOcean; **nu îl integra** dacă s-a decis ClouDNS.
+
+## Alternativă: automatizarea ClouDNS Premium HTTP API (opțional)
+
+ClouDNS Free nu oferă HTTP API. Pentru ca GitHub să poată crea zona și înregistrările automat, contul trebuie să aibă **Premium S ori alt plan cu HTTP API**. ClouDNS anunță un trial Premium S de 30 zile fără card, însă accesul API și continuarea după expirare se verifică în cont.
+
+1. În ClouDNS: **API & Resellers → API Users → Add new user**. Preferabil folosește un sub-user cu permisiuni numai pentru zona `robotgo.ro` când configurarea contului o permite. Păstrează secretele doar în GitHub, nu în chat sau fișiere.
+2. În GitHub `marinpolina33-lang/RobotGo` → **Settings → Secrets and variables → Actions**: adaugă `CLOUDNS_AUTH_ID` și `CLOUDNS_AUTH_PASSWORD` în repository secrets (sau în environment-ul `dns-production`). Nu sunt necesare chei DigitalOcean.
+3. Configurează GitHub **Settings → Environments → dns-production** cu aprobare pentru modificări, dacă planul și setările permit; aprobarea nu se configurează automat de script.
+4. După revizuirea și integrarea Pull Request #2 în `main`, deschide **Actions → RobotGo ClouDNS Premium API - guarded operations → Run workflow**. Mai întâi selectează `plan`, care doar verifică situația.
+5. Dacă planul spune că lipsește zona, selectează **create-zone** și introdu confirmarea `CONFIGURE-ROBOTGO`. Scriptul încearcă să creeze exclusiv zona Master `robotgo.ro`.
+6. Verifică în Render (Custom Domains) țintele `216.24.57.1` și `robotgo-preview.onrender.com`. Apoi selectează **add-web-records** cu aceeași confirmare. Scriptul adaugă doar înregistrări lipsă A și CNAME; la conflicte se oprește și nu șterge nimic.
+7. Înainte de schimbarea nameserverelor la RoTLD, verifică nameserverele autoritative ClouDNS și toate înregistrările (inclusiv MX/TXT/DKIM/CAA/alte servicii), plus DNSSEC/DS. Schimbarea RoTLD rămâne manuală.
+
+Fluxul API nu pornește la push și nu schimbă nimic fără `workflow_dispatch` plus confirmarea pentru scriere. Verificarea sintaxei scriptului la push nu utilizează credențiale. Nu este garantată executarea API până când contul ClouDNS nu este autorizat și testul `plan` nu funcționează.
+
+Documentație: https://www.cloudns.net/wiki/article/42/ (autentificare), https://www.cloudns.net/wiki/article/48/ (creare zonă), https://www.cloudns.net/wiki/article/58/ (creare înregistrare), https://www.cloudns.net/wiki/article/57/ (citire înregistrări).
