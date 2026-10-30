@@ -23,7 +23,7 @@ Clientul își selectează modelele și cantitățile, completează cererea și 
 
 ## Limite actuale
 
-Indexarea paginii principale este permisă; `robots.txt` publică `https://robotgo.ro/sitemap.xml`, iar adresa canonică este `https://robotgo.ro/`. Apariția în Google depinde de recrawl și nu este confirmată de simpla publicare. Rutele cu `#/` nu sunt pagini indexabile separat și nu sunt incluse în sitemap. Nu există procesare de carduri, autentificare clienți, stocuri în timp real, backend de cereri sau AI conectat. Ghidul local și selecțiile în browser funcționează. Cele 29 de fotografii ale celor 26 de produse sunt servite local; sursele și integritatea fișierelor sunt documentate în `docs/product-image-sources.json`.
+Indexarea paginii principale este permisă; `robots.txt` publică `https://robotgo.ro/sitemap.xml`, iar adresa canonică este `https://robotgo.ro/`. Apariția în Google depinde de recrawl și nu este confirmată de simpla publicare. Build-ul generează 29 de pagini HTML indexabile: pagina principală, catalogul, contactul și cele 26 de produse. Textul, metadatele și linkurile sunt disponibile fără JavaScript, iar sitemap-ul include toate aceste adrese normale. Rutele vechi cu `#/` funcționează în continuare pentru compatibilitate și instrumentele interactive. Nu există procesare de carduri, autentificare clienți, stocuri în timp real, backend de cereri sau AI conectat. Ghidul local și selecțiile în browser funcționează. Cele 29 de fotografii ale celor 26 de produse sunt servite local; sursele și integritatea fișierelor sunt documentate în `docs/product-image-sources.json`.
 
 ## Prezentare și contact
 

@@ -20,7 +20,9 @@ Ultima comandă pornește un server local la `http://127.0.0.1:4173` și nu publ
 
 - Pagina principală permite indexarea și declară adresa canonică `https://robotgo.ro/`.
 - `public/robots.txt` permite accesul și indică `https://robotgo.ro/sitemap.xml`.
-- Sitemap-ul include pagina principală. Rutele interactive `#/...` nu sunt URL-uri indexabile separat; nu trebuie adăugate ca pagini distincte în sitemap.
+- Build-ul generează 29 de pagini HTML cu conținut vizibil fără JavaScript: pagina principală, `/shop/`, `/contact/` și cele 26 de produse la `/product/<id>/`. Fiecare are titlu, descriere și adresă canonică proprie; toate sunt incluse în sitemap-ul generat în `dist/`.
+- Catalogul și paginile de produs folosesc linkuri normale. Adresele vechi `#/...` continuă să funcționeze; instrumentele interactive (ofertă, comparație, coș) păstrează rutele cu fragment.
+- Datele structurate identifică site-ul, firma și produsele. Nu se declară prețuri, stocuri sau recenzii neverificate.
 - `render.yaml` și `config/hosting.json` nu impun un antet global `X-Robots-Tag: noindex`.
 - Pagina 404 rămâne neindexabilă. Fișierele inexistente primesc 404; nu există rescriere generală către aplicație.
 - Publicarea face site-ul eligibil pentru indexare; nu confirmă includerea în Google și nu garantează o poziție în rezultate. După verificarea proprietății în Google Search Console, se poate trimite sitemap-ul și solicita indexarea paginii principale.

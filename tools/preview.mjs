@@ -15,7 +15,11 @@ const server=http.createServer((req,res)=>{
  let urlPath;
  try{urlPath=decodeURIComponent(new URL(req.url,'http://localhost').pathname);}catch{res.writeHead(400);return res.end();}
  if(urlPath.split('/').some(x=>x.startsWith('.'))||urlPath.includes('\\')||urlPath.includes('\0'))return reply404(req,res);
- const file=path.resolve(dist,'.'+(urlPath==='/'?'/index.html':urlPath));
+ let file=path.resolve(dist,'.'+(urlPath==='/'?'/index.html':urlPath));
+ if(file.startsWith(dist+path.sep)&&fs.existsSync(file)&&fs.statSync(file).isDirectory()){
+  if(!urlPath.endsWith('/')){res.writeHead(308,{Location:urlPath+'/'+new URL(req.url,'http://localhost').search});return res.end();}
+  file=path.join(file,'index.html');
+ }
  if(!file.startsWith(dist+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile()||!fs.realpathSync(file).startsWith(fs.realpathSync(dist)+path.sep))return reply404(req,res);
  const {size}=fs.statSync(file);
  if(urlPath.startsWith('/assets/'))res.setHeader('Cache-Control',hosting.assetCacheControl);
