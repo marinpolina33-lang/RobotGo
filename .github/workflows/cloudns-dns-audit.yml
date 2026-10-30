@@ -1,0 +1,31 @@
+name: RobotGo ClouDNS - audit DNS without access keys
+
+on:
+  push:
+    branches:
+      - migration/cloudns-dns
+    paths:
+      - ".github/workflows/cloudns-dns-audit.yml"
+      - "config/cloudns-dns.json"
+      - "tools/cloudns_dns_audit.py"
+  workflow_dispatch:
+    inputs:
+      name_servers:
+        description: "Name servers shown by ClouDNS for robotgo.ro, comma separated (optional)"
+        type: string
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  dns-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout prepared migration
+        uses: actions/checkout@v4
+      - name: Public DNS and Render preflight — READ ONLY
+        env:
+          CLOUDNS_NS: ${{ inputs.name_servers }}
+        run: python3 tools/cloudns_dns_audit.py
