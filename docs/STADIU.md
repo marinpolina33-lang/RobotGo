@@ -1,28 +1,26 @@
-# Stadiul livrării tehnice — 29 octombrie 2026
+# RobotGo — stadiu la 30 octombrie 2026
 
-## Executat
+## Publicat
 
-- Inspectarea arhivei RobotGo v0.4h și păstrarea designului și catalogului.
-- Separarea fișierelor publice de documentația internă și de componentele server neactivate.
-- Configurație Render Static Site, build fără dependențe npm, verificări de consistență și pagină 404.
-- Configurații de headere: CSP, prevenirea încadrării în iframe, nosniff, politica de referer și restricții pentru cameră, microfon și geolocație.
-- Integrarea modulului de afișare a datelor de contact, cu câmpuri publice momentan necompletate.
-- Teste locale HTTP, verificări ale fișierelor și teste ale interfeței în Chromium.
+- Repository GitHub: marinpolina33-lang/RobotGo; ramura main.
+- Render Static Site: robotgo-preview; build `node tools/build.mjs`, publicare `dist/`.
+- https://robotgo.ro funcțional prin HTTPS; www redirecționează către domeniul principal.
+- DNS administrat prin Cloudflare; domeniul rămâne la RoTLD.
+- Migrarea ClouDNS abandonată la cererea proprietarului; PR #2 închis fără integrare.
 
-## Blocajul publicării
+## Contacte și solicitări de ofertă
 
-Instrumentul de integrări indică **GitHub: installed=false** și **Render: installed=false**. Nu există o conexiune autorizată la conturile utilizatorului în această conversație. Nu au fost create repository-uri, servicii sau adrese publice.
+Datele ROUTEX LOGISTICA S.R.L. sunt în `public/site-config.js`. Fluxul ales de proprietar: persoane fizice și juridice, ofertă în EUR, transport inclus în prețul ofertat, transfer bancar conform ofertei acceptate.
 
-## Delimitarea testării
+Clientul își selectează modelele și cantitățile, completează cererea, verifică mesajul și îl trimite din aplicația proprie de email sau WhatsApp. Serverul nu colectează formulare și nu trimite emailuri. Generarea mesajului nu înseamnă că acesta a fost trimis sau că o comandă/plată a fost confirmată. Copierea și descărcarea textului sunt disponibile ca alternativă.
 
-Serverul local a fost testat prin cereri HTTP. Browserul administrat blochează navigarea atât la adrese HTTP locale, cât și la fișiere locale. De aceea, testele interfeței folosesc o copie în memorie a aceleiași aplicații, cu fișierele media locale încorporate. Nu au fost dezactivate sau ocolite politicile browserului.
+## Rămâne de completat
 
-Rezultatele nu reprezintă validarea navigării browserului prin HTTPS pe Render, a aplicării CSP de către browser, a persistenței localStorage pe domeniul final sau a fotografiilor de pe serverele externe. Acestea trebuie verificate după publicarea autorizată. Verificările statice nu reprezintă un audit complet de securitate.
+- Adresa completă (stradă și număr), numărul Registrului Comerțului, statutul TVA.
+- Coordonatele bancare și condițiile de plată, de furnizat cu oferta/factura; nu sunt publicate date bancare inventate.
+- Acoperirea geografică, termenele, garanția/returul și documentația completă privind prelucrarea datelor.
+- Prețurile și disponibilitatea modelelor se confirmă individual prin ofertă.
 
-## Nu este activat
+## Limite actuale
 
-Înregistrarea și conectarea domeniului, emailurile automate, conturile și rolurile de utilizator, plățile, analytics și serviciul AI. Cheile, parolele și datele titularului nu au fost solicitate sau introduse în fișiere.
-
-## Ce trebuie verificat după publicare
-
-Adresa publică reală, HTTPS și DNS; toate imaginile online; navigarea și salvarea selecțiilor pe domeniul real; formularele și mesajele WhatsApp cu destinatarul corect; absența fișierelor private; identificarea firmei și politicile comerciale. AutoSSL/HTTPS nu sunt marcate drept active înainte de confirmarea platformei.
+Indexarea este blocată prin `noindex` și `robots.txt`. Nu există procesare de carduri, autentificare clienți, stocuri în timp real, backend de cereri sau AI conectat. Ghidul local și selecțiile în browser funcționează. Fotografiile externe și drepturile comerciale rămân de verificat în vederea lansării complete.
