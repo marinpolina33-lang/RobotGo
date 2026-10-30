@@ -30,5 +30,6 @@ services:
       - path: /assets/*
         name: Cache-Control
         value: "public, max-age=3600"
-# The app uses #/ routes, so there is no catch-all rewrite.
+# Catalogue pages have real HTML directories; legacy #/ routes remain supported.
+# No catch-all rewrite is needed.
 # Unknown files return 404 instead of leaking/faking an application response.
