@@ -6,7 +6,10 @@ import assert from 'node:assert/strict';
 
 export function verifySearchPages(root,dist,pages){
  const catalog=JSON.parse(fs.readFileSync(path.join(root,'public/catalog.json'),'utf8'));
- const expected=['/','/shop/','/contact/',...catalog.products.map(p=>'/product/'+p.id+'/')];
+ const expected=['/','/shop/','/contact/',...catalog.products.map(p=>'/product/'+p.id+'/'),'/categories/','/solutions/','/about/',...catalog.categories.map(c=>'/categories/'+c.id+'/'),...catalog.domains.map(d=>'/solutions/'+d.id+'/')];
+ const context={window:{ROBOTGO_CATALOG:catalog},URLSearchParams};
+ for(const file of ['site-config.js','seo.js','routing.js'])vm.runInNewContext(fs.readFileSync(path.join(root,'public',file),'utf8'),context);
+ const seo=context.window.ROBOTGO_SEO,links=new Map(),titles=new Set(),descriptions=new Set();
  assert.deepEqual(pages.map(p=>p.route),expected);
  const sitemap=fs.readFileSync(path.join(dist,'sitemap.xml'),'utf8');
  assert.deepEqual([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]),expected.map(p=>'https://robotgo.ro'+p));
@@ -14,6 +17,15 @@ export function verifySearchPages(root,dist,pages){
   const html=fs.readFileSync(path.join(dist,page.route,'index.html'),'utf8');
   const main=html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)?.[1];
   assert.ok(main&&/<h1>/.test(main),'Readable heading before JavaScript: '+page.route);
+  assert.equal((main.match(/<h1[ >]/g)||[]).length,1,'One main heading: '+page.route);
+  const entry=seo.pages[page.route.replace(/\/+$/,'')||'/'];
+  assert.equal(page.title,entry.title,'Shared title must survive JavaScript rendering');
+  assert.equal(page.description,entry.description,'Shared description must survive JavaScript rendering');
+  assert.ok(!titles.has(page.title),'Unique page title: '+page.route);titles.add(page.title);
+  assert.ok(!descriptions.has(page.description),'Unique page description: '+page.route);descriptions.add(page.description);
+  assert.ok(html.includes('property="og:image"'),'Social preview image');
+  if(entry.kind)assert.ok(main.includes(seo.renderLanding(entry.path)),'Same useful content before and after JavaScript');
+  links.set(page.route,[]);
   assert.ok(html.includes('<base href="/">'),'Nested assets use the site root');
   assert.ok(html.includes('rel="canonical" href="https://robotgo.ro'+page.route+'"'));
   assert.ok(!/noindex|nofollow/i.test(html));
@@ -24,12 +36,14 @@ export function verifySearchPages(root,dist,pages){
    const schema=JSON.parse(body);
    assert.equal(schema['@context'],'https://schema.org');
    for(const entry of schema['@graph']){assert.ok(!entry.offers&&!entry.aggregateRating&&!entry.review,'Do not invent commercial data');}
+   if(page.route!=='/'){const breadcrumb=schema['@graph'].find(x=>x['@type']==='BreadcrumbList');assert.ok(breadcrumb,'Breadcrumb data');assert.equal(breadcrumb.itemListElement.at(-1).item,'https://robotgo.ro'+page.route);}
   }
   for(const [,value]of html.matchAll(/(?:href|src)="([^"]+)"/g)){
    const url=new URL(value.replace(/&amp;/g,'&'),'https://robotgo.ro/');
    if(url.origin!=='https://robotgo.ro')continue;
    const target=path.join(dist,url.pathname,url.pathname.endsWith('/')?'index.html':'');
    assert.ok(fs.existsSync(target),'Broken public link or asset: '+page.route+' → '+value);
+   if(expected.includes(url.pathname)&&!url.hash)links.get(page.route).push(url.pathname);
   }
   const product=catalog.products.find(p=>page.route==='/product/'+p.id+'/');
   if(product){
@@ -38,8 +52,9 @@ export function verifySearchPages(root,dist,pages){
    assert.ok(main.includes(product.localImage),'Correct product image in initial HTML');
   }
  }
- const context={window:{ROBOTGO_CATALOG:catalog},URLSearchParams};
- vm.runInNewContext(fs.readFileSync(path.join(root,'public/routing.js'),'utf8'),context);
+ const reachable=new Set(['/']),pending=['/'];
+ while(pending.length)for(const target of links.get(pending.pop())||[])if(!reachable.has(target)){reachable.add(target);pending.push(target);}
+ assert.equal(reachable.size,expected.length,'Every indexed page must be reachable through ordinary links from home');
  const route=context.window.ROBOTGO_ROUTING;
  assert.equal(route.url('/shop?category=umanoizi'),'/shop/?category=umanoizi');
  assert.equal(route.url('/product/'+catalog.products[0].id),'/product/'+catalog.products[0].id+'/');
@@ -49,5 +64,11 @@ export function verifySearchPages(root,dist,pages){
  assert.equal(route.read({pathname:'/',hash:'#/product/'+catalog.products[0].id}).path,'/product/'+catalog.products[0].id);
  assert.equal(route.read({pathname:'/',hash:'#/catalog?brand=unitree'}).path,'/shop');
  assert.equal(route.read({pathname:'/',hash:'#/oferta'}).path,'/quote');
+ assert.equal(route.url('/categories/umanoizi'),'/categories/umanoizi/');
+ assert.equal(route.url('/solutii'),'/solutions/');
+ let redirected;
+ context.window.location={pathname:'/',search:'',hash:'#/product/'+catalog.products[0].id,replace:value=>{redirected=value;}};
+ assert.equal(route.redirectLegacy(),true);assert.equal(redirected,'/product/'+catalog.products[0].id+'/');
+ context.window.location.hash='#/quote';assert.equal(route.redirectLegacy(),false);
  console.log('Search pages: '+pages.length+' HTML pages, sitemap, metadata, links, structured data and legacy routing verified.');
 }
