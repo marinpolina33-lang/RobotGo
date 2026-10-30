@@ -1,0 +1,60 @@
+name: RobotGo - One-time DigitalOcean DNS zone creation
+on:
+  push:
+    branches: ["automation/robotgo-create-do-zone"]
+    paths:
+      - ".github/workflows/robotgo-create-do-zone.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  create-zone:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Create robotgo.ro zone if DigitalOcean credentials are available
+        env:
+          DO_API_TOKEN: ${{ secrets.DO_API_TOKEN }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request, urllib.error
+          base = "https://api.digitalocean.com/v2/domains"
+          domain = "robotgo.ro"
+          token = os.getenv("DO_API_TOKEN", "")
+          if not token:
+              print("RESULT: NO_TOKEN")
+              print("The GitHub Actions secret DO_API_TOKEN is absent or unavailable. No changes made.")
+              raise SystemExit(0)
+          headers = {"Authorization": "Bearer " + token, "Accept": "application/json"}
+          def call(url, method="GET", data=None):
+              payload = json.dumps(data).encode() if data is not None else None
+              hdrs = dict(headers)
+              if payload is not None:
+                  hdrs["Content-Type"] = "application/json"
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(url, headers=hdrs, method=method, data=payload), timeout=25) as res:
+                      return res.status, json.loads(res.read().decode() or "{}")
+              except urllib.error.HTTPError as err:
+                  return err.code, {}
+          status, response = call(base + "/" + domain)
+          if status == 200:
+              print("RESULT: ALREADY_EXISTS")
+              print("DigitalOcean DNS zone robotgo.ro exists in authorized team.")
+          elif status == 404:
+              status, response = call(base, "POST", {"name": domain})
+              if status in (200, 201):
+                  print("RESULT: CREATED")
+                  print("Created DNS zone:", response.get("domain", {}).get("name", domain))
+              else:
+                  print("RESULT: API_ERROR")
+                  print("Create zone HTTP status:", status, "(check permissions/domain policy)")
+                  raise SystemExit(1)
+          else:
+              print("RESULT: API_ERROR")
+              print("Read zone HTTP status:", status, "(check authorization and scopes)")
+              raise SystemExit(1)
+          print("No nameserver delegation, DNS records, or Render configuration were changed.")
+          PY
