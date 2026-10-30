@@ -1,0 +1,20 @@
+{
+  "hero": "assets/robotgo-approved-robot.webp",
+  "ankle": "assets/robotgo-ankle-detail.webp",
+  "background": "assets/robotgo-corridor.webp",
+  "floor": "assets/robotgo-floor.webp",
+  "categories": {
+    "humanoid": "assets/robotgo-category-humanoid.webp",
+    "quadruped": "assets/robotgo-category-quadruped.webp",
+    "amr": "assets/robotgo-category-amr.webp",
+    "cobot": "assets/robotgo-category-cobot.webp"
+  },
+  "anklePoint": [
+    0.5410628019323671,
+    0.9184713375796179
+  ],
+  "notice": {
+    "ro": "Ilustrație de concept generată cu AI",
+    "en": "AI-generated concept illustration"
+  }
+}

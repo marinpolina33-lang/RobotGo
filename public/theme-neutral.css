@@ -1,0 +1,77 @@
+
+/* ROBOTGO v0.4b — Neutral background. Built directly on v0.4.
+   This patch changes colours only: no layout, typography, catalogue or behaviour changes.
+   Brand green remains an accent, not the background of content sections. */
+:root {
+  --paper: #F4F6F8;
+  --white: #FFFFFF;
+  --ink: #20252B;
+  --muted: #5A6470;
+  --dark: #1B232C;
+  --green: #285B43;
+  --lime: #E4EAF0;
+  --mint: #EEF1F4;
+  --line: #DCE1E7;
+  --shadow: 0 12px 36px #20252B10;
+}
+body { background: var(--paper); color: var(--ink); }
+.main-header { background: #FFFFFFF5; }
+.topstrip { color: #E5E9EE; }
+.eyebrow { color: #59636E; }
+.pill { background: var(--mint); color: #404B58; border-color: var(--line); }
+.link { border-color: #9FA9B4; }
+.hero-main, .ux-showcase { background: #E9EDF1; border-color: var(--line); }
+.ux-showcase::before { background: #DCE3EA; }
+.hero-card { background: #EFF2F5; }
+.hero-card.ai-card { background: var(--dark); }
+.showcase-top .pill, .showcase-caption .icon-button { background: #F8FAFC; }
+.showcase-controls { border-color: #CDD5DE; }
+.showcase-number { color: #64717F; }
+.hero-controls button, .showcase-controls .hero-controls button { background: #B9C4CF; }
+.hero-controls button.selected, .showcase-controls .hero-controls button.selected { background: var(--green); }
+.ux-primary { background: var(--ink); border-color: var(--ink); }
+.ux-primary:hover { background: var(--green); border-color: var(--green); }
+.hero-mini-nav, .ux-quickpath { border-color: var(--line); }
+.intent-chip:hover, .intent-chip.chosen { background: #E8EDF2; border-color: #B8C3CE; }
+.band, .ux-feature-band { background: #EDF0F4; }
+.ux-discovery, .discovery { background: #E9EDF2; }
+.discovery-preview { background: #FFFFFF; border-color: var(--line); }
+.ux-category-visual { background: #F0F3F6; }
+.category-tile:hover { border-color: #B4C0CB; }
+.product-card.ux-card { background: #FFFFFF; border-color: var(--line); }
+.ux-card .media { background: #F1F3F6; }
+.media .fallback { background: linear-gradient(145deg,#F6F8FA,#E8EDF2); color: #63707E; }
+.media .exhibition { color: #52606E; }
+.product-stats span { background: #EFF2F5; }
+.product-tag { color: #5D6977; border-color: var(--line); }
+.quick-button { background: #E8EDF2; color: #354556; border-color: var(--line); }
+.learning-card { background: #FFFFFF; border-color: var(--line); }
+.learning-card:nth-child(2) { background: #EEF2F6; border-color: var(--line); }
+.learning-card:nth-child(3) { background: #E7ECF1; border-color: var(--line); }
+.learning-card:hover { background: #E1E8EF; }
+.learning-icon { background: #F8FAFC; }
+.ux-contact-band, .callout, .site-footer { background: var(--dark); }
+.ux-contact-band p, .callout p, .site-footer p { color: #CAD2DA; }
+.shop-intro, .friendly-empty, .quick-example, .wizard-summary, .wizard-match-reason,
+.help-choices>button, .page-notice { background: #EEF2F6; border-color: var(--line); }
+.filter-select { background: #F8FAFC; }
+.technical-toggle { background: #EEF2F6; }
+.spec-pill { background: #EBF0F5; }
+.notice { background: #EDF1F5; border-color: var(--line); }
+.notice.neutral { background: #F8FAFC; }
+.field:disabled { background: #ECEFF3; }
+.modal-backdrop { background: #20252B80; }
+.quickview-layout .media, .modal-header .icon-button { background: #EEF2F6; }
+.chat-body { background: #F4F6F8; }
+.chat-consent { background: #EDF1F5; }
+.bubble.user { background: #E0E7EF; }
+.progress { background: #E2E8EE; }
+.progress i { background: #687D92; }
+button[aria-pressed=true].compare-text { background: #E0E8F0; }
+.compare-picked>span { background: #EDF1F6; }
+.detail-nav { background: #E8EDF2; }
+.mobile-bottom-nav { background: #FFFFFFF5; border-top-color: var(--line); box-shadow: 0 -5px 20px #20252B10; }
+.mobile-bottom-nav>a, .mobile-bottom-nav>button { color: #5A6470; }
+.mobile-bottom-nav .active { background: #E6ECF2; color: var(--ink); }
+.mobile-bottom-nav>button { background: #E1E8EF; color: var(--ink); }
+@media print { body { background: #FFFFFF; color: #000000; } }

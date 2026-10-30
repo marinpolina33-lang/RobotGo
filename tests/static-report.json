@@ -1,0 +1,155 @@
+{
+  "version": "0.4h-p1",
+  "checkedAt": "2026-10-29T16:52:22.002Z",
+  "scope": "Local static-file and configuration validation. Not a penetration test. Does not verify external-image availability, Render remote schema, or live services.",
+  "files": 51,
+  "checks": [
+    {
+      "name": "No symlinks or private/server files in public",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Public files use expected types",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Demo mode retained, backend disabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Domain is not claimed as registered",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "26 product records preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "7 categories preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "13 brand records preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Product IDs unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Product category and brand references valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Product application references valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "RO/EN descriptions present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3 photographs and 4 videos preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog.json matches executable data",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "visuals.json matches executable data",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exhibition.json matches executable data",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All referenced local catalogue and exhibition assets exist",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No HTTP-only images in public data",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "HTML script/style/favicon references exist",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Contact module loaded after app",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Responsive viewport present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No inline scripts in HTML",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Non-JavaScript fallback present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Search indexing disabled in preview",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All public JavaScript passes syntax check",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "No recognizable private-key/token signatures in public text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Optional public contacts valid; no test placeholders",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Security header configuration present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Render uses static publish only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No broad SPA rewrite for nonexistent API paths",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "passed": 29,
+  "failed": 0
+}

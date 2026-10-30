@@ -1,0 +1,388 @@
+{
+  "release": "0.4h-p1",
+  "scope": "HTTP/static checks use a loopback Node server. Browser UI checks use an in-memory snapshot with the same application code and embedded local assets because managed Chromium blocks both HTTP-local and file navigation. External images are blocked. Real HTTP browser navigation, enforced CSP, persistent localStorage, live services and remote deployment are not validated.",
+  "checks": [
+    {
+      "name": "Home served with HTTP 200",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "CSP, framing, MIME and noindex headers served",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "HEAD returns no body",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Not publicly served: /.env",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Not publicly served: /server.mjs",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Not publicly served: /private/SOURCES.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Not publicly served: /render.yaml",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Not publicly served: /.git/config",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Not publicly served: /api/status",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Not publicly served: /api/requests",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Not publicly served: /missing-file.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "POST cannot create a request on static preview",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "MP4 supports partial-content playback",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Invalid byte range returns 416",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Every public file returns HTTP 200",
+      "passed": true,
+      "details": {
+        "files": 50,
+        "missing": []
+      }
+    },
+    {
+      "name": "Home title and RobotGo branding render",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "26 catalogue products loaded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "AI/backend remain inactive",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Real exhibition photos appear on Home",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Selection wizard opens",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Wizard returns a model shortlist",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Shop starts with 9 cards",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Interactive category filter updates URL and results",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Search query filters catalogue",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Product adds to cart",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Product adds to comparison",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Product saves to favourites",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Purchase request downloads locally",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Real password collection stays disabled",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No invented public contact details",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Configured company/contact fields render",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact email and phone actions use safe links",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact module switches to English",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "All exhibition media appear",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Exhibition photo loads and zooms: teleoperare-manusi",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Zoom changes scale: teleoperare-manusi",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Exhibition photo loads and zooms: leju-umanoid-mobil",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Zoom changes scale: leju-umanoid-mobil",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Exhibition photo loads and zooms: rokae-umanoid-mobil",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Zoom changes scale: rokae-umanoid-mobil",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Video opens paused: umanoid-demonstratie",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Video actually plays: umanoid-demonstratie",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Video removed on close: umanoid-demonstratie",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Video opens paused: manipulare-mobila-demo",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Video actually plays: manipulare-mobila-demo",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Video removed on close: manipulare-mobila-demo",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Video opens paused: brate-mainile-demo",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Video actually plays: brate-mainile-demo",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Video removed on close: brate-mainile-demo",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Video opens paused: umanoizi-expusi",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Video actually plays: umanoizi-expusi",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Video removed on close: umanoizi-expusi",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "All application routes render in RO and EN",
+      "passed": true,
+      "details": {
+        "routes": 58,
+        "language_route_visits": 116,
+        "missing": []
+      }
+    },
+    {
+      "name": "No horizontal overflow at 360px: /",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No horizontal overflow at 360px: /shop",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No horizontal overflow at 360px: /media",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No horizontal overflow at 360px: /contact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No horizontal overflow at 360px: /account",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No horizontal overflow at 390px: /",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No horizontal overflow at 390px: /shop",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No horizontal overflow at 390px: /media",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No horizontal overflow at 390px: /contact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No horizontal overflow at 390px: /account",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No horizontal overflow at 768px: /",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No horizontal overflow at 768px: /shop",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No horizontal overflow at 768px: /media",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No horizontal overflow at 768px: /contact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No horizontal overflow at 768px: /account",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No horizontal overflow at 1440px: /",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No horizontal overflow at 1440px: /shop",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No horizontal overflow at 1440px: /media",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No horizontal overflow at 1440px: /contact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No horizontal overflow at 1440px: /account",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No browser JavaScript errors",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "js_errors": [],
+  "csp_violations": [],
+  "passed": 74,
+  "failed": 0,
+  "completed": true
+}

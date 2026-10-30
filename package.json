@@ -1,0 +1,16 @@
+{
+  "name": "robotgo-static",
+  "version": "0.4.8-p1",
+  "private": true,
+  "type": "module",
+  "description": "RobotGo \u2014 static preview deployment package, based on v0.4h.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "node tools/verify.mjs",
+    "build": "node tools/build.mjs",
+    "preview": "node tools/preview.mjs",
+    "test": "node tools/verify.mjs"
+  }
+}

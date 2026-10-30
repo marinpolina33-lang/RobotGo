@@ -1,0 +1,287 @@
+{
+  "version": "0.4h-p1",
+  "base": "RobotGo v0.4h",
+  "prepared_at": "2026-10-29T16:54:36.713659+00:00",
+  "deployment": {
+    "published": false,
+    "public_url": null,
+    "domain_registered_in_this_task": false,
+    "domain_target": "robotgo.ro",
+    "domain_status": "unverified",
+    "GitHub": "not connected",
+    "Render": "not connected"
+  },
+  "verification": {
+    "static_passed": 29,
+    "http_and_ui_passed": 74,
+    "failures": 0,
+    "browser_scope": "In-memory Chromium snapshot. Local HTTP server tested separately. Managed browser navigation to HTTP-local and file URLs was blocked; no policies changed.",
+    "remote_deployment_tested": false,
+    "external_images_reverified": false,
+    "real_authentication_tested": false
+  },
+  "content": {
+    "products": 26,
+    "categories": 7,
+    "brands": 13,
+    "real_photos": 3,
+    "videos": 4
+  },
+  "public_files": [
+    {
+      "path": ".htaccess",
+      "bytes": 871,
+      "sha256": "1095c1e3cafb5822eab09e9090de6abe37d3903db14fba32b810198b91ed9c79"
+    },
+    {
+      "path": "404.html",
+      "bytes": 710,
+      "sha256": "f92f685da21ce4ac6562b9b67e6ba40277be65d6ee4d1fff3f5d266bdfbc8a95"
+    },
+    {
+      "path": "app.js",
+      "bytes": 183850,
+      "sha256": "f1b5d339c26dbe816887371d6d90514e357a33beb1d0de69290ec9fc77adf87c"
+    },
+    {
+      "path": "approved-design.css",
+      "bytes": 16837,
+      "sha256": "851a59486232048736d300b493c019cd51b0f5a37242c60f30a398a05dd17292"
+    },
+    {
+      "path": "assets/expozitie/brate-mainile-demo-poster.webp",
+      "bytes": 34924,
+      "sha256": "fc9d0e408cb74c74726d7a03e89dd0c23737d8dfb03f90d7c2042ebc9ed7e235"
+    },
+    {
+      "path": "assets/expozitie/brate-mainile-demo.mp4",
+      "bytes": 1791586,
+      "sha256": "17255b7b8a72dd7f64c5c22d37881fc1cc2efbfbf024f37a11d53c014f5db289"
+    },
+    {
+      "path": "assets/expozitie/leju-umanoid-mobil-thumb.webp",
+      "bytes": 87848,
+      "sha256": "2fc3e2d57c6ef45e81962467d2aeacd7bccf0e101f68b4de93b7d2763446ff60"
+    },
+    {
+      "path": "assets/expozitie/leju-umanoid-mobil.webp",
+      "bytes": 284874,
+      "sha256": "0d55882640606f8c787b15fa020a833af323ff475f6a696cead383080f2b57b0"
+    },
+    {
+      "path": "assets/expozitie/manipulare-mobila-demo-poster.webp",
+      "bytes": 47554,
+      "sha256": "2cc743d092fe59c545a67598114195b805c12cc2641118e0a09ce16551aeb4f7"
+    },
+    {
+      "path": "assets/expozitie/manipulare-mobila-demo.mp4",
+      "bytes": 7917018,
+      "sha256": "55b0a96b8c1d1f1584b841a90abce57557047b573472c10be9d887a2a7a567b5"
+    },
+    {
+      "path": "assets/expozitie/rokae-umanoid-mobil-thumb.webp",
+      "bytes": 66998,
+      "sha256": "7d5cfef84496a7a559ef2f14142d3ef5c0c044136213ccea116b88a704a5f461"
+    },
+    {
+      "path": "assets/expozitie/rokae-umanoid-mobil.webp",
+      "bytes": 251006,
+      "sha256": "d91919501c81f214b8e6764fdcec2afca88f222b1e8a84d8a5c8b34e2ca8a1ef"
+    },
+    {
+      "path": "assets/expozitie/teleoperare-manusi-thumb.webp",
+      "bytes": 53846,
+      "sha256": "b6463dcd907a27f43a69b93fe006c1b2bab3baf391fc2540417dd102d5b19a6e"
+    },
+    {
+      "path": "assets/expozitie/teleoperare-manusi.webp",
+      "bytes": 147824,
+      "sha256": "b290512ca029c9b9185a4977512974b97f7d511f73b8141a8bdfa45de630096c"
+    },
+    {
+      "path": "assets/expozitie/umanoid-demonstratie-poster.webp",
+      "bytes": 38892,
+      "sha256": "7623c9dcbb8dc5889e7da022849c0f75f69fee36a443fdba0b19673024a223a6"
+    },
+    {
+      "path": "assets/expozitie/umanoid-demonstratie.mp4",
+      "bytes": 2413439,
+      "sha256": "ea8cae48d19212b2cbaa9ceae9c1067aca49e3b4667a5dfe5f7b7875d599d911"
+    },
+    {
+      "path": "assets/expozitie/umanoizi-expusi-poster.webp",
+      "bytes": 18166,
+      "sha256": "1e6c727ca35d56aeee4ad16cbd3ec39430422bcd72c17be77f7f3304acba0413"
+    },
+    {
+      "path": "assets/expozitie/umanoizi-expusi.mp4",
+      "bytes": 2007183,
+      "sha256": "c542de923ededffdb5a1916f9f3bb2005c14c59d4a6bd694ac04125d93c07a76"
+    },
+    {
+      "path": "assets/g1-raised-leg-clean.webp",
+      "bytes": 30722,
+      "sha256": "3890afc9f0cd6e62cb03b58eb612b055cd79ee8c630b716d0667cf098b7fb375"
+    },
+    {
+      "path": "assets/leju-kuavo-4pro.webp",
+      "bytes": 6866,
+      "sha256": "33148be241a4f0ddf402b12e0477d5aa472b780e1af1997a01bf4e47a913ef88"
+    },
+    {
+      "path": "assets/leju-kuavo-5.webp",
+      "bytes": 10876,
+      "sha256": "794585fa34ca0f0eebadf45306054d4ae28abbd6cc32e774c08f91e1efee44a0"
+    },
+    {
+      "path": "assets/leju-roban-2.webp",
+      "bytes": 24708,
+      "sha256": "347a9e5c66ee053676a17ee618c03cbfcaae73fe5a0a9e1eebaf15527cdc801c"
+    },
+    {
+      "path": "assets/robotgo-ankle-detail.webp",
+      "bytes": 4948,
+      "sha256": "8351746b9fcd8b89db7812537852cebe40c22b6d65d5890df6d64d0eaad40cd3"
+    },
+    {
+      "path": "assets/robotgo-approved-robot.webp",
+      "bytes": 64624,
+      "sha256": "3ceb5ba99aea8bebd034d1913b24bc4f15e58dc9e622345ebfa0b03cc68b258e"
+    },
+    {
+      "path": "assets/robotgo-category-amr.webp",
+      "bytes": 5366,
+      "sha256": "f3c701458146c12eef92a64a7e1b503f96706567dc125e3fdad283f82643e2c6"
+    },
+    {
+      "path": "assets/robotgo-category-cobot.webp",
+      "bytes": 5068,
+      "sha256": "f1790b5c4a7adc8762a03d6bcf877ad9edd9b96af93e0c97a340416ec1cc651b"
+    },
+    {
+      "path": "assets/robotgo-category-humanoid.webp",
+      "bytes": 7036,
+      "sha256": "ffc24ad28d80455c2cc640a8cce0167f76d666d6ba35f29e370b28de6c6a1792"
+    },
+    {
+      "path": "assets/robotgo-category-quadruped.webp",
+      "bytes": 6820,
+      "sha256": "60cee35319938b7184e44a4f422c9795289358c32cf28965f8efb8b59ba1ad0f"
+    },
+    {
+      "path": "assets/robotgo-corridor.webp",
+      "bytes": 8746,
+      "sha256": "c33102f95a4c7da8011252a67314ea956da6a98a57e15b4694d88fe4e5ee16c2"
+    },
+    {
+      "path": "assets/robotgo-floor.webp",
+      "bytes": 11052,
+      "sha256": "ae608b8ffd982dd82b6ce3d78e2024310824686ac679610c7bca3bfa9c44618c"
+    },
+    {
+      "path": "assets/rokae-helios-exhibition.webp",
+      "bytes": 56440,
+      "sha256": "78680aebe75490ac41e3eb352e53e1cd2c5da818f7339b2c697dd8f88e6184ec"
+    },
+    {
+      "path": "assets/unitree-g1-scene.webp",
+      "bytes": 7210,
+      "sha256": "dca3008ddde518133e04dd2ec42c2a3e2eb5ff12fb032ef01211db15b8c5761c"
+    },
+    {
+      "path": "assets/unitree-g1.webp",
+      "bytes": 16998,
+      "sha256": "0788ba08e12f741094a49ed3fdc744b429fc55c66e5707330e5a557ad41e5385"
+    },
+    {
+      "path": "assets/unitree-go2.webp",
+      "bytes": 14026,
+      "sha256": "f64e52a2a100d85368f6189d86cab999e40115c51c77d2b19a2f5f15a8f08d5e"
+    },
+    {
+      "path": "catalog.js",
+      "bytes": 57299,
+      "sha256": "1e20d343f69d6e9e5fa20916642ad39ba61770defa70bd656d74616321039e38"
+    },
+    {
+      "path": "catalog.json",
+      "bytes": 72671,
+      "sha256": "3b3d6850d6319826f75b29bbbe0761b9295527ecfe7147eb43477693c08678d1"
+    },
+    {
+      "path": "contact-public.js",
+      "bytes": 2868,
+      "sha256": "7290b2219867ec2aed13dfa6edc4adbe85479bef3446f1cd3fe193bb67d604d5"
+    },
+    {
+      "path": "dark-dynamic.css",
+      "bytes": 18542,
+      "sha256": "00b42a92672772946131f2513de8e3d993f875fd4a3184a82d9ebe48a08ef3bf"
+    },
+    {
+      "path": "exhibition-data.js",
+      "bytes": 6817,
+      "sha256": "fddd1231c28f85820308c8776882f875a146f8f09c4960343dbfabe4a7058c5c"
+    },
+    {
+      "path": "exhibition.css",
+      "bytes": 5424,
+      "sha256": "3503de0f66d5b4ee78f9cf0c0bdde6384953e6b6ca15ad5e45ef99ffefa32bb7"
+    },
+    {
+      "path": "exhibition.json",
+      "bytes": 8682,
+      "sha256": "389288d3d577b13487df73720c7fd2df34aa8e16f36737f642d973c9effa5d7b"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 268,
+      "sha256": "8b18d496133954d7b696c0c12cb61131ac3a5a96705214b41e3bc58a1bc28d5d"
+    },
+    {
+      "path": "home-refinement.css",
+      "bytes": 5952,
+      "sha256": "a77c53966c53a9be5ce5a355e53c0b0182db6c8b81f2f5a111ade0e4981a663a"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1430,
+      "sha256": "f033fd767473c3815f3fef33473275afc8b1407075255b30e426bb38b784793c"
+    },
+    {
+      "path": "product-images.css",
+      "bytes": 3417,
+      "sha256": "ea14efa2e6b7fa30bb18783a4f920e62a5507b3f62598a5002315fc9082ae3da"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 26,
+      "sha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1"
+    },
+    {
+      "path": "site-config.js",
+      "bytes": 759,
+      "sha256": "b3a14d46f90129cca75ae82162973a4864f1948a232f6e1634a1c2acb385d889"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 79300,
+      "sha256": "8b2b00a4736d50c8ed4c5c719fb9df1fc23119f46d11e8864dcc7096ad2e1984"
+    },
+    {
+      "path": "theme-neutral.css",
+      "bytes": 3991,
+      "sha256": "097a9e9b45fbbd8f20c857a91eeef7e736d9993622bc61a43dcbec99f2fb36ea"
+    },
+    {
+      "path": "visuals.js",
+      "bytes": 572,
+      "sha256": "12e46e905dde8e05c033a0d61f7c34522c07352ca7ba308ad802a164fe3659a1"
+    },
+    {
+      "path": "visuals.json",
+      "bytes": 608,
+      "sha256": "fada7dca52c32f810e43461d4f851c2c0fad37521aaee96c0ff6b41b2c2930b7"
+    }
+  ]
+}
