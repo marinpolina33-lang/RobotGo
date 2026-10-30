@@ -1,0 +1,87 @@
+name: RobotGo - independent public website audit
+
+on:
+  push:
+    branches:
+      - audit/robotgo-public-check
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect-public-website:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Checkout configuration
+        uses: actions/checkout@v4
+
+      - name: DNS HTTPS and indexing audit without Cloudflare login
+        shell: bash
+        run: |
+          set +e
+          mkdir -p audit-output
+          {
+            echo "# RobotGo independent public website audit"
+            echo ""
+            echo "Run date (UTC): $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo ""
+            echo "This read-only audit uses GitHub's network, public DNS resolvers, and HTTPS. It does not require a Cloudflare account."
+            echo ""
+            if ! command -v dig >/dev/null 2>&1; then
+              echo "Installing DNS lookup utility..."
+              sudo apt-get update -qq && sudo apt-get install -y -qq dnsutils
+            fi
+            for host in robotgo.ro www.robotgo.ro robotgo-preview.onrender.com; do
+              echo ""
+              echo "## $host"
+              for resolver in 1.1.1.1 8.8.8.8; do
+                for record in A AAAA CNAME NS; do
+                  answer=$(dig @"$resolver" "$host" "$record" +short +time=3 +tries=1 2>&1)
+                  if [ -z "$answer" ]; then answer="(no matching answer)"; fi
+                  echo "DNS resolver=$resolver type=$record: $answer"
+                done
+              done
+              echo ""
+              echo "### HTTPS (certificate validation enabled)"
+              curl --silent --show-error --location --head --max-time 20                 --dump-header /tmp/robotgo-response-headers                 --output /dev/null                 --write-out 'HTTP status: %{http_code} | SSL verification: %{ssl_verify_result} | Final URL: %{url_effective}\n'                 "https://$host"
+              result=$?
+              echo "Curl exit code: $result (0 means the request and certificate validation succeeded)"
+              grep -i -E '^(HTTP/|location:|x-robots-tag:|content-type:)' /tmp/robotgo-response-headers 2>/dev/null | head -35 || true
+              rm -f /tmp/robotgo-response-headers
+            done
+            echo ""
+            echo "## Indexing diagnostics"
+            for host in robotgo.ro robotgo-preview.onrender.com; do
+              echo "robots.txt for $host:"
+              curl --silent --show-error --location --max-time 15 --range 0-1200 "https://$host/robots.txt" 2>&1 | head -c 1200
+              echo ""
+              curl --silent --show-error --location --max-time 15 "https://$host" -o /tmp/robotgo-page.html
+              if [ -s /tmp/robotgo-page.html ]; then
+                echo "HTML noindex count: $(grep -oi 'noindex' /tmp/robotgo-page.html | wc -l)"
+                echo "HTML title: $(grep -oi '<title>[^<]*</title>' /tmp/robotgo-page.html | head -1)"
+              else
+                echo "Could not retrieve HTML."
+              fi
+              rm -f /tmp/robotgo-page.html
+            done
+            echo ""
+            echo "## Repository release configuration"
+            grep -E "releaseStage:|domainStatus:|backendEnabled:|demo:|companyName:|email:" public/site-config.js 2>/dev/null || true
+            echo ""
+            echo "## Interpretation"
+            echo "- A live Render deploy is not the same as a verified custom domain."
+            echo "- Empty DNS answers or curl errors require review; an HTTP 403 may also be an anti-bot restriction."
+            echo "- noindex or Disallow: / prevents search indexing, even if the website loads."
+            echo "- Add and verify custom domains on Render; change DNS only at the authoritative DNS provider."
+          } 2>&1 | tee audit-output/robotgo-audit.md
+          cat audit-output/robotgo-audit.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Store audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: robotgo-public-audit
+          path: audit-output/robotgo-audit.md
+          retention-days: 14
