@@ -1,0 +1,46 @@
+name: RobotGo - Porkbun DNS migration preflight
+on:
+  push:
+    branches: [audit/robotgo-public-check]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  public-dns-preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: DNS baseline (read-only)
+        shell: bash
+        run: |
+          set +e
+          echo "# robotgo.ro DNS migration preflight" >> "$GITHUB_STEP_SUMMARY"
+          echo "Checked at (UTC): $(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "DNS baseline (public records only; this run changes nothing):" >> "$GITHUB_STEP_SUMMARY"
+          echo '### Parent DNS delegation and DNSSEC' >> "$GITHUB_STEP_SUMMARY"
+          for record in NS DS; do
+            echo "robotgo.ro $record:" >> "$GITHUB_STEP_SUMMARY"
+            echo '~~~' >> "$GITHUB_STEP_SUMMARY"
+            dig @1.1.1.1 robotgo.ro "$record" +short +time=3 +tries=1 >> "$GITHUB_STEP_SUMMARY"
+            echo '~~~' >> "$GITHUB_STEP_SUMMARY"
+          done
+          echo '### Current mail-related records' >> "$GITHUB_STEP_SUMMARY"
+          for host in robotgo.ro _dmarc.robotgo.ro default._domainkey.robotgo.ro; do
+            for record in MX TXT; do
+              echo "$host $record:" >> "$GITHUB_STEP_SUMMARY"
+              echo '~~~' >> "$GITHUB_STEP_SUMMARY"
+              dig @8.8.8.8 "$host" "$record" +short +time=3 +tries=1 >> "$GITHUB_STEP_SUMMARY"
+              echo '~~~' >> "$GITHUB_STEP_SUMMARY"
+            done
+          done
+          echo '### Existing web records' >> "$GITHUB_STEP_SUMMARY"
+          for host in robotgo.ro www.robotgo.ro; do
+            for record in A AAAA CNAME CAA; do
+              echo "$host $record:" >> "$GITHUB_STEP_SUMMARY"
+              echo '~~~' >> "$GITHUB_STEP_SUMMARY"
+              dig @1.1.1.1 "$host" "$record" +short +time=3 +tries=1 >> "$GITHUB_STEP_SUMMARY"
+              echo '~~~' >> "$GITHUB_STEP_SUMMARY"
+            done
+          done
+          echo "Caution: lack of answers for sampled selectors does not prove that no DKIM records exist. Preserve all original DNS records before switching nameservers." >> "$GITHUB_STEP_SUMMARY"
