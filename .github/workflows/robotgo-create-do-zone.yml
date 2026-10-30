@@ -58,3 +58,4 @@ jobs:
               raise SystemExit(1)
           print("No nameserver delegation, DNS records, or Render configuration were changed.")
           PY
+# Re-run after DO_API_TOKEN was added to GitHub Actions secrets (2026-10-30).
