@@ -27,6 +27,14 @@ Ultima comandă pornește un server local la `http://127.0.0.1:4173` și nu publ
 - Pagina 404 rămâne neindexabilă. Fișierele inexistente primesc 404; nu există rescriere generală către aplicație.
 - Publicarea face site-ul eligibil pentru indexare; nu confirmă includerea în Google și nu garantează o poziție în rezultate. După verificarea proprietății în Google Search Console, se poate trimite sitemap-ul și solicita indexarea paginii principale.
 
+### Notificarea motoarelor de căutare
+
+Fișierul public de verificare IndexNow este indicat în `config/indexnow.json`. După publicarea unei versiuni, `node tools/submit-indexnow.mjs` previzualizează adresele din sitemap, iar `node tools/submit-indexnow.mjs --submit` le trimite o singură dată. Scriptul verifică întâi fișierul de pe domeniu și concordanța sitemap-ului public cu versiunea locală. Nu se trimit notificări la fiecare vizită și nu există retrimiteri repetitive automate.
+
+IndexNow notifică Bing și celelalte motoare participante. HTTP 200 confirmă primirea; HTTP 202 indică primirea cu verificarea cheii în așteptare. Niciunul nu confirmă indexarea sau poziționarea. Google se gestionează separat în Search Console: verificarea proprietății, trimiterea `https://robotgo.ro/sitemap.xml` și inspecția URL pentru pagina principală, catalog și produse. API-ul Google Indexing este rezervat tipurilor eligibile de pagini și nu este folosit pentru catalogul de roboți.
+
+Documentație: https://www.indexnow.org/documentation · https://www.indexnow.org/faq · https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl
+
 ## Funcționare actuală
 
 Catalogul include 26 de produse, 29 de fotografii locale de produs, 3 fotografii și 4 clipuri de expoziție. Sursele și hash-urile imaginilor sunt în `docs/product-image-sources.json`. Build-ul validează fișierele și configurația pentru a preveni reintroducerea blocajului de indexare.
