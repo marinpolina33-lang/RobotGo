@@ -52,6 +52,7 @@ jobs:
       - name: ClouDNS Premium API (plan or explicitly confirmed change)
         env:
           CLOUDNS_AUTH_ID: ${{ secrets.CLOUDNS_AUTH_ID }}
+          CLOUDNS_SUB_AUTH_ID: ${{ secrets.CLOUDNS_SUB_AUTH_ID }}
           CLOUDNS_AUTH_PASSWORD: ${{ secrets.CLOUDNS_AUTH_PASSWORD }}
           CLOUDNS_MODE: ${{ inputs.mode }}
           CLOUDNS_CONFIRM: ${{ inputs.confirmation }}
