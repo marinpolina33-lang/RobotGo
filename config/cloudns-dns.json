@@ -1,0 +1,20 @@
+{
+  "domain": "robotgo.ro",
+  "render_service": "robotgo-preview.onrender.com",
+  "expected_web_records": [
+    {
+      "type": "A",
+      "host": "@",
+      "value": "216.24.57.1"
+    },
+    {
+      "type": "CNAME",
+      "host": "www",
+      "value": "robotgo-preview.onrender.com"
+    }
+  ],
+  "name_servers_to_test": [],
+  "registrar": "RoTLD",
+  "dns_provider_target": "ClouDNS",
+  "delegation_change_authorized": false
+}
