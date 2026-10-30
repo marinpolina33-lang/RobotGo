@@ -25,8 +25,8 @@ AUTH_ID = os.environ.get("CLOUDNS_AUTH_ID", "")
 SUB_AUTH_ID = os.environ.get("CLOUDNS_SUB_AUTH_ID", "")
 AUTH_PASSWORD = os.environ.get("CLOUDNS_AUTH_PASSWORD", "")
 WANTED = [
-    {"record-type": "A", "host": "@", "record": "216.24.57.1", "ttl": "3600"},
-    {"record-type": "CNAME", "host": "www", "record": "robotgo-preview.onrender.com", "ttl": "3600"},
+    {"type": "A", "host": "@", "record": "216.24.57.1", "ttl": "3600"},
+    {"type": "CNAME", "host": "www", "record": "robotgo-preview.onrender.com", "ttl": "3600"},
 ]
 
 if MODE not in ("plan", "create-zone", "add-web-records"):
@@ -109,7 +109,7 @@ def matches_host(record, wanted_host):
 def assess(records):
     missing = []
     for wanted in WANTED:
-        host, record_type, target = wanted["host"], wanted["record-type"], normalize(wanted["record"])
+        host, record_type, target = wanted["host"], wanted["type"], normalize(wanted["record"])
         at_host = [r for r in records if matches_host(r, host)]
         same = [r for r in at_host if normalize(r.get("type")) == record_type.lower()
                 and normalize(r.get("record")) == target]
@@ -147,7 +147,7 @@ try:
             for wanted in missing:
                 fields = {"domain-name": DOMAIN, **wanted}
                 request("/dns/add-record.json", fields)
-                print("CREATED_WEB_RECORD:", wanted["host"], wanted["record-type"])
+                print("CREATED_WEB_RECORD:", wanted["host"], wanted["type"])
         else:
             print("PLAN: No changes made. Missing web records:", len(missing))
     print("No existing records were deleted or modified. Nameserver delegation at RoTLD was not changed.")
