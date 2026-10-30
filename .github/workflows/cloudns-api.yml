@@ -1,0 +1,58 @@
+name: RobotGo ClouDNS Premium API - guarded operations
+
+on:
+  push:
+    branches: [migration/cloudns-dns]
+    paths:
+      - tools/cloudns_api.py
+      - .github/workflows/cloudns-api.yml
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "plan = read-only; create-zone; add-web-records"
+        type: choice
+        required: true
+        default: plan
+        options:
+          - plan
+          - create-zone
+          - add-web-records
+      confirmation:
+        description: "For changes, type CONFIGURE-ROBOTGO"
+        type: string
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  syntax-check:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check ClouDNS API helper syntax (no authentication or changes)
+        run: python3 -m py_compile tools/cloudns_api.py
+
+  manual-api:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    environment: dns-production
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Require explicit confirmation for changes
+        env:
+          MODE: ${{ inputs.mode }}
+          CONFIRM: ${{ inputs.confirmation }}
+        run: |
+          if [ "$MODE" != "plan" ] && [ "$CONFIRM" != "CONFIGURE-ROBOTGO" ]; then
+            echo "Refusing to change DNS: confirmation missing"; exit 1
+          fi
+      - name: ClouDNS Premium API (plan or explicitly confirmed change)
+        env:
+          CLOUDNS_AUTH_ID: ${{ secrets.CLOUDNS_AUTH_ID }}
+          CLOUDNS_AUTH_PASSWORD: ${{ secrets.CLOUDNS_AUTH_PASSWORD }}
+          CLOUDNS_MODE: ${{ inputs.mode }}
+          CLOUDNS_CONFIRM: ${{ inputs.confirmation }}
+        run: python3 tools/cloudns_api.py
