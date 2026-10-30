@@ -19,7 +19,7 @@ export function verify() {
  for(const name of ['site-config.js','catalog.js','visuals.js','exhibition-data.js']) vm.runInNewContext(read(name),context,{timeout:3000,filename:name});
  const cfg=context.window.ROBOTGO_CONFIG,cat=context.window.ROBOTGO_CATALOG,vis=context.window.ROBOTGO_VISUALS,ex=context.window.ROBOTGO_EXHIBITION;
  check('Demo mode retained, backend disabled', cfg.demo===true&&cfg.backendEnabled===false);
- check('Domain is not claimed as registered',cfg.domainStatus==='unverified');
+ check('Verified production domain configured',cfg.domainTarget==='robotgo.ro'&&cfg.domainStatus==='verified');
  check('26 product records preserved',cat.products.length===26);
  check('7 categories preserved',cat.categories.length===7);
  check('13 brand records preserved',cat.brands.length===13);
