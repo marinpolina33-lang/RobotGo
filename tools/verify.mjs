@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
+import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {spawnSync} from 'node:child_process';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
@@ -33,6 +34,16 @@ export function verify() {
  const local=[];function scan(o){if(typeof o==='string'&&o.startsWith('assets/'))local.push(o);else if(o&&typeof o==='object')Object.values(o).forEach(scan);} [cat,vis,ex].forEach(scan);
  const missing=[...new Set(local)].filter(p=>!fs.existsSync(path.join(pub,p)));
  check('All referenced local catalogue and exhibition assets exist',!missing.length,missing.join(', '));
+ const productImages=cat.products.flatMap(p=>[p.localImage,...(p.gallery||[]).map(g=>g.localImage)]);
+ check('Every product and gallery image has a same-site asset',productImages.every(p=>typeof p==='string'&&p.startsWith('assets/products/')&&!p.includes('..')));
+ const sources=JSON.parse(fs.readFileSync(path.join(root,'docs/product-image-sources.json'),'utf8')).images;
+ const invalidImages=[...new Set(productImages)].filter(file=>{
+  if(typeof file!=='string'||!fs.existsSync(path.join(pub,file)))return true;
+  const bytes=fs.readFileSync(path.join(pub,file)),source=sources.find(r=>r.path===file);
+  return bytes.toString('ascii',0,4)!=='RIFF'||bytes.toString('ascii',8,12)!=='WEBP'||!source||source.sha256!==createHash('sha256').update(bytes).digest('hex');
+ });
+ check('Product image bytes match verified WebP sources',invalidImages.length===0,invalidImages.join(', '));
+
  const insecure=[];function scanUrls(o){if(typeof o==='string'&&o.startsWith('http://'))insecure.push(o);else if(o&&typeof o==='object')Object.values(o).forEach(scanUrls);} [cat,vis,ex].forEach(scanUrls);
  check('No HTTP-only images in public data',insecure.length===0,insecure.join(', '));
  const html=read('index.html');
