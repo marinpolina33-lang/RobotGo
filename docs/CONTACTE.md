@@ -23,14 +23,15 @@ Verificarea automată acceptă câmpuri goale sau contacte publice cu format val
 
 ## Configurație confirmată — 30 octombrie 2026
 
-- Operator: ROUTEX LOGISTICA S.R.L.; CUI 54708422.
+- Operator: ROUTEX LOGISTICA S.R.L.; CUI 54708422; plătitoare de TVA, conform proprietarului.
+- Adresa publică: Strada Episcopiei, București, Sectorul 4, scara 3, etaj 5, apartament 77. Numărul străzii este omis la cererea explicită a proprietarului.
 - Telefon: +40778167507; același număr folosit pentru WhatsApp.
 - Email: robotgo100@gmail.com; căsuță existentă furnizată de proprietar.
 - Program: luni–vineri, 09:00–17:00, ora României.
 - Public: persoane fizice și juridice.
-- Flux: solicitare de ofertă în EUR; plata prin transfer bancar se stabilește în oferta acceptată.
-- Transport inclus în prețul ofertat. Stocul, termenul și TVA se precizează în ofertă.
+- Flux: solicitare de ofertă în EUR; plata cu avans prin transfer bancar. Valoarea avansului și termenele de plată se stabilesc în oferta acceptată. Datele bancare se comunică doar în ofertă, nu se publică pe site.
+- Transport inclus în prețul ofertat doar în România. Stocul, termenul și TVA se precizează în ofertă.
 - Formularele pregătesc textul complet pentru aplicația de email sau WhatsApp. Clientul verifică și trimite mesajul acolo. Există copiere/descărcare de rezervă.
 - Niciun email nu este trimis de server și nicio încasare nu este procesată pe site.
 
-De completat de proprietar: strada și numărul sediului (adresa primită este incompletă), numărul Registrului Comerțului, statutul TVA, coordonatele bancare și condițiile de plată. Nu publica un cont bancar presupus. Politicile comerciale și de confidențialitate trebuie finalizate separat. Indexarea rămâne blocată până la finalizarea lansării.
+De clarificat cu proprietarul: numărul complet al Registrului Comerțului. Răspunsul primit este „4690”; nu se publică drept număr complet înainte de clarificare. Statutul TVA este confirmat de proprietar, fără a presupune o cotă de TVA sau dacă prețurile includ TVA. Datele bancare rămân exclusiv în ofertă. Nu solicita și nu publica numărul străzii, omis explicit de proprietar. Politicile comerciale și de confidențialitate trebuie finalizate separat. Indexarea rămâne blocată până la finalizarea lansării.

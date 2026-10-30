@@ -13,7 +13,7 @@
   const ro=document.documentElement.lang!=='en';
   const values=['companyName','email','phoneNumber','address','vatId','registrationNo','openingHours'].map(str);
   if(!values.some(Boolean))return;
-  const signature=JSON.stringify([ro,...values]);
+  const signature=JSON.stringify([ro,...values,cfg.vatRegistered]);
   const old=document.getElementById('robotgo-company-contact');
   if(old?.dataset.signature===signature)return;
   old?.remove();
@@ -30,8 +30,9 @@
   for(const [key,labelRo,labelEn]of [['address','Adresă','Address'],['vatId','Cod fiscal','Tax ID'],['registrationNo','Înregistrare','Registration'],['openingHours','Program','Opening hours']]){
    if(str(key))section.append(text('p',(ro?labelRo:labelEn)+': '+(key==='openingHours'&&!ro&&str('openingHoursEn')?str('openingHoursEn'):str(key))));
   }
-  section.append(text('p',ro?'Persoane fizice și juridice · Oferte în EUR · Transport inclus în prețul ofertat · Plată prin transfer bancar, conform ofertei acceptate.':'Individuals and businesses · Quotes in EUR · Transport included in the quoted price · Payment by bank transfer under the accepted quote.'));
-  section.append(text('p',ro?'Trimite solicitarea prin email sau WhatsApp. Disponibilitatea, termenul și tratamentul TVA se precizează în ofertă.':'Send your request by email or WhatsApp. Availability, timing and VAT treatment are specified in the quote.','muted'));
+  if(cfg.vatRegistered===true)section.append(text('p',ro?'Statut TVA: societate plătitoare de TVA.':'VAT status: VAT-registered company.'));
+  section.append(text('p',ro?'Persoane fizice și juridice · Oferte în EUR · Transport inclus în prețul ofertat doar în România · Plată cu avans prin transfer bancar, conform ofertei acceptate.':'Individuals and businesses · Quotes in EUR · Transport included in the quoted price only within Romania · Deposit by bank transfer under the accepted quote.'));
+  section.append(text('p',ro?'Trimite solicitarea prin email sau WhatsApp. Valoarea avansului, termenele de plată, disponibilitatea, livrarea și TVA se detaliază în ofertă. Datele bancare sunt comunicate doar în ofertă.':'Send your request by email or WhatsApp. The deposit amount, payment schedule, availability, delivery and VAT are detailed in the quote. Bank details are provided only in the quote.','muted'));
   const wrap=main.querySelector('.wrap');if(!wrap)return;
   const grid=wrap.querySelector('.guide-grid');if(grid)grid.before(section);else wrap.append(section);
  }
