@@ -22,6 +22,7 @@ API = "https://api.cloudns.net"
 MODE = os.environ.get("CLOUDNS_MODE", "plan")
 CONFIRM = os.environ.get("CLOUDNS_CONFIRM", "")
 AUTH_ID = os.environ.get("CLOUDNS_AUTH_ID", "")
+SUB_AUTH_ID = os.environ.get("CLOUDNS_SUB_AUTH_ID", "")
 AUTH_PASSWORD = os.environ.get("CLOUDNS_AUTH_PASSWORD", "")
 WANTED = [
     {"record-type": "A", "host": "@", "record": "216.24.57.1", "ttl": "3600"},
@@ -32,8 +33,8 @@ if MODE not in ("plan", "create-zone", "add-web-records"):
     sys.exit("ERROR: Invalid mode")
 if MODE != "plan" and CONFIRM != "CONFIGURE-ROBOTGO":
     sys.exit("BLOCKED: changes require confirmation CONFIGURE-ROBOTGO")
-if not AUTH_ID or not AUTH_PASSWORD:
-    print("NO_CLOUDNS_API_CREDENTIALS: Store CLOUDNS_AUTH_ID and CLOUDNS_AUTH_PASSWORD in GitHub Actions secrets.")
+if (not AUTH_ID and not SUB_AUTH_ID) or not AUTH_PASSWORD:
+    print("NO_CLOUDNS_API_CREDENTIALS: Store CLOUDNS_AUTH_ID (or CLOUDNS_SUB_AUTH_ID) and CLOUDNS_AUTH_PASSWORD in GitHub Actions secrets.")
     print("No DNS changes were made.")
     sys.exit(0)
 
@@ -42,7 +43,7 @@ class CloudNSError(Exception):
 
 def request(path, fields=None):
     payload = {
-        "auth-id": AUTH_ID,
+        **({"sub-auth-id": SUB_AUTH_ID} if SUB_AUTH_ID else {"auth-id": AUTH_ID}),
         "auth-password": AUTH_PASSWORD,
         **(fields or {}),
     }
