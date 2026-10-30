@@ -1,44 +1,61 @@
-/* RobotGo v0.4h — optional public-contact display. No credentials, no network calls.
-   Load AFTER app.js. Values come from window.ROBOTGO_CONFIG.
-   This adds contact details; it does not create mailboxes or send forms. */
+/* Public business details. Values are inserted as text, never as HTML. */
 (()=>{'use strict';
  const cfg=window.ROBOTGO_CONFIG||{};
- const main=document.getElementById('main');
- if(!main)return;
- const text=(tag,value,cls)=>{const n=document.createElement(tag);n.textContent=value;if(cls)n.className=cls;return n;};
- const str=k=>typeof cfg[k]==='string'?cfg[k].trim():'';
- const digits=v=>/^\+?[1-9]\d{6,14}$/.test(v.replace(/[\s()-]/g,''))?v.replace(/[\s()-]/g,''):'';
- function mount(){
-  if((location.hash||'#/').split('?')[0]!=='#/contact')return;
-  const ro=document.documentElement.lang!=='en';
-  const values=['companyName','email','phoneNumber','address','vatId','registrationNo','openingHours'].map(str);
-  if(!values.some(Boolean))return;
-  const signature=JSON.stringify([ro,...values,cfg.vatRegistered]);
-  const old=document.getElementById('robotgo-company-contact');
-  if(old?.dataset.signature===signature)return;
-  old?.remove();
-  const section=text('section','', 'panel');section.id='robotgo-company-contact';section.dataset.signature=signature;
-  section.setAttribute('aria-label',ro?'Date de contact':'Contact details');section.style.margin='20px 0';
-  section.append(text('h2',ro?'Date de contact':'Contact details'));
-  if(str('companyName'))section.append(text('p',str('companyName')));
+ const str=key=>typeof cfg[key]==='string'?cfg[key].trim():'';
+ const text=(tag,value='',className='')=>{const el=document.createElement(tag);el.textContent=value;if(className)el.className=className;return el;};
+ const field=(list,label,value,{wide=false,href=''}={})=>{
+  if(!value)return;
+  const row=text('div','',wide?'business-fact business-fact-wide':'business-fact');
+  row.append(text('dt',label));
+  const dd=text('dd');
+  if(href){const a=text('a',value);a.href=href;dd.append(a);}else dd.textContent=value;
+  row.append(dd);list.append(row);
+ };
+ function section(title){const el=text('section','','business-section');el.append(text('h2',title));return el;}
+ function company(ro){
+  const el=section(ro?'Datele firmei':'Company details'),dl=text('dl','','business-facts');
+  field(dl,ro?'Denumire firmă':'Company name',str('companyName'),{wide:true});
+  field(dl,ro?'Cod fiscal (CUI)':'Tax ID (CUI)',str('vatId'));
+  field(dl,ro?'Registrul Comerțului':'Trade Register',str('registrationNo'));
+  if(cfg.vatRegistered===true)field(dl,'TVA / VAT',ro?'Plătitoare de TVA':'VAT registered');
+  field(dl,ro?'Sediu social':'Registered office',str('address'),{wide:true});
+  el.append(dl);return el;
+ }
+ function contact(ro){
+  const el=section('Contact'),dl=text('dl','','business-facts');
+  const phone=str('phoneNumber').replace(/[\s()-]/g,'');
+  if(/^\+?[1-9]\d{6,14}$/.test(phone))field(dl,ro?'Telefon':'Phone',phone,{href:'tel:'+phone});
   const email=str('email');
-  if(/^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(email)&&!/["'\r\n]/.test(email)){
-   const p=text('p','Email: '),a=text('a',email);a.href='mailto:'+encodeURIComponent(email);p.append(a);section.append(p);
+  if(/^[^\s@<>"']+@[^\s@<>"']+\.[^\s@<>"']+$/.test(email))field(dl,'Email',email,{wide:true,href:'mailto:'+email});
+  field(dl,ro?'Program':'Opening hours',!ro&&str('openingHoursEn')?str('openingHoursEn'):str('openingHours'),{wide:true});
+  el.append(dl);return el;
+ }
+ function terms(ro){
+  const el=section(ro?'Oferte și livrare':'Quotes and delivery'),dl=text('dl','','business-facts');
+  field(dl,ro?'Clienți':'Customers',ro?'Persoane fizice și juridice':'Individuals and businesses');
+  field(dl,ro?'Monedă':'Currency','EUR');
+  field(dl,ro?'Plată':'Payment',ro?'Avans prin transfer bancar':'Deposit by bank transfer');
+  field(dl,ro?'Transport':'Transport',ro?'Inclus doar în România':'Included only within Romania');
+  el.append(dl);
+  const details=text('details','','business-quote-details');
+  details.append(text('summary',ro?'Detalii despre ofertă':'Quote details'));
+  details.append(text('p',ro?'Valoarea avansului, termenele de plată, TVA și livrarea se precizează în ofertă. Datele bancare se comunică doar în ofertă.':'The deposit amount, payment schedule, VAT and delivery are specified in the quote. Bank details are provided only in the quote.'));
+  el.append(details);return el;
+ }
+ function mount(){
+  const ro=document.documentElement.lang!=='en';
+  const signature=JSON.stringify([ro,cfg]);
+  for(const [id,isFooter]of [['robotgo-contact-details',false],['robotgo-footer-details',true]]){
+   const host=document.getElementById(id);if(!host||host.dataset.signature===signature)continue;
+   host.dataset.signature=signature;host.replaceChildren();
+   const grid=text('div','','business-grid');
+   grid.append(contact(ro),company(ro));host.append(grid);
+   if(!isFooter)host.append(terms(ro));
   }
-  const phone=digits(str('phoneNumber'));
-  if(phone){const p=text('p',ro?'Telefon: ':'Phone: '),a=text('a',phone);a.href='tel:'+phone;p.append(a);section.append(p);}
-  for(const [key,labelRo,labelEn]of [['address','Adresă','Address'],['vatId','Cod fiscal','Tax ID'],['registrationNo','Înregistrare','Registration'],['openingHours','Program','Opening hours']]){
-   if(str(key))section.append(text('p',(ro?labelRo:labelEn)+': '+(key==='openingHours'&&!ro&&str('openingHoursEn')?str('openingHoursEn'):str(key))));
-  }
-  if(cfg.vatRegistered===true)section.append(text('p',ro?'Statut TVA: societate plătitoare de TVA.':'VAT status: VAT-registered company.'));
-  section.append(text('p',ro?'Persoane fizice și juridice · Oferte în EUR · Transport inclus în prețul ofertat doar în România · Plată cu avans prin transfer bancar, conform ofertei acceptate.':'Individuals and businesses · Quotes in EUR · Transport included in the quoted price only within Romania · Deposit by bank transfer under the accepted quote.'));
-  section.append(text('p',ro?'Trimite solicitarea prin email sau WhatsApp. Valoarea avansului, termenele de plată, disponibilitatea, livrarea și TVA se detaliază în ofertă. Datele bancare sunt comunicate doar în ofertă.':'Send your request by email or WhatsApp. The deposit amount, payment schedule, availability, delivery and VAT are detailed in the quote. Bank details are provided only in the quote.','muted'));
-  const wrap=main.querySelector('.wrap');if(!wrap)return;
-  const grid=wrap.querySelector('.guide-grid');if(grid)grid.before(section);else wrap.append(section);
  }
  let queued=false;
  function schedule(){if(queued)return;queued=true;queueMicrotask(()=>{queued=false;mount();});}
- new MutationObserver(schedule).observe(main,{childList:true});
+ for(const id of ['main','footer']){const root=document.getElementById(id);if(root)new MutationObserver(schedule).observe(root,{childList:true});}
  new MutationObserver(schedule).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
  window.addEventListener('hashchange',schedule);schedule();
 })();

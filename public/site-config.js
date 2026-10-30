@@ -1,6 +1,6 @@
 /* Public settings only. Do not store passwords, private keys or API credentials here. */
 window.ROBOTGO_CONFIG = {
-  version: '0.4h-p3',
+  version: '0.4h-p4',
   releaseStage: 'quotation-contact',
   domainTarget: 'robotgo.ro', // HTTPS verified on 2026-10-30.
   domainStatus: 'verified',
