@@ -44,3 +44,5 @@ jobs:
             done
           done
           echo "Caution: lack of answers for sampled selectors does not prove that no DKIM records exist. Preserve all original DNS records before switching nameservers." >> "$GITHUB_STEP_SUMMARY"
+          echo '--- Collected read-only DNS results ---'
+          cat "$GITHUB_STEP_SUMMARY"
