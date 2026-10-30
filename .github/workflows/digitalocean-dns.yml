@@ -1,0 +1,44 @@
+name: RobotGo DigitalOcean DNS - manual plan or apply
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "plan = read-only; apply = create missing records only"
+        type: choice
+        required: true
+        default: plan
+        options: [plan, apply]
+      confirmation:
+        description: "For apply, type APPLY-ROBOTGO-DNS"
+        type: string
+        required: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: robotgo-dns
+  cancel-in-progress: false
+
+jobs:
+  dns:
+    runs-on: ubuntu-latest
+    environment: dns-production
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify mode and confirmation
+        env:
+          MODE: ${{ inputs.mode }}
+          CONFIRM: ${{ inputs.confirmation }}
+        run: |
+          if [ "$MODE" = "apply" ] && [ "$CONFIRM" != "APPLY-ROBOTGO-DNS" ]; then
+            echo "Confirmation mismatch"; exit 1
+          fi
+      - name: Plan or create missing DNS records
+        env:
+          DO_API_TOKEN: ${{ secrets.DO_API_TOKEN }}
+          DNS_MODE: ${{ inputs.mode }}
+          DNS_CONFIRM: ${{ inputs.confirmation }}
+        run: python3 tools/digitalocean_dns.py
