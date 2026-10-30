@@ -1,0 +1,49 @@
+/* Quiet, readable business details and direct WhatsApp contact. */
+.contact-page{max-width:1120px;padding-bottom:40px}
+.contact-page .pagehead{padding-bottom:18px}
+.contact-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:36px}
+.contact-actions .btn.wa{background:#098849;color:#fff;border:1px solid #22b66b}
+.business-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:48px}
+.business-section{min-width:0;padding:30px 0;border-top:1px solid #ffffff24}
+.business-section h2{font-family:inherit;font-size:22px;font-weight:600;line-height:1.4;letter-spacing:0;color:#f1f7f8;margin:0 0 24px}
+.business-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 28px;margin:0}
+.business-fact{min-width:0}
+.business-fact-wide{grid-column:1/-1}
+.business-facts dt{font-size:14px;font-weight:400;line-height:1.5;color:#a3b7bf;margin:0 0 8px}
+.business-facts dd{font-size:16px;font-weight:400;line-height:1.6;color:#edf3f5;margin:0;overflow-wrap:anywhere}
+.business-facts dd a{color:inherit;text-decoration:underline;text-decoration-color:#718b96;text-underline-offset:5px}
+.business-facts dd a:hover{color:#8df3da;text-decoration-color:currentColor}
+#robotgo-contact-details>.business-section .business-facts{grid-template-columns:repeat(4,minmax(0,1fr))}
+.business-quote-details{margin-top:24px;color:#aebfc6;font-size:14px;line-height:1.7}
+.business-quote-details summary{cursor:pointer;min-height:44px;padding:10px 0;color:#d0e2e8}
+.business-quote-details p{max-width:760px;margin:8px 0 0}
+#robotgo-footer-details{margin-top:36px}
+#robotgo-footer-details .business-section h2{font-size:19px}
+#robotgo-footer-details .business-facts dd{font-size:15px}
+#robotgo-footer-details .business-facts dt{font-size:13px}
+.site-footer .footer-bottom{align-items:center;font-size:12px;line-height:1.7;margin-top:6px;padding-bottom:80px}
+.site-footer .footer-bottom a{text-decoration:underline;text-underline-offset:4px}
+.floating.contact-floating{display:flex;flex-direction:column;align-items:flex-end;right:22px;bottom:22px;gap:10px;z-index:45}
+.contact-whatsapp-float{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:13px 21px;border-radius:999px;background:#098849;border:2px solid #28c871;color:#fff;font-size:16px;font-weight:700;line-height:1.2;box-shadow:0 5px 22px #0005;text-decoration:none}
+.contact-whatsapp-float:hover{background:#08733e;color:#fff}
+.contact-whatsapp-float .icon{width:25px;height:25px}
+.contact-whatsapp-float:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.contact-floating .contact-help{font-size:11px;padding:9px 12px;color:#d8e5ea;background:#10262e;border-color:#314b55}
+@media(max-width:800px){
+ .business-grid{grid-template-columns:1fr;gap:0}
+ .business-section{padding:26px 0}
+ .business-section h2{font-size:21px;margin-bottom:24px}
+ .business-facts{gap:25px 20px}
+ #robotgo-contact-details>.business-section .business-facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .contact-actions{gap:10px;margin-bottom:28px}
+ .contact-actions .btn{min-height:48px;font-size:14px}
+ .contact-actions .btn.ghost{padding-left:0;padding-right:0}
+ .contact-floating .contact-help{display:none}
+ .floating.contact-floating{right:15px;bottom:calc(88px + env(safe-area-inset-bottom))}
+ body.on-product .floating.contact-floating{bottom:calc(156px + env(safe-area-inset-bottom))}
+ body.has-compare .floating.contact-floating{bottom:calc(205px + env(safe-area-inset-bottom))}
+ .contact-whatsapp-float{min-height:52px;padding:12px 18px;font-size:15px}
+ .site-footer .footer-bottom{align-items:flex-start;gap:14px;padding-bottom:78px}
+}
+@media(max-width:374px){.business-facts{column-gap:14px}.business-facts dd{font-size:15px}.business-facts dt{font-size:13px}}
+@media print{.contact-floating{display:none!important}}
