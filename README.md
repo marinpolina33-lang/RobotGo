@@ -20,9 +20,9 @@ Ultima comandă pornește un server local la `http://127.0.0.1:4173` și nu publ
 
 - Pagina principală permite indexarea și declară adresa canonică `https://robotgo.ro/`.
 - `public/robots.txt` permite accesul și indică `https://robotgo.ro/sitemap.xml`.
-- Build-ul generează 29 de pagini HTML cu conținut vizibil fără JavaScript: pagina principală, `/shop/`, `/contact/` și cele 26 de produse la `/product/<id>/`. Fiecare are titlu, descriere și adresă canonică proprie; toate sunt incluse în sitemap-ul generat în `dist/`.
-- Catalogul și paginile de produs folosesc linkuri normale. Adresele vechi `#/...` continuă să funcționeze; instrumentele interactive (ofertă, comparație, coș) păstrează rutele cu fragment.
-- Datele structurate identifică site-ul, firma și produsele. Nu se declară prețuri, stocuri sau recenzii neverificate.
+- Build-ul generează 46 de pagini HTML cu conținut vizibil fără JavaScript: pagina principală, catalog, contact, 26 de produse, două pagini de navigare, 7 categorii, 7 domenii și pagina despre firmă. Fiecare are titlu, descriere și adresă canonică proprie; toate sunt incluse în sitemap-ul generat în `dist/`.
+- Catalogul și paginile de produs folosesc linkuri normale. Adresele vechi `#/...` pentru pagini publice sunt redirecționate în browser către documentul HTML canonic; instrumentele interactive (ofertă, comparație, coș) păstrează rutele cu fragment.
+- Datele structurate identifică site-ul, firma, paginile, colecțiile și traseele de navigare. Marcajul Product pentru rezultate îmbogățite este amânat până la existența unor oferte sau recenzii eligibile și verificabile. Nu se declară prețuri, stocuri sau recenzii neverificate.
 - `render.yaml` și `config/hosting.json` nu impun un antet global `X-Robots-Tag: noindex`.
 - Pagina 404 rămâne neindexabilă. Fișierele inexistente primesc 404; nu există rescriere generală către aplicație.
 - Publicarea face site-ul eligibil pentru indexare; nu confirmă includerea în Google și nu garantează o poziție în rezultate. După verificarea proprietății în Google Search Console, se poate trimite sitemap-ul și solicita indexarea paginii principale.
@@ -48,3 +48,5 @@ Datele operatorului ROUTEX LOGISTICA S.R.L. și contactele sunt în `public/site
 - `docs/product-image-sources.json` — sursele fotografiilor.
 
 Nu include parole, tokenuri sau alte informații private în fișierele publice ori în repository.
+
+Auditul, harta intențiilor de căutare și pașii de măsurare sunt în [docs/SEO.md](docs/SEO.md).

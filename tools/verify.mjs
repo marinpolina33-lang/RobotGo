@@ -71,6 +71,7 @@ export function verify() {
  check('Optional public contacts valid; no test placeholders', contactsValid);
  const hosting=JSON.parse(fs.readFileSync(path.join(root,'config/hosting.json'),'utf8'));
  check('Security header configuration present',hosting.headers['X-Content-Type-Options']==='nosniff'&&hosting.headers['X-Frame-Options']==='DENY'&&hosting.headers['Content-Security-Policy'].includes("object-src 'none'"));
+ check('Apache compatibility does not block indexing',!/X-Robots-Tag[^\n]*(?:noindex|none)/i.test(read('.htaccess')));
  const yaml=fs.readFileSync(path.join(root,'render.yaml'),'utf8');
  check('Hosting configuration cannot reintroduce a global indexing block',!Object.entries(hosting.headers).some(([k,v])=>k.toLowerCase()==='x-robots-tag'&&/noindex|none/i.test(v)) && !/name: X-Robots-Tag\s+value: [^\n]*(?:noindex|none)/i.test(yaml));
  check('Render uses static publish only',/runtime: static/.test(yaml)&&/staticPublishPath: \.\/dist/.test(yaml)&&!/^\s*(?:startCommand|databases|plan|domains):/m.test(yaml));
