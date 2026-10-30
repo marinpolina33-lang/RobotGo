@@ -1,5 +1,4 @@
-# RobotGo: static PREVIEW. No domain, database or paid compute configured.
-# DNS and account connections are deliberately not assumed.
+# RobotGo production catalogue. Existing Render service and custom domain.
 services:
   - type: web
     name: robotgo-preview
@@ -25,9 +24,6 @@ services:
       - path: /*
         name: Content-Security-Policy
         value: "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'"
-      - path: /*
-        name: X-Robots-Tag
-        value: "noindex, nofollow"
       - path: /*
         name: Cache-Control
         value: "no-cache"

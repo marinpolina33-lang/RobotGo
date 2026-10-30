@@ -23,8 +23,8 @@ Clientul își selectează modelele și cantitățile, completează cererea și 
 
 ## Limite actuale
 
-Indexarea este blocată prin `noindex` și `robots.txt`. Nu există procesare de carduri, autentificare clienți, stocuri în timp real, backend de cereri sau AI conectat. Ghidul local și selecțiile în browser funcționează. Fotografiile externe și drepturile comerciale rămân de verificat în vederea lansării complete.
+Indexarea paginii principale este permisă; `robots.txt` publică `https://robotgo.ro/sitemap.xml`, iar adresa canonică este `https://robotgo.ro/`. Apariția în Google depinde de recrawl și nu este confirmată de simpla publicare. Rutele cu `#/` nu sunt pagini indexabile separat și nu sunt incluse în sitemap. Nu există procesare de carduri, autentificare clienți, stocuri în timp real, backend de cereri sau AI conectat. Ghidul local și selecțiile în browser funcționează. Cele 29 de fotografii ale celor 26 de produse sunt servite local; sursele și integritatea fișierelor sunt documentate în `docs/product-image-sources.json`.
 
 ## Prezentare și contact
 
-Datele de contact și datele firmei sunt grupate în blocuri cu etichete clare, inclusiv în subsol. Butonul WhatsApp rămâne vizibil pe desktop și telefon și deschide direct conversația. Titlul public și metadatele de distribuire sunt „RobotGo — Robotul potrivit pentru ideea ta”; descrierea prezintă catalogul și oferta personalizată, fără eticheta „Demo”. Acest text nu activează capabilități de backend sau plăți.
+Datele de contact și datele firmei sunt grupate în blocuri cu etichete clare, inclusiv în subsol. Butonul WhatsApp rămâne vizibil pe desktop și telefon și deschide direct conversația. Titlul public și metadatele de distribuire sunt „RobotGo România — Roboți pentru afaceri, educație și cercetare”; descrierea prezintă catalogul și oferta personalizată, fără eticheta „Demo”. Acest text nu activează capabilități de backend sau plăți.

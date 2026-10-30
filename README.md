@@ -1,26 +1,12 @@
-# RobotGo — pachet tehnic pentru publicare
+# RobotGo — catalog public
 
-**Bază:** RobotGo v0.4h. **Revizie tehnică:** 0.4h-p1. **Stadiu:** PREVIEW, nepublicat.
+Site: https://robotgo.ro/ · Repository: `marinpolina33-lang/RobotGo` · Ramură: `main`.
 
-Designul, catalogul cu 26 de fișe, cele 3 fotografii și cele 4 clipuri sunt păstrate. Nu a fost înregistrat un domeniu, creat un cont sau activat un serviciu cu plată.
+## Publicare și verificare
 
-## Publicare recomandată: GitHub + Render Static Site
+Serviciul Render Static Site existent este `robotgo-preview`, cu build `node tools/build.mjs` și director public `dist/`. Domeniul principal este `robotgo.ro`; `www` redirecționează către acesta. DNS-ul și nameserverele se gestionează separat de cod.
 
-1. Folosește un repository GitHub care îți aparține. Poate fi privat; acordă aplicației Render acces doar la acel repository.
-2. Încarcă **conținutul acestui dosar**, nu arhiva ZIP ca un singur fișier. La rădăcină trebuie să fie `render.yaml`, `package.json`, `tools/` și `public/`.
-3. În Render creează un **Static Site** din repository. Folosește:
-   - Build Command: `node tools/build.mjs`
-   - Publish Directory: `dist`
-   - Variabilă opțională: `SKIP_INSTALL_DEPS=true` — proiectul nu are dependențe npm.
-4. Alternativ, importă `render.yaml` ca Blueprint și verifică resursele afișate înainte de aprobare. Fișierul descrie un singur site static, fără bază de date sau server persistent.
-5. Adresa de previzualizare este stabilită de Render. Nu este creată și nu este cunoscută în această livrare.
-6. Adaugă un domeniu propriu numai după confirmarea înregistrării și a controlului asupra lui. Datele DNS se preiau din serviciul real creat în Render, nu din exemple.
-
-Nu încărca materiale confidențiale în repository. Pentru un repository public, toate fișierele sale sunt publice, chiar dacă Render publică numai `dist/`. Este recomandat un repository privat pentru acest proiect.
-
-## Testare locală
-
-Instalează o versiune Node.js compatibilă cu proiectul (minimum 20), apoi:
+Proiectul nu necesită dependențe npm. Folosește Node.js 20 sau mai nou:
 
 ```sh
 node tools/verify.mjs
@@ -28,28 +14,27 @@ node tools/build.mjs
 node tools/preview.mjs
 ```
 
-Ultima comandă pornește doar un server local la `http://127.0.0.1:4173`. Nu publică site-ul pe internet. Oprește-l cu Ctrl+C. Nu este necesar `npm install`.
+Ultima comandă pornește un server local la `http://127.0.0.1:4173` și nu publică pe internet. Render publică doar conținutul `dist/`.
 
-## Modificări pregătite
+## Indexare în motoarele de căutare
 
-- Structură de publicare separată: `public/` → verificare → `dist/`.
-- Configurație Render, headere de securitate și pagină 404.
-- Fără redirecționare generală a adreselor `/api/*` către HTML: site-ul folosește rute `#/`.
-- Modul de afișare a contactelor; nu introduce date fictive atunci când câmpurile sunt goale.
-- Fișierele sensibile, registrul intern al surselor și serverul opțional vechi nu fac parte din pachetul public.
-- Indexarea rămâne blocată prin `noindex` și `robots.txt`. Aceasta NU este protecție prin parolă.
+- Pagina principală permite indexarea și declară adresa canonică `https://robotgo.ro/`.
+- `public/robots.txt` permite accesul și indică `https://robotgo.ro/sitemap.xml`.
+- Sitemap-ul include pagina principală. Rutele interactive `#/...` nu sunt URL-uri indexabile separat; nu trebuie adăugate ca pagini distincte în sitemap.
+- `render.yaml` și `config/hosting.json` nu impun un antet global `X-Robots-Tag: noindex`.
+- Pagina 404 rămâne neindexabilă. Fișierele inexistente primesc 404; nu există rescriere generală către aplicație.
+- Publicarea face site-ul eligibil pentru indexare; nu confirmă includerea în Google și nu garantează o poziție în rezultate. După verificarea proprietății în Google Search Console, se poate trimite sitemap-ul și solicita indexarea paginii principale.
 
-## Ce rămâne neactivat
+## Funcționare actuală
 
-Domeniul, publicarea în contul de hosting, autentificarea, emailurile automate, plățile, baza de date și serviciul AI nu sunt active. Datele de contact sunt lăsate goale până la primirea valorilor reale. Pozele online ale produselor pot depinde de servere externe. Permisiunile de publicare comercială a imaginilor trebuie confirmate.
+Catalogul include 26 de produse, 29 de fotografii locale de produs, 3 fotografii și 4 clipuri de expoziție. Sursele și hash-urile imaginilor sunt în `docs/product-image-sources.json`. Build-ul validează fișierele și configurația pentru a preveni reintroducerea blocajului de indexare.
 
-Înainte de lansarea comercială, completează identitatea operatorului, contactele, politicile, condițiile comerciale și configurațiile produselor. Etapa pregătită aici este demonstrația online, nu un magazin complet operațional.
+Datele operatorului ROUTEX LOGISTICA S.R.L. și contactele sunt în `public/site-config.js`. Cererile de ofertă folosesc emailul sau WhatsApp-ul clientului. Backend-ul, autentificarea, plățile online și AI-ul conectat nu sunt active. Prețurile, disponibilitatea și condițiile comerciale se confirmă prin ofertă.
 
-## Fișiere utile
+## Documentație
 
-- `docs/STADIU.md` — făcut / neactivat / limite.
-- `docs/CONTACTE.md` — actualizarea sigură a contactelor.
-- `docs/SURSE.md` — documentația Render folosită.
-- `tests/static-report.json` și `tests/browser-report.json` — rezultatele verificărilor.
+- `docs/STADIU.md` — stadiu și limite.
+- `docs/CONTACTE.md` — datele publice de contact.
+- `docs/product-image-sources.json` — sursele fotografiilor.
 
-Nu trimite parole, coduri 2FA, tokenuri private sau date de card în conversație și nu le pune în JavaScript.
+Nu include parole, tokenuri sau alte informații private în fișierele publice ori în repository.
