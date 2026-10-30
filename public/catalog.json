@@ -312,7 +312,7 @@
         "https://www.unitree.com/images/5378760356e14e25be18bd24a3d49660_2740x1720.jpg",
         "https://www.unitree.com/images/5e100d4349924287869c7f1ff6c0316b_2740x1720.jpg"
       ],
-      "imageStatus": "image_displayed",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Vizual de produs din materialele furnizorului. Aspectul și echiparea se confirmă pentru configurația ofertată.",
         "en": "Product visual from supplier materials. Appearance and equipment must be confirmed for the quoted configuration."
@@ -323,30 +323,35 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/unitree-g1-0.webp"
         },
         {
           "url": "https://www.unitree.com/images/5e100d4349924287869c7f1ff6c0316b_2740x1720.jpg",
           "label": {
             "ro": "Vedere frontală",
             "en": "Front view"
-          }
+          },
+          "localImage": "assets/products/unitree-g1-1.webp"
         },
         {
           "url": "https://www.unitree.com/images/ee3fc23204054aa491c7950bfa399c1a_2740x1720.jpg",
           "label": {
             "ro": "Poziție dinamică",
             "en": "Dynamic pose"
-          }
+          },
+          "localImage": "assets/products/unitree-g1-2.webp"
         },
         {
           "url": "https://www.unitree.com/images/8992fd91eed0495696ca876f86699523_2740x1720.jpg",
           "label": {
             "ro": "Poziție joasă",
             "en": "Low pose"
-          }
+          },
+          "localImage": "assets/products/unitree-g1-3.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/unitree-g1-0.webp"
     },
     {
       "id": "unitree-go2",
@@ -397,7 +402,7 @@
       "imageAlternatives": [
         "https://www.unitree.com/images/1c36f0b03cfd445fbcad12b4b1eb3a29_3840x3266.jpg?x-oss-process=image%2Fformat%2Cwebp"
       ],
-      "imageStatus": "page_linked",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Vizual de produs din materialele furnizorului. Aspectul și echiparea se confirmă pentru configurația ofertată.",
         "en": "Product visual from supplier materials. Appearance and equipment must be confirmed for the quoted configuration."
@@ -408,9 +413,11 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/unitree-go2-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/unitree-go2-0.webp"
     },
     {
       "id": "leju-kuavo-4pro",
@@ -460,7 +467,7 @@
       "compatibility": "integration",
       "isFamily": false,
       "imageAlternatives": [],
-      "imageStatus": "image_displayed",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Vizual de produs din materialele furnizorului. Aspectul și echiparea se confirmă pentru configurația ofertată.",
         "en": "Product visual from supplier materials. Appearance and equipment must be confirmed for the quoted configuration."
@@ -471,9 +478,11 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/leju-kuavo-4pro-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/leju-kuavo-4pro-0.webp"
     },
     {
       "id": "leju-kuavo-5",
@@ -522,7 +531,7 @@
       "compatibility": "integration",
       "isFamily": true,
       "imageAlternatives": [],
-      "imageStatus": "image_displayed",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Vizual de familie: KUAVO 5 și KUAVO 5-W. Configurațiile se ofertează separat.",
         "en": "Family visual: KUAVO 5 and KUAVO 5-W. Configurations are quoted separately."
@@ -533,9 +542,11 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/leju-kuavo-5-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/leju-kuavo-5-0.webp"
     },
     {
       "id": "leju-roban-2",
@@ -583,7 +594,7 @@
       "compatibility": "integration",
       "isFamily": false,
       "imageAlternatives": [],
-      "imageStatus": "image_displayed",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Vizual de produs din materialele furnizorului. Aspectul și echiparea se confirmă pentru configurația ofertată.",
         "en": "Product visual from supplier materials. Appearance and equipment must be confirmed for the quoted configuration."
@@ -594,9 +605,11 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/leju-roban-2-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/leju-roban-2-0.webp"
     },
     {
       "id": "rokae-helios",
@@ -664,7 +677,7 @@
       "imageAlternatives": [
         "https://www.rokae.com/public/uploads/20251114/a6c18b19ab25808193e8cf73ecabff23.jpg"
       ],
-      "imageStatus": "page_linked",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Vizual de produs din materialele furnizorului. Aspectul și echiparea se confirmă pentru configurația ofertată.",
         "en": "Product visual from supplier materials. Appearance and equipment must be confirmed for the quoted configuration."
@@ -675,9 +688,11 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/rokae-helios-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/rokae-helios-0.webp"
     },
     {
       "id": "rokae-human-x",
@@ -740,7 +755,7 @@
       "imageAlternatives": [
         "https://www.rokae.com/public/uploads/20251114/c8dc81cd7a77852d4b3c7d7e0bb368e4.jpg"
       ],
-      "imageStatus": "page_linked",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Vizual de produs din materialele furnizorului. Aspectul și echiparea se confirmă pentru configurația ofertată.",
         "en": "Product visual from supplier materials. Appearance and equipment must be confirmed for the quoted configuration."
@@ -751,9 +766,11 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/rokae-human-x-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/rokae-human-x-0.webp"
     },
     {
       "id": "rokae-ar",
@@ -803,7 +820,7 @@
       "imageAlternatives": [
         "https://www.rokae.com/public/uploads/20251114/99b74fab73d1e4ff4646c024d1474d41.jpg"
       ],
-      "imageStatus": "image_displayed",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Brațe AR prezentate integrate într-o platformă. Trunchiul și accesoriile ilustrate nu sunt implicit incluse.",
         "en": "AR arms shown integrated into a platform. The illustrated torso and accessories are not automatically included."
@@ -814,9 +831,11 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/rokae-ar-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/rokae-ar-0.webp"
     },
     {
       "id": "rokae-cr",
@@ -866,7 +885,7 @@
       "imageAlternatives": [
         "https://idec-fs.com/rokae/images/products/product_cr7-7.png"
       ],
-      "imageStatus": "page_linked",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Imagine reprezentativă a seriei CR. Varianta și echiparea se stabilesc în ofertă.",
         "en": "Representative CR Series image. Variant and equipment are specified in the quote."
@@ -877,9 +896,11 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/rokae-cr-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/rokae-cr-0.webp"
     },
     {
       "id": "deep-lynx-m20",
@@ -913,7 +934,7 @@
           "Research: compare mobility over different surfaces."
         ]
       },
-      "image": "https://www.deeprobotics.cn/public/static/robot/demo/lynx.jpg",
+      "image": "https://www.deeprobotics.cn/bocupload/2026/10/15/17920448768053l1mfp.webp",
       "fallback": null,
       "price": null,
       "currency": "EUR",
@@ -927,20 +948,22 @@
       "compatibility": "integration",
       "isFamily": false,
       "imageAlternatives": [],
-      "imageStatus": "image_displayed",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Vizual de produs din materialele furnizorului. Aspectul și echiparea se confirmă pentru configurația ofertată.",
         "en": "Product visual from supplier materials. Appearance and equipment must be confirmed for the quoted configuration."
       },
       "gallery": [
         {
-          "url": "https://www.deeprobotics.cn/public/static/robot/demo/lynx.jpg",
+          "url": "https://www.deeprobotics.cn/bocupload/2026/10/15/17920448768053l1mfp.webp",
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/deep-lynx-m20-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/deep-lynx-m20-0.webp"
     },
     {
       "id": "deep-x30",
@@ -973,7 +996,7 @@
           "Technical facility: follow validated routes for documentation."
         ]
       },
-      "image": "https://www.deeprobotics.cn/public/static/robot/demo/x30.jpg",
+      "image": "https://www.deeprobotics.cn/bocupload/2026/09/24/17902372296896b29s7_cp789.webp",
       "fallback": null,
       "price": null,
       "currency": "EUR",
@@ -987,20 +1010,22 @@
       "compatibility": "integration",
       "isFamily": false,
       "imageAlternatives": [],
-      "imageStatus": "page_linked",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Vizual de produs din materialele furnizorului. Aspectul și echiparea se confirmă pentru configurația ofertată.",
         "en": "Product visual from supplier materials. Appearance and equipment must be confirmed for the quoted configuration."
       },
       "gallery": [
         {
-          "url": "https://www.deeprobotics.cn/public/static/robot/demo/x30.jpg",
+          "url": "https://www.deeprobotics.cn/bocupload/2026/09/24/17902372296896b29s7_cp789.webp",
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/deep-x30-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/deep-x30-0.webp"
     },
     {
       "id": "pudu-bellabot",
@@ -1048,7 +1073,7 @@
       "imageAlternatives": [
         "https://cdn.pudutech.com/pop_bellabot_6dbb362a0b.png"
       ],
-      "imageStatus": "page_linked",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Vizual de produs din materialele furnizorului. Aspectul și echiparea se confirmă pentru configurația ofertată.",
         "en": "Product visual from supplier materials. Appearance and equipment must be confirmed for the quoted configuration."
@@ -1059,9 +1084,11 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/pudu-bellabot-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/pudu-bellabot-0.webp"
     },
     {
       "id": "pudu-cc1",
@@ -1110,7 +1137,7 @@
       "imageAlternatives": [
         "https://cdn.pudutech.com/C7_puducc1_1f5b17c79f.png"
       ],
-      "imageStatus": "image_displayed",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Vizual de produs din materialele furnizorului. Aspectul și echiparea se confirmă pentru configurația ofertată.",
         "en": "Product visual from supplier materials. Appearance and equipment must be confirmed for the quoted configuration."
@@ -1121,9 +1148,11 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/pudu-cc1-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/pudu-cc1-0.webp"
     },
     {
       "id": "keenon-t10",
@@ -1171,7 +1200,7 @@
       "compatibility": "integration",
       "isFamily": false,
       "imageAlternatives": [],
-      "imageStatus": "page_linked",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Vizual de produs din materialele furnizorului. Aspectul și echiparea se confirmă pentru configurația ofertată.",
         "en": "Product visual from supplier materials. Appearance and equipment must be confirmed for the quoted configuration."
@@ -1182,9 +1211,11 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/keenon-t10-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/keenon-t10-0.webp"
     },
     {
       "id": "keenon-c40",
@@ -1231,7 +1262,7 @@
       "compatibility": "integration",
       "isFamily": false,
       "imageAlternatives": [],
-      "imageStatus": "image_displayed",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Vizual de produs din materialele furnizorului. Aspectul și echiparea se confirmă pentru configurația ofertată.",
         "en": "Product visual from supplier materials. Appearance and equipment must be confirmed for the quoted configuration."
@@ -1242,9 +1273,11 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/keenon-c40-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/keenon-c40-0.webp"
     },
     {
       "id": "keenon-w3",
@@ -1290,7 +1323,7 @@
       "compatibility": "integration",
       "isFamily": false,
       "imageAlternatives": [],
-      "imageStatus": "page_linked",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Vizual de produs din materialele furnizorului. Aspectul și echiparea se confirmă pentru configurația ofertată.",
         "en": "Product visual from supplier materials. Appearance and equipment must be confirmed for the quoted configuration."
@@ -1301,9 +1334,11 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/keenon-w3-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/keenon-w3-0.webp"
     },
     {
       "id": "dobot-nova2",
@@ -1352,7 +1387,7 @@
       "compatibility": "integration",
       "isFamily": false,
       "imageAlternatives": [],
-      "imageStatus": "image_displayed",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Imagine oficială Nova 2. Rezoluția originalului disponibil este limitată.",
         "en": "Official Nova 2 image. The available original has limited resolution."
@@ -1363,9 +1398,11 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/dobot-nova2-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/dobot-nova2-0.webp"
     },
     {
       "id": "dobot-magician-e6",
@@ -1412,7 +1449,7 @@
       "compatibility": "integration",
       "isFamily": false,
       "imageAlternatives": [],
-      "imageStatus": "image_displayed",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Vizual de produs din materialele furnizorului. Aspectul și echiparea se confirmă pentru configurația ofertată.",
         "en": "Product visual from supplier materials. Appearance and equipment must be confirmed for the quoted configuration."
@@ -1423,9 +1460,11 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/dobot-magician-e6-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/dobot-magician-e6-0.webp"
     },
     {
       "id": "inspire-rh56bfx",
@@ -1459,7 +1498,7 @@
           "Integration: evaluate a hand on a compatible arm."
         ]
       },
-      "image": "https://en.inspire-robots.com/wp-content/uploads/2023/09/BFX-1.jpg",
+      "image": "https://en.inspire-robots.com/wp-content/uploads/2026/07/Products_BFX.jpg",
       "fallback": null,
       "price": null,
       "currency": "EUR",
@@ -1473,20 +1512,22 @@
       "compatibility": "integration",
       "isFamily": false,
       "imageAlternatives": [],
-      "imageStatus": "image_displayed",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Vizual de produs din materialele furnizorului. Aspectul și echiparea se confirmă pentru configurația ofertată.",
         "en": "Product visual from supplier materials. Appearance and equipment must be confirmed for the quoted configuration."
       },
       "gallery": [
         {
-          "url": "https://en.inspire-robots.com/wp-content/uploads/2023/09/BFX-1.jpg",
+          "url": "https://en.inspire-robots.com/wp-content/uploads/2026/07/Products_BFX.jpg",
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/inspire-rh56bfx-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/inspire-rh56bfx-0.webp"
     },
     {
       "id": "geekplus-p-series",
@@ -1532,7 +1573,7 @@
       "compatibility": "integration",
       "isFamily": true,
       "imageAlternatives": [],
-      "imageStatus": "page_linked",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Imagine de familie P Series. Rezoluția sursei este limitată; modelul exact se confirmă.",
         "en": "P Series family image. Source resolution is limited; the exact model is to be confirmed."
@@ -1543,9 +1584,11 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/geekplus-p-series-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/geekplus-p-series-0.webp"
     },
     {
       "id": "ubtech-walker-s2",
@@ -1607,7 +1650,7 @@
       "compatibility": "integration",
       "isFamily": false,
       "imageAlternatives": [],
-      "imageStatus": "image_displayed",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Vizual de produs din materialele furnizorului. Aspectul și echiparea se confirmă pentru configurația ofertată.",
         "en": "Product visual from supplier materials. Appearance and equipment must be confirmed for the quoted configuration."
@@ -1618,9 +1661,11 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/ubtech-walker-s2-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/ubtech-walker-s2-0.webp"
     },
     {
       "id": "unitree-h1",
@@ -1687,7 +1732,7 @@
       "imageAlternatives": [
         "https://www.unitree.com/images/6112d3308ac842cd9e0557e89a47e405_389x225.png"
       ],
-      "imageStatus": "image_displayed",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Vizual de produs din materialele furnizorului. Aspectul și echiparea se confirmă pentru configurația ofertată.",
         "en": "Product visual from supplier materials. Appearance and equipment must be confirmed for the quoted configuration."
@@ -1698,9 +1743,11 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/unitree-h1-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/unitree-h1-0.webp"
     },
     {
       "id": "agilex-scout-mini",
@@ -1771,16 +1818,18 @@
       "imageAlternatives": [
         "https://global.agilex.ai/cdn/shop/files/Scoutmini__3_d6d219f5-c8d4-417b-9e3e-954ac57439e4.png?v=1720158238&width=1946"
       ],
-      "imageStatus": "image_displayed",
+      "imageStatus": "local_verified",
       "gallery": [
         {
           "url": "https://global.agilex.ai/cdn/shop/files/Scoutmini__453_84f5aad6-5d1a-4ed0-a511-80ef51702a11.png?v=1718028946&width=1946",
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/agilex-scout-mini-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/agilex-scout-mini-0.webp"
     },
     {
       "id": "brainco-revo2",
@@ -1837,7 +1886,7 @@
       "compatibility": "integration",
       "isFamily": false,
       "imageAlternatives": [],
-      "imageStatus": "image_displayed",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Randare de produs din documentația Revo 2. Configurația se confirmă înainte de ofertare.",
         "en": "Product render from Revo 2 documentation. Configuration is confirmed before quoting."
@@ -1848,9 +1897,11 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/brainco-revo2-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/brainco-revo2-0.webp"
     },
     {
       "id": "siasun-gcr5",
@@ -1884,7 +1935,7 @@
           "Quality inspection: position a part in front of a vision system."
         ]
       },
-      "image": "https://www.ducorobots.com/upload/product/1708395297934227.jpg.webp",
+      "image": "https://image.makewebeasy.net/makeweb/r_400x400/rMxr6x61R/DUCOROBOT/1708395297934227.jpg?v=202405291424",
       "fallback": null,
       "price": null,
       "currency": "EUR",
@@ -1915,20 +1966,22 @@
       "compatibility": "integration",
       "isFamily": false,
       "imageAlternatives": [],
-      "imageStatus": "prior_source_unconfirmed",
+      "imageStatus": "local_verified",
       "imageNote": {
-        "ro": "Model documentat; imaginea existentă necesită reverificare. Nu o înlocuim cu fotografia altui robot.",
-        "en": "Documented model; the existing image needs rechecking. We do not substitute a different robot."
+        "ro": "Vizual al modelului GCR5-910, recuperat din pagina de produs a distribuitorului. Aspectul și echiparea se confirmă pentru configurația ofertată.",
+        "en": "GCR5-910 product visual recovered from the distributor product listing. Appearance and equipment must be confirmed for the quoted configuration."
       },
       "gallery": [
         {
-          "url": "https://www.ducorobots.com/upload/product/1708395297934227.jpg.webp",
+          "url": "https://image.makewebeasy.net/makeweb/r_400x400/rMxr6x61R/DUCOROBOT/1708395297934227.jpg?v=202405291424",
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/siasun-gcr5-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/siasun-gcr5-0.webp"
     },
     {
       "id": "pudu-t300",
@@ -1984,7 +2037,7 @@
       "compatibility": "integration",
       "isFamily": false,
       "imageAlternatives": [],
-      "imageStatus": "image_displayed",
+      "imageStatus": "local_verified",
       "imageNote": {
         "ro": "Vizual de produs din materialele furnizorului. Aspectul și echiparea se confirmă pentru configurația ofertată.",
         "en": "Product visual from supplier materials. Appearance and equipment must be confirmed for the quoted configuration."
@@ -1995,9 +2048,11 @@
           "label": {
             "ro": "Imagine de produs",
             "en": "Product image"
-          }
+          },
+          "localImage": "assets/products/pudu-t300-0.webp"
         }
-      ]
+      ],
+      "localImage": "assets/products/pudu-t300-0.webp"
     }
   ],
   "brands": [

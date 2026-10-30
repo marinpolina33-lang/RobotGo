@@ -1,0 +1,300 @@
+{
+  "verifiedAt": "2026-10-30",
+  "images": [
+    {
+      "id": "agilex-scout-mini",
+      "slot": 0,
+      "source": "https://global.agilex.ai/cdn/shop/files/Scoutmini__453_84f5aad6-5d1a-4ed0-a511-80ef51702a11.png?v=1718028946&width=1946",
+      "path": "assets/products/agilex-scout-mini-0.webp",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 313226,
+      "sha256": "18758bb5c4f4e7944def5d4d9003081878c14b5218859de9bfb8837e3c5d6db8"
+    },
+    {
+      "id": "brainco-revo2",
+      "slot": 0,
+      "source": "https://brainco-common-public.oss-cn-hangzhou.aliyuncs.com/web-config/docs-sdk/WbXwhniecMNLxKDj.webp",
+      "path": "assets/products/brainco-revo2-0.webp",
+      "width": 324,
+      "height": 414,
+      "bytes": 21064,
+      "sha256": "2051ce6871097c13aaa9c393a2131a875e3cab881d07044fe2566053a3784a01"
+    },
+    {
+      "id": "deep-lynx-m20",
+      "slot": 0,
+      "source": "https://www.deeprobotics.cn/bocupload/2026/10/15/17920448768053l1mfp.webp",
+      "sourcePage": "https://www.deeprobotics.cn/products/detail/1.html",
+      "path": "assets/products/deep-lynx-m20-0.webp",
+      "width": 1270,
+      "height": 560,
+      "bytes": 23598,
+      "sha256": "bc310dd8d8d9ad8f89677637b0bd0c4cfdbcc3862dd9bfec5426e6a6aafbc730"
+    },
+    {
+      "id": "deep-x30",
+      "slot": 0,
+      "source": "https://www.deeprobotics.cn/bocupload/2026/09/24/17902372296896b29s7_cp789.webp",
+      "sourcePage": "https://www.deeprobotics.cn/products/detail/6.html",
+      "path": "assets/products/deep-x30-0.webp",
+      "width": 1270,
+      "height": 560,
+      "bytes": 16440,
+      "sha256": "0bcc481bac899fd14b960b48db7988985babf12356a2186394dfc6d9b9081744"
+    },
+    {
+      "id": "dobot-magician-e6",
+      "slot": 0,
+      "source": "https://www.dobot-robots.com/media/upload/2023/e6/3.png",
+      "path": "assets/products/dobot-magician-e6-0.webp",
+      "width": 1132,
+      "height": 1600,
+      "bytes": 60870,
+      "sha256": "e855b8f4ca83e4abb5bbdae463b5a4c657998d493f3fc80d34c85da94b477c30"
+    },
+    {
+      "id": "dobot-nova2",
+      "slot": 0,
+      "source": "https://www.dobot-robots.com/media/upload/nova/list/nova2-x.png",
+      "path": "assets/products/dobot-nova2-0.webp",
+      "width": 240,
+      "height": 360,
+      "bytes": 3058,
+      "sha256": "032fa0c5645a1b6329f43416d9a64a002a47fec2efb508f4f34b56232b1dd3fd"
+    },
+    {
+      "id": "geekplus-p-series",
+      "slot": 0,
+      "source": "https://www.geekplus.com/hs-fs/hubfs/35014f694a5caa8f1c66308f2da3a58117b67bb4%20%281%29.png?height=184&name=35014f694a5caa8f1c66308f2da3a58117b67bb4+%281%29.png&width=335",
+      "path": "assets/products/geekplus-p-series-0.webp",
+      "width": 335,
+      "height": 184,
+      "bytes": 13306,
+      "sha256": "9676f94d4fdf5550d6660de7f471c9c94ef2c960372ba3875ec42b6ab0721cbe"
+    },
+    {
+      "id": "inspire-rh56bfx",
+      "slot": 0,
+      "source": "https://en.inspire-robots.com/wp-content/uploads/2026/07/Products_BFX.jpg",
+      "sourcePage": "https://en.inspire-robots.com/product-category/the-dexterous-hands/rh56bfx/",
+      "path": "assets/products/inspire-rh56bfx-0.webp",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 39982,
+      "sha256": "6186a65b8cdf3957e6c438c8ceecabe724427e9e694a6182a81da6fc6cece7b6"
+    },
+    {
+      "id": "keenon-c40",
+      "slot": 0,
+      "source": "https://www.keenon.com/uploads/20260723/d325fccc14a0b37e55cdaad06eddb881.jpg",
+      "path": "assets/products/keenon-c40-0.webp",
+      "width": 750,
+      "height": 1200,
+      "bytes": 32752,
+      "sha256": "496ab8a3dd56fc0443c73da42ea578793ddb44daea583129c85787ef86fa7e49"
+    },
+    {
+      "id": "keenon-t10",
+      "slot": 0,
+      "source": "https://www.keenon.com/uploads/20260721/afc30b3d563a5c77d28d650103448dac.jpg",
+      "path": "assets/products/keenon-t10-0.webp",
+      "width": 750,
+      "height": 1200,
+      "bytes": 50362,
+      "sha256": "14d9c836dad68b1d088a29322a07e63012911dcb9ad072cea1c082762fd43013"
+    },
+    {
+      "id": "keenon-w3",
+      "slot": 0,
+      "source": "https://www.keenon.com/uploads/20260722/d549d0d67f37c708932ec2322391115f.jpg",
+      "path": "assets/products/keenon-w3-0.webp",
+      "width": 750,
+      "height": 1200,
+      "bytes": 48628,
+      "sha256": "6ed396e3060182799cfac13bbd9bf39c8f0164dba8885795408785c13628e7fa"
+    },
+    {
+      "id": "leju-kuavo-4pro",
+      "slot": 0,
+      "source": "https://kuavo.lejurobot.com/leju_website/images/054138ca486e6d58f09da19d964772d6.png",
+      "path": "assets/products/leju-kuavo-4pro-0.webp",
+      "width": 902,
+      "height": 1554,
+      "bytes": 130660,
+      "sha256": "8ed82860153f8473c68beda99aa70c1d7198b0461a573166406ce64d0fb606bb"
+    },
+    {
+      "id": "leju-kuavo-5",
+      "slot": 0,
+      "source": "https://kuavo.lejurobot.com/leju_website/images/5e1133f6ed346b7b406dc0ad131eec63.png",
+      "path": "assets/products/leju-kuavo-5-0.webp",
+      "width": 831,
+      "height": 830,
+      "bytes": 95694,
+      "sha256": "7cd5bf12c5fa10a4398617ffca08e06e3bbdb37976c6670034e9e0c5c137606a"
+    },
+    {
+      "id": "leju-roban-2",
+      "slot": 0,
+      "source": "https://kuavo.lejurobot.com/leju_website/images/db0c40c9142db25d8827c52e1dc898d8.jpg",
+      "path": "assets/products/leju-roban-2-0.webp",
+      "width": 1600,
+      "height": 783,
+      "bytes": 86552,
+      "sha256": "19f5108e5e13b0ccbd19e16ade365cc2b1c42d00f461bfa357abf50f6d5981a7"
+    },
+    {
+      "id": "pudu-bellabot",
+      "slot": 0,
+      "source": "https://cdn.pudutech.com/parameters_robot_6f725d9adf.png",
+      "path": "assets/products/pudu-bellabot-0.webp",
+      "width": 800,
+      "height": 960,
+      "bytes": 27366,
+      "sha256": "a9e5d9bc20a2bfc5914f31e295e6cf5e863652a998826e603a0e77704f3acb81"
+    },
+    {
+      "id": "pudu-cc1",
+      "slot": 0,
+      "source": "https://cdn.pudutech.com/parameters_robot_en_4ad12f66a7.png",
+      "path": "assets/products/pudu-cc1-0.webp",
+      "width": 800,
+      "height": 960,
+      "bytes": 26778,
+      "sha256": "60700611a46611e5063c52edfc800a6df3ab48d377015b8ebe448d70e1d0a48d"
+    },
+    {
+      "id": "pudu-t300",
+      "slot": 0,
+      "source": "https://cdn.pudutech.com/official-website/pudut300/tab_PUDUT300Standard.png",
+      "path": "assets/products/pudu-t300-0.webp",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 18224,
+      "sha256": "a2bab68d9baf59ea9511280512182bbcafafa6d40739ee5883bd471affb64dab"
+    },
+    {
+      "id": "rokae-ar",
+      "slot": 0,
+      "source": "https://www.rokae.com/public/uploads/20251114/842142b74cef736d633fef822b9235f3.png",
+      "path": "assets/products/rokae-ar-0.webp",
+      "width": 500,
+      "height": 485,
+      "bytes": 22204,
+      "sha256": "af891617021433fb7952261aaeb1bca3549b5de41d34fa46559af0876e7739bc"
+    },
+    {
+      "id": "rokae-cr",
+      "slot": 0,
+      "source": "https://idec-fs.com/rokae/images/products/product_cr-c.webp",
+      "path": "assets/products/rokae-cr-0.webp",
+      "width": 1600,
+      "height": 664,
+      "bytes": 73194,
+      "sha256": "cb037cb232d2651c880415e85a01d281512ca8ae5b1e188159cb0db00697869a"
+    },
+    {
+      "id": "rokae-helios",
+      "slot": 0,
+      "source": "https://www.rokae.com/public/uploads/20251114/3bec74ad662f311de9f4570c72f6c524.png",
+      "path": "assets/products/rokae-helios-0.webp",
+      "width": 500,
+      "height": 863,
+      "bytes": 41252,
+      "sha256": "918c317d84b722c9c73a1404c8d9f8e0d8d8a1d380532153f0240af9cf0ecbf6"
+    },
+    {
+      "id": "rokae-human-x",
+      "slot": 0,
+      "source": "https://www.rokae.com/public/uploads/20251114/6e88bbf599aa9a9c47c98b3cbce6b57b.png",
+      "path": "assets/products/rokae-human-x-0.webp",
+      "width": 392,
+      "height": 800,
+      "bytes": 26464,
+      "sha256": "c3d02a6812c65d1c89fac74b25050753fd12a2d464c30259bbfbe6509a666482"
+    },
+    {
+      "id": "siasun-gcr5",
+      "slot": 0,
+      "source": "https://image.makewebeasy.net/makeweb/r_400x400/rMxr6x61R/DUCOROBOT/1708395297934227.jpg?v=202405291424",
+      "sourcePage": "https://www.isotema.com/product/29394-42548/duco-gcr5-910",
+      "verification": "Product listing explicitly identifies GCR5-910; recovered image retains the filename of the original DUCO asset. Specifications retained from manufacturer.",
+      "path": "assets/products/siasun-gcr5-0.webp",
+      "width": 400,
+      "height": 400,
+      "bytes": 3288,
+      "sha256": "b449f3be4904e3800d7592d8a2ab86b4d67ee058963cd9297500da64549d9b89"
+    },
+    {
+      "id": "ubtech-walker-s2",
+      "slot": 0,
+      "source": "https://owebsite-cdn.ubtrobot.com/resources/image/2025/07/17/698770322690117.jpg",
+      "path": "assets/products/ubtech-walker-s2-0.webp",
+      "width": 1600,
+      "height": 833,
+      "bytes": 63052,
+      "sha256": "534ead5f934f8ee989904095f102c12616e0ee279c9d18250c912c61927a4e18"
+    },
+    {
+      "id": "unitree-g1",
+      "slot": 0,
+      "source": "https://www.unitree.com/images/a20ba1ebc0724df8a8135744dee8bbea_2740x1720.jpg",
+      "path": "assets/products/unitree-g1-0.webp",
+      "width": 1600,
+      "height": 1004,
+      "bytes": 32896,
+      "sha256": "370859416ab4272dce7df8a8c5a0e3637f8395b0c4bfdf2a09055fbd31b19924"
+    },
+    {
+      "id": "unitree-g1",
+      "slot": 1,
+      "source": "https://www.unitree.com/images/5e100d4349924287869c7f1ff6c0316b_2740x1720.jpg",
+      "path": "assets/products/unitree-g1-1.webp",
+      "width": 1600,
+      "height": 1004,
+      "bytes": 30048,
+      "sha256": "8f2af65bc1910af664c16ccc18ef43eb13ec7785b2cce20df504e25c9545e087"
+    },
+    {
+      "id": "unitree-g1",
+      "slot": 2,
+      "source": "https://www.unitree.com/images/ee3fc23204054aa491c7950bfa399c1a_2740x1720.jpg",
+      "path": "assets/products/unitree-g1-2.webp",
+      "width": 1600,
+      "height": 1004,
+      "bytes": 34432,
+      "sha256": "54d543be4ed65e130c52c5f8bce97b565fad769bce8c0dcc1766b6c584a7dfdf"
+    },
+    {
+      "id": "unitree-g1",
+      "slot": 3,
+      "source": "https://www.unitree.com/images/8992fd91eed0495696ca876f86699523_2740x1720.jpg",
+      "path": "assets/products/unitree-g1-3.webp",
+      "width": 1600,
+      "height": 1004,
+      "bytes": 45486,
+      "sha256": "94a61642fefee810f3e9276fa03db2dedd4418d844c6fb42742d0663eb0bf587"
+    },
+    {
+      "id": "unitree-go2",
+      "slot": 0,
+      "source": "https://www.unitree.com/images/e41651fe455e463bb25f1ef33ece3809_1920x1370.jpg?x-oss-process=image%2Fformat%2Cwebp",
+      "path": "assets/products/unitree-go2-0.webp",
+      "width": 1600,
+      "height": 1142,
+      "bytes": 140496,
+      "sha256": "64cfd7ce0ac12e07a1b418f1e93ac21090bf223527a7a4d60f824286158620c0"
+    },
+    {
+      "id": "unitree-h1",
+      "slot": 0,
+      "source": "https://shop.unitree.com/cdn/shop/files/28e35ab30a869ecc9b9b192a2915962d_7e33abc7-4215-4986-ad47-ab6c066d7c4c_1024x1024.jpg?v=1732269318",
+      "path": "assets/products/unitree-h1-0.webp",
+      "width": 1024,
+      "height": 576,
+      "bytes": 78134,
+      "sha256": "2ae68fcff6a303ac997f6a615c75edaccc81238f860a6be16c51deda6b3f8753"
+    }
+  ]
+}

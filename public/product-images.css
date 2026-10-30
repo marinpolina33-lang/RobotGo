@@ -32,3 +32,5 @@
 .detail-thumbs button{width:auto!important;height:auto!important;min-height:44px;max-width:100%;white-space:normal}
 .detail-thumbs{justify-content:flex-start}
 .media[data-photo]{background:radial-gradient(ellipse at center,#f8fafb,#e5ecef)!important}
+
+.image-loading-note[hidden]{display:none}
