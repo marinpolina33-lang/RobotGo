@@ -1,0 +1,8 @@
+{
+  "domain": "robotgo.ro",
+  "origin": "https://robotgo-preview.onrender.com",
+  "records": [
+    {"type":"A","name":"@","data":"216.24.57.1","ttl":1800},
+    {"type":"CNAME","name":"www","data":"robotgo-preview.onrender.com.","ttl":1800}
+  ]
+}
