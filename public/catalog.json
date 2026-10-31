@@ -193,8 +193,8 @@
     {
       "id": "evenimente",
       "name": {
-        "ro": "Evenimente & interacțiune",
-        "en": "Events & interaction"
+        "ro": "Entertainment & evenimente",
+        "en": "Entertainment & events"
       },
       "icon": "spark",
       "tagline": {
@@ -202,8 +202,8 @@
         "en": "Make technology an experience."
       },
       "description": {
-        "ro": "Demonstrații educative și prezentări interactive, cu operator, spațiu delimitat și funcții validate pentru configurația aleasă.",
-        "en": "Educational demonstrations and interactive presentations, with an operator, a controlled space and functions validated for the selected configuration."
+        "ro": "Demonstrații de mișcare, entertainment și promovare: umanoizi, câini roboți și roboți de servire interactivi. Alegerea pornește de la scenariu și funcțiile validate.",
+        "en": "Motion demonstrations, entertainment and promotion: humanoids, robot dogs and interactive delivery robots. Start with the scenario and validated functions."
       }
     }
   ],
@@ -265,8 +265,8 @@
         "interaction"
       ],
       "description": {
-        "ro": "O platformă umanoidă compactă pentru studiul mersului, percepției și interacțiunii. Versiunea G1 EDU oferă opțiuni diferite față de G1; accesul de dezvoltare se confirmă înainte de ofertă.",
-        "en": "A compact humanoid platform for studying locomotion, perception and interaction. G1 EDU options differ from G1; development access is confirmed before quotation."
+        "ro": "Robot umanoid compact pentru demonstrații de mișcare, evenimente, educație și cercetare. Publicul vede mersul și secvențele validate; programarea și aplicațiile personalizate necesită verificarea versiunii G1 EDU.",
+        "en": "A compact humanoid for motion demonstrations, events, education and research. Visitors see walking and validated sequences; programming and custom applications require confirmation of the G1 EDU version."
       },
       "examples": {
         "ro": [
@@ -373,17 +373,19 @@
         "inspection"
       ],
       "description": {
-        "ro": "Robot cu patru picioare pentru explorarea mobilității și percepției mediului. Este o platformă de demonstrație sau dezvoltare; o aplicație de inspecție necesită configurare și echipare dedicate.",
-        "en": "A four-legged robot for exploring mobility and environmental perception. It is a demonstration or development platform; an inspection application needs dedicated configuration and equipment."
+        "ro": "Câine robot pentru demonstrații de mobilitate, entertainment și educație. Aplicația Unitree prezintă dans și gesturi predefinite; funcțiile disponibile se confirmă pentru versiunea aleasă. Inspecția necesită echipare dedicată.",
+        "en": "A robot dog for mobility demonstrations, entertainment and education. The Unitree app presents preset dances and gestures; available functions depend on the selected version. Inspection requires dedicated equipment."
       },
       "examples": {
         "ro": [
           "Cercetare: evaluarea percepției într-un traseu de laborator.",
-          "Demonstrație: prezentarea modurilor de deplasare, sub supraveghere."
+          "Demonstrație: prezentarea modurilor de deplasare, sub supraveghere.",
+          "Entertainment: prezentarea unei secvențe de dans sau a gesturilor disponibile în aplicație, cu operator."
         ],
         "en": [
           "Research: evaluate perception on a laboratory route.",
-          "Demonstration: showcase locomotion modes under supervision."
+          "Demonstration: showcase locomotion modes under supervision.",
+          "Entertainment: an operator presents a dance sequence or gestures available in the app."
         ]
       },
       "image": "https://www.unitree.com/images/e41651fe455e463bb25f1ef33ece3809_1920x1370.jpg?x-oss-process=image%2Fformat%2Cwebp",
@@ -1038,23 +1040,26 @@
         "en": "Delivery robot"
       },
       "domains": [
-        "horeca"
+        "horeca",
+        "evenimente"
       ],
       "tasks": [
         "delivery"
       ],
       "description": {
-        "ro": "Transportă preparate și obiecte între puncte configurate într-un restaurant. Personalul încarcă și preia obiectele; robotul nu gătește și nu înlocuiește interacțiunea ospătarului cu clientul.",
-        "en": "Transports dishes and items between configured restaurant points. Staff load and unload the items; the robot does not cook or replace waiter–customer interaction."
+        "ro": "Robot de servire care transportă preparate între puncte configurate și adaugă interacțiune experienței din restaurant. Producătorul prezintă moduri de întâmpinare și aniversare. Personalul încarcă și preia articolele.",
+        "en": "A delivery robot that carries dishes between configured points and adds interaction to the restaurant experience. The manufacturer presents greeting and birthday modes. Staff load and collect the items."
       },
       "examples": {
         "ro": [
           "Restaurant: transportul tăvilor din zona bucătăriei spre mesele alese.",
-          "Bufet: transferuri repetate între zona de pregătire și servire."
+          "Bufet: transferuri repetate între zona de pregătire și servire.",
+          "Aniversare: livrarea la masă și un moment festiv cu modul dedicat, după configurare."
         ],
         "en": [
           "Restaurant: transport trays from the kitchen area to selected tables.",
-          "Buffet: repeat transfers between preparation and serving areas."
+          "Buffet: repeat transfers between preparation and serving areas.",
+          "Birthday: table delivery and a celebration using the dedicated mode after configuration."
         ]
       },
       "image": "https://cdn.pudutech.com/parameters_robot_6f725d9adf.png",
@@ -1173,17 +1178,19 @@
         "interaction"
       ],
       "description": {
-        "ro": "Robot pentru transport interior în spații de servire. Ecranul permite prezentarea informațiilor, iar traseele trebuie corelate cu mobilierul și fluxul persoanelor.",
-        "en": "A robot for indoor transport in serving environments. Its screen can present information, while routes must account for furniture and pedestrian flow."
+        "ro": "Robot de servire și promovare pentru restaurante și evenimente în interior. Transportă preparate pe rute configurate, afișează materiale de campanie pe ecran și oferă reacții vizuale prin capul mobil.",
+        "en": "An indoor delivery and promotion robot for restaurants and events. It carries dishes on configured routes, shows campaign content on its screen and provides visual feedback through a movable head."
       },
       "examples": {
         "ro": [
           "Restaurant: transportul comenzilor între puncte de servire.",
-          "Eveniment: livrare în interior într-un traseu controlat."
+          "Eveniment: livrare în interior într-un traseu controlat.",
+          "Promovare: afișarea imaginilor sau clipurilor campaniei pe ecran, în timpul deplasării pe ruta configurată."
         ],
         "en": [
           "Restaurant: transport orders between serving points.",
-          "Event: indoor delivery along a controlled route."
+          "Event: indoor delivery along a controlled route.",
+          "Promotion: show campaign images or video on screen while following a configured route."
         ]
       },
       "image": "https://www.keenon.com/uploads/20260721/afc30b3d563a5c77d28d650103448dac.jpg",
