@@ -1,12 +1,12 @@
 /* Public settings only. Do not store passwords, private keys or API credentials here. */
 window.ROBOTGO_CONFIG = {
-  version: '0.4h-p4',
-  releaseStage: 'quotation-contact',
+  version: '0.5.0-accounts',
+  releaseStage: 'accounts-live',
   domainTarget: 'robotgo.ro', // HTTPS verified on 2026-10-30.
   domainStatus: 'verified',
   brandClearance: 'not_verified',
   backendEnabled: false,
-  demo: true,
+  demo: false,
   whatsappNumber: '40778167507',
   email: 'robotgo100@gmail.com',
   companyName: 'ROUTEX LOGISTICA S.R.L.',

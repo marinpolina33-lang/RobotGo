@@ -1,0 +1,14 @@
+{
+  "name": "robotgo-auth",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-10-01",
+  "account_id": "1e84276aeadfac0144b661d542831864",
+  "workers_dev": false,
+  "routes": [
+    {"pattern": "robotgo.ro/api/auth/*", "zone_name": "robotgo.ro"},
+    {"pattern": "www.robotgo.ro/api/auth/*", "zone_name": "robotgo.ro"}
+  ],
+  "d1_databases": [{"binding": "DB", "database_name": "robotgo-accounts", "database_id": "3f863ea3-635e-4f5b-b341-a4671580a202", "migrations_dir": "."}],
+  "observability": {"enabled": true, "logs": {"enabled": true, "invocation_logs": false}},
+  "triggers": {"crons": ["17 3 * * *"]}
+}
