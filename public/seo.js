@@ -29,13 +29,46 @@
  add('/shop','Catalog de roboți în România | RobotGo','Explorează '+D.products.length+' de modele: roboți umanoizi, câini roboți, coboți și roboți mobili. Compară specificațiile și solicită o ofertă în România.','Catalog');
  add('/contact','Contact și solicitări de ofertă | RobotGo România','Contactează RobotGo pentru roboți și configurații la ofertă. Telefon '+C.phoneNumber+', email '+C.email+'. Livrare în România.','Contact');
  const productTerms={umanoizi:'robot umanoid',patrupezi:'robot patruped',hibrizi:'robot hibrid',amr:'robot mobil',coboti:'braț robotic','ugv-civile':'platformă robotică UGV',accesorii:'componentă robotică'};
- for(const p of D.products)add('/product/'+p.id,p.name+' — '+productTerms[p.category]+' | RobotGo',short(p.description.ro),p.name,{productId:p.id,image:p.localImage,parent:'/categories/'+p.category});
+ // Describe the actual task, rather than treating every AMR or component alike.
+ const productSearch={
+  'unitree-g1':['robot umanoid','Unitree G1: robot umanoid pentru studiul mersului, percepției și interacțiunii. Compară configurațiile G1 și G1 EDU și solicită ofertă în România.'],
+  'unitree-go2':['câine robot','Unitree Go2: câine robot pentru educație, cercetare și proiecte de mobilitate. Vezi specificațiile și echiparea necesară și solicită ofertă în România.'],
+  'leju-kuavo-4pro':['robot umanoid','LEJU KUAVO 4Pro: platformă umanoidă pentru cercetare, colectare de date și studiul manipulării. Vezi specificațiile și solicită configurație la ofertă.'],
+  'leju-kuavo-5':['roboți umanoizi','LEJU KUAVO 5 și 5-W: compară versiunile bipede și pe roți pentru proiecte de robotică. Verifică echiparea și solicită ofertă pentru modelul potrivit.'],
+  'leju-roban-2':['robot umanoid educațional','LEJU ROBAN 2: robot umanoid pentru învățare, testare și dezvoltarea comportamentelor robotice. Consultă fișa și solicită o ofertă pentru laborator.'],
+  'rokae-helios':['umanoid pe roți','ROKAE Helios: platformă mobilă cu două brațe pentru manipulare în interior. Consultă specificațiile Helios II și solicită configurația prin ofertă.'],
+  'rokae-human-x':['robot umanoid','ROKAE Human.X: robot umanoid pentru cercetarea manipulării și mobilității. Explorează aplicațiile, interfețele și configurația și solicită ofertă.'],
+  'rokae-ar':['brațe robotice','ROKAE AR Series: brațe robotice pentru integrare în platforme și aplicații de manipulare. Verifică prinderea, controlerul și software-ul și cere ofertă.'],
+  'rokae-cr':['coboți','ROKAE CR Series: coboți pentru transfer de piese și operații repetitive. Compară sarcina, raza de lucru și cerințele aplicației și solicită ofertă.'],
+  'deep-lynx-m20':['robot hibrid','DEEP Robotics LYNX M20: robot hibrid cu roți și picioare pentru mobilitate și inspecție civilă. Vezi configurația și solicită ofertă în România.'],
+  'deep-x30':['robot patruped de inspecție','DEEP Robotics X30: robot patruped pentru inspecții tehnice civile. Verifică traseul, senzorii și configurația proiectului și solicită ofertă.'],
+  'pudu-bellabot':['robot de servire','PUDU BellaBot: robot de servire pentru transportul preparatelor între puncte configurate în restaurant. Vezi specificațiile și solicită ofertă în România.'],
+  'pudu-cc1':['robot de curățenie','PUDU CC1: robot de curățenie pentru măturare, aspirare, spălare și mop. Compară cerințele pardoselii și stației și solicită ofertă pentru România.'],
+  'keenon-t10':['robot de servire','KEENON DINERBOT T10: robot pentru transport interior în restaurante și spații de servire. Vezi aplicațiile și specificațiile și solicită ofertă.'],
+  'keenon-c40':['robot de curățenie','KEENON KLEENBOT C40: robot de curățenie pentru spații interioare. Verifică pardoseala, consumabilele și stația necesară și solicită ofertă în România.'],
+  'keenon-w3':['robot pentru hoteluri','KEENON BUTLERBOT W3: robot cu compartimente pentru livrări în hoteluri. Consultă cerințele de traseu și integrare cu liftul și solicită ofertă.'],
+  'dobot-nova2':['cobot compact','DOBOT Nova 2: cobot compact pentru manipularea obiectelor ușoare. Vezi raza de lucru, sarcina și cerințele de integrare și solicită ofertă în România.'],
+  'dobot-magician-e6':['braț robotic educațional','DOBOT Magician E6: braț robotic cu șase axe pentru educație și laborator. Explorează cinematica și manipularea și solicită o configurație la ofertă.'],
+  'inspire-rh56bfx':['mână robotică','INSPIRE RH56BFX: mână robotică pentru prindere, cercetare și integrare. Verifică versiunea stânga/dreapta și interfețele și solicită ofertă în România.'],
+  'geekplus-p-series':['roboți pentru depozite','Geek+ P Series: roboți mobili pentru sisteme de depozit de tip marfa-la-persoană. Vezi cerințele pentru rafturi și integrare software și cere ofertă.'],
+  'ubtech-walker-s2':['robot umanoid industrial','UBTECH Walker S2: robot umanoid industrial pentru manipulare și automatizare. Verifică echiparea și infrastructura bateriei și solicită ofertă.'],
+  'unitree-h1':['robot umanoid','Unitree H1: robot umanoid de dimensiuni mari pentru dezvoltare și cercetarea mobilității. Vezi specificațiile versiunii H1 și solicită ofertă.'],
+  'agilex-scout-mini':['platformă robotică UGV','AgileX SCOUT MINI: platformă mobilă UGV pentru cercetare, senzori și prototipare. Vezi interfețele și cerințele de integrare și solicită ofertă.'],
+  'brainco-revo2':['mână robotică','BrainCo Revo 2: mână robotică articulată pentru cercetarea prinderii și integrare. Vezi specificațiile componentei și solicită ofertă în România.'],
+  'siasun-gcr5':['cobot','SIASUN DUCO GCR5-910: cobot de 5 kg, cu rază de lucru de 917 mm, pentru manipulare și asamblare. Consultă fișa și solicită ofertă pentru România.'],
+  'pudu-t300':['robot pentru transport','PUDU T300 Standard: robot mobil pentru transport interior de materiale, cu sarcină de până la 300 kg. Vezi cerințele de integrare și solicită ofertă.']
+ };
+ for(const p of D.products){const [term,description]=productSearch[p.id]||[productTerms[p.category],short(p.description.ro)];add('/product/'+p.id,p.name+' — '+term+' | RobotGo',description,p.name,{productId:p.id,image:p.localImage,parent:'/categories/'+p.category});}
  add('/categories','Tipuri de roboți: categorii și modele | RobotGo','Explorează tipurile de roboți din catalog: umanoizi, patrupezi, hibrizi, roboți mobili, coboți și componente. Alege categoria potrivită proiectului.','Tipuri de roboți',{kind:'categories'});
  add('/solutions','Roboți după domeniul de utilizare | RobotGo','Găsește roboți pentru restaurante, curățenie, logistică, producție, educație și inspecție. Pornește de la aplicație și compară modelele.','Domenii de utilizare',{kind:'solutions'});
  add('/about','Despre RobotGo și ROUTEX LOGISTICA | RobotGo','RobotGo este operat de ROUTEX LOGISTICA S.R.L. Descoperă cum alegi un robot, cum soliciți oferta și condițiile de livrare în România.','Despre RobotGo',{kind:'about'});
  for(const c of D.categories){const copy=categoryCopy[c.id];add('/categories/'+c.id,copy.title,copy.description,copy.heading,{kind:'category',id:c.id,parent:'/categories',image:D.products.find(p=>p.id===c.hero)?.localImage,...copy});}
  for(const d of D.domains){const copy=domainCopy[d.id];add('/solutions/'+d.id,copy.title,copy.description,copy.heading,{kind:'solution',id:d.id,parent:'/solutions',...copy});}
  const link=(p,label,cls='')=>`<a href="${esc(route(p))}" class="${esc(cls)}">${esc(label)}</a>`;
+ function renderDirectory(lang='ro'){
+  const en=lang==='en';
+  return `<section class="wrap section seo-directory" aria-labelledby="catalog-directory-title"><h2 id="catalog-directory-title">${en?'All robot models in the catalogue':'Toate modelele de roboți din catalog'}</h2><p>${en?'Find a model directly by name or robot type. The filters above help you compare your selection.':'Găsește direct un model după nume sau tip de robot. Filtrele de mai sus te ajută să compari selecția.'}</p><div class="seo-directory-grid">${D.categories.map(c=>`<section><h3>${link('/categories/'+c.id,c.name[en?'en':'ro'])}</h3><ul>${D.products.filter(p=>p.category===c.id).map(p=>`<li>${link('/product/'+p.id,p.name)}</li>`).join('')}</ul></section>`).join('')}</div></section>`;
+ }
  function renderIntro(lang='ro'){
   const en=lang==='en',tr=(ro,english)=>en?english:ro;
   const choices=[
@@ -76,7 +109,7 @@
  function schema(path){
   const p=pages[path];if(!p)return null;
   const url=origin+p.route,graph=[];
-  const organization={'@type':'Organization','@id':origin+'/#organization',name:'RobotGo',legalName:C.companyName,url:origin+'/',telephone:C.phoneNumber,email:C.email,address:{'@type':'PostalAddress',streetAddress:C.address,addressLocality:'București',addressCountry:'RO'}};
+  const organization={'@type':'Organization','@id':origin+'/#organization',name:'RobotGo',legalName:C.companyName,url:origin+'/',logo:{'@type':'ImageObject',url:origin+'/assets/brand/robotgo-logo.png',width:256,height:256},taxID:C.vatId,telephone:C.phoneNumber,email:C.email,address:{'@type':'PostalAddress',streetAddress:C.address,addressLocality:'București',addressCountry:'RO'}};
   if(['/', '/about','/contact'].includes(path))graph.push(organization);
   if(path==='/')graph.push({'@type':'WebSite','@id':origin+'/#website',name:'RobotGo',alternateName:'RobotGo România',url:origin+'/',inLanguage:'ro-RO',publisher:{'@id':origin+'/#organization'}});
   const collection=['categories','solutions','category','solution'].includes(p.kind)||path==='/shop';
@@ -86,5 +119,5 @@
   const products=productsFor(p);if(products.length)page.mainEntity={'@type':'ItemList',numberOfItems:products.length,itemListElement:products.map((x,i)=>({'@type':'ListItem',position:i+1,name:x.name,url:origin+'/product/'+x.id+'/'}))};
   graph.push(page);return {'@context':'https://schema.org','@graph':graph};
  }
- window.ROBOTGO_SEO={pages,renderLanding,renderIntro,schema,breadcrumbs,origin,route};
+ window.ROBOTGO_SEO={pages,renderLanding,renderIntro,renderDirectory,schema,breadcrumbs,origin,route};
 })();

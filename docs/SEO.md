@@ -69,6 +69,24 @@ Un rezultat organic Google pentru `/categories/coboti/` a fost verificat la cău
 
 Nu se adaugă meta keywords sau liste artificiale de variante fără diacritice. Cuvintele sunt folosite în explicații utile, titluri și linkuri descriptive. Nu se declară volume de căutare măsurate sau creșteri de poziție neverificate. Întrebările sunt conținut vizibil și accesibil; nu promit rezultate îmbogățite FAQ.
 
+## Claritatea produselor și descoperirea catalogului — 31 octombrie 2026
+
+Verificarea codului a identificat trei îmbunătățiri concrete. Categoria generică AMR producea titlul „robot mobil” atât pentru un robot de servire, cât și pentru unul de curățenie. Catalogul afișa 9 carduri după încărcarea JavaScript, iar restul necesitau butonul „Mai arată”; documentul inițial avea toate cele 26 de modele, dar legăturile nu erau păstrate în aceeași formă după randare. Site-ul declara numai o favicon SVG, format care nu apare în lista actuală de formate pentru favicon din documentația Google Search. Aceste observații nu stabilesc motivul pentru care Google nu afișează pagina principală la o anumită interogare.
+
+- Titluri și descrieri editoriale pentru toate cele 26 de produse, cu modelul, tipul sau sarcina reală și invitația de a solicita ofertă. Exemple: robot de servire, robot de curățenie, câine robot, cobot, mână robotică, robot pentru hoteluri și robot pentru transport.
+- Index vizibil cu toate cele 26 de modele, grupate în cele 7 categorii. Aceleași linkuri HTML sunt prezente în documentul inițial și în aplicație, în RO/EN. Filtrarea și încărcarea progresivă a cardurilor rămân funcționale.
+- Categoriile din prima secțiune Home și tipul din fișa produsului trimit la paginile canonice de categorie. Filtrele rămân în catalog, unde sunt necesare pentru selecție.
+- Navigarea inițială include paginile de categorii și domenii. HTML-ul inițial al produselor include și modele din aceeași categorie, așa cum face deja aplicația.
+- Favicon PNG de 96 × 96 px și logo PNG de 256 × 256 px, derivate din identitatea SVG existentă. Organization declară logo-ul și identificatorul fiscal deja publicat; nu se adaugă profiluri sociale, recenzii, prețuri sau stocuri neverificate.
+
+Validarea verifică toate paginile generate, metadatele distincte, linkurile din ambele versiuni ale indexului, favicon PNG și logo-ul din datele structurate. URL-urile canonice și sitemap-ul cu 46 de pagini sunt păstrate; această intervenție nu retrimite cererea de indexare sau sitemap-ul. Efectul asupra impresiilor, clicurilor și pozițiilor se măsoară ulterior în Search Console și nu se deduce din trecerea testelor tehnice.
+
+Referințe suplimentare:
+
+- https://developers.google.com/search/docs/specialty/ecommerce/pagination-and-incremental-page-loading
+- https://developers.google.com/search/docs/appearance/favicon-in-search
+- https://developers.google.com/search/docs/appearance/structured-data/organization
+
 ## Celelalte motoare și măsurarea rezultatelor
 
 IndexNow este configurat. Trimiterea anterioară a 29 de URL-uri a primit HTTP 202: primire cu validarea cheii în așteptare, nu confirmare de indexare. După publicarea acestei versiuni se poate trimite o singură notificare pentru sitemap-ul actualizat cu `node tools/submit-indexnow.mjs --submit`. IndexNow nu înlocuiește procedura Google Search Console.
