@@ -20,7 +20,7 @@ Ultima comandă pornește un server local la `http://127.0.0.1:4173` și nu publ
 
 - Pagina principală permite indexarea și declară adresa canonică `https://robotgo.ro/`.
 - `public/robots.txt` permite accesul și indică `https://robotgo.ro/sitemap.xml`.
-- Build-ul generează 46 de pagini HTML cu conținut vizibil fără JavaScript: pagina principală, catalog, contact, 26 de produse, două pagini de navigare, 7 categorii, 7 domenii și pagina despre firmă. Fiecare are titlu, descriere și adresă canonică proprie; toate sunt incluse în sitemap-ul generat în `dist/`.
+- Build-ul generează 47 de pagini HTML cu conținut vizibil fără JavaScript: pagina principală, catalog, contact, 26 de produse, două pagini de navigare, 7 categorii, 7 domenii, pagina despre firmă și ghidul de entertainment. Fiecare are titlu, descriere și adresă canonică proprie; toate sunt incluse în sitemap-ul generat în `dist/`.
 - Catalogul și paginile de produs folosesc linkuri normale. Adresele vechi `#/...` pentru pagini publice sunt redirecționate în browser către documentul HTML canonic; instrumentele interactive (ofertă, comparație, coș) păstrează rutele cu fragment.
 - Datele structurate identifică site-ul, firma, paginile, colecțiile și traseele de navigare. Marcajul Product pentru rezultate îmbogățite este amânat până la existența unor oferte sau recenzii eligibile și verificabile. Nu se declară prețuri, stocuri sau recenzii neverificate.
 - `render.yaml` și `config/hosting.json` nu impun un antet global `X-Robots-Tag: noindex`.
@@ -50,3 +50,5 @@ Datele operatorului ROUTEX LOGISTICA S.R.L. și contactele sunt în `public/site
 Nu include parole, tokenuri sau alte informații private în fișierele publice ori în repository.
 
 Auditul, harta intențiilor de căutare și pașii de măsurare sunt în [docs/SEO.md](docs/SEO.md).
+
+Comparația editorială, sursele și explicațiile practice RO/EN sunt documentate în [docs/CONTENT-BENCHMARK.md](docs/CONTENT-BENCHMARK.md). Ghidul public este la `/guides/roboti-entertainment/`; toate cele 26 de carduri au descrieri individuale ale activităților, iar produsele și domeniile explică fluxul de utilizare și evaluarea rezultatului. Conținutul comun din `public/practical.js` este verificat atât în HTML-ul inițial, cât și în aplicație.

@@ -6,10 +6,15 @@ import assert from 'node:assert/strict';
 
 export function verifySearchPages(root,dist,pages){
  const catalog=JSON.parse(fs.readFileSync(path.join(root,'public/catalog.json'),'utf8'));
- const expected=['/','/shop/','/contact/',...catalog.products.map(p=>'/product/'+p.id+'/'),'/categories/','/solutions/','/about/',...catalog.categories.map(c=>'/categories/'+c.id+'/'),...catalog.domains.map(d=>'/solutions/'+d.id+'/')];
+ const expected=['/','/shop/','/contact/',...catalog.products.map(p=>'/product/'+p.id+'/'),'/categories/','/solutions/','/about/',...catalog.categories.map(c=>'/categories/'+c.id+'/'),...catalog.domains.map(d=>'/solutions/'+d.id+'/'),'/guides/roboti-entertainment/'];
  const context={window:{ROBOTGO_CATALOG:catalog},URLSearchParams};
- for(const file of ['site-config.js','seo.js','routing.js'])vm.runInNewContext(fs.readFileSync(path.join(root,'public',file),'utf8'),context);
+ for(const file of ['site-config.js','practical.js','seo.js','routing.js'])vm.runInNewContext(fs.readFileSync(path.join(root,'public',file),'utf8'),context);
  const seo=context.window.ROBOTGO_SEO,links=new Map(),titles=new Set(),descriptions=new Set();
+ for(const lang of ['ro','en']){
+  const blurbs=catalog.products.map(p=>context.window.ROBOTGO_PRACTICAL.cardBrief(p,lang));
+  assert.ok(blurbs.every(text=>text.length>30),'Every model has a useful activity description in '+lang);
+  assert.equal(new Set(blurbs).size,catalog.products.length,'Cards explain individual models rather than repeating a category slogan');
+ }
  assert.deepEqual(pages.map(p=>p.route),expected);
  const sitemap=fs.readFileSync(path.join(dist,'sitemap.xml'),'utf8');
  assert.deepEqual([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]),expected.map(p=>'https://robotgo.ro'+p));
@@ -54,12 +59,20 @@ export function verifySearchPages(root,dist,pages){
   }
   const product=catalog.products.find(p=>page.route==='/product/'+p.id+'/');
   if(product){
+   assert.ok(main.includes(context.window.ROBOTGO_PRACTICAL.product(product)),'Practical product content is crawlable and shared with the UI: '+product.id);
    assert.ok(main.includes(product.name),'Product name in initial HTML');
    assert.ok(main.includes(product.description.ro.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;')),'Product description in initial HTML');
    assert.ok(main.includes(product.localImage),'Correct product image in initial HTML');
   }
  }
  const reachable=new Set(['/']),pending=['/'];
+ assert.ok(context.window.ROBOTGO_PRACTICAL.guide('en').includes('Can the robot speak Romanian?'),'Entertainment FAQ is available in English');
+ const guideHtml=fs.readFileSync(path.join(dist,'guides/roboti-entertainment/index.html'),'utf8');
+ assert.ok(guideHtml.includes('property="og:type" content="article"'),'Guide has article social metadata');
+ assert.ok(guideHtml.includes('"@type":"Article"'),'Editorial guide has Article structured data');
+ for(const id of Object.keys(context.window.ROBOTGO_PRACTICAL.roles))assert.ok(guideHtml.includes('/product/'+id+'/'),'Entertainment guide connects activities to real catalogue models');
+ const appShell=fs.readFileSync(path.join(dist,'index.html'),'utf8');
+ assert.ok(appShell.indexOf('src="catalog.js')<appShell.indexOf('src="practical.js')&&appShell.indexOf('src="practical.js')<appShell.indexOf('src="seo.js'),'Shared application content loads after the catalogue and before SEO');
  while(pending.length)for(const target of links.get(pending.pop())||[])if(!reachable.has(target)){reachable.add(target);pending.push(target);}
  assert.equal(reachable.size,expected.length,'Every indexed page must be reachable through ordinary links from home');
  // The UI shows nine image cards initially. Plain links must still expose all
