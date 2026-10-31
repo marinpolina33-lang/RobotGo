@@ -53,23 +53,21 @@ Expresiile de mai jos descriu subiectele paginilor; nu reprezintă volume de că
 | model + specificații / ofertă | `/product/<id>/` |
 | RobotGo contact, firma care operează site-ul | `/contact/`, `/about/` |
 
-## Google Search Console: pasul rămas
+## Google Search Console: stare verificată la 31 octombrie 2026
 
-Conectarea Google nu a fost confirmată în sesiunea anterioară. Nu s-a raportat o trimitere reușită a sitemap-ului către Google.
+Proprietatea `sc-domain:robotgo.ro` a fost verificată de proprietar. Pagina principală este raportată ca indexată, cu acces Googlebot reușit și canonical ales de Google egal cu URL-ul inspectat. Sitemap-ul a fost procesat cu succes: 46 de pagini descoperite, fără a implica indexarea tuturor. S-a cerut o singură dată reindexarea paginii principale; repetarea nu accelerează accesarea.
 
-1. În https://search.google.com/search-console/about se adaugă proprietatea de tip Domeniu `robotgo.ro` sau se selectează proprietatea existentă.
-2. Se folosește exact codul de verificare emis de Google pentru acel cont. Codul TXT poate fi instalat în zona DNS existentă; nu este necesară schimbarea nameserverelor. Nu trebuie ghicit sau reutilizat un cod din alt cont.
-3. După verificare, în Sitemaps se trimite `https://robotgo.ro/sitemap.xml`.
-4. În URL Inspection se verifică pagina principală, catalogul și câteva categorii reprezentative. Se rulează testul live și se solicită indexarea o dată pentru URL-urile eligibile.
-5. Se verifică raportul Pages, canonical-ul ales de Google și eventualele rapoarte Manual Actions/Security Issues. Lipsa accesului nu înseamnă că există o acțiune manuală.
+Un rezultat organic Google pentru `/categories/coboti/` a fost verificat la căutarea `site:robotgo.ro` pe 31 octombrie. Acest rezultat nu dovedește apariția paginii principale la căutările de brand. Monitorizarea paginii principale urmărește separat un link organic către `https://robotgo.ro/`.
 
-| Stare observată în Search Console | Acțiune |
-|---|---|
-| Excluded by noindex | Verificare live, apoi validarea remedierii dacă blocajul nu mai este prezent |
-| Discovered — currently not indexed | Confirmarea accesului și a legăturilor interne, apoi monitorizare; nu retrimiteri repetitive |
-| Crawled — currently not indexed | Revizuirea conținutului și a utilității paginii, diferențierii și duplicatelor |
-| Duplicate / different canonical | Compararea URL-ului declarat cu cel ales de Google și a legăturilor interne |
-| Server error / blocked access | Reproducerea răspunsului exact și corectarea disponibilității sau configurației |
+## Conținut orientat spre căutări și alegerea produsului — 31 octombrie 2026
+
+- Home: titlu și descriere despre roboți în România; ghid comparativ pentru roboți umanoizi, patrupezi, coboți și roboți mobili, cu linkuri directe spre paginile relevante.
+- Navigare contextuală spre toate cele 7 domenii și întrebări despre prețul unui robot, alegere, acces software, cerere de ofertă și livrare.
+- Produse: titlul include modelul și tipul la singular, de exemplu „Unitree G1 — robot umanoid | RobotGo”.
+- Industrie: titlu și descriere pentru roboți industriali și coboți, conform scopului paginii.
+- Textele Home sunt comune între HTML-ul inițial și aplicația JavaScript, în RO/EN. Sloganul și aspectul primei secțiuni sunt păstrate.
+
+Nu se adaugă meta keywords sau liste artificiale de variante fără diacritice. Cuvintele sunt folosite în explicații utile, titluri și linkuri descriptive. Nu se declară volume de căutare măsurate sau creșteri de poziție neverificate. Întrebările sunt conținut vizibil și accesibil; nu promit rezultate îmbogățite FAQ.
 
 ## Celelalte motoare și măsurarea rezultatelor
 
