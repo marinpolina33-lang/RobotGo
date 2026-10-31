@@ -25,6 +25,8 @@ export function verifySearchPages(root,dist,pages){
   assert.ok(!descriptions.has(page.description),'Unique page description: '+page.route);descriptions.add(page.description);
   assert.ok(html.includes('property="og:image"'),'Social preview image');
   if(entry.kind)assert.ok(main.includes(seo.renderLanding(entry.path)),'Same useful content before and after JavaScript');
+  if(page.route==='/shop/')assert.ok(main.includes(seo.renderDirectory()),'Complete model directory exists before JavaScript');
+  assert.ok(html.includes('rel="icon" href="favicon.png" type="image/png" sizes="96x96"'),'Raster favicon supported by Google Search');
   links.set(page.route,[]);
   assert.ok(html.includes('<base href="/">'),'Nested assets use the site root');
   assert.ok(html.includes('rel="canonical" href="https://robotgo.ro'+page.route+'"'));
@@ -36,6 +38,11 @@ export function verifySearchPages(root,dist,pages){
    const schema=JSON.parse(body);
    assert.equal(schema['@context'],'https://schema.org');
    for(const entry of schema['@graph']){assert.ok(!entry.offers&&!entry.aggregateRating&&!entry.review,'Do not invent commercial data');}
+   const organization=schema['@graph'].find(x=>x['@type']==='Organization');
+   if(organization){
+    assert.equal(organization.logo.url,'https://robotgo.ro/assets/brand/robotgo-logo.png');
+    assert.ok(fs.existsSync(path.join(dist,'assets/brand/robotgo-logo.png')),'Organization logo is publicly available');
+   }
    if(page.route!=='/'){const breadcrumb=schema['@graph'].find(x=>x['@type']==='BreadcrumbList');assert.ok(breadcrumb,'Breadcrumb data');assert.equal(breadcrumb.itemListElement.at(-1).item,'https://robotgo.ro'+page.route);}
   }
   for(const [,value]of html.matchAll(/(?:href|src)="([^"]+)"/g)){
@@ -55,6 +62,20 @@ export function verifySearchPages(root,dist,pages){
  const reachable=new Set(['/']),pending=['/'];
  while(pending.length)for(const target of links.get(pending.pop())||[])if(!reachable.has(target)){reachable.add(target);pending.push(target);}
  assert.equal(reachable.size,expected.length,'Every indexed page must be reachable through ordinary links from home');
+ // The UI shows nine image cards initially. Plain links must still expose all
+ // models without asking a crawler or a visitor to activate "load more".
+ for(const lang of ['ro','en']){
+  const directory=seo.renderDirectory(lang);
+  const productLinks=[...directory.matchAll(/href="(\/product\/[^"?]+\/)"/g)].map(m=>m[1]);
+  assert.deepEqual(productLinks.sort(),catalog.products.map(p=>'/product/'+p.id+'/').sort(),'All model links in '+lang+' directory');
+  for(const category of catalog.categories)assert.ok(directory.includes('href="/categories/'+category.id+'/"'),'Directory links to category document');
+ }
+ assert.match(seo.pages['/product/pudu-bellabot'].title,/robot de servire/);
+ assert.match(seo.pages['/product/pudu-cc1'].title,/robot de curățenie/);
+ assert.match(seo.pages['/product/brainco-revo2'].title,/mână robotică/);
+ const icon=fs.readFileSync(path.join(dist,'favicon.png'));
+ assert.equal(icon.subarray(0,8).toString('hex'),'89504e470d0a1a0a');
+ assert.equal(icon.readUInt32BE(16),96);assert.equal(icon.readUInt32BE(20),96);
  const route=context.window.ROBOTGO_ROUTING;
  assert.equal(route.url('/shop?category=umanoizi'),'/shop/?category=umanoizi');
  assert.equal(route.url('/product/'+catalog.products[0].id),'/product/'+catalog.products[0].id+'/');
