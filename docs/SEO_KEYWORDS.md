@@ -1,12 +1,10 @@
-# RobotGo — harta cuvintelor și intențiilor de căutare
+# Harta editorială SEO — RobotGo
 
-Actualizare: 1 noiembrie 2026. **60 pagini țintă și 353 expresii distincte**, dintre care 86 adăugate în această extindere. Toate paginile țintă există; întrebările suplimentare din planul editorial nu sunt încă publicate. Expresiile sunt ipoteze relevante pentru catalog, fără volume, dificultăți sau poziții măsurate.
+**1 noiembrie 2026 · 62 pagini țintă · 365 expresii distincte normalizate**
 
-Planul de lucru este în [PLAN_SEO_ROBOTGO.md](PLAN_SEO_ROBOTGO.md). Mapa CSV [SEO_QUERY_MAP.csv](SEO_QUERY_MAP.csv) desemnează o singură pagină principală pentru fiecare expresie. Paginile secundare pot explica același termen în context și trimit spre pagina principală. Normalizarea unește literele mari/mici și diacriticele pentru analiză; nu generează URL-uri.
+12 expresii noi susțin cele două comparații publicate. Lista reprezintă obiective editoriale, nu volume de căutare sau poziții măsurate. Întrebările specifice modelelor sunt implementate; nu afirmăm că fiecare expresie are deja performanță organică. [Mapa CSV](SEO_QUERY_MAP.csv) desemnează o singură pagină principală pe expresie.
 
-P1 = prioritate comercială sau de măsurare; P2 = aprofundare pe aplicație și tehnologie. Aceste priorități sunt decizii editoriale, nu scoruri calculate din căutări Google.
-
-| Prioritate | Intenție | Pagină principală a grupului | Expresii relevante |
+| Prioritate | Intenție | Pagină | Expresii |
 |---|---|---|---|
 | P2 | Informare generală | `/robot/` | robot, roboți, robotică, ce este un robot, tipuri de roboți, robot pentru firmă |
 | P1 | Cumpărare / ofertă | `/shop/` | roboți de vânzare, robot de cumpărat, magazin roboți, catalog roboți România, ofertă robot |
@@ -68,11 +66,7 @@ P1 = prioritate comercială sau de măsurare; P2 = aprofundare pe aplicație și
 | P2 | Demonstrație și promovare | `/guides/roboti-entertainment/` | robot dans eveniment, robot pentru târg expozițional, robot prezentare produse, demonstrație robot pentru public |
 | P2 | Identitatea comerciantului | `/about/` | despre RobotGo, RobotGo ROUTEX LOGISTICA |
 | P1 | Contact comercial | `/contact/` | RobotGo contact, RobotGo WhatsApp, solicită ofertă RobotGo |
+| P2 | Comparație modele / configurație | `/guides/dobot-nova2-vs-magician-e6/` | DOBOT Nova 2 vs Magician E6, Nova 2 sau Magician E6, braț robotic pentru laborator sau aplicații comerciale, comparație roboți DOBOT, Magician E6 sarcină și rază, Nova 2 sarcină și rază |
+| P2 | Comparație modele / configurație | `/guides/unitree-g1-vs-h1/` | Unitree G1 vs H1, G1 sau H1, comparație roboți umanoizi Unitree, G1 EDU vs H1 pentru cercetare, diferențe G1 H1 H1-2, robot umanoid compact pentru laborator |
 
-## Folosire și verificare
-
-Fiecare expresie este acoperită numai dacă pagina oferă efectiv răspunsul. Cuvintele despre SDK, ROS, senzori sau lift sunt cerințe de verificat pentru configurație, nu funcții declarate pentru toate produsele. RobotGo păstrează oferta în EUR, avansul prin transfer și transportul inclus doar în România, conform condițiilor deja configurate.
-
-Nu sunt prioritizate închirierea, jucăriile, aspiratoarele casnice, electrocasnicele de bucătărie, stocul imediat, cel mai mic preț sau statutul de distribuitor autorizat fără confirmarea unei oferte reale. Pagini separate pentru orașe, ortografii și variații minore nu sunt obiective ale planului.
-
-Măsurarea se face pe pagină și interogare în Search Console, separat pentru RobotGo, numele modelelor și căutările generale. Maparea editorială nu dovedește indexarea sau apariția în rezultate.
+P1 și P2 sunt priorități editoriale. Nu se generează pagini pentru variante ortografice sau orașe fără conținut distinct. Închirierea, jucăriile, aspiratoarele casnice, stocul imediat și acreditările comerciale nu sunt ținte fără confirmarea ofertei reale. Măsurarea se face pe pagină și interogare în Search Console.

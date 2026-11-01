@@ -1,5 +1,9 @@
 # RobotGo — audit și implementare SEO
 
+## Extinderea 4 — conținut implementat, 1 noiembrie 2026
+
+Versiunea include 62 de pagini, 14 ghiduri și 58 de întrebări de model în RO/EN. Sunt noi 40 de răspunsuri și comparațiile Nova 2–Magician E6 și G1–H1. Planul are 22 de acțiuni, cu stadiu distinct pentru implementări și propuneri, și 365 de expresii editoriale. Detalii în [SEO_RELEASE_4.md](SEO_RELEASE_4.md) și [PLAN_SEO_ROBOTGO.md](PLAN_SEO_ROBOTGO.md). Secțiunile mai vechi de mai jos sunt istoricul etapelor și păstrează numerele valabile atunci.
+
 ## Plan de execuție pentru întregul catalog — 1 noiembrie 2026
 
 Extinderea 3 adaugă fișe de lucru pentru 26 de modele și patru comparații candidate. Planul are 20 de acțiuni, dependențe și o procedură de măsurare. Cele 353 de expresii, 60 de pagini și 18 întrebări publicate rămân baza existentă. Fișele noi sunt planuri, nu completări publicate. Nu s-a executat un deploy, nu s-a trimis sitemap și nu sunt declarate măsurători Google noi. Vezi [planul principal](PLAN_SEO_ROBOTGO.md), [fișele editoriale](SEO_CONTENT_BRIEFS.md) și [planul de măsurare](SEO_MEASUREMENT_PLAN.md).

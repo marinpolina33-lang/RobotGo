@@ -13,10 +13,11 @@
     "previous_unique_terms": 267
   },
   "target_map": {
-    "page_groups": 60,
-    "unique_queries": 353,
-    "new_queries": 86,
-    "primary_query_file": "docs/SEO_QUERY_MAP.csv"
+    "page_groups": 62,
+    "unique_queries": 365,
+    "new_queries": 12,
+    "primary_query_file": "docs/SEO_QUERY_MAP.csv",
+    "previous_unique_queries": 353
   },
   "measurement": {
     "gsc_export_used": false,
@@ -62,7 +63,9 @@
         "P12",
         "P13",
         "P17",
-        "P20"
+        "P20",
+        "P21",
+        "P22"
       ]
     }
   ],
@@ -87,7 +90,7 @@
     {
       "id": "P02",
       "priority": "P1",
-      "status": "planned",
+      "status": "implemented",
       "title": "Extinde cele șase modele comerciale prioritare",
       "type": "product_content",
       "existing_target_paths": [
@@ -103,7 +106,8 @@
       "evidence_needed": "Fișa oficială a versiunii, accesoriile și responsabilitățile confirmate; fără preț sau termen inventat.",
       "depends_on": [],
       "evidence_gate": "Fișa oficială a versiunii, accesoriile și responsabilitățile confirmate; fără preț sau termen inventat.",
-      "effort_band": "mediu"
+      "effort_band": "mediu",
+      "implementation": "Răspunsurile specifice sunt în HTML inițial și în interfață, RO/EN, cu referințe și buton de ofertă care păstrează modelul."
     },
     {
       "id": "P03",
@@ -160,7 +164,7 @@
     {
       "id": "P06",
       "priority": "P2",
-      "status": "planned",
+      "status": "implemented",
       "title": "Completează cele 14 modele de cercetare și integrare",
       "type": "product_content",
       "existing_target_paths": [
@@ -184,7 +188,8 @@
       "evidence_needed": "Documentația modelului; delimitarea componentelor de roboți compleți și a demonstrațiilor de funcții livrate.",
       "depends_on": [],
       "evidence_gate": "Documentația modelului; delimitarea componentelor de roboți compleți și a demonstrațiilor de funcții livrate.",
-      "effort_band": "mare"
+      "effort_band": "mare",
+      "implementation": "Răspunsurile specifice sunt în HTML inițial și în interfață, RO/EN, cu referințe și buton de ofertă care păstrează modelul."
     },
     {
       "id": "P07",
@@ -310,7 +315,7 @@
     {
       "id": "P14",
       "priority": "P2",
-      "status": "planned",
+      "status": "partially_implemented",
       "title": "Pregătește patru comparații suplimentare",
       "type": "comparison_content",
       "existing_target_paths": [
@@ -331,12 +336,13 @@
         "P06"
       ],
       "evidence_gate": "Fișele de versiune și confirmarea utilității distincte față de ghidurile actuale.",
-      "effort_band": "mare"
+      "effort_band": "mare",
+      "implementation": "C01 Nova 2–E6 și C04 G1–H1 implementate. C02 X30–M20 și C03 RH56BFX–Revo 2 rămân candidate."
     },
     {
       "id": "P15",
       "priority": "P2",
-      "status": "planned",
+      "status": "partially_implemented",
       "title": "Verifică descoperirea și contextul imaginilor",
       "type": "image_seo",
       "existing_target_paths": [
@@ -372,7 +378,8 @@
       "evidence_needed": "Identificarea și sursa imaginilor; se păstrează identitatea vizuală aprobată și se remediază numai probleme observate.",
       "depends_on": [],
       "evidence_gate": "Identificarea și sursa imaginilor; se păstrează identitatea vizuală aprobată și se remediază numai probleme observate.",
-      "effort_band": "mediu"
+      "effort_band": "mediu",
+      "implementation": "Textele alternative ale imaginilor de produs includ modelul și tipul. Imaginile principale ale ghidurilor sunt preîncărcate. Auditul vizual complet și măsurătorile rămân planificate."
     },
     {
       "id": "P16",
@@ -490,6 +497,44 @@
       "depends_on": [],
       "evidence_gate": "Date reale de la furnizori și oferta comercială; se actualizează data articolului numai când conținutul a fost modificat substanțial.",
       "effort_band": "mediu"
+    },
+    {
+      "id": "P21",
+      "title": "Construiește un ghid al costului total al proiectului",
+      "priority": "P2",
+      "status": "planned",
+      "type": "evidence_content",
+      "existing_target_paths": [
+        "/guides/cat-costa-un-robot/"
+      ],
+      "deliverable": "Extinde ghidul existent cu echipament, integrare, instruire, energie și consumabile, apoi un exemplu cu ipoteze explicite.",
+      "acceptance": "Un cititor distinge costul inițial de costul exploatării; fiecare sumă are sursă, perioadă și ipoteze. Nu se promite amortizare universală.",
+      "evidence_needed": "Oferte reale și date de consum/întreținere pentru configurație; fără valori comerciale inventate.",
+      "depends_on": [
+        "P20"
+      ],
+      "evidence_gate": "Oferte reale și date de consum/întreținere pentru configurație; fără valori comerciale inventate.",
+      "effort_band": "mediu"
+    },
+    {
+      "id": "P22",
+      "title": "Pregătește matricea de compatibilitate a configurațiilor",
+      "priority": "P2",
+      "status": "planned",
+      "type": "evidence_content",
+      "existing_target_paths": [
+        "/guides/robot-programabil-sdk-ros/",
+        "/categories/accesorii/",
+        "/categories/ugv-civile/"
+      ],
+      "deliverable": "Documentează combinațiile confirmate robot–controler–SDK–senzor–accesoriu, cu versiune și sursă, în paginile relevante.",
+      "acceptance": "Fiecare asociere are model, versiune hardware/software, sursă și statut verificat sau de confirmat; informația necunoscută rămâne explicită.",
+      "evidence_needed": "Manuale de versiune și probe de integrare disponibile; un conector identic nu dovedește compatibilitatea completă.",
+      "depends_on": [
+        "P20"
+      ],
+      "evidence_gate": "Manuale de versiune și probe de integrare disponibile; un conector identic nu dovedește compatibilitatea completă.",
+      "effort_band": "mediu"
     }
   ],
   "product_briefs": [
@@ -497,7 +542,7 @@
       "product_id": "keenon-w3",
       "path": "/product/keenon-w3/",
       "priority": "P1",
-      "status": "planned",
+      "status": "implemented",
       "topic": "Livrare în hoteluri",
       "questions": [
         "Ce informații despre lift și uși sunt necesare înainte de oferta W3?",
@@ -513,7 +558,7 @@
       "product_id": "pudu-t300",
       "path": "/product/pudu-t300/",
       "priority": "P1",
-      "status": "planned",
+      "status": "implemented",
       "topic": "Transport intern",
       "questions": [
         "Cum alegi între T300 Standard și o variantă cu ridicare?",
@@ -529,7 +574,7 @@
       "product_id": "geekplus-p-series",
       "path": "/product/geekplus-p-series/",
       "priority": "P1",
-      "status": "planned",
+      "status": "implemented",
       "topic": "Depozit marfa-la-persoană",
       "questions": [
         "Ce trebuie să includă proiectul pe lângă robotul din P Series?",
@@ -545,7 +590,7 @@
       "product_id": "dobot-nova2",
       "path": "/product/dobot-nova2/",
       "priority": "P1",
-      "status": "planned",
+      "status": "implemented",
       "topic": "Manipulare compactă",
       "questions": [
         "Cum calculezi încărcătura cu tot cu dispozitivul de prindere?",
@@ -561,7 +606,7 @@
       "product_id": "rokae-cr",
       "path": "/product/rokae-cr/",
       "priority": "P1",
-      "status": "planned",
+      "status": "implemented",
       "topic": "Coboți pentru producție",
       "questions": [
         "Cum alegi modelul CR după piesă și pozițiile de lucru?",
@@ -577,7 +622,7 @@
       "product_id": "siasun-gcr5",
       "path": "/product/siasun-gcr5/",
       "priority": "P1",
-      "status": "planned",
+      "status": "implemented",
       "topic": "Celulă de manipulare",
       "questions": [
         "Cum verifici dacă piesa și scula se încadrează în sarcina aplicației?",
@@ -593,7 +638,7 @@
       "product_id": "dobot-magician-e6",
       "path": "/product/dobot-magician-e6/",
       "priority": "P2",
-      "status": "planned",
+      "status": "implemented",
       "topic": "Laborator și instruire",
       "questions": [
         "Ce exerciții de cinematică și manipulare intră în proiectul didactic?",
@@ -609,7 +654,7 @@
       "product_id": "agilex-scout-mini",
       "path": "/product/agilex-scout-mini/",
       "priority": "P2",
-      "status": "planned",
+      "status": "implemented",
       "topic": "Prototip mobil civil",
       "questions": [
         "Ce lipsește unei baze mobile pentru a deveni aplicația cerută?",
@@ -625,7 +670,7 @@
       "product_id": "deep-x30",
       "path": "/product/deep-x30/",
       "priority": "P2",
-      "status": "planned",
+      "status": "implemented",
       "topic": "Inspecție tehnică civilă",
       "questions": [
         "Ce senzori trebuie incluși pentru măsurătoarea cerută?",
@@ -641,7 +686,7 @@
       "product_id": "deep-lynx-m20",
       "path": "/product/deep-lynx-m20/",
       "priority": "P2",
-      "status": "planned",
+      "status": "implemented",
       "topic": "Mobilitate pe trasee mixte",
       "questions": [
         "Ce suprafețe și tranziții trebuie incluse într-o probă LYNX M20?",
@@ -657,7 +702,7 @@
       "product_id": "inspire-rh56bfx",
       "path": "/product/inspire-rh56bfx/",
       "priority": "P2",
-      "status": "planned",
+      "status": "implemented",
       "topic": "Prindere robotică",
       "questions": [
         "Cum alegi versiunea stânga/dreapta și prinderea mecanică?",
@@ -673,7 +718,7 @@
       "product_id": "brainco-revo2",
       "path": "/product/brainco-revo2/",
       "priority": "P2",
-      "status": "planned",
+      "status": "implemented",
       "topic": "Cercetarea prinderii",
       "questions": [
         "Ce date despre obiecte sunt necesare pentru alegerea mâinii Revo 2?",
@@ -689,7 +734,7 @@
       "product_id": "rokae-ar",
       "path": "/product/rokae-ar/",
       "priority": "P2",
-      "status": "planned",
+      "status": "implemented",
       "topic": "Brațe pentru integrare",
       "questions": [
         "Ce controler, prindere și bază sunt necesare pentru AR Series?",
@@ -705,7 +750,7 @@
       "product_id": "rokae-helios",
       "path": "/product/rokae-helios/",
       "priority": "P2",
-      "status": "planned",
+      "status": "implemented",
       "topic": "Manipulare mobilă cu două brațe",
       "questions": [
         "Ce versiune Helios este descrisă în oferta tehnică?",
@@ -721,7 +766,7 @@
       "product_id": "rokae-human-x",
       "path": "/product/rokae-human-x/",
       "priority": "P2",
-      "status": "planned",
+      "status": "implemented",
       "topic": "Dezvoltare umanoidă",
       "questions": [
         "Ce funcții de manipulare trebuie demonstrate pentru proiect?",
@@ -737,7 +782,7 @@
       "product_id": "leju-kuavo-4pro",
       "path": "/product/leju-kuavo-4pro/",
       "priority": "P2",
-      "status": "planned",
+      "status": "implemented",
       "topic": "Cercetare și date",
       "questions": [
         "Ce date trebuie colectate și prin ce interfețe?",
@@ -753,7 +798,7 @@
       "product_id": "leju-kuavo-5",
       "path": "/product/leju-kuavo-5/",
       "priority": "P2",
-      "status": "planned",
+      "status": "implemented",
       "topic": "Variante bipede și pe roți",
       "questions": [
         "Cum diferențiezi KUAVO 5 de KUAVO 5-W?",
@@ -769,7 +814,7 @@
       "product_id": "leju-roban-2",
       "path": "/product/leju-roban-2/",
       "priority": "P2",
-      "status": "planned",
+      "status": "implemented",
       "topic": "Educație umanoidă",
       "questions": [
         "Ce obiective didactice sunt potrivite configurației ROBAN 2?",
@@ -785,7 +830,7 @@
       "product_id": "ubtech-walker-s2",
       "path": "/product/ubtech-walker-s2/",
       "priority": "P2",
-      "status": "planned",
+      "status": "implemented",
       "topic": "Proiect industrial umanoid",
       "questions": [
         "Ce infrastructură cere schimbul bateriei în configurația propusă?",
@@ -801,7 +846,7 @@
       "product_id": "unitree-h1",
       "path": "/product/unitree-h1/",
       "priority": "P2",
-      "status": "planned",
+      "status": "implemented",
       "topic": "Cercetarea mobilității",
       "questions": [
         "Ce diferențe de versiune trebuie verificate între H1 și H1-2?",
@@ -878,15 +923,17 @@
       "use": "Filtre, comparații și limitele rapoartelor"
     }
   ],
-  "version": "2026-11-01-plan-3",
+  "version": "2026-11-01-release-4",
   "execution_briefs_file": "config/seo-content-briefs.json",
   "execution_metrics_file": "docs/SEO_MEASUREMENT_PLAN.md",
   "expansion_summary": {
-    "task_count": 20,
+    "tasks": 22,
     "product_execution_briefs": 26,
-    "comparison_candidates": 4,
-    "unique_queries_unchanged": 353,
-    "new_public_pages": 0
+    "comparison_candidates_remaining": 2,
+    "comparisons_implemented_this_release": 2,
+    "queries": 365,
+    "new_queries": 12,
+    "new_public_pages": 2
   },
   "task_execution_order": [
     "P01",
@@ -908,6 +955,22 @@
     "P14",
     "P20",
     "P12",
-    "P17"
-  ]
+    "P17",
+    "P21",
+    "P22"
+  ],
+  "current_release": {
+    "version": "2026-11-01-release-4",
+    "public_pages": 62,
+    "guide_pages": 14,
+    "catalogue_products": 26,
+    "products_with_specific_questions": 26,
+    "published_model_questions": 58,
+    "new_model_questions": 40,
+    "new_comparisons": [
+      "/guides/dobot-nova2-vs-magician-e6/",
+      "/guides/unitree-g1-vs-h1/"
+    ],
+    "google_metrics_observed": false
+  }
 }

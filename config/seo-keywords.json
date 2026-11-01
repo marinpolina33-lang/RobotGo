@@ -394,7 +394,7 @@
       "priority": "P1",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "existing_content_to_measure"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/unitree-go2/",
@@ -411,7 +411,7 @@
       "priority": "P1",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "existing_content_to_measure"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/leju-kuavo-4pro/",
@@ -428,7 +428,7 @@
       "priority": "P2",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "planned_product_brief"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/leju-kuavo-5/",
@@ -445,7 +445,7 @@
       "priority": "P2",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "planned_product_brief"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/leju-roban-2/",
@@ -462,7 +462,7 @@
       "priority": "P2",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "planned_product_brief"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/rokae-helios/",
@@ -479,7 +479,7 @@
       "priority": "P2",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "planned_product_brief"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/rokae-human-x/",
@@ -496,7 +496,7 @@
       "priority": "P2",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "planned_product_brief"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/rokae-ar/",
@@ -513,7 +513,7 @@
       "priority": "P2",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "planned_product_brief"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/rokae-cr/",
@@ -530,7 +530,7 @@
       "priority": "P1",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "planned_product_brief"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/deep-lynx-m20/",
@@ -547,7 +547,7 @@
       "priority": "P2",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "planned_product_brief"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/deep-x30/",
@@ -564,7 +564,7 @@
       "priority": "P2",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "planned_product_brief"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/pudu-bellabot/",
@@ -581,7 +581,7 @@
       "priority": "P1",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "existing_content_to_measure"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/pudu-cc1/",
@@ -598,7 +598,7 @@
       "priority": "P1",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "existing_content_to_measure"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/keenon-t10/",
@@ -615,7 +615,7 @@
       "priority": "P1",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "existing_content_to_measure"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/keenon-c40/",
@@ -632,7 +632,7 @@
       "priority": "P1",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "existing_content_to_measure"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/keenon-w3/",
@@ -649,7 +649,7 @@
       "priority": "P1",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "planned_product_brief"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/dobot-nova2/",
@@ -666,7 +666,7 @@
       "priority": "P1",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "planned_product_brief"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/dobot-magician-e6/",
@@ -683,7 +683,7 @@
       "priority": "P2",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "planned_product_brief"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/inspire-rh56bfx/",
@@ -700,7 +700,7 @@
       "priority": "P2",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "planned_product_brief"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/geekplus-p-series/",
@@ -717,7 +717,7 @@
       "priority": "P1",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "planned_product_brief"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/ubtech-walker-s2/",
@@ -734,7 +734,7 @@
       "priority": "P2",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "planned_product_brief"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/unitree-h1/",
@@ -751,7 +751,7 @@
       "priority": "P2",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "planned_product_brief"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/agilex-scout-mini/",
@@ -768,7 +768,7 @@
       "priority": "P2",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "planned_product_brief"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/brainco-revo2/",
@@ -785,7 +785,7 @@
       "priority": "P2",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "planned_product_brief"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/siasun-gcr5/",
@@ -802,7 +802,7 @@
       "priority": "P1",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "planned_product_brief"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/product/pudu-t300/",
@@ -819,7 +819,7 @@
       "priority": "P1",
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
-      "extension_status": "planned_product_brief"
+      "extension_status": "model_answers_implemented"
     },
     {
       "path": "/guides/bellabot-vs-keenon-t10/",
@@ -966,7 +966,39 @@
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
       "extension_status": "existing_content_to_measure"
+    },
+    {
+      "path": "/guides/dobot-nova2-vs-magician-e6/",
+      "intent": "Comparație modele / configurație",
+      "terms": [
+        "DOBOT Nova 2 vs Magician E6",
+        "Nova 2 sau Magician E6",
+        "braț robotic pentru laborator sau aplicații comerciale",
+        "comparație roboți DOBOT",
+        "Magician E6 sarcină și rază",
+        "Nova 2 sarcină și rază"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "comparison_implemented"
+    },
+    {
+      "path": "/guides/unitree-g1-vs-h1/",
+      "intent": "Comparație modele / configurație",
+      "terms": [
+        "Unitree G1 vs H1",
+        "G1 sau H1",
+        "comparație roboți umanoizi Unitree",
+        "G1 EDU vs H1 pentru cercetare",
+        "diferențe G1 H1 H1-2",
+        "robot umanoid compact pentru laborator"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "comparison_implemented"
     }
   ],
-  "version": "2026-11-01-plan-2"
+  "version": "2026-11-01-release-4"
 }

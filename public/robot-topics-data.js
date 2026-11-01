@@ -1542,6 +1542,394 @@ window.ROBOTGO_TOPIC_DATA = {
         ]
       ],
       "date": "2026-11-01"
+    },
+    "/guides/dobot-nova2-vs-magician-e6": {
+      "title": "DOBOT Nova 2 vs Magician E6: ce braț robotic alegi? | RobotGo",
+      "description": "Compară DOBOT Nova 2 și Magician E6: sarcină, rază de lucru, aplicații comerciale și educație. Pregătește configurația și solicită ofertă.",
+      "date": "2026-11-01",
+      "label": [
+        "DOBOT Nova 2 vs Magician E6: aplicație comercială sau laborator?",
+        "DOBOT Nova 2 vs Magician E6: commercial application or laboratory?"
+      ],
+      "intro": [
+        "Ambele modele pot intra într-un proiect de manipulare, dar alegerea începe cu obiectivul. Nova 2 este prezentat de DOBOT pentru aplicații comerciale, iar Magician E6 pentru educație și cercetare. Compară piesa, scula, spațiul și resursele software înainte de a decide configurația.",
+        "Both models can form part of a handling project, but start with the objective. DOBOT presents Nova 2 for commercial applications and Magician E6 for education and research. Compare the part, tooling, space and software resources before selecting a configuration."
+      ],
+      "sections": [
+        [
+          "Pornește de la sarcină, apoi de la robot",
+          "Start with the task, then choose the robot",
+          "Pentru un punct de servire, descrie operația repetată, obiectul și alimentarea lui. Pentru un laborator, descrie ce trebuie să învețe participanții și câte posturi vor folosi. Aceste cerințe schimbă scula, programarea și modul de verificare. Niciunul dintre cele două brațe nu reprezintă singur un punct de lucru complet.",
+          "For a service station, describe the repeated operation, object and feeding arrangement. For a laboratory, describe what participants should learn and how many workstations they will use. These requirements change tooling, programming and acceptance checks. Neither arm alone represents a complete workstation."
+        ],
+        [
+          "Sarcina utilă include și scula",
+          "Payload includes the tool",
+          "Nova 2 are o sarcină maximă publicată de 2 kg și o rază de 625 mm; Magician E6 are 750 g și 450 mm. Aceste repere ajută la selecția inițială. Pentru validare, include masa dispozitivului de prindere, poziția piesei și orientările extreme. Raza maximă nu confirmă accesul la orice poziție din postul tău.",
+          "Nova 2 has a published 2 kg maximum payload and 625 mm reach; Magician E6 has 750 g and 450 mm. These figures help initial selection. For validation, include gripper mass, part position and extreme orientations. Maximum reach does not establish access to every position at your workstation."
+        ],
+        [
+          "Compară oferta pentru aceeași operație",
+          "Compare quotations for the same operation",
+          "Trimite același desen și aceleași obiecte pentru evaluarea celor două variante. Cere separarea robotului, sculei, suportului, software-ului și instruirii. Verifică ce programe sunt livrate și ce trebuie realizat prin integrare. Prețul unui braț și bugetul unei aplicații funcționale descriu lucruri diferite.",
+          "Provide the same drawing and objects when assessing both alternatives. Ask for the robot, tooling, mounting, software and training to be itemised. Check which programs are delivered and which require integration. The price of an arm and the budget for a working application describe different scopes."
+        ],
+        [
+          "Definește o probă care răspunde obiectivului",
+          "Define a trial that addresses the objective",
+          "Într-o aplicație comercială, urmărește rezultatul operației și reluarea după o întrerupere. Într-un laborator, verifică și ușurința de pregătire a exercițiului, accesul la program și documentația. Folosește aceleași criterii pentru modelele evaluate. Evaluarea postului include piesa și scula, chiar dacă brațul este descris drept colaborativ.",
+          "For a commercial application, assess the operation result and recovery after interruption. In a laboratory, also assess exercise setup, program access and documentation. Use the same criteria for the models being evaluated. Workstation assessment includes the part and tooling even when the arm is described as collaborative."
+        ]
+      ],
+      "table": [
+        [
+          "Criteriu",
+          "Criterion",
+          "Ce verifici",
+          "What to check"
+        ]
+      ],
+      "comparison": {
+        "columns": [
+          [
+            "Criteriu",
+            "Criterion"
+          ],
+          [
+            "DOBOT Nova 2",
+            "DOBOT Nova 2"
+          ],
+          [
+            "DOBOT Magician E6",
+            "DOBOT Magician E6"
+          ]
+        ],
+        "rows": [
+          [
+            [
+              "Direcție prezentată de producător",
+              "Manufacturer positioning"
+            ],
+            [
+              "Aplicații comerciale",
+              "Commercial applications"
+            ],
+            [
+              "Educație și cercetare",
+              "Education and research"
+            ]
+          ],
+          [
+            [
+              "Sarcină maximă publicată",
+              "Published maximum payload"
+            ],
+            [
+              "2 kg",
+              "2 kg"
+            ],
+            [
+              "750 g",
+              "750 g"
+            ]
+          ],
+          [
+            [
+              "Rază de lucru publicată",
+              "Published working radius"
+            ],
+            [
+              "625 mm",
+              "625 mm"
+            ],
+            [
+              "450 mm",
+              "450 mm"
+            ]
+          ],
+          [
+            [
+              "Repetabilitate publicată",
+              "Published repeatability"
+            ],
+            [
+              "±0,05 mm",
+              "±0.05 mm"
+            ],
+            [
+              "±0,1 mm",
+              "±0.1 mm"
+            ]
+          ],
+          [
+            [
+              "Ce trebuie definit în proiect",
+              "What to define in the project"
+            ],
+            [
+              "Operație, sculă, suport și integrare",
+              "Operation, tooling, mounting and integration"
+            ],
+            [
+              "Exerciții, sculă, calculator și resurse didactice",
+              "Exercises, tooling, computer and teaching resources"
+            ]
+          ]
+        ]
+      },
+      "checks": [
+        [
+          "Masa și dimensiunile obiectului, plus dispozitivul de prindere.",
+          "Object mass and dimensions, plus the gripper."
+        ],
+        [
+          "Pozițiile de preluare/depunere și orientările necesare.",
+          "Pickup/placement positions and required orientations."
+        ],
+        [
+          "Rezultatul urmărit: operație comercială sau obiectiv didactic.",
+          "Desired outcome: commercial operation or learning objective."
+        ],
+        [
+          "Componentele incluse, programarea, instruirea și criteriile probei.",
+          "Included components, programming, training and trial criteria."
+        ]
+      ],
+      "faq": [
+        [
+          "Este Nova 2 automat alegerea mai bună dacă are sarcină mai mare?",
+          "Is Nova 2 automatically better because it has a larger payload?",
+          "O sarcină mai mare ajută numai dacă proiectul o cere. Pentru instruire contează și resursele didactice, programarea și organizarea laboratorului. Compară configurația completă cu obiectivul tău și verifică accesoriile necesare.",
+          "A larger payload helps when the project requires it. Teaching also depends on learning resources, programming and laboratory organisation. Compare the full configuration against your objective and check the required accessories."
+        ],
+        [
+          "Magician E6 include camera și banda transportoare?",
+          "Does Magician E6 include a camera and conveyor?",
+          "Solicită o listă explicită a componentelor din oferta E6. Echipamentele folosite într-un exemplu de aplicație pot fi accesorii separate. Precizează dacă lecția cere vedere artificială sau transfer între posturi.",
+          "Request an explicit component list in the E6 quotation. Equipment used in an application example may be supplied separately. State whether the lesson requires machine vision or transfer between workstations."
+        ],
+        [
+          "Cum cer un preț comparabil pentru Nova 2 și Magician E6?",
+          "How do I request comparable Nova 2 and Magician E6 prices?",
+          "Descrie aceeași sarcină și cere detalierea echipamentului, sculei, programării și instruirii. RobotGo confirmă configurația și prețul prin ofertă în EUR, cu transport inclus în prețul ofertat doar în România.",
+          "Describe the same task and request itemised equipment, tooling, programming and training. RobotGo confirms configuration and price by quotation in EUR, with shipping included in the quoted price within Romania only."
+        ]
+      ],
+      "products": [
+        "dobot-nova2",
+        "dobot-magician-e6"
+      ],
+      "links": [
+        "/categories/coboti",
+        "/solutions/educatie",
+        "/solutions/industrie",
+        "/guides/cobot-vs-robot-industrial",
+        "/guides/cat-costa-un-robot"
+      ],
+      "sources": [
+        [
+          "DOBOT Nova 2 — specificații",
+          "https://www.dobot-robots.com/products/nova-series/nova2.html?lang=en"
+        ],
+        [
+          "DOBOT Magician E6 — specificații",
+          "https://www.dobot-robots.com/products/education/magician-e6.html?lang=en"
+        ]
+      ]
+    },
+    "/guides/unitree-g1-vs-h1": {
+      "title": "Unitree G1 vs H1: roboți umanoizi pentru cercetare | RobotGo",
+      "description": "Compară Unitree G1 și H1 pentru laborator: dimensiuni, configurații, acces software și condiții de testare. Distincții G1 EDU și H1-2.",
+      "date": "2026-11-01",
+      "label": [
+        "Unitree G1 vs H1: ce platformă umanoidă alegi?",
+        "Unitree G1 vs H1: choosing a humanoid platform"
+      ],
+      "intro": [
+        "G1 și H1 au dimensiuni și configurații diferite. Pentru un laborator, alegerea începe cu experimentul, spațiul și accesul la dezvoltare. Ghidul compară reperele G1 și H1 și explică de ce G1 EDU și H1-2 trebuie identificate separat în ofertă.",
+        "G1 and H1 differ in size and configuration. For a laboratory, start with the experiment, space and development access. This guide compares G1 and H1 reference specifications and explains why G1 EDU and H1-2 must be identified separately in the quotation."
+      ],
+      "sections": [
+        [
+          "Alege experimentul înaintea platformei",
+          "Choose the experiment before the platform",
+          "Un proiect de studiu al mersului cere alte resurse decât unul de prindere a obiectelor. Notează mișcările, datele necesare și ce trebuie programat de echipă. Pentru manipulare, precizează mâinile și obiectele. Pentru mobilitate, descrie suprafața și spațiul de testare. O demonstrație video nu definește configurația completă a laboratorului.",
+          "A locomotion study requires different resources from an object-grasping project. Record the movements, required data and what the team must program. For manipulation, specify hands and objects. For mobility, describe the surface and test space. A video demonstration does not define the complete laboratory configuration."
+        ],
+        [
+          "Dimensiunile schimbă organizarea laboratorului",
+          "Size changes laboratory organisation",
+          "Unitree indică pentru G1 o înălțime de 1,32 m și o masă de aproximativ 35 kg cu bateria. Pentru H1, pagina producătorului indică aproximativ 1,80 m și 47 kg. Pregătește accesul, depozitarea și zona de lucru pentru modelul ales. Aceste valori descriu repere de produs, nu o evaluare a spațiului tău.",
+          "Unitree lists G1 at 1.32 m tall and approximately 35 kg with its battery. For H1, the manufacturer page lists approximately 1.80 m and 47 kg. Prepare access, storage and the work area for the selected model. These figures are product references, not an assessment of your space."
+        ],
+        [
+          "G1 EDU și H1-2 sunt configurații distincte",
+          "G1 EDU and H1-2 are distinct configurations",
+          "Pagina G1 separă modelul standard de G1 EDU și accesul la dezvoltare. Pagina H1 separă H1 de H1-2, cu diferențe de articulații, masă și echipare. Pentru ofertă, cere versiunea exactă, calculatoarele, mâinile și accesul software. Nu combina parametrii variantelor într-un singur robot imaginar.",
+          "The G1 page separates the standard model from G1 EDU and development access. The H1 page separates H1 from H1-2, with differences in joints, mass and equipment. Request the exact version, computers, hands and software access. Do not combine variant specifications into one imaginary robot."
+        ],
+        [
+          "Evaluează resursele, nu doar fișa tehnică",
+          "Assess resources as well as specifications",
+          "Stabilește cine operează robotul, cine pregătește software-ul și ce documentație trebuie livrată. Cere o probă pentru funcția necesară și delimitarea funcțiilor standard de cele dezvoltate ulterior. Bugetul proiectului poate include echipamente și activități suplimentare; un preț internațional afișat de producător nu este oferta RobotGo.",
+          "Establish who operates the robot, who prepares software and what documentation must be delivered. Request a trial of the required function and distinguish standard features from later development. The project budget may include additional equipment and work; an international manufacturer price is not a RobotGo quotation."
+        ]
+      ],
+      "table": [
+        [
+          "Criteriu",
+          "Criterion",
+          "Ce verifici",
+          "What to check"
+        ]
+      ],
+      "comparison": {
+        "columns": [
+          [
+            "Criteriu",
+            "Criterion"
+          ],
+          [
+            "Unitree G1",
+            "Unitree G1"
+          ],
+          [
+            "Unitree H1",
+            "Unitree H1"
+          ]
+        ],
+        "rows": [
+          [
+            [
+              "Modelul de referință",
+              "Reference model"
+            ],
+            [
+              "G1; G1 EDU se verifică separat",
+              "G1; check G1 EDU separately"
+            ],
+            [
+              "H1; H1-2 se verifică separat",
+              "H1; check H1-2 separately"
+            ]
+          ],
+          [
+            [
+              "Înălțime publicată",
+              "Published height"
+            ],
+            [
+              "1,32 m",
+              "1.32 m"
+            ],
+            [
+              "Aproximativ 1,80 m",
+              "Approximately 1.80 m"
+            ]
+          ],
+          [
+            [
+              "Masă publicată",
+              "Published mass"
+            ],
+            [
+              "Aproximativ 35 kg, cu baterie",
+              "Approximately 35 kg, with battery"
+            ],
+            [
+              "Aproximativ 47 kg",
+              "Approximately 47 kg"
+            ]
+          ],
+          [
+            [
+              "De clarificat pentru dezvoltare",
+              "Development details to confirm"
+            ],
+            [
+              "G1 sau G1 EDU, SDK și echiparea mâinilor",
+              "G1 or G1 EDU, SDK and hand equipment"
+            ],
+            [
+              "H1 sau H1-2, calcul, interfețe și mâini",
+              "H1 or H1-2, computing, interfaces and hands"
+            ]
+          ],
+          [
+            [
+              "Criteriu de alegere",
+              "Selection criterion"
+            ],
+            [
+              "Experiment realizabil în spațiul și configurația disponibile",
+              "A feasible experiment within the available space and configuration"
+            ],
+            [
+              "Același obiectiv, evaluat cu resursele platformei H1",
+              "The same objective assessed with H1 platform resources"
+            ]
+          ]
+        ]
+      },
+      "checks": [
+        [
+          "Experimentul, datele necesare și funcțiile de programat.",
+          "The experiment, required data and functions to program."
+        ],
+        [
+          "Versiunea completă și lista echipamentelor incluse.",
+          "The complete version and included-equipment list."
+        ],
+        [
+          "Spațiul, accesul și echipa de operare a laboratorului.",
+          "Laboratory space, access and operating team."
+        ],
+        [
+          "Proba, documentația și responsabilitățile de dezvoltare.",
+          "Trial, documentation and development responsibilities."
+        ]
+      ],
+      "faq": [
+        [
+          "Pentru programare aleg G1 standard sau G1 EDU?",
+          "Should I choose standard G1 or G1 EDU for programming?",
+          "Verifică funcția de dezvoltare cerută față de versiunea exactă. Unitree diferențiază accesul la dezvoltare pentru G1 EDU. Solicită în ofertă interfețele, documentația și echiparea necesare experimentului, nu doar denumirea G1.",
+          "Check the required development function against the exact version. Unitree distinguishes development access for G1 EDU. Request the interfaces, documentation and equipment required for the experiment, rather than only the G1 name."
+        ],
+        [
+          "Pot folosi specificațiile H1-2 pentru un H1?",
+          "Can I use H1-2 specifications for an H1?",
+          "Folosește fișa variantei ofertate. H1 și H1-2 au tabele separate în documentația Unitree. Mâinile, brațele și calculatoarele se identifică explicit, iar o funcție prezentată pe o variantă nu se presupune inclusă în cealaltă.",
+          "Use the specification sheet for the quoted variant. H1 and H1-2 have separate tables in Unitree documentation. Identify hands, arms and computers explicitly; do not assume a function shown on one variant is included on the other."
+        ],
+        [
+          "Care este mai potrivit pentru educație și cercetare?",
+          "Which is better suited to education and research?",
+          "Alegerea depinde de obiectiv, spațiu, echipă și accesul software. Compară aceeași activitate pe configurațiile propuse și verifică resursele de pregătire. Dimensiunea mai mare sau numărul de articulații nu stabilesc singure valoarea didactică.",
+          "The choice depends on the objective, space, team and software access. Compare the same activity on the proposed configurations and check preparation resources. Larger size or joint count alone does not determine educational value."
+        ]
+      ],
+      "products": [
+        "unitree-g1",
+        "unitree-h1"
+      ],
+      "links": [
+        "/categories/umanoizi",
+        "/solutions/educatie",
+        "/guides/robot-programabil-sdk-ros",
+        "/guides/umanoid-vs-caine-robot",
+        "/guides/cat-costa-un-robot"
+      ],
+      "sources": [
+        [
+          "Unitree G1 / G1 EDU — parametri și versiuni",
+          "https://www.unitree.com/g1/"
+        ],
+        [
+          "Unitree H1 / H1-2 — parametri și versiuni",
+          "https://www.unitree.com/mobile/h1/"
+        ]
+      ]
     }
   },
   "productQuestions": {
@@ -1712,6 +2100,466 @@ window.ROBOTGO_TOPIC_DATA = {
           "Describe the flooring, designated area, sequence duration and operator role. Select only motions confirmed for the robot version and venue. Also request a charging plan; demonstration runtime cannot be inferred from a promotional clip."
         ]
       ]
+    },
+    "keenon-w3": {
+      "faq": [
+        [
+          "Ce informații despre lift și uși sunt necesare înainte de oferta W3?",
+          "What lift and door information is needed for a W3 quotation?",
+          "Pentru BUTLERBOT W3, trimite numărul etajelor, modelul liftului, sistemul de acces și o schiță a traseului. KEENON descrie folosirea liftului prin integrare IoT; compatibilitatea clădirii și lucrările necesare se confirmă separat. Include în probă intrarea, ieșirea și revenirea robotului, inclusiv când liftul este ocupat.",
+          "For BUTLERBOT W3, provide the number of floors, lift model, access system and route plan. KEENON describes lift use through IoT integration; building compatibility and required installation work need separate confirmation. Include entering, leaving and returning in the trial, including when the lift is occupied."
+        ],
+        [
+          "Cum organizezi încărcarea, preluarea și accesul la compartimente?",
+          "How should loading, collection and compartment access be organised?",
+          "W3 permite configurarea a până la patru compartimente cu acces independent, potrivit producătorului. Pentru hotelul tău, precizează dimensiunile articolelor, cine le încarcă și cum este anunțată preluarea. Stabilește și situația în care destinatarul nu ridică articolul, plus curățarea compartimentelor între curse.",
+          "The manufacturer describes up to four independently accessible compartments on W3. For your hotel, specify item dimensions, who loads them and how collection is announced. Also define what happens when a recipient does not collect an item and how compartments are cleaned between trips."
+        ]
+      ],
+      "sources": [
+        [
+          "KEENON BUTLERBOT W3 — documentație producător",
+          "https://www.keenon.com/en/product/W3"
+        ]
+      ],
+      "reviewed": "2026-11-01"
+    },
+    "pudu-t300": {
+      "faq": [
+        [
+          "Cum alegi între T300 Standard și o variantă cu ridicare?",
+          "How do you choose between T300 Standard and a lifting version?",
+          "PUDU prezintă distinct T300 Standard și T300 Lifting. Alegerea începe la punctul de transfer: personalul încarcă materialele sau este necesară preluarea prin ridicare? Trimite desenul suportului și înălțimile de predare. Cere identificarea variantei, a accesoriilor și a modului de încărcare în ofertă.",
+          "PUDU presents T300 Standard and T300 Lifting separately. Start at the transfer point: will staff load materials, or is lifting pickup required? Send a drawing of the carrier and handover heights. Ask the quotation to identify the version, accessories and loading method."
+        ],
+        [
+          "Cum verifici încărcătura, punctele de transfer și traseul?",
+          "How do you assess the load, transfer points and route?",
+          "Notează masa totală, dimensiunile și stabilitatea încărcăturii, apoi traseul cu viraje, praguri și puncte de oprire. Pentru varianta Lifting, producătorul precizează că lățimea de trecere depinde de dimensiunea încărcăturii. Proba trebuie să includă transferul complet și confirmarea predării, nu doar deplasarea fără materiale.",
+          "Record total load mass, dimensions and stability, then the route with turns, thresholds and stopping points. For the Lifting version, the manufacturer states that passage width depends on load size. The trial should include the complete transfer and handover confirmation, not just unloaded travel."
+        ]
+      ],
+      "sources": [
+        [
+          "PUDU T300 Standard — documentație producător",
+          "https://www.pudurobotics.com/en/products/pudut300"
+        ]
+      ],
+      "reviewed": "2026-11-01"
+    },
+    "geekplus-p-series": {
+      "faq": [
+        [
+          "Ce trebuie să includă proiectul pe lângă robotul din P Series?",
+          "What should a project include besides the P Series robot?",
+          "Într-un flux shelf-to-person, robotul face parte dintr-un sistem cu rafturi, posturi de lucru și software de coordonare. Pregătește lista articolelor, dimensiunile unităților de stocare și volumele din perioadele aglomerate. Oferta trebuie să identifice modelul P, rafturile, încărcarea bateriilor și funcțiile sistemului complet.",
+          "In a shelf-to-person workflow, the robot belongs to a system of shelves, workstations and coordination software. Prepare the item list, storage-unit dimensions and peak-period volumes. The quotation should identify the P model, shelves, battery charging and complete-system functions."
+        ],
+        [
+          "Cum se definesc interfețele dintre WMS, rafturi și posturile de lucru?",
+          "How are interfaces between the WMS, shelves and workstations defined?",
+          "Descrie comenzile de preluare, reaprovizionare și inventar, apoi cine confirmă fiecare operație. Documentația Geek+ explică legătura dintre gestionarea roboților și WMS-ul clientului. În proiect se verifică mesajele, identificarea rafturilor, tratarea erorilor și reluarea operațiilor; compatibilitatea cu un anumit WMS trebuie confirmată.",
+          "Describe picking, replenishment and inventory orders, then who confirms each operation. Geek+ documentation explains the connection between robot management and the customer WMS. Check messages, shelf identification, error handling and recovery in the project; compatibility with a particular WMS requires confirmation."
+        ]
+      ],
+      "sources": [
+        [
+          "Geek+ P Series — documentație producător",
+          "https://www.geekplus.com/resources/robotics-blogs/stpintro?hs_amp=true"
+        ]
+      ],
+      "reviewed": "2026-11-01"
+    },
+    "dobot-nova2": {
+      "faq": [
+        [
+          "Cum calculezi încărcătura cu tot cu dispozitivul de prindere?",
+          "How do you calculate the load including the gripper?",
+          "Pentru Nova 2, producătorul indică o sarcină maximă de 2 kg. La evaluare se iau în calcul piesa, dispozitivul de prindere și accesoriile purtate. Masa singură nu este suficientă: transmite și poziția centrului de greutate și orientările cerute, pentru verificarea configurației de către integrator.",
+          "The manufacturer specifies a 2 kg maximum payload for Nova 2. Assessment includes the part, gripper and carried accessories. Mass alone is insufficient: provide the centre-of-gravity position and required orientations so the integrator can check the configuration."
+        ],
+        [
+          "Ce suport, sculă și programare se verifică în oferta Nova 2?",
+          "Which mounting, tool and programming details belong in a Nova 2 quote?",
+          "Definește suportul rigid, pozițiile de preluare și depunere, scula și legătura cu celelalte echipamente. Cere ca oferta să precizeze controlerul, metoda de programare, dispozitivul de prindere și proba aplicației. O imagine cu robotul într-un restaurant nu confirmă includerea echipamentelor auxiliare sau realizarea automată a întregii operații.",
+          "Define rigid mounting, pickup and placement positions, tooling and connections to other equipment. Ask the quotation to specify the controller, programming method, gripper and application trial. A restaurant demonstration image does not establish that auxiliary equipment is included or the entire operation is automated."
+        ]
+      ],
+      "sources": [
+        [
+          "DOBOT Nova 2 — documentație producător",
+          "https://www.dobot-robots.com/products/nova-series/nova2.html?lang=en"
+        ]
+      ],
+      "reviewed": "2026-11-01"
+    },
+    "dobot-magician-e6": {
+      "faq": [
+        [
+          "Ce exerciții de cinematică și manipulare intră în proiectul didactic?",
+          "Which kinematics and handling exercises belong in the teaching project?",
+          "Magician E6 este un braț cu șase axe prezentat de DOBOT pentru educație și cercetare. Ca proiect didactic, poți evalua poziții, orientări și secvențe de preluare–depunere cu obiecte ușoare. Stabilește nivelul cursanților și rezultatul fiecărei lecții; programul și accesoriile necesare se verifică pentru configurația aleasă.",
+          "Magician E6 is a six-axis arm presented by DOBOT for education and research. A teaching project can assess positions, orientations and pick-and-place sequences with light objects. Define learner level and each lesson outcome; check the required program and accessories for the selected configuration."
+        ],
+        [
+          "Ce accesorii și acces software sunt necesare laboratorului?",
+          "What accessories and software access does the laboratory need?",
+          "Listează scula de prindere, piesele de exercițiu, calculatorul și eventualele camere sau benzi transportoare. Pagina producătorului indică DobotStudio Pro pentru E6. Cere confirmarea versiunii software, a interfețelor și a materialelor de instruire incluse; o cameră sau un kit văzut într-o demonstrație nu este automat inclus.",
+          "List the gripper, exercise parts, computer and any cameras or conveyors. The manufacturer lists DobotStudio Pro for E6. Confirm the software version, interfaces and included teaching resources; a camera or kit shown in a demonstration is not automatically included."
+        ]
+      ],
+      "sources": [
+        [
+          "DOBOT Magician E6 — documentație producător",
+          "https://www.dobot-robots.com/products/education/magician-e6.html?lang=en"
+        ]
+      ],
+      "reviewed": "2026-11-01"
+    },
+    "rokae-cr": {
+      "faq": [
+        [
+          "Cum alegi modelul CR după piesă și pozițiile de lucru?",
+          "How do you choose a CR model for the part and working positions?",
+          "ROKAE CR este o familie, cu modele care au sarcini și raze diferite. Trimite masa ansamblului piesă–sculă, pozițiile extreme și modul de fixare. În ofertă trebuie să apară codul complet al robotului; o valoare din fișa unui CR nu se aplică automat tuturor modelelor seriei.",
+          "ROKAE CR is a family with different payloads and reaches. Provide the combined part-and-tool mass, extreme working positions and mounting arrangement. The quotation should state the full robot code; a specification for one CR does not automatically apply to every model in the series."
+        ],
+        [
+          "Ce operații trebuie demonstrate înainte de acceptarea aplicației?",
+          "What operations should be demonstrated before accepting the application?",
+          "Definește un ciclu cu piesele reale: preluare, deplasare, operație și depunere. Stabilește criteriile pentru poziționare, calitatea rezultatului și opririle acceptate. Cere verificarea controlerului, sculei și comunicării cu postul; denumirea de cobot nu înlocuiește evaluarea aplicației complete.",
+          "Define a cycle with real parts: pickup, movement, processing and placement. Set criteria for positioning, result quality and acceptable stops. Check the controller, tooling and workstation communication; the cobot designation does not replace assessment of the complete application."
+        ]
+      ],
+      "sources": [
+        [
+          "ROKAE CR Series — documentație producător",
+          "https://www.rokae.com/en/product/show/545/xMateCR.html"
+        ]
+      ],
+      "reviewed": "2026-11-01"
+    },
+    "siasun-gcr5": {
+      "faq": [
+        [
+          "Cum verifici dacă piesa și scula se încadrează în sarcina aplicației?",
+          "How do you check whether the part and tool fit the application payload?",
+          "Pentru GCR5-910, SIASUN publică o sarcină maximă de 5 kg și o rază de 917 mm. Compară aceste repere cu masa piesei plus scula și cu pozițiile de lucru. Cere verificarea distribuției masei și a mișcărilor propuse; sarcina nominală nu stabilește singură dacă operația poate fi realizată.",
+          "For GCR5-910, SIASUN publishes a 5 kg maximum payload and 917 mm reach. Compare these with part-plus-tool mass and working positions. Request checks of mass distribution and proposed movements; rated payload alone does not establish whether the operation can be performed."
+        ],
+        [
+          "Ce date despre post sunt necesare pentru o ofertă GCR5-910?",
+          "What workstation information is needed for a GCR5-910 quotation?",
+          "Trimite schița postului, piesele, alimentarea lor, operația și metoda de verificare a rezultatului. Identifică dispozitivele de prindere, senzorii și comunicarea cu echipamentele existente. Specifică GCR5-910 în cerere și confirmă pachetul de aplicație; funcțiile variantei de sudare GCR5-910-W nu trebuie presupuse incluse.",
+          "Send the workstation layout, parts, feeding arrangement, operation and result-checking method. Identify grippers, sensors and communication with existing equipment. Specify GCR5-910 and confirm the application package; do not assume functions of the GCR5-910-W welding version are included."
+        ]
+      ],
+      "sources": [
+        [
+          "SIASUN DUCO GCR5-910 — documentație producător",
+          "https://en.siasun.com/gcr5-910-2.html"
+        ]
+      ],
+      "reviewed": "2026-11-01"
+    },
+    "deep-lynx-m20": {
+      "faq": [
+        [
+          "Ce suprafețe și tranziții trebuie incluse într-o probă LYNX M20?",
+          "Which surfaces and transitions belong in a LYNX M20 trial?",
+          "Pentru LYNX M20, platformă cu roți și picioare, descrie suprafețele, pantele, pragurile și trecerile dintre ele. Include întoarcerea și oprirea cu echipamentul proiectului montat. Cere identificarea versiunii și a funcțiilor software disponibile; limitele măsurate în laborator nu sunt o promisiune pentru orice traseu.",
+          "For LYNX M20, a wheeled-legged platform, describe surfaces, slopes, steps and transitions. Include turning and stopping with project equipment fitted. Ask for the version and available software functions to be identified; laboratory limits are not a promise for every route."
+        ],
+        [
+          "Cum se verifică echiparea pentru datele de inspecție dorite?",
+          "How do you check equipment for the required inspection data?",
+          "Începe cu informația dorită: imagine, temperatură sau altă măsurătoare. Apoi verifică senzorul, montajul, alimentarea și exportul datelor. Un senzor folosit pentru navigație nu dovedește că platforma furnizează măsurătoarea de inspecție cerută. Include în probă un punct de observație și un fișier de rezultat.",
+          "Start with the required information: an image, temperature or another measurement. Then check the sensor, mounting, power and data export. A navigation sensor does not establish that the platform provides the required inspection measurement. Include an observation point and an output file in the trial."
+        ]
+      ],
+      "sources": [
+        [
+          "DEEP Robotics LYNX M20 — documentație producător",
+          "https://www.deeprobotics.cn/en/index/lynx.html"
+        ]
+      ],
+      "reviewed": "2026-11-01"
+    },
+    "deep-x30": {
+      "faq": [
+        [
+          "Ce senzori trebuie incluși pentru măsurătoarea cerută?",
+          "Which sensors should be included for the required measurement?",
+          "Pentru o inspecție civilă cu X30, definește ce urmărești și de la ce distanță. Cere identificarea camerei ori senzorului dedicat, a metodei de montaj și a formatului de înregistrare. Oferta trebuie să separe platforma de echiparea aplicației; simpla prezență a navigației nu confirmă o cameră termică inclusă.",
+          "For a civil inspection with X30, define what you need to observe and from what distance. Identify the dedicated camera or sensor, mounting method and recording format. The quotation should separate the platform from application equipment; navigation alone does not establish that a thermal camera is included."
+        ],
+        [
+          "Ce date despre traseu și mediu se verifică înainte de ofertă?",
+          "What route and environment information should be checked before quotation?",
+          "Notează suprafețele, treptele, pasajele, iluminarea și condițiile de temperatură. DEEP Robotics prezintă separat X30 și X30 Pro, cu diferențe de echipare și interfețe. Confirmă varianta și testează traseul cu senzorii necesari; durata reală depinde și de sarcină, deplasare și modul de operare.",
+          "Record surfaces, steps, passages, lighting and temperature conditions. DEEP Robotics presents X30 and X30 Pro separately, with equipment and interface differences. Confirm the variant and test the route with the required sensors; actual runtime also depends on load, movement and operating mode."
+        ]
+      ],
+      "sources": [
+        [
+          "DEEP Robotics X30 — documentație producător",
+          "https://www.deeprobotics.cn/en/index/product3.html"
+        ]
+      ],
+      "reviewed": "2026-11-01"
+    },
+    "inspire-rh56bfx": {
+      "faq": [
+        [
+          "Cum alegi versiunea stânga/dreapta și prinderea mecanică?",
+          "How do you choose the left/right version and mechanical mounting?",
+          "INSPIRE identifică variante stânga și dreapta și diferențiază modelele cu încheietură de cele fără. Precizează mâna necesară, flanșa brațului și spațiul din jurul obiectelor. Cere desenul mecanic pentru codul exact și verifică masa ansamblului, cablurile și amplitudinea mișcărilor înainte de integrare.",
+          "INSPIRE identifies left/right versions and distinguishes models with and without a wrist. Specify the required hand, arm flange and clearance around objects. Request the mechanical drawing for the exact code and check assembly mass, cables and motion range before integration."
+        ],
+        [
+          "Ce interfețe și alimentare cere integrarea RH56BFX?",
+          "What interfaces and power supply does RH56BFX integration require?",
+          "Pagina RH56BFX indică interfața RS485. Solicită documentația electrică și protocolul pentru versiunea livrată, inclusiv alimentarea, conectorii și comenzile disponibile. Proba de integrare trebuie să confirme o prindere pe obiectul tău și citirea informațiilor necesare, fără a presupune compatibilitate directă cu orice braț.",
+          "The RH56BFX page lists an RS485 interface. Request electrical documentation and the protocol for the delivered version, including power, connectors and available commands. The integration trial should confirm grasping your object and reading the required feedback, without assuming direct compatibility with every arm."
+        ]
+      ],
+      "sources": [
+        [
+          "INSPIRE RH56BFX — documentație producător",
+          "https://en.inspire-robots.com/product/rh56bfx/"
+        ]
+      ],
+      "reviewed": "2026-11-01"
+    },
+    "brainco-revo2": {
+      "faq": [
+        [
+          "Ce date despre obiecte sunt necesare pentru alegerea mâinii Revo 2?",
+          "What object information is needed to choose a Revo 2 hand?",
+          "Trimite forma, dimensiunile, masa și fragilitatea obiectelor, plus tipul de prindere dorit. BrainCo diferențiază Revo 2 Basic, Pro și Touch. Cere varianta potrivită și verifică prinderea cu obiectele reale; datele unei versiuni nu se transferă automat celorlalte.",
+          "Provide object shape, dimensions, mass and fragility, plus the desired grasp. BrainCo distinguishes Revo 2 Basic, Pro and Touch. Request the appropriate variant and assess grasping with real objects; specifications for one version do not automatically transfer to the others."
+        ],
+        [
+          "Ce hardware și software trebuie definite pentru teleoperare?",
+          "What hardware and software should be specified for teleoperation?",
+          "Precizează dispozitivul de comandă, calculatorul, interfața mâinii și informațiile care trebuie transmise înapoi. Documentația Revo 2 diferențiază interfețele și funcțiile după versiune. Cere identificarea adaptorului, SDK-ului și programului de legătură; o mănușă de comandă sau o aplicație completă de teleoperare nu se presupune inclusă.",
+          "Specify the control device, computer, hand interface and required feedback. Revo 2 documentation distinguishes interfaces and functions by version. Identify the adapter, SDK and connecting software; do not assume a control glove or complete teleoperation application is included."
+        ]
+      ],
+      "sources": [
+        [
+          "BrainCo Revo 2 — documentație producător",
+          "https://brainco.tech/docs/revolimb-hand/en/revo2/parameters.html"
+        ]
+      ],
+      "reviewed": "2026-11-01"
+    },
+    "agilex-scout-mini": {
+      "faq": [
+        [
+          "Ce lipsește unei baze mobile pentru a deveni aplicația cerută?",
+          "What does a mobile base need to become the required application?",
+          "SCOUT MINI este o bază mobilă pentru dezvoltare. Proiectul poate cere separat senzori, calculator, software de localizare și logica misiunii. Definește traseul și rezultatul dorit, apoi stabilește cine integrează fiecare componentă. Platforma singură nu este confirmarea unei aplicații autonome complete.",
+          "SCOUT MINI is a mobile development base. A project may separately need sensors, a computer, localisation software and mission logic. Define the route and desired result, then assign responsibility for integrating each component. The platform alone does not establish a complete autonomous application."
+        ],
+        [
+          "Cum verifici alimentarea, montajul senzorilor și pachetele software?",
+          "How do you check power, sensor mounting and software packages?",
+          "AgileX descrie șine de montaj, comunicație CAN și resurse software pentru dezvoltare. Listează masa, prinderea și consumul fiecărui dispozitiv suplimentar. Cere verificarea alimentării disponibile și a versiunilor SDK/ROS pentru configurația ta, apoi testează comanda bazei și recepția datelor de la senzori.",
+          "AgileX describes mounting rails, CAN communication and development software resources. List the mass, mounting and consumption of each additional device. Check available power and SDK/ROS versions for your configuration, then test base control and sensor-data reception."
+        ]
+      ],
+      "sources": [
+        [
+          "AgileX SCOUT MINI — documentație producător",
+          "https://global.agilex.ai/products/scout-mini"
+        ]
+      ],
+      "reviewed": "2026-11-01"
+    },
+    "ubtech-walker-s2": {
+      "faq": [
+        [
+          "Ce infrastructură cere schimbul bateriei în configurația propusă?",
+          "What infrastructure does battery swapping require in the proposed configuration?",
+          "UBTECH prezintă schimbul autonom al bateriei împreună cu stații dedicate și gestionarea energiei. În cerere, descrie locul stației, accesul robotului și programul de lucru. Cere separarea stației, bateriilor și integrării în ofertă; prezentarea unei funcții nu confirmă includerea întregii infrastructuri.",
+          "UBTECH presents autonomous battery swapping together with dedicated stations and energy management. Describe station location, robot access and the operating schedule. Ask the quotation to separate the station, batteries and integration; presentation of a function does not establish that all infrastructure is included."
+        ],
+        [
+          "Cum se stabilește proba pentru operația industrială solicitată?",
+          "How should the trial for the requested industrial operation be defined?",
+          "Pentru Walker S2, descrie obiectul, punctele de preluare și depunere și variațiile întâlnite în lucru. Stabilește o probă cu rezultat verificabil, timp de ciclu și intervenții consemnate. Evaluează separat manipularea, deplasarea și alimentarea; o demonstrație a producătorului nu stabilește performanța în postul tău.",
+          "For Walker S2, describe the object, pickup and placement points and operational variations. Define a trial with a verifiable result, cycle time and recorded interventions. Assess handling, movement and energy supply separately; a manufacturer demonstration does not establish performance at your workstation."
+        ]
+      ],
+      "sources": [
+        [
+          "UBTECH Walker S2 — documentație producător",
+          "https://www.ubtrobot.com/en/humanoid/products/walker-s2"
+        ]
+      ],
+      "reviewed": "2026-11-01"
+    },
+    "unitree-h1": {
+      "faq": [
+        [
+          "Ce diferențe de versiune trebuie verificate între H1 și H1-2?",
+          "Which version differences should be checked between H1 and H1-2?",
+          "Unitree publică fișe separate pentru H1 și H1-2, cu diferențe de masă, articulații și echipare. Cere denumirea completă, configurația brațelor și mâinilor și calculatoarele incluse. Nu folosi un singur set de specificații pentru ambele variante; compară fișa ofertei cu versiunea exactă din documentație.",
+          "Unitree publishes separate H1 and H1-2 specifications, with differences in mass, joints and equipment. Request the complete name, arm/hand configuration and included computers. Do not use one specification set for both variants; compare the quotation with documentation for the exact version."
+        ],
+        [
+          "Cum definești spațiul și funcțiile necesare proiectului de cercetare?",
+          "How do you define the space and functions needed for research?",
+          "Pornește de la experiment: studierea mersului, percepție sau manipulare. Pregătește dimensiunile spațiului, suprafața, echipa de operare și datele necesare. Pentru H1, cere accesul software, calculul și accesoriile potrivite obiectivului; funcțiile dezvoltate de laborator trebuie delimitate de cele livrate în configurația standard.",
+          "Start with the experiment: locomotion, perception or manipulation. Prepare space dimensions, flooring, operating team and required data. For H1, request software access, computing and accessories suited to the objective; distinguish laboratory-developed functions from those delivered in the standard configuration."
+        ]
+      ],
+      "sources": [
+        [
+          "Unitree H1 — documentație producător",
+          "https://www.unitree.com/mobile/h1/"
+        ]
+      ],
+      "reviewed": "2026-11-01"
+    },
+    "rokae-helios": {
+      "faq": [
+        [
+          "Ce versiune Helios este descrisă în oferta tehnică?",
+          "Which Helios version is covered by the technical quotation?",
+          "Cere codul configurației Helios, data fișei și echiparea brațelor, mâinilor și bazei mobile. Documentele publice pot descrie revizii diferite; fotografia și numele familiei nu identifică singure versiunea. În ofertă, parametrii trebuie să aparțină aceleiași configurații, iar opțiunile să fie enumerate separat.",
+          "Request the Helios configuration code, datasheet date and arm, hand and mobile-base equipment. Public documents may describe different revisions; the photograph and family name alone do not identify the version. Quoted parameters should belong to one configuration, with options listed separately."
+        ],
+        [
+          "Cum definești transferul obiectelor și punctele de lucru în interior?",
+          "How do you define indoor object transfers and work points?",
+          "Pentru Helios, descrie traseul bazei mobile și operația fiecărui braț: de unde se ia obiectul, cum este prins și unde ajunge. Include înălțimile posturilor, forma piesei și obstacolele. Proba trebuie să cuprindă oprirea, poziționarea și predarea, nu numai deplasarea între două puncte.",
+          "For Helios, describe the mobile-base route and each arm operation: where the object is collected, how it is grasped and where it goes. Include workstation heights, part shape and obstacles. The trial should cover stopping, positioning and handover, not only travel between two points."
+        ]
+      ],
+      "sources": [
+        [
+          "ROKAE Helios — documentație producător",
+          "https://www.rokae.com/en/product/show/596/Wheeled-Dual-Arm-Robot-Helios.html"
+        ]
+      ],
+      "reviewed": "2026-11-01"
+    },
+    "rokae-human-x": {
+      "faq": [
+        [
+          "Ce funcții de manipulare trebuie demonstrate pentru proiect?",
+          "Which handling functions should be demonstrated for the project?",
+          "Pentru Human.X, alege un obiect și o secvență concretă: identificare, prindere, transfer și depunere. Definește pozițiile inițiale și variațiile pe care proba trebuie să le acopere. Cere verificarea configurației și a programului folosit; descrierea generală a unui robot umanoid nu confirmă executarea oricărei sarcini.",
+          "For Human.X, choose an object and a specific sequence: identification, grasping, transfer and placement. Define starting positions and variations the trial should cover. Check the configuration and software used; a general humanoid description does not establish performance of every task."
+        ],
+        [
+          "Ce interfețe și resurse sunt incluse pentru echipa de dezvoltare?",
+          "Which interfaces and resources are included for the development team?",
+          "Listează datele și comenzile necesare proiectului, apoi cere interfețele, exemplele software și condițiile de acces pentru configurația Human.X ofertată. Delimitează funcțiile disponibile de dezvoltarea suplimentară. Oferta trebuie să arate cine configurează percepția, mișcarea și integrarea cu alte echipamente.",
+          "List the data and commands required by the project, then request interfaces, software examples and access conditions for the quoted Human.X configuration. Separate available functions from additional development. The quotation should identify who configures perception, movement and integration with other equipment."
+        ]
+      ],
+      "sources": [
+        [
+          "ROKAE Human.X — documentație producător",
+          "https://www.rokae.com/en/product/show/597/Humanoid-Robot-Human.X.html"
+        ]
+      ],
+      "reviewed": "2026-11-01"
+    },
+    "rokae-ar": {
+      "faq": [
+        [
+          "Ce controler, prindere și bază sunt necesare pentru AR Series?",
+          "What controller, gripper and base are needed for the AR Series?",
+          "AR Series este o familie de brațe; identifică mai întâi modelul, apoi controlerul, scula și suportul mecanic. ROKAE prezintă variante AR3, AR5 și AR10, cu parametri diferiți. Cere în ofertă cablurile, alimentarea și funcțiile de control necesare; brațul nu reprezintă singur o aplicație completă.",
+          "AR Series is an arm family; identify the model first, then the controller, tooling and mechanical support. ROKAE presents AR3, AR5 and AR10 with different parameters. Request the required cables, power and control functions; the arm alone is not a complete application."
+        ],
+        [
+          "Cum se verifică compatibilitatea cu platforma aleasă?",
+          "How do you verify compatibility with the selected platform?",
+          "Compară desenele de montaj, masa, spațiul de lucru și interfețele electrice/software. Definește obiectul și mișcările, apoi cere o verificare a ansamblului braț–platformă. Pentru AR Series, existența unor interfețe de dezvoltare nu înseamnă conectare directă la orice bază mobilă sau robot umanoid.",
+          "Compare mounting drawings, mass, workspace and electrical/software interfaces. Define the object and motions, then request an assessment of the arm-platform assembly. Development interfaces on AR Series do not mean direct connection to every mobile base or humanoid."
+        ]
+      ],
+      "sources": [
+        [
+          "ROKAE AR Series — documentație producător",
+          "https://www.rokae.com/en/product/show/595/Humanoid-Force-Controlled-Arm-AR.html"
+        ]
+      ],
+      "reviewed": "2026-11-01"
+    },
+    "leju-kuavo-4pro": {
+      "faq": [
+        [
+          "Ce date trebuie colectate și prin ce interfețe?",
+          "Which data must be collected and through which interfaces?",
+          "Pentru KUAVO 4Pro, descrie experimentul și datele necesare: imagini, stări ale articulațiilor sau comenzi. Cere documentația pentru revizia hardware și software ofertată, inclusiv formatul datelor și metoda de înregistrare. O demonstrație de învățare prin imitație nu confirmă automat accesul la toate interfețele necesare proiectului.",
+          "For KUAVO 4Pro, describe the experiment and required data: images, joint states or commands. Request documentation for the quoted hardware/software revision, including data format and recording method. An imitation-learning demonstration does not automatically establish access to every interface your project requires."
+        ],
+        [
+          "Ce echipare este necesară pentru obiectele manipulate în laborator?",
+          "What equipment is needed for the objects handled in the laboratory?",
+          "Trimite dimensiunile, masa și suprafața obiectelor, plus pozițiile de preluare și depunere. Verifică mâna sau dispozitivul de prindere, senzorii și programul propus pentru KUAVO 4Pro. Cere o listă a componentelor incluse și o probă cu obiectul real, înainte de a trata manipularea ca funcție validată.",
+          "Provide object dimensions, mass and surface, plus pickup and placement positions. Check the proposed hand or gripper, sensors and program for KUAVO 4Pro. Request an included-component list and a trial with the real object before treating handling as a validated function."
+        ]
+      ],
+      "sources": [
+        [
+          "LEJU KUAVO 4Pro — documentație producător",
+          "https://www.lejurobot.com/en/products/kuavo-my"
+        ]
+      ],
+      "reviewed": "2026-11-01"
+    },
+    "leju-kuavo-5": {
+      "faq": [
+        [
+          "Cum diferențiezi KUAVO 5 de KUAVO 5-W?",
+          "How do you distinguish KUAVO 5 from KUAVO 5-W?",
+          "LEJU prezintă KUAVO 5 și 5-W sub denumiri distincte. În cerere, precizează varianta dorită și solicită fișa exactă, inclusiv modul de deplasare, brațele și calculul disponibil. Nu combina dimensiuni, sarcini sau imagini din variante diferite într-o singură configurație.",
+          "LEJU presents KUAVO 5 and 5-W under distinct names. Specify the desired variant and request its exact datasheet, including mobility, arms and available computing. Do not combine dimensions, payloads or images from different variants into one configuration."
+        ],
+        [
+          "Ce cerințe de mobilitate și manipulare trebuie comparate între variante?",
+          "Which mobility and handling requirements should be compared between variants?",
+          "Separă traseul de operația asupra obiectului. Pentru mobilitate, descrie suprafețele și trecerile; pentru manipulare, precizează piesa, scula și înălțimile de lucru. Compară variantele KUAVO numai după aceeași probă și cere delimitarea funcțiilor livrate de cele care necesită dezvoltare.",
+          "Separate the route from the object-handling operation. For mobility, describe surfaces and transitions; for manipulation, specify the part, tool and working heights. Compare KUAVO variants against the same trial and distinguish delivered functions from those requiring development."
+        ]
+      ],
+      "sources": [
+        [
+          "LEJU KUAVO 5 / 5-W — documentație producător",
+          "https://www.lejurobot.com/en"
+        ]
+      ],
+      "reviewed": "2026-11-01"
+    },
+    "leju-roban-2": {
+      "faq": [
+        [
+          "Ce obiective didactice sunt potrivite configurației ROBAN 2?",
+          "Which learning objectives suit the proposed ROBAN 2 configuration?",
+          "Formulează un obiectiv observabil: studierea echilibrului, analiza unui mers sau controlul unei mișcări. Pentru ROBAN 2, cere confirmarea funcțiilor și interfețelor care susțin acel experiment. Alege proiectul după nivelul participanților, supraveghere și resursele disponibile, fără a presupune că orice exercițiu este pregătit din fabrică.",
+          "Set an observable objective: studying balance, analysing gait or controlling a motion. For ROBAN 2, confirm the functions and interfaces supporting that experiment. Choose the project around participant level, supervision and available resources, without assuming every exercise is ready out of the box."
+        ],
+        [
+          "Ce documentație și echipamente trebuie pregătite în laborator?",
+          "What documentation and equipment should the laboratory prepare?",
+          "Include calculatorul, spațiul de testare, manualul versiunii, exemplele de programare și procedura de oprire. În oferta ROBAN 2, cere lista accesoriilor și condițiile de acces la resursele de dezvoltare. Stabilește cine pregătește lecțiile și cine asistă experimentele înainte de planificarea activităților.",
+          "Include the computer, test area, version-specific manual, programming examples and stopping procedure. In the ROBAN 2 quotation, request the accessory list and development-resource access conditions. Establish who prepares lessons and supervises experiments before scheduling activities."
+        ]
+      ],
+      "sources": [
+        [
+          "LEJU ROBAN 2 — documentație producător",
+          "https://www.lejurobot.com/en/products/roban2"
+        ]
+      ],
+      "reviewed": "2026-11-01"
     }
   }
 };

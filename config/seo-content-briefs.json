@@ -1,14 +1,14 @@
 {
-  "version": "2026-11-01-plan-3",
-  "status": "editorial_plan_not_publication",
-  "source_commit": "e11c5a1b6cf5a3109272baad21bf35f0b85bb207",
+  "version": "2026-11-01-release-4",
+  "status": "mixed_implemented_content_and_future_plan",
+  "source_commit": "1c099d1490864da4c96d0a1e22c404fd18f79bf8",
   "products": [
     {
       "product_id": "unitree-g1",
       "model": "Unitree G1",
       "path": "/product/unitree-g1/",
       "priority": "P1",
-      "plan_status": "planned",
+      "plan_status": "partially_implemented",
       "existing_faq_status": "published",
       "buyer_context": [
         "Educație & cercetare",
@@ -53,14 +53,14 @@
         "Sunt incluse mâinile articulate în orice configurație G1?",
         "Ce trebuie să includă o ofertă pentru Unitree G1 în România?"
       ],
-      "questions_status": "published_to_review",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/unitree-g1-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -80,14 +80,21 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "Unitree G1 — variante G1 și G1 EDU",
+          "https://www.unitree.com/g1/"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "unitree-go2",
       "model": "Unitree Go2",
       "path": "/product/unitree-go2/",
       "priority": "P1",
-      "plan_status": "planned",
+      "plan_status": "partially_implemented",
       "existing_faq_status": "published",
       "buyer_context": [
         "Educație & cercetare",
@@ -133,14 +140,14 @@
         "Poate Go2 face inspecție tehnică imediat după cumpărare?",
         "Ce pregătesc pentru o demonstrație Go2 la un eveniment?"
       ],
-      "questions_status": "published_to_review",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/unitree-go2-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -161,15 +168,22 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "Unitree Go2 — versiuni și funcții",
+          "https://www.unitree.com/go2/"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "leju-kuavo-4pro",
       "model": "LEJU KUAVO 4Pro",
       "path": "/product/leju-kuavo-4pro/",
       "priority": "P2",
-      "plan_status": "planned",
-      "existing_faq_status": "not_yet_published",
+      "plan_status": "partially_implemented",
+      "existing_faq_status": "published",
       "buyer_context": [
         "Educație & cercetare",
         "Entertainment & evenimente",
@@ -213,14 +227,14 @@
         "Ce date trebuie colectate și prin ce interfețe?",
         "Ce echipare este necesară pentru obiectele manipulate în laborator?"
       ],
-      "questions_status": "planned_to_write",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/leju-kuavo-4pro-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -239,15 +253,22 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "LEJU KUAVO 4Pro — documentație producător",
+          "https://www.lejurobot.com/en/products/kuavo-my"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "leju-kuavo-5",
       "model": "LEJU KUAVO 5 / 5-W",
       "path": "/product/leju-kuavo-5/",
       "priority": "P2",
-      "plan_status": "planned",
-      "existing_faq_status": "not_yet_published",
+      "plan_status": "partially_implemented",
+      "existing_faq_status": "published",
       "buyer_context": [
         "Producție & asamblare",
         "Depozite & logistică",
@@ -291,14 +312,14 @@
         "Cum diferențiezi KUAVO 5 de KUAVO 5-W?",
         "Ce cerințe de mobilitate și manipulare trebuie comparate între variante?"
       ],
-      "questions_status": "planned_to_write",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/leju-kuavo-5-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -317,15 +338,22 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "LEJU KUAVO 5 / 5-W — documentație producător",
+          "https://www.lejurobot.com/en"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "leju-roban-2",
       "model": "LEJU ROBAN 2",
       "path": "/product/leju-roban-2/",
       "priority": "P2",
-      "plan_status": "planned",
-      "existing_faq_status": "not_yet_published",
+      "plan_status": "partially_implemented",
+      "existing_faq_status": "published",
       "buyer_context": [
         "Educație & cercetare",
         "Entertainment & evenimente"
@@ -368,14 +396,14 @@
         "Ce obiective didactice sunt potrivite configurației ROBAN 2?",
         "Ce documentație și echipamente trebuie pregătite în laborator?"
       ],
-      "questions_status": "planned_to_write",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/leju-roban-2-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -394,15 +422,22 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "LEJU ROBAN 2 — documentație producător",
+          "https://www.lejurobot.com/en/products/roban2"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "rokae-helios",
       "model": "ROKAE Helios",
       "path": "/product/rokae-helios/",
       "priority": "P2",
-      "plan_status": "planned",
-      "existing_faq_status": "not_yet_published",
+      "plan_status": "partially_implemented",
+      "existing_faq_status": "published",
       "buyer_context": [
         "Producție & asamblare",
         "Depozite & logistică",
@@ -446,14 +481,14 @@
         "Ce versiune Helios este descrisă în oferta tehnică?",
         "Cum definești transferul obiectelor și punctele de lucru în interior?"
       ],
-      "questions_status": "planned_to_write",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/rokae-helios-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -473,15 +508,22 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "ROKAE Helios — documentație producător",
+          "https://www.rokae.com/en/product/show/596/Wheeled-Dual-Arm-Robot-Helios.html"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "rokae-human-x",
       "model": "ROKAE Human.X",
       "path": "/product/rokae-human-x/",
       "priority": "P2",
-      "plan_status": "planned",
-      "existing_faq_status": "not_yet_published",
+      "plan_status": "partially_implemented",
+      "existing_faq_status": "published",
       "buyer_context": [
         "Producție & asamblare",
         "Educație & cercetare"
@@ -524,14 +566,14 @@
         "Ce funcții de manipulare trebuie demonstrate pentru proiect?",
         "Ce interfețe și resurse sunt incluse pentru echipa de dezvoltare?"
       ],
-      "questions_status": "planned_to_write",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/rokae-human-x-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -549,15 +591,22 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "ROKAE Human.X — documentație producător",
+          "https://www.rokae.com/en/product/show/597/Humanoid-Robot-Human.X.html"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "rokae-ar",
       "model": "ROKAE AR Series",
       "path": "/product/rokae-ar/",
       "priority": "P2",
-      "plan_status": "planned",
-      "existing_faq_status": "not_yet_published",
+      "plan_status": "partially_implemented",
+      "existing_faq_status": "published",
       "buyer_context": [
         "Educație & cercetare",
         "Producție & asamblare"
@@ -600,14 +649,14 @@
         "Ce controler, prindere și bază sunt necesare pentru AR Series?",
         "Cum se verifică compatibilitatea cu platforma aleasă?"
       ],
-      "questions_status": "planned_to_write",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/rokae-ar-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -625,15 +674,22 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "ROKAE AR Series — documentație producător",
+          "https://www.rokae.com/en/product/show/595/Humanoid-Force-Controlled-Arm-AR.html"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "rokae-cr",
       "model": "ROKAE CR Series",
       "path": "/product/rokae-cr/",
       "priority": "P1",
-      "plan_status": "planned",
-      "existing_faq_status": "not_yet_published",
+      "plan_status": "partially_implemented",
+      "existing_faq_status": "published",
       "buyer_context": [
         "Producție & asamblare",
         "Educație & cercetare"
@@ -676,14 +732,14 @@
         "Cum alegi modelul CR după piesă și pozițiile de lucru?",
         "Ce operații trebuie demonstrate înainte de acceptarea aplicației?"
       ],
-      "questions_status": "planned_to_write",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/rokae-cr-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -702,15 +758,22 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "ROKAE CR Series — documentație producător",
+          "https://www.rokae.com/en/product/show/545/xMateCR.html"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "deep-lynx-m20",
       "model": "DEEP Robotics LYNX M20",
       "path": "/product/deep-lynx-m20/",
       "priority": "P2",
-      "plan_status": "planned",
-      "existing_faq_status": "not_yet_published",
+      "plan_status": "partially_implemented",
+      "existing_faq_status": "published",
       "buyer_context": [
         "Inspecție tehnică",
         "Educație & cercetare"
@@ -753,14 +816,14 @@
         "Ce suprafețe și tranziții trebuie incluse într-o probă LYNX M20?",
         "Cum se verifică echiparea pentru datele de inspecție dorite?"
       ],
-      "questions_status": "planned_to_write",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/deep-lynx-m20-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -779,15 +842,22 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "DEEP Robotics LYNX M20 — documentație producător",
+          "https://www.deeprobotics.cn/en/index/lynx.html"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "deep-x30",
       "model": "DEEP Robotics X30",
       "path": "/product/deep-x30/",
       "priority": "P2",
-      "plan_status": "planned",
-      "existing_faq_status": "not_yet_published",
+      "plan_status": "partially_implemented",
+      "existing_faq_status": "published",
       "buyer_context": [
         "Inspecție tehnică",
         "Producție & asamblare"
@@ -830,14 +900,14 @@
         "Ce senzori trebuie incluși pentru măsurătoarea cerută?",
         "Ce date despre traseu și mediu se verifică înainte de ofertă?"
       ],
-      "questions_status": "planned_to_write",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/deep-x30-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -856,14 +926,21 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "DEEP Robotics X30 — documentație producător",
+          "https://www.deeprobotics.cn/en/index/product3.html"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "pudu-bellabot",
       "model": "PUDU BellaBot",
       "path": "/product/pudu-bellabot/",
       "priority": "P1",
-      "plan_status": "planned",
+      "plan_status": "partially_implemented",
       "existing_faq_status": "published",
       "buyer_context": [
         "Restaurante & hoteluri",
@@ -908,14 +985,14 @@
         "BellaBot preia comanda și pune singur farfuriile pe masă?",
         "Ce informații sunt necesare pentru o ofertă BellaBot?"
       ],
-      "questions_status": "published_to_review",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/pudu-bellabot-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -935,14 +1012,21 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "PUDU BellaBot — funcții și parametri",
+          "https://www.pudurobotics.com/en/products/bellabot"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "pudu-cc1",
       "model": "PUDU CC1",
       "path": "/product/pudu-cc1/",
       "priority": "P1",
-      "plan_status": "planned",
+      "plan_status": "partially_implemented",
       "existing_faq_status": "published",
       "buyer_context": [
         "Curățenie profesională",
@@ -987,14 +1071,14 @@
         "Stația de apă și încărcare este inclusă în prețul CC1?",
         "Cum estimez timpul de curățare cu CC1?"
       ],
-      "questions_status": "published_to_review",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/pudu-cc1-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -1014,14 +1098,21 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "PUDU CC1 — funcții, rezervoare și accesorii",
+          "https://www.pudurobotics.com/en/products/puducc1"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "keenon-t10",
       "model": "KEENON DINERBOT T10",
       "path": "/product/keenon-t10/",
       "priority": "P1",
-      "plan_status": "planned",
+      "plan_status": "partially_implemented",
       "existing_faq_status": "published",
       "buyer_context": [
         "Restaurante & hoteluri",
@@ -1066,14 +1157,14 @@
         "T10 poate lucra în culoarele înguste ale restaurantului?",
         "T10 vorbește română și rulează orice reclamă?"
       ],
-      "questions_status": "published_to_review",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/keenon-t10-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -1093,14 +1184,21 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "KEENON DINERBOT T10 — funcții și parametri",
+          "https://www.keenon.com/en/product/T10"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "keenon-c40",
       "model": "KEENON KLEENBOT C40",
       "path": "/product/keenon-c40/",
       "priority": "P1",
-      "plan_status": "planned",
+      "plan_status": "partially_implemented",
       "existing_faq_status": "published",
       "buyer_context": [
         "Curățenie profesională",
@@ -1145,14 +1243,14 @@
         "Câtă apă transportă KLEENBOT C40?",
         "Ce consumabile cer în oferta pentru C40?"
       ],
-      "questions_status": "published_to_review",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/keenon-c40-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -1172,15 +1270,22 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "KEENON KLEENBOT C40 — funcții și parametri",
+          "https://www.keenon.com/en/product/C40"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "keenon-w3",
       "model": "KEENON BUTLERBOT W3",
       "path": "/product/keenon-w3/",
       "priority": "P1",
-      "plan_status": "planned",
-      "existing_faq_status": "not_yet_published",
+      "plan_status": "partially_implemented",
+      "existing_faq_status": "published",
       "buyer_context": [
         "Restaurante & hoteluri"
       ],
@@ -1222,14 +1327,14 @@
         "Ce informații despre lift și uși sunt necesare înainte de oferta W3?",
         "Cum organizezi încărcarea, preluarea și accesul la compartimente?"
       ],
-      "questions_status": "planned_to_write",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/keenon-w3-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -1246,15 +1351,22 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "KEENON BUTLERBOT W3 — documentație producător",
+          "https://www.keenon.com/en/product/W3"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "dobot-nova2",
       "model": "DOBOT Nova 2",
       "path": "/product/dobot-nova2/",
       "priority": "P1",
-      "plan_status": "planned",
-      "existing_faq_status": "not_yet_published",
+      "plan_status": "partially_implemented",
+      "existing_faq_status": "published",
       "buyer_context": [
         "Producție & asamblare",
         "Restaurante & hoteluri",
@@ -1298,14 +1410,14 @@
         "Cum calculezi încărcătura cu tot cu dispozitivul de prindere?",
         "Ce suport, sculă și programare se verifică în oferta Nova 2?"
       ],
-      "questions_status": "planned_to_write",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/dobot-nova2-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -1325,15 +1437,22 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "DOBOT Nova 2 — documentație producător",
+          "https://www.dobot-robots.com/products/nova-series/nova2.html?lang=en"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "dobot-magician-e6",
       "model": "DOBOT Magician E6",
       "path": "/product/dobot-magician-e6/",
       "priority": "P2",
-      "plan_status": "planned",
-      "existing_faq_status": "not_yet_published",
+      "plan_status": "partially_implemented",
+      "existing_faq_status": "published",
       "buyer_context": [
         "Educație & cercetare"
       ],
@@ -1375,14 +1494,14 @@
         "Ce exerciții de cinematică și manipulare intră în proiectul didactic?",
         "Ce accesorii și acces software sunt necesare laboratorului?"
       ],
-      "questions_status": "planned_to_write",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/dobot-magician-e6-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -1401,15 +1520,22 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "DOBOT Magician E6 — documentație producător",
+          "https://www.dobot-robots.com/products/education/magician-e6.html?lang=en"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "inspire-rh56bfx",
       "model": "INSPIRE RH56BFX",
       "path": "/product/inspire-rh56bfx/",
       "priority": "P2",
-      "plan_status": "planned",
-      "existing_faq_status": "not_yet_published",
+      "plan_status": "partially_implemented",
+      "existing_faq_status": "published",
       "buyer_context": [
         "Educație & cercetare",
         "Producție & asamblare"
@@ -1452,14 +1578,14 @@
         "Cum alegi versiunea stânga/dreapta și prinderea mecanică?",
         "Ce interfețe și alimentare cere integrarea RH56BFX?"
       ],
-      "questions_status": "planned_to_write",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/inspire-rh56bfx-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -1477,15 +1603,22 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "INSPIRE RH56BFX — documentație producător",
+          "https://en.inspire-robots.com/product/rh56bfx/"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "geekplus-p-series",
       "model": "Geek+ P Series",
       "path": "/product/geekplus-p-series/",
       "priority": "P1",
-      "plan_status": "planned",
-      "existing_faq_status": "not_yet_published",
+      "plan_status": "partially_implemented",
+      "existing_faq_status": "published",
       "buyer_context": [
         "Depozite & logistică"
       ],
@@ -1527,14 +1660,14 @@
         "Ce trebuie să includă proiectul pe lângă robotul din P Series?",
         "Cum se definesc interfețele dintre WMS, rafturi și posturile de lucru?"
       ],
-      "questions_status": "planned_to_write",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/geekplus-p-series-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -1552,15 +1685,22 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "Geek+ P Series — documentație producător",
+          "https://www.geekplus.com/resources/robotics-blogs/stpintro?hs_amp=true"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "ubtech-walker-s2",
       "model": "UBTECH Walker S2",
       "path": "/product/ubtech-walker-s2/",
       "priority": "P2",
-      "plan_status": "planned",
-      "existing_faq_status": "not_yet_published",
+      "plan_status": "partially_implemented",
+      "existing_faq_status": "published",
       "buyer_context": [
         "Producție & asamblare",
         "Depozite & logistică",
@@ -1604,14 +1744,14 @@
         "Ce infrastructură cere schimbul bateriei în configurația propusă?",
         "Cum se stabilește proba pentru operația industrială solicitată?"
       ],
-      "questions_status": "planned_to_write",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/ubtech-walker-s2-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -1630,15 +1770,22 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "UBTECH Walker S2 — documentație producător",
+          "https://www.ubtrobot.com/en/humanoid/products/walker-s2"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "unitree-h1",
       "model": "Unitree H1",
       "path": "/product/unitree-h1/",
       "priority": "P2",
-      "plan_status": "planned",
-      "existing_faq_status": "not_yet_published",
+      "plan_status": "partially_implemented",
+      "existing_faq_status": "published",
       "buyer_context": [
         "Educație & cercetare",
         "Entertainment & evenimente"
@@ -1681,14 +1828,14 @@
         "Ce diferențe de versiune trebuie verificate între H1 și H1-2?",
         "Cum definești spațiul și funcțiile necesare proiectului de cercetare?"
       ],
-      "questions_status": "planned_to_write",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/unitree-h1-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -1706,15 +1853,22 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "Unitree H1 — documentație producător",
+          "https://www.unitree.com/mobile/h1/"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "agilex-scout-mini",
       "model": "AgileX SCOUT MINI",
       "path": "/product/agilex-scout-mini/",
       "priority": "P2",
-      "plan_status": "planned",
-      "existing_faq_status": "not_yet_published",
+      "plan_status": "partially_implemented",
+      "existing_faq_status": "published",
       "buyer_context": [
         "Educație & cercetare",
         "Inspecție tehnică"
@@ -1757,14 +1911,14 @@
         "Ce lipsește unei baze mobile pentru a deveni aplicația cerută?",
         "Cum verifici alimentarea, montajul senzorilor și pachetele software?"
       ],
-      "questions_status": "planned_to_write",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/agilex-scout-mini-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -1784,15 +1938,22 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "AgileX SCOUT MINI — documentație producător",
+          "https://global.agilex.ai/products/scout-mini"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "brainco-revo2",
       "model": "BrainCo Revo 2",
       "path": "/product/brainco-revo2/",
       "priority": "P2",
-      "plan_status": "planned",
-      "existing_faq_status": "not_yet_published",
+      "plan_status": "partially_implemented",
+      "existing_faq_status": "published",
       "buyer_context": [
         "Educație & cercetare",
         "Producție & asamblare"
@@ -1835,14 +1996,14 @@
         "Ce date despre obiecte sunt necesare pentru alegerea mâinii Revo 2?",
         "Ce hardware și software trebuie definite pentru teleoperare?"
       ],
-      "questions_status": "planned_to_write",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/brainco-revo2-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -1860,15 +2021,22 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "BrainCo Revo 2 — documentație producător",
+          "https://brainco.tech/docs/revolimb-hand/en/revo2/parameters.html"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "siasun-gcr5",
       "model": "SIASUN DUCO GCR5-910",
       "path": "/product/siasun-gcr5/",
       "priority": "P1",
-      "plan_status": "planned",
-      "existing_faq_status": "not_yet_published",
+      "plan_status": "partially_implemented",
+      "existing_faq_status": "published",
       "buyer_context": [
         "Producție & asamblare",
         "Educație & cercetare"
@@ -1911,14 +2079,14 @@
         "Cum verifici dacă piesa și scula se încadrează în sarcina aplicației?",
         "Ce date despre post sunt necesare pentru o ofertă GCR5-910?"
       ],
-      "questions_status": "planned_to_write",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/siasun-gcr5-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -1937,15 +2105,22 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "SIASUN DUCO GCR5-910 — documentație producător",
+          "https://en.siasun.com/gcr5-910-2.html"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     },
     {
       "product_id": "pudu-t300",
       "model": "PUDU T300 Standard",
       "path": "/product/pudu-t300/",
       "priority": "P1",
-      "plan_status": "planned",
-      "existing_faq_status": "not_yet_published",
+      "plan_status": "partially_implemented",
+      "existing_faq_status": "published",
       "buyer_context": [
         "Depozite & logistică",
         "Producție & asamblare"
@@ -1988,14 +2163,14 @@
         "Cum alegi între T300 Standard și o variantă cu ridicare?",
         "Cum verifici încărcătura, punctele de transfer și traseul?"
       ],
-      "questions_status": "planned_to_write",
+      "questions_status": "published",
       "evidence_required": [
         "fișa oficială a modelului și versiunii",
         "lista configurației și accesoriilor ofertate",
         "sursa și identificarea exactă a imaginilor",
         "confirmarea distinctă a oricărei funcții software menționate"
       ],
-      "evidence_status": "verify_before_editing",
+      "evidence_status": "public_sources_checked_configuration_confirmed_in_quote",
       "current_primary_image": "assets/products/pudu-t300-0.webp",
       "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
       "context_links": [
@@ -2014,7 +2189,14 @@
         "conținut lizibil în HTML inițial și după JavaScript",
         "legături către categorie, aplicații și ofertă",
         "fără preț, stoc, performanță sau compatibilitate presupuse"
-      ]
+      ],
+      "public_sources": [
+        [
+          "PUDU T300 Standard — documentație producător",
+          "https://www.pudurobotics.com/en/products/pudut300"
+        ]
+      ],
+      "implementation": "Întrebări și răspunsuri publice în RO/EN, în HTML și interfață; link direct către ofertă cu modelul selectat. Restul fișei rămâne ghid pentru revizii ulterioare."
     }
   ],
   "comparisons": [
@@ -2043,14 +2225,15 @@
         "/solutions/educatie/",
         "/solutions/industrie/"
       ],
-      "status": "candidate_not_published",
+      "status": "implemented",
       "priority": "P2",
       "publication_gate": "Publică numai după verificarea datelor, evaluarea utilității distincte și completarea ambelor fișe. Nu declara un câștigător fără criterii și dovezi.",
       "question_candidates": [
         "DOBOT Nova 2 sau Magician E6: aplicație comercială ori laborator?",
         "Ce configurație trebuie inclusă în comparație?",
         "Ce se verifică într-o probă relevantă?"
-      ]
+      ],
+      "published_path": "/guides/dobot-nova2-vs-magician-e6/"
     },
     {
       "id": "C02",
@@ -2148,14 +2331,15 @@
         "/solutions/educatie/",
         "/guides/robot-programabil-sdk-ros/"
       ],
-      "status": "candidate_not_published",
+      "status": "implemented",
       "priority": "P2",
       "publication_gate": "Publică numai după verificarea datelor, evaluarea utilității distincte și completarea ambelor fișe. Nu declara un câștigător fără criterii și dovezi.",
       "question_candidates": [
         "Unitree G1 sau H1: ce cere proiectul de cercetare?",
         "Ce configurație trebuie inclusă în comparație?",
         "Ce se verifică într-o probă relevantă?"
-      ]
+      ],
+      "published_path": "/guides/unitree-g1-vs-h1/"
     }
   ],
   "rules": {

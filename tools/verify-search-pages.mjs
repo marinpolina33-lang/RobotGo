@@ -6,7 +6,7 @@ import assert from 'node:assert/strict';
 
 export function verifySearchPages(root,dist,pages){
  const catalog=JSON.parse(fs.readFileSync(path.join(root,'public/catalog.json'),'utf8'));
- const expected=['/','/shop/','/contact/',...catalog.products.map(p=>'/product/'+p.id+'/'),'/categories/','/solutions/','/about/',...catalog.categories.map(c=>'/categories/'+c.id+'/'),...catalog.domains.map(d=>'/solutions/'+d.id+'/'),'/guides/roboti-entertainment/','/brands/','/guides/primul-robot/','/robot/','/guides/cat-costa-un-robot/','/guides/','/guides/amr-vs-agv/','/guides/cobot-vs-robot-industrial/','/guides/umanoid-vs-caine-robot/','/guides/robot-programabil-sdk-ros/','/guides/robot-autonom-inteligenta-artificiala/','/guides/mentenanta-robotilor/','/guides/bellabot-vs-keenon-t10/','/guides/pudu-cc1-vs-keenon-c40/'];
+ const expected=['/','/shop/','/contact/',...catalog.products.map(p=>'/product/'+p.id+'/'),'/categories/','/solutions/','/about/',...catalog.categories.map(c=>'/categories/'+c.id+'/'),...catalog.domains.map(d=>'/solutions/'+d.id+'/'),'/guides/roboti-entertainment/','/brands/','/guides/primul-robot/','/robot/','/guides/cat-costa-un-robot/','/guides/','/guides/amr-vs-agv/','/guides/cobot-vs-robot-industrial/','/guides/umanoid-vs-caine-robot/','/guides/robot-programabil-sdk-ros/','/guides/robot-autonom-inteligenta-artificiala/','/guides/mentenanta-robotilor/','/guides/bellabot-vs-keenon-t10/','/guides/pudu-cc1-vs-keenon-c40/','/guides/dobot-nova2-vs-magician-e6/','/guides/unitree-g1-vs-h1/'];
  const context={window:{ROBOTGO_CATALOG:catalog},URLSearchParams};
  for(const file of ['site-config.js','practical.js','robot-guides.js','robot-topics-data.js','robot-topics.js','seo.js','routing.js'])vm.runInNewContext(fs.readFileSync(path.join(root,'public',file),'utf8'),context);
  const seo=context.window.ROBOTGO_SEO,links=new Map(),titles=new Set(),descriptions=new Set();
@@ -85,6 +85,7 @@ export function verifySearchPages(root,dist,pages){
    }
   }
  }
+ assert.deepEqual(Object.keys(topics.productQuestions).sort(),catalog.products.map(p=>p.id).sort(),'Every catalogue model has buying answers');
  const allQuestions={ro:new Set(),en:new Set()};
  for(const [id,q]of Object.entries(topics.productQuestions)){
   const product=catalog.products.find(p=>p.id===id);
@@ -95,22 +96,25 @@ export function verifySearchPages(root,dist,pages){
    assert.ok(context.window.ROBOTGO_PRACTICAL.product(product,lang).includes(body),'Product uses the shared buying answers in '+lang);
    if(lang==='ro')assert.ok(html.includes(body),'Buying answers are readable before JavaScript');
    assert.ok(body.includes('href="/contact/"'),'Buying answers lead to quotation contact');
+   assert.ok(body.includes('href="/#/quote?product='+id+'"'),'Buying answers retain the selected model in the quote');
    for(const row of q.faq){
     assert.equal(row.length,4,'Question and answer exist in both languages');
+    assert.ok(row.every(text=>typeof text==='string'&&text.trim().length>20),'Buying content is complete in both languages');
     const question=row[lang==='en'?1:0];
     assert.ok(!allQuestions[lang].has(question),'Model questions are distinct');allQuestions[lang].add(question);
    }
   }
   for(const [,source]of q.sources)assert.ok(source.startsWith('https://'),'Technical references use HTTPS');
  }
- assert.equal(allQuestions.ro.size,18,'Six model pages carry 18 specific buying questions');
+ assert.equal(allQuestions.ro.size,58,'All 26 model pages carry 58 specific buying questions');
+ assert.equal(allQuestions.en.size,58,'English retains every buying question');
  for(const product of catalog.products){
   const reading=topics.productLinks(product);
   assert.ok(reading.includes('href="/guides/'),'Every product offers contextual explanation');
   for(const [,target]of reading.matchAll(/href="([^"]+)"/g))assert.ok(seo.pages[target.replace(/\/$/,'')],'Product reading has no broken internal target');
  }
  const guideCollection=seo.schema('/guides')['@graph'].find(x=>x['@type']==='CollectionPage');
- assert.equal(guideCollection.mainEntity.numberOfItems,12,'Guide collection includes the two model comparisons');
+ assert.equal(guideCollection.mainEntity.numberOfItems,14,'Guide collection includes four model comparisons');
  assert.ok(seo.renderIntro().includes('href="/guides/"'),'Guide hub is reachable from Home');
  assert.ok(seo.renderDirectory().includes('href="/guides/"'),'Guide hub is reachable from the catalogue');
  const sitemap=fs.readFileSync(path.join(dist,'sitemap.xml'),'utf8');
