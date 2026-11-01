@@ -6,9 +6,9 @@ import assert from 'node:assert/strict';
 
 export function verifySearchPages(root,dist,pages){
  const catalog=JSON.parse(fs.readFileSync(path.join(root,'public/catalog.json'),'utf8'));
- const expected=['/','/shop/','/contact/',...catalog.products.map(p=>'/product/'+p.id+'/'),'/categories/','/solutions/','/about/',...catalog.categories.map(c=>'/categories/'+c.id+'/'),...catalog.domains.map(d=>'/solutions/'+d.id+'/'),'/guides/roboti-entertainment/','/brands/','/guides/primul-robot/','/robot/','/guides/cat-costa-un-robot/'];
+ const expected=['/','/shop/','/contact/',...catalog.products.map(p=>'/product/'+p.id+'/'),'/categories/','/solutions/','/about/',...catalog.categories.map(c=>'/categories/'+c.id+'/'),...catalog.domains.map(d=>'/solutions/'+d.id+'/'),'/guides/roboti-entertainment/','/brands/','/guides/primul-robot/','/robot/','/guides/cat-costa-un-robot/','/guides/','/guides/amr-vs-agv/','/guides/cobot-vs-robot-industrial/','/guides/umanoid-vs-caine-robot/','/guides/robot-programabil-sdk-ros/','/guides/robot-autonom-inteligenta-artificiala/','/guides/mentenanta-robotilor/'];
  const context={window:{ROBOTGO_CATALOG:catalog},URLSearchParams};
- for(const file of ['site-config.js','practical.js','robot-guides.js','seo.js','routing.js'])vm.runInNewContext(fs.readFileSync(path.join(root,'public',file),'utf8'),context);
+ for(const file of ['site-config.js','practical.js','robot-guides.js','robot-topics-data.js','robot-topics.js','seo.js','routing.js'])vm.runInNewContext(fs.readFileSync(path.join(root,'public',file),'utf8'),context);
  const seo=context.window.ROBOTGO_SEO,links=new Map(),titles=new Set(),descriptions=new Set();
  for(const lang of ['ro','en']){
   const brands=seo.renderLanding('/brands',lang);
@@ -43,6 +43,44 @@ export function verifySearchPages(root,dist,pages){
   assert.ok(seo.renderIntro().includes('href="'+route+'/"'),'Guide discoverable from homepage');
   assert.ok(seo.renderDirectory().includes('href="'+route+'/"'),'Guide discoverable from catalogue');
  }
+ // Check editorial relationships, not just the number of generated URLs.
+ const topics=context.window.ROBOTGO_TOPICS;
+ const guideIndex=seo.renderLanding('/guides');
+ for(const [route,topic] of Object.entries(topics.topics)){
+  assert.ok(seo.pages[route],'Editorial topic maps to an existing canonical page');
+  for(const lang of ['ro','en']){
+   const extra=topics.renderTopic(route,lang);
+   assert.ok(seo.renderLanding(route,lang).includes(extra),'Category/application carries its shared explanation');
+   assert.ok(extra.includes('<details'),'Topic includes visible questions and answers');
+   for(const slug of topic.guides)assert.ok(topics.guides['/guides/'+slug],'Topic links to an existing comparison');
+  }
+ }
+ for(const [route,g] of Object.entries(topics.guides)){
+  assert.ok(guideIndex.includes('href="'+route+'/"'),'Guide is discoverable from the guide directory');
+  for(const lang of ['ro','en']){
+   const body=seo.renderLanding(route,lang);
+   assert.equal((body.match(/<h1>/g)||[]).length,1);
+   assert.ok(!/undefined|NaN/.test(body),'Guide has no missing model or label');
+   for(const id of g.products){
+    assert.ok(catalog.products.some(p=>p.id===id),'Guide names a real catalogue model');
+    assert.ok(body.includes('href="/product/'+id+'/"'),'Model links are present in both languages');
+   }
+  }
+  for(const path of g.links)assert.ok(seo.pages[path],'Related reading points to a canonical page');
+  const article=seo.schema(route)['@graph'].find(x=>x['@type']==='Article');
+  assert.equal(article.headline,g.title);assert.equal(article.datePublished,g.date);
+  const html=fs.readFileSync(path.join(dist,route,'index.html'),'utf8');
+  assert.ok(html.includes('property="og:type" content="article"'));
+ }
+ for(const product of catalog.products){
+  const reading=topics.productLinks(product);
+  assert.ok(reading.includes('href="/guides/'),'Every product offers contextual explanation');
+  for(const [,target]of reading.matchAll(/href="([^"]+)"/g))assert.ok(seo.pages[target.replace(/\/$/,'')],'Product reading has no broken internal target');
+ }
+ const guideCollection=seo.schema('/guides')['@graph'].find(x=>x['@type']==='CollectionPage');
+ assert.equal(guideCollection.mainEntity.numberOfItems,10,'Guide collection covers six specialist guides and four introductory guides');
+ assert.ok(seo.renderIntro().includes('href="/guides/"'),'Guide hub is reachable from Home');
+ assert.ok(seo.renderDirectory().includes('href="/guides/"'),'Guide hub is reachable from the catalogue');
  const sitemap=fs.readFileSync(path.join(dist,'sitemap.xml'),'utf8');
  assert.deepEqual([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]),expected.map(p=>'https://robotgo.ro'+p));
  for(const page of pages){

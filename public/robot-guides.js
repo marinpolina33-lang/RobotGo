@@ -25,7 +25,7 @@
  };
  function related(lang='ro'){
   const tr=(ro,en)=>lang==='en'?en:ro;
-  return `<nav class="seo-context robot-reading" aria-label="${tr('Ghiduri despre roboți','Robot guides')}"><a href="/robot/">${tr('Ce este un robot și ce tipuri există','What is a robot and which types are available')}</a><a href="/guides/cat-costa-un-robot/">${tr('Cât costă un robot','How much a robot costs')}</a><a href="/guides/primul-robot/">${tr('Cum alegi primul robot','How to choose your first robot')}</a></nav>`;
+  return `<nav class="seo-context robot-reading" aria-label="${tr('Ghiduri despre roboți','Robot guides')}"><a href="/robot/">${tr('Ce este un robot și ce tipuri există','What is a robot and which types are available')}</a><a href="/guides/cat-costa-un-robot/">${tr('Cât costă un robot','How much a robot costs')}</a><a href="/guides/primul-robot/">${tr('Cum alegi primul robot','How to choose your first robot')}</a><a href="/guides/">${tr('Toate ghidurile și comparațiile','All guides and comparisons')}</a></nav>`;
  }
  function render(path,lang='ro'){
   const a=articles[path];if(!a)return '';

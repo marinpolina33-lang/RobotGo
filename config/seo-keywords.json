@@ -1,0 +1,551 @@
+{
+  "date": "2026-11-01",
+  "purpose": "Editorial and Search Console monitoring map. Not measured search volume or guaranteed ranking.",
+  "groups": [
+    {
+      "path": "/robot/",
+      "intent": "Informare generală",
+      "terms": [
+        "robot",
+        "roboți",
+        "robotică",
+        "ce este un robot",
+        "tipuri de roboți",
+        "robot pentru firmă"
+      ]
+    },
+    {
+      "path": "/shop/",
+      "intent": "Cumpărare / ofertă",
+      "terms": [
+        "roboți de vânzare",
+        "robot de cumpărat",
+        "magazin roboți",
+        "catalog roboți România",
+        "ofertă robot"
+      ]
+    },
+    {
+      "path": "/guides/cat-costa-un-robot/",
+      "intent": "Preț / comparație",
+      "terms": [
+        "preț robot",
+        "cât costă un robot",
+        "cost robot",
+        "preț roboți România",
+        "buget robotizare"
+      ]
+    },
+    {
+      "path": "/categories/umanoizi/",
+      "intent": "Categorie / aplicație",
+      "terms": [
+        "robot umanoid",
+        "roboți umanoizi",
+        "robot biped",
+        "android robot",
+        "humanoid robot",
+        "robot umanoid educațional",
+        "robot umanoid industrial"
+      ]
+    },
+    {
+      "path": "/categories/patrupezi/",
+      "intent": "Categorie / aplicație",
+      "terms": [
+        "câine robot",
+        "câini roboți",
+        "robot patruped",
+        "robot dog",
+        "quadruped robot",
+        "robot de inspecție",
+        "Unitree Go2 România"
+      ]
+    },
+    {
+      "path": "/categories/hibrizi/",
+      "intent": "Categorie / aplicație",
+      "terms": [
+        "robot hibrid",
+        "robot cu roți și picioare",
+        "wheeled legged robot",
+        "robot teren mixt",
+        "LYNX M20"
+      ]
+    },
+    {
+      "path": "/categories/amr/",
+      "intent": "Categorie / aplicație",
+      "terms": [
+        "robot mobil autonom",
+        "AMR",
+        "AGV",
+        "robot de livrare",
+        "robot transport interior",
+        "autonomous mobile robot"
+      ]
+    },
+    {
+      "path": "/categories/coboti/",
+      "intent": "Categorie / aplicație",
+      "terms": [
+        "cobot",
+        "coboți",
+        "robot colaborativ",
+        "braț robotic",
+        "robotic arm",
+        "pick and place",
+        "robot cu 6 axe"
+      ]
+    },
+    {
+      "path": "/categories/ugv-civile/",
+      "intent": "Categorie / aplicație",
+      "terms": [
+        "platformă robotică",
+        "bază mobilă robot",
+        "UGV civil",
+        "șasiu robotic",
+        "robot ROS 2",
+        "AgileX SCOUT MINI"
+      ]
+    },
+    {
+      "path": "/categories/accesorii/",
+      "intent": "Categorie / aplicație",
+      "terms": [
+        "mână robotică",
+        "mână dexteră",
+        "dexterous hand",
+        "gripper robotic",
+        "prindere robotică",
+        "teleoperare robot"
+      ]
+    },
+    {
+      "path": "/solutions/horeca/",
+      "intent": "Categorie / aplicație",
+      "terms": [
+        "robot ospătar",
+        "robot restaurant",
+        "robot de servire",
+        "robot livrare mâncare",
+        "robot hotel",
+        "robot room service",
+        "robot HoReCa"
+      ]
+    },
+    {
+      "path": "/solutions/curatenie/",
+      "intent": "Categorie / aplicație",
+      "terms": [
+        "robot curățenie profesională",
+        "robot spălat pardoseli",
+        "robot curățenie comercială",
+        "robot aspirare profesională",
+        "robot curățenie birouri",
+        "robot curățenie hală"
+      ]
+    },
+    {
+      "path": "/solutions/logistica/",
+      "intent": "Categorie / aplicație",
+      "terms": [
+        "robot depozit",
+        "robot logistică",
+        "robot intralogistică",
+        "robot transport materiale",
+        "automatizare depozit",
+        "goods to person",
+        "AMR WMS"
+      ]
+    },
+    {
+      "path": "/solutions/industrie/",
+      "intent": "Categorie / aplicație",
+      "terms": [
+        "robot industrial",
+        "robot manipulare",
+        "automatizare industrială",
+        "celulă robotizată",
+        "robot asamblare",
+        "pick and place",
+        "deservire utilaj"
+      ]
+    },
+    {
+      "path": "/solutions/educatie/",
+      "intent": "Categorie / aplicație",
+      "terms": [
+        "robot educațional",
+        "robot programabil",
+        "robotică STEM",
+        "robot laborator",
+        "robot cercetare",
+        "robot Python",
+        "robot ROS 2"
+      ]
+    },
+    {
+      "path": "/solutions/inspectie/",
+      "intent": "Categorie / aplicație",
+      "terms": [
+        "robot inspecție",
+        "inspecție robotizată",
+        "robot inspecție vizuală",
+        "robot cu cameră termică",
+        "robot infrastructură",
+        "patruped industrial"
+      ]
+    },
+    {
+      "path": "/solutions/evenimente/",
+      "intent": "Categorie / aplicație",
+      "terms": [
+        "robot evenimente",
+        "robot entertainment",
+        "robot expoziție",
+        "robot promovare",
+        "robot interactiv",
+        "robot dans",
+        "robot întâmpinare"
+      ]
+    },
+    {
+      "path": "/guides/amr-vs-agv/",
+      "intent": "Informare / comparație",
+      "terms": [
+        "AMR vs AGV",
+        "diferența AMR AGV",
+        "robot autonom depozit",
+        "navigație robot",
+        "robot transport intern",
+        "intralogistică"
+      ]
+    },
+    {
+      "path": "/guides/cobot-vs-robot-industrial/",
+      "intent": "Informare / comparație",
+      "terms": [
+        "cobot vs robot industrial",
+        "robot colaborativ",
+        "braț robotic 6 axe",
+        "pick and place",
+        "celulă robotizată",
+        "sarcină utilă robot",
+        "rază de lucru robot"
+      ]
+    },
+    {
+      "path": "/guides/umanoid-vs-caine-robot/",
+      "intent": "Informare / comparație",
+      "terms": [
+        "robot umanoid vs câine robot",
+        "robot biped vs patruped",
+        "humanoid robot",
+        "robot dog",
+        "robot pe roți",
+        "robot pentru demonstrații"
+      ]
+    },
+    {
+      "path": "/guides/robot-programabil-sdk-ros/",
+      "intent": "Informare / comparație",
+      "terms": [
+        "robot programabil",
+        "robot SDK",
+        "robot API",
+        "robot ROS 2",
+        "programare roboți Python",
+        "robot C++",
+        "robot educațional STEM"
+      ]
+    },
+    {
+      "path": "/guides/robot-autonom-inteligenta-artificiala/",
+      "intent": "Informare / comparație",
+      "terms": [
+        "robot autonom",
+        "robot inteligent",
+        "robot AI",
+        "robot cu inteligență artificială",
+        "robot interactiv",
+        "robot LiDAR",
+        "robot conversațional"
+      ]
+    },
+    {
+      "path": "/guides/mentenanta-robotilor/",
+      "intent": "Informare / comparație",
+      "terms": [
+        "mentenanță roboți",
+        "întreținere roboți",
+        "service roboți",
+        "consumabile robot curățenie",
+        "baterie robot",
+        "diagnostic robot",
+        "inspecție periodică robot"
+      ]
+    },
+    {
+      "path": "/product/unitree-g1/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "Unitree G1",
+        "Unitree G1 preț",
+        "Unitree G1 specificații",
+        "Unitree G1 România"
+      ]
+    },
+    {
+      "path": "/product/unitree-go2/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "Unitree Go2",
+        "Unitree Go2 preț",
+        "Unitree Go2 specificații",
+        "Unitree Go2 România"
+      ]
+    },
+    {
+      "path": "/product/leju-kuavo-4pro/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "LEJU KUAVO 4Pro",
+        "LEJU KUAVO 4Pro preț",
+        "LEJU KUAVO 4Pro specificații",
+        "LEJU KUAVO 4Pro România"
+      ]
+    },
+    {
+      "path": "/product/leju-kuavo-5/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "LEJU KUAVO 5 / 5-W",
+        "LEJU KUAVO 5 / 5-W preț",
+        "LEJU KUAVO 5 / 5-W specificații",
+        "LEJU KUAVO 5 / 5-W România"
+      ]
+    },
+    {
+      "path": "/product/leju-roban-2/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "LEJU ROBAN 2",
+        "LEJU ROBAN 2 preț",
+        "LEJU ROBAN 2 specificații",
+        "LEJU ROBAN 2 România"
+      ]
+    },
+    {
+      "path": "/product/rokae-helios/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "ROKAE Helios",
+        "ROKAE Helios preț",
+        "ROKAE Helios specificații",
+        "ROKAE Helios România"
+      ]
+    },
+    {
+      "path": "/product/rokae-human-x/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "ROKAE Human.X",
+        "ROKAE Human.X preț",
+        "ROKAE Human.X specificații",
+        "ROKAE Human.X România"
+      ]
+    },
+    {
+      "path": "/product/rokae-ar/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "ROKAE AR Series",
+        "ROKAE AR Series preț",
+        "ROKAE AR Series specificații",
+        "ROKAE AR Series România"
+      ]
+    },
+    {
+      "path": "/product/rokae-cr/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "ROKAE CR Series",
+        "ROKAE CR Series preț",
+        "ROKAE CR Series specificații",
+        "ROKAE CR Series România"
+      ]
+    },
+    {
+      "path": "/product/deep-lynx-m20/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "DEEP Robotics LYNX M20",
+        "DEEP Robotics LYNX M20 preț",
+        "DEEP Robotics LYNX M20 specificații",
+        "DEEP Robotics LYNX M20 România"
+      ]
+    },
+    {
+      "path": "/product/deep-x30/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "DEEP Robotics X30",
+        "DEEP Robotics X30 preț",
+        "DEEP Robotics X30 specificații",
+        "DEEP Robotics X30 România"
+      ]
+    },
+    {
+      "path": "/product/pudu-bellabot/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "PUDU BellaBot",
+        "PUDU BellaBot preț",
+        "PUDU BellaBot specificații",
+        "PUDU BellaBot România"
+      ]
+    },
+    {
+      "path": "/product/pudu-cc1/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "PUDU CC1",
+        "PUDU CC1 preț",
+        "PUDU CC1 specificații",
+        "PUDU CC1 România"
+      ]
+    },
+    {
+      "path": "/product/keenon-t10/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "KEENON DINERBOT T10",
+        "KEENON DINERBOT T10 preț",
+        "KEENON DINERBOT T10 specificații",
+        "KEENON DINERBOT T10 România"
+      ]
+    },
+    {
+      "path": "/product/keenon-c40/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "KEENON KLEENBOT C40",
+        "KEENON KLEENBOT C40 preț",
+        "KEENON KLEENBOT C40 specificații",
+        "KEENON KLEENBOT C40 România"
+      ]
+    },
+    {
+      "path": "/product/keenon-w3/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "KEENON BUTLERBOT W3",
+        "KEENON BUTLERBOT W3 preț",
+        "KEENON BUTLERBOT W3 specificații",
+        "KEENON BUTLERBOT W3 România"
+      ]
+    },
+    {
+      "path": "/product/dobot-nova2/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "DOBOT Nova 2",
+        "DOBOT Nova 2 preț",
+        "DOBOT Nova 2 specificații",
+        "DOBOT Nova 2 România"
+      ]
+    },
+    {
+      "path": "/product/dobot-magician-e6/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "DOBOT Magician E6",
+        "DOBOT Magician E6 preț",
+        "DOBOT Magician E6 specificații",
+        "DOBOT Magician E6 România"
+      ]
+    },
+    {
+      "path": "/product/inspire-rh56bfx/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "INSPIRE RH56BFX",
+        "INSPIRE RH56BFX preț",
+        "INSPIRE RH56BFX specificații",
+        "INSPIRE RH56BFX România"
+      ]
+    },
+    {
+      "path": "/product/geekplus-p-series/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "Geek+ P Series",
+        "Geek+ P Series preț",
+        "Geek+ P Series specificații",
+        "Geek+ P Series România"
+      ]
+    },
+    {
+      "path": "/product/ubtech-walker-s2/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "UBTECH Walker S2",
+        "UBTECH Walker S2 preț",
+        "UBTECH Walker S2 specificații",
+        "UBTECH Walker S2 România"
+      ]
+    },
+    {
+      "path": "/product/unitree-h1/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "Unitree H1",
+        "Unitree H1 preț",
+        "Unitree H1 specificații",
+        "Unitree H1 România"
+      ]
+    },
+    {
+      "path": "/product/agilex-scout-mini/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "AgileX SCOUT MINI",
+        "AgileX SCOUT MINI preț",
+        "AgileX SCOUT MINI specificații",
+        "AgileX SCOUT MINI România"
+      ]
+    },
+    {
+      "path": "/product/brainco-revo2/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "BrainCo Revo 2",
+        "BrainCo Revo 2 preț",
+        "BrainCo Revo 2 specificații",
+        "BrainCo Revo 2 România"
+      ]
+    },
+    {
+      "path": "/product/siasun-gcr5/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "SIASUN DUCO GCR5-910",
+        "SIASUN DUCO GCR5-910 preț",
+        "SIASUN DUCO GCR5-910 specificații",
+        "SIASUN DUCO GCR5-910 România"
+      ]
+    },
+    {
+      "path": "/product/pudu-t300/",
+      "intent": "Model / ofertă",
+      "terms": [
+        "PUDU T300 Standard",
+        "PUDU T300 Standard preț",
+        "PUDU T300 Standard specificații",
+        "PUDU T300 Standard România"
+      ]
+    }
+  ]
+}

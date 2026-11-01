@@ -1,5 +1,15 @@
 # RobotGo — audit și implementare SEO
 
+## Extindere pe tipuri, aplicații și întrebări tehnice — 1 noiembrie 2026
+
+Au fost îmbogățite cele 7 pagini de categorie și 7 pagini de domeniu cu explicații distincte, termeni uzuali, criterii și răspunsuri specifice. Categoriile răspund despre tipul echipamentului; domeniile răspund despre fluxul de lucru. Exemplele includ robot ospătar, livrare în hotel, spălat pardoseli, intralogistică, manipulare, STEM, inspecție și promovare.
+
+Directorul `/guides/` reunește 10 ghiduri. Șase pagini noi tratează AMR vs AGV, cobot vs robot industrial, umanoid vs câine robot, programare SDK/API/ROS 2, autonomie și AI, respectiv mentenanță. Fiecare are conținut RO/EN comun înainte/după JavaScript, exemple de modele existente, surse tehnice și Article. Directorul are CollectionPage și ItemList. Toate cele 26 de fișe de produs oferă legături către explicații relevante. Meniul, subsolul, Home și catalogul descoperă directorul prin URL normal.
+
+Sitemap-ul include **58 de pagini canonice**. Titlurile și descrierile celor 14 pagini au fost clarificate, fără a schimba URL-urile ori identitatea Home. Nu se generează pagini duplicate pentru ortografii, orașe sau fiecare combinație de cuvinte. Harta editorială și expresiile de monitorizare sunt în `docs/SEO_KEYWORDS.md` și `config/seo-keywords.json`; nu sunt blocuri de keywords inserate în pagină.
+
+Validarea include schema și legăturile fiecărui ghid, apartenența modelelor la catalog, conținutul inițial și randat, navigarea de la produse, directorul complet, sitemap, canonical și toate verificările existente. Publicarea live și comportamentul în browser se confirmă separat; nu reprezintă dovada unei poziții Google sau a apariției la toate căutările.
+
 ## Căutarea „robot” și intenția de cumpărare — 1 noiembrie 2026
 
 Extinderea adaugă două pagini editoriale distincte și întărește pagina comercială existentă:
