@@ -15,6 +15,9 @@ export function optimizePages(root,dist,pages){
  const sample=fs.readFileSync(path.join(dist,'index.html'),'utf8');
  const styles=[...sample.matchAll(/<link rel="stylesheet" href="([^"]+)">/g)].map(m=>m[1].split('?')[0]);
  const stylesheet=asset('site',styles.map(file=>fs.readFileSync(path.join(dist,file),'utf8')).join('\n'),'css');
+ // Ship the comparison enhancement with its caller. A content-addressed filename
+ // also prevents cached app.js responses from mixing different releases.
+ const application=asset('application',fs.readFileSync(path.join(dist,'humanoid-buying-client.js'),'utf8')+'\n'+fs.readFileSync(path.join(dist,'app.js'),'utf8'),'js');
  const measurements=[];
  for(const p of pages){
   const key=p.route.replace(/\/$/,'')||'/',product=key.startsWith('/product/')?key.split('/')[2]:null;
@@ -36,6 +39,9 @@ export function optimizePages(root,dist,pages){
    for(const lang of ['ro','en'])assert.ok(ctx.window.ROBOTGO_SEO.renderLanding(key,lang),'Page content remains available in both languages');
   }
   if(product)for(const lang of ['ro','en'])assert.ok(ctx.window.ROBOTGO_TOPICS.productFaq(ctx.window.ROBOTGO_CATALOG.products.find(x=>x.id===product),lang).includes(product),'Product buying answers survive route payload selection');
+  html=html.replace(/<script defer src="humanoid-buying-client\.js(?:\?v=[^"]+)?"><\/script>/,'').replace(/src="app\.js(?:\?v=[^"]+)?"/,`src="${application}"`);
+  assert.ok(html.includes(`src="${application}"`)&&!html.includes('src="humanoid-buying-client.js'),'Comparison enhancement and application are delivered together');
+  fs.writeFileSync(file,html);
   measurements.push({path:p.route,editorialBytes:Buffer.byteLength(content),stylesheetRequests:1});
  }
  const before=fs.statSync(path.join(root,'public/robot-topics-data.js')).size;
