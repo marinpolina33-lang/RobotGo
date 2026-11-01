@@ -72,6 +72,19 @@ export function verifySearchPages(root,dist,pages){
  assert.ok(guideHtml.includes('"@type":"Article"'),'Editorial guide has Article structured data');
  for(const id of Object.keys(context.window.ROBOTGO_PRACTICAL.roles))assert.ok(guideHtml.includes('/product/'+id+'/'),'Entertainment guide connects activities to real catalogue models');
  const appShell=fs.readFileSync(path.join(dist,'index.html'),'utf8');
+ const homeGraph=JSON.parse(appShell.match(/id="robotgo-schema" type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
+ const site=homeGraph.find(x=>x['@type']==='WebSite');
+ const home=homeGraph.find(x=>x['@type']==='WebPage');
+ assert.equal(site.url,'https://robotgo.ro/');
+ assert.ok(site.alternateName.includes('robotgo.ro'),'Domain is an explicit alternative site name');
+ assert.equal(home.mainEntity['@id'],'https://robotgo.ro/#organization');
+ assert.ok(appShell.includes('<title>RobotGo România |'),'Homepage title clearly identifies the brand');
+ assert.ok(appShell.includes('RobotGo.ro este catalogul de roboți operat de ROUTEX LOGISTICA S.R.L.'),'Visible brand and operator identity before JavaScript');
+ for(const page of pages){
+  const html=fs.readFileSync(path.join(dist,page.route,'index.html'),'utf8');
+  const footer=html.match(/<footer\b[^>]*>([\s\S]*?)<\/footer>/)[1];
+  assert.match(footer,/<a href="\/"[^>]*>RobotGo România<\/a>/,'Every public page links back to the canonical homepage with the brand');
+ }
  assert.ok(appShell.indexOf('src="catalog.js')<appShell.indexOf('src="practical.js')&&appShell.indexOf('src="practical.js')<appShell.indexOf('src="seo.js'),'Shared application content loads after the catalogue and before SEO');
  while(pending.length)for(const target of links.get(pending.pop())||[])if(!reachable.has(target)){reachable.add(target);pending.push(target);}
  assert.equal(reachable.size,expected.length,'Every indexed page must be reachable through ordinary links from home');
