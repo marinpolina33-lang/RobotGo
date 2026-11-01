@@ -2,7 +2,7 @@
 
 Data: 1 noiembrie 2026. Obiectiv: mai multe oportunități de afișare pentru căutări relevante despre roboții din catalog. Măsurile de conținut și navigare sunt în română și engleză în interfața existentă. Adresele canonice rămân în română; nu se declară versiuni `/en/` inexistente.
 
-Acestea sunt modificări concrete ale site-ului, nu creșteri de poziție deja măsurate. Nu se presupun volume de căutare, vânzări, certificări, stocuri, prețuri sau studii de caz care nu au fost confirmate. Publicarea și verificările live ale versiunii se consemnează la predare.
+Acestea sunt modificări concrete ale site-ului, nu creșteri de poziție deja măsurate. Nu se presupun volume de căutare, vânzări, certificări, stocuri, prețuri sau studii de caz care nu au fost confirmate. Versiunea este publicată; dovezile verificării sunt consemnate mai jos.
 
 ## Lista acțiunilor
 
@@ -68,6 +68,21 @@ Acestea nu sunt raportate ca executate prin modificarea codului:
 Prioritate: „robot”, „roboți”, „robot umanoid”, „roboți umanoizi”, „câine robot”, „robot de servire”, „robot de curățenie profesională”, „cobot”, denumirile modelelor și intențiile explicative din harta de cuvinte. Acestea sunt ținte de monitorizare, nu interogări deja observate.
 
 Comparația de evoluție rămâne programată pentru 4 ianuarie 2027, pe două perioade complete de 28 de zile, cu separarea dispozitivelor. Nu se atribuie o creștere de poziție acestei versiuni în ziua publicării.
+
+## Confirmarea publicării și verificările efectuate
+
+Versiunea `e432f9d6e00e62d5d5305f41600be6d0bd5fa049` a devenit **live la 1 noiembrie 2026, 23:11:23, ora României**, prin publicarea Render `dep-dbjqlrg473hc73al1j4g`.
+
+- Build: 35/35 verificări statice, validarea celor 72 de documente, plus verificările noi de conținut, ancore, sitemap, date editoriale și resurse comune.
+- Toate cele 8 teste de integrare existente pentru autentificare, permisiuni, revocări, cereri și măsurare au trecut. Backendul nu a fost modificat.
+- Browser live: glosarul și cele 18 definiții, comutarea RO/EN, canonicalul, accesul din ghiduri, tabelul categoriei coboți, scenariul HoReCa, titlul Unitree G1 și legăturile spre definiții.
+- Cuprinsul ghidului de cost a deschis secțiunea corectă prin `#section-8`.
+- Formularul deschis din HoReCa a păstrat domeniul `horeca`, a afișat trimiterea directă către RobotGo și a păstrat canonicalul `/quote/` cu `noindex,follow`. Nu a fost transmisă o cerere de test în producție în această etapă.
+- Sitemap public verificat: **71 URL-uri, 59 date lastmod**, glosarul inclus, formularul exclus.
+- Search Console a indicat inițial că noul glosar era necunoscut pentru Google. O singură cerere de indexare a fost trimisă și acceptată cu mesajul **„Indexing requested”**, după verificarea automată a URL-ului live. Acesta este un statut de solicitare, nu confirmarea indexării sau a unei poziții.
+- Verificarea vizuală s-a făcut în browserul disponibil. Nu se raportează scoruri PageSpeed noi sau teste pe un telefon fizic pentru această versiune.
+
+Pagini verificate: [glosar](https://robotgo.ro/guides/glosar-robotica/), [coboți](https://robotgo.ro/categories/coboti/), [HoReCa](https://robotgo.ro/solutions/horeca/), [ghid de cost](https://robotgo.ro/guides/cat-costa-un-robot/), [Unitree G1](https://robotgo.ro/product/unitree-g1/).
 
 ## Referințe
 
