@@ -6,10 +6,20 @@ import assert from 'node:assert/strict';
 
 export function verifySearchPages(root,dist,pages){
  const catalog=JSON.parse(fs.readFileSync(path.join(root,'public/catalog.json'),'utf8'));
- const expected=['/','/shop/','/contact/',...catalog.products.map(p=>'/product/'+p.id+'/'),'/categories/','/solutions/','/about/',...catalog.categories.map(c=>'/categories/'+c.id+'/'),...catalog.domains.map(d=>'/solutions/'+d.id+'/'),'/guides/roboti-entertainment/'];
+ const expected=['/','/shop/','/contact/',...catalog.products.map(p=>'/product/'+p.id+'/'),'/categories/','/solutions/','/about/',...catalog.categories.map(c=>'/categories/'+c.id+'/'),...catalog.domains.map(d=>'/solutions/'+d.id+'/'),'/guides/roboti-entertainment/','/brands/','/guides/primul-robot/'];
  const context={window:{ROBOTGO_CATALOG:catalog},URLSearchParams};
  for(const file of ['site-config.js','practical.js','seo.js','routing.js'])vm.runInNewContext(fs.readFileSync(path.join(root,'public',file),'utf8'),context);
  const seo=context.window.ROBOTGO_SEO,links=new Map(),titles=new Set(),descriptions=new Set();
+ for(const lang of ['ro','en']){
+  const brands=seo.renderLanding('/brands',lang);
+  for(const brand of catalog.brands){
+   assert.ok(brands.includes('href="/shop/?brand='+brand.id+'"'),'Brand filter retains the exact brand ID');
+  }
+  for(const product of catalog.products)assert.ok(brands.includes('href="/product/'+product.id+'/"'),'Brand directory exposes every product before interaction');
+  const guide=seo.renderLanding('/guides/primul-robot',lang);
+  assert.equal((guide.match(/<h1>/g)||[]).length,1);
+  for(const target of ['/shop/','/categories/','/solutions/','/contact/'])assert.ok(guide.includes('href="'+target+'"'),'Selection guide connects to useful canonical pages');
+ }
  for(const lang of ['ro','en']){
   const blurbs=catalog.products.map(p=>context.window.ROBOTGO_PRACTICAL.cardBrief(p,lang));
   assert.ok(blurbs.every(text=>text.length>30),'Every model has a useful activity description in '+lang);
@@ -113,7 +123,11 @@ export function verifySearchPages(root,dist,pages){
  assert.equal(route.read({pathname:'/',hash:'#/oferta'}).path,'/quote');
  assert.equal(route.url('/categories/umanoizi'),'/categories/umanoizi/');
  assert.equal(route.url('/solutii'),'/solutions/');
+ assert.equal(route.url('/brands'),'/brands/');
+ assert.equal(route.url('/learn'),'/guides/primul-robot/');
  let redirected;
+ context.window.location={pathname:'/',search:'',hash:'#/learn',replace:value=>{redirected=value;}};
+ assert.equal(route.redirectLegacy(),true);assert.equal(redirected,'/guides/primul-robot/');
  context.window.location={pathname:'/',search:'',hash:'#/product/'+catalog.products[0].id,replace:value=>{redirected=value;}};
  assert.equal(route.redirectLegacy(),true);assert.equal(redirected,'/product/'+catalog.products[0].id+'/');
  context.window.location.hash='#/quote';assert.equal(route.redirectLegacy(),false);

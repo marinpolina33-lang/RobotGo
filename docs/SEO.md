@@ -1,5 +1,17 @@
 # RobotGo — audit și implementare SEO
 
+## Descoperirea conținutului și consolidarea Home — 1 noiembrie 2026
+
+Auditul suplimentar a găsit paginile Branduri și Ghid pentru prima vizită accesibile numai prin fragmente, deci fără documente HTML distincte pentru Google. Sunt acum publicate la `/brands/` și `/guides/primul-robot/`, în același sistem de conținut RO/EN folosit înainte și după JavaScript. Catalogul de branduri are legături directe către toate cele 26 de modele și filtre corecte pentru cele 13 branduri; ghidul explică sarcina, spațiul, echiparea, software-ul și pregătirea ofertei. Linkurile din meniu, subsol și Home folosesc adresele normale. Adresa veche `/#/learn` deschide ghidul nou. Sitemap-ul conține 49 de pagini, fără o nouă trimitere în Search Console.
+
+HTTP și www ajungeau deja la HTTPS pe domeniul canonic. `/index.html` răspundea însă separat cu 200. Regula Cloudflare descrisă în `config/seo-redirects.json` consolidează numai acest alias Home prin 301 către `/`, pentru GET și HEAD, păstrând query string-ul. Nu schimbă DNS, categoriile, API-ul sau politicile de securitate. Documentele nested `index.html` și variantele fără slash declară în continuare propriile URL-uri canonice; nu sunt redirecționate artificial către Home.
+
+Imaginea principală din fișa unui produs păstrează `fetchpriority="high"` și după randarea aplicației. Miniaturile și imaginile din liste nu primesc această prioritate. Aceasta este o îmbunătățire a priorității de încărcare, nu un rezultat Core Web Vitals măsurat sau o promisiune de poziționare.
+
+Validarea suplimentară acoperă linkurile către toate produsele în directorul brandurilor, parametrii filtrelor, conținutul ghidului în RO/EN și compatibilitatea adresei vechi. Regula 301 și paginile noi se verifică pe domeniul public după publicare. Un rezultat organic Google către pagina principală rămâne un criteriu separat, încă neconfirmat.
+
+Referință: https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics
+
 ## Revizie de identitate a paginii principale — 1 noiembrie 2026
 
 Canonical-ul, indexarea permisă, conținutul HTML inițial și datele structurate erau deja prezente. Lipsa unui rezultat de brand observat anterior nu demonstrează o eroare de indexare. Această revizie întărește identificarea paginii principale fără a schimba URL-uri, categorii, DNS sau protecțiile conturilor:

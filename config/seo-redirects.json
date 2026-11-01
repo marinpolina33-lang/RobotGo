@@ -1,0 +1,19 @@
+{
+  "provider": "Cloudflare",
+  "hostname": "robotgo.ro",
+  "phase": "http_request_dynamic_redirect",
+  "rule": {
+    "ref": "robotgo_home_index_canonical",
+    "description": "Canonical homepage: /index.html to / (GET and HEAD only)",
+    "expression": "(http.host in {\"robotgo.ro\" \"www.robotgo.ro\"} and http.request.method in {\"GET\" \"HEAD\"} and http.request.uri.path eq \"/index.html\")",
+    "action": "redirect",
+    "action_parameters": {
+      "from_value": {
+        "status_code": 301,
+        "target_url": { "value": "https://robotgo.ro/" },
+        "preserve_query_string": true
+      }
+    },
+    "enabled": true
+  }
+}
