@@ -18,6 +18,7 @@ export function optimizePages(root,dist,pages){
  // Ship the comparison enhancement with its caller. A content-addressed filename
  // also prevents cached app.js responses from mixing different releases.
  const application=asset('application',fs.readFileSync(path.join(dist,'humanoid-buying-client.js'),'utf8')+'\n'+fs.readFileSync(path.join(dist,'app.js'),'utf8'),'js');
+ const discovery=asset('discovery',fs.readFileSync(path.join(dist,'discovery.js'),'utf8')+'\n'+fs.readFileSync(path.join(dist,'content-updates.js'),'utf8'),'js');
  const measurements=[];
  for(const p of pages){
   const key=p.route.replace(/\/$/,'')||'/',product=key.startsWith('/product/')?key.split('/')[2]:null;
@@ -29,6 +30,7 @@ export function optimizePages(root,dist,pages){
   const file=path.join(dist,p.route,'index.html');let html=fs.readFileSync(file,'utf8'),first=true;
   html=html.replace(/<link rel="stylesheet" href="[^"]+">/g,()=>{if(!first)return '';first=false;return `<link rel="stylesheet" href="${stylesheet}">`;});
   html=html.replace(/src="robot-topics-data.js(?:\?v=[^"]+)?"/,`src="${script}"`);
+  html=html.replace(/src="discovery.js(?:\?v=[^"]+)?"/,`src="${discovery}"`).replace(/<script defer src="content-updates.js(?:\?v=[^"]+)?"><\/script>/,'');
   fs.writeFileSync(file,html);
   const ctx={window:{},URLSearchParams};
   for(const [,src]of html.matchAll(/<script defer src="([^"]+)"><\/script>/g)){

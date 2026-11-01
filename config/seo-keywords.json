@@ -998,6 +998,24 @@
       "page_status": "published",
       "query_status": "editorial_targets_not_measured",
       "extension_status": "comparison_implemented"
+    },
+    {
+      "path": "/guides/glosar-robotica/",
+      "intent": "Explicații tehnice",
+      "terms": [
+        "glosar robotică",
+        "dicționar robotică",
+        "termeni robotică",
+        "ce înseamnă payload",
+        "ce înseamnă DOF",
+        "repetabilitate robot",
+        "ce este un gripper",
+        "diferența precizie repetabilitate"
+      ],
+      "priority": "P2",
+      "page_status": "published_on_deploy",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "content_implemented"
     }
   ],
   "version": "2026-11-01-release-4"

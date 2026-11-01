@@ -20,7 +20,7 @@ Ultima comandă pornește un server local la `http://127.0.0.1:4173` și nu publ
 
 - Pagina principală permite indexarea și declară adresa canonică `https://robotgo.ro/`.
 - `public/robots.txt` permite accesul și indică `https://robotgo.ro/sitemap.xml`.
-- Build-ul generează 47 de pagini HTML cu conținut vizibil fără JavaScript: pagina principală, catalog, contact, 26 de produse, două pagini de navigare, 7 categorii, 7 domenii, pagina despre firmă și ghidul de entertainment. Fiecare are titlu, descriere și adresă canonică proprie; toate sunt incluse în sitemap-ul generat în `dist/`.
+- Build-ul generează 72 de pagini HTML cu conținut vizibil fără JavaScript: pagina principală, catalog, contact, 26 de produse, două pagini de navigare, 7 categorii, 7 domenii, pagina despre firmă și ghidul de entertainment. Fiecare are titlu, descriere și adresă canonică proprie; paginile indexabile sunt incluse în sitemap-ul generat în `dist/`; formularul de ofertă folosește `noindex,follow`.
 - Catalogul și paginile de produs folosesc linkuri normale. Adresele vechi `#/...` pentru pagini publice sunt redirecționate în browser către documentul HTML canonic; instrumentele interactive (ofertă, comparație, coș) păstrează rutele cu fragment.
 - Datele structurate identifică site-ul, firma, paginile, colecțiile și traseele de navigare. Marcajul Product pentru rezultate îmbogățite este amânat până la existența unor oferte sau recenzii eligibile și verificabile. Nu se declară prețuri, stocuri sau recenzii neverificate.
 - `render.yaml` și `config/hosting.json` nu impun un antet global `X-Robots-Tag: noindex`.
@@ -39,7 +39,7 @@ Documentație: https://www.indexnow.org/documentation · https://www.indexnow.or
 
 Catalogul include 26 de produse, 29 de fotografii locale de produs, 3 fotografii și 4 clipuri de expoziție. Sursele și hash-urile imaginilor sunt în `docs/product-image-sources.json`. Build-ul validează fișierele și configurația pentru a preveni reintroducerea blocajului de indexare.
 
-Datele operatorului ROUTEX LOGISTICA S.R.L. și contactele sunt în `public/site-config.js`. Cererile de ofertă folosesc emailul sau WhatsApp-ul clientului. Backend-ul, autentificarea, plățile online și AI-ul conectat nu sunt active. Prețurile, disponibilitatea și condițiile comerciale se confirmă prin ofertă.
+Datele operatorului ROUTEX LOGISTICA S.R.L. și contactele sunt în `public/site-config.js`. Cererile de ofertă pot fi salvate prin API-ul existent sau pregătite în email/WhatsApp. Autentificarea și administrarea cererilor sunt active în Workerul existent. Plățile online și AI-ul conectat nu sunt active. Prețurile, disponibilitatea și condițiile comerciale se confirmă prin ofertă.
 
 ## Documentație
 

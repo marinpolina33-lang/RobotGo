@@ -95,7 +95,7 @@
  const productsFor=p=>p.kind==='category'?D.products.filter(x=>x.category===p.id):p.kind==='solution'?D.products.filter(x=>x.domains.includes(p.id)):p.path==='/shop'?D.products:[];
  function breadcrumbs(p){const out=[{name:'Acasă',path:'/'}];if(p.parent){const parent=pages[p.parent];if(parent.parent)out.push(p.productId?{name:'Catalog',path:'/shop'}:{name:pages[parent.parent].label,path:parent.parent});out.push({name:parent.label,path:parent.path});}if(p.path!=='/')out.push({name:p.label,path:p.path});return out;}
  function renderLanding(path,lang='ro'){
-  const p=pages[path];if(!p?.kind)return null;if(p.kind==='auditPage')return R.render(path,lang);
+  const p=pages[path];if(!p?.kind)return null;if(p.kind==='glossary')return window.ROBOTGO_DISCOVERY.glossary(lang);if(p.kind==='auditPage')return R.render(path,lang);
   const en=lang==='en',tr=(ro,enText)=>en?enText:ro,local=o=>o?.[en?'en':'ro']||o?.ro||'';
   if(p.kind==='humanoidComparison')return B.render(lang);
   if(p.kind==='guideIndex')return T.renderIndex(lang).replace('</header>','</header>'+B.hub(lang));
@@ -131,6 +131,9 @@
  add(B.path,B.title,B.description,'Comparație umanoizi',{kind:'humanoidComparison',parent:'/categories/umanoizi'});
  for(const [path,p]of Object.entries(R.pages))add(path,p.title,p.description,p.heading[0],{kind:'auditPage'});
  for(const m of window.ROBOTGO_EXHIBITION.items.filter(m=>m.kind==='video'))add('/media/'+m.id,m.title.ro+' — video de expoziție | RobotGo',m.description.ro,m.title.ro,{kind:'auditPage',parent:'/media',image:m.poster});
+ add(window.ROBOTGO_DISCOVERY.glossaryPath,window.ROBOTGO_DISCOVERY.meta.title,window.ROBOTGO_DISCOVERY.meta.description,window.ROBOTGO_DISCOVERY.meta.label,window.ROBOTGO_DISCOVERY.meta);
+ for(const [path,date]of Object.entries(window.ROBOTGO_CONTENT_UPDATES||{}))if(pages[path])pages[path].modified=date;
+ pages['/quote'].noindex=true;
  function schema(path){
   const p=pages[path];if(!p)return null;
   const url=origin+p.route,graph=[];
@@ -140,16 +143,18 @@
   const collection=['brands','categories','solutions','category','solution','guideIndex','humanoidComparison'].includes(p.kind)||path==='/shop';
   const page={'@type':collection?'CollectionPage':path==='/about'?'AboutPage':path==='/contact'?'ContactPage':'WebPage','@id':url+'#webpage',url,name:p.title,description:p.description,inLanguage:'ro-RO',isPartOf:{'@id':origin+'/#website'}};
   if(path==='/'){page.about={'@id':origin+'/#organization'};page.mainEntity={'@id':origin+'/#organization'};}
+  if(p.modified)page.dateModified=p.modified;
+  if(p.kind==='glossary')page.mainEntity={'@type':'DefinedTermSet','@id':url+'#terms',name:p.label,inLanguage:'ro-RO',hasDefinedTerm:window.ROBOTGO_DISCOVERY.terms.map(t=>({'@type':'DefinedTerm',name:t[1],description:t[3],url:url+'#'+t[0],inDefinedTermSet:url+'#terms'}))};
   if(p.image)page.primaryImageOfPage={'@type':'ImageObject',url:origin+'/'+p.image};
   if(path!=='/'){page.breadcrumb={'@id':url+'#breadcrumb'};graph.push({'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:breadcrumbs(p).map((x,i)=>({'@type':'ListItem',position:i+1,name:x.name,item:origin+route(x.path)}))});}
   const products=p.kind==='humanoidComparison'?B.products:productsFor(p);if(products.length)page.mainEntity={'@type':'ItemList',numberOfItems:products.length,itemListElement:products.map((x,i)=>({'@type':'ListItem',position:i+1,name:x.name,url:origin+'/product/'+x.id+'/'}))};
-  if(p.kind==='guideIndex'){const entries=Object.values(pages).filter(entry=>['guide','firstGuide','robotGuide','deepGuide','humanoidComparison'].includes(entry.kind));page.mainEntity={'@type':'ItemList',numberOfItems:entries.length,itemListElement:entries.map((entry,i)=>({'@type':'ListItem',position:i+1,name:entry.label,url:origin+entry.route}))};}
+  if(p.kind==='guideIndex'){const entries=Object.values(pages).filter(entry=>['guide','firstGuide','robotGuide','deepGuide','humanoidComparison','glossary'].includes(entry.kind));page.mainEntity={'@type':'ItemList',numberOfItems:entries.length,itemListElement:entries.map((entry,i)=>({'@type':'ListItem',position:i+1,name:entry.label,url:origin+entry.route}))};}
   if(['guide','robotGuide','deepGuide'].includes(p.kind)){
-   const article={'@type':'Article','@id':url+'#article',headline:p.title,description:p.description,inLanguage:'ro-RO',datePublished:p.date||'2026-10-31',dateModified:p.date||'2026-10-31',author:{'@type':'Organization',name:'RobotGo',url:origin+'/'},publisher:organization,mainEntityOfPage:{'@id':page['@id']},image:origin+'/'+p.image};
+   const article={'@type':'Article','@id':url+'#article',headline:p.title,description:p.description,inLanguage:'ro-RO',datePublished:p.date||'2026-10-31',dateModified:p.modified||p.date||'2026-10-31',author:{'@type':'Organization',name:'RobotGo',url:origin+'/'},publisher:organization,mainEntityOfPage:{'@id':page['@id']},image:origin+'/'+p.image};
    page.mainEntity={'@id':article['@id']};graph.push(article);
   }
   // Keep product pages as WebPage until verified Offer or Review data supports Google's Product requirements.
   graph.push(page);return {'@context':'https://schema.org','@graph':graph};
  }
- window.ROBOTGO_SEO={pages,renderLanding,renderIntro,renderDirectory,schema,breadcrumbs,origin,route};
+ window.ROBOTGO_SEO={pages,renderLanding:(path,lang='ro')=>window.ROBOTGO_DISCOVERY.decorate(renderLanding(path,lang),path,lang),renderIntro:(lang='ro')=>renderIntro(lang)+window.ROBOTGO_DISCOVERY.glossaryCard(lang),renderDirectory:(lang='ro')=>renderDirectory(lang)+window.ROBOTGO_DISCOVERY.glossaryCard(lang),schema,breadcrumbs,origin,route};
 })();

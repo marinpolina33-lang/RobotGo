@@ -356,6 +356,11 @@
       "path": "/media/umanoizi-expusi/",
       "editorialBytes": 17038,
       "stylesheetRequests": 1
+    },
+    {
+      "path": "/guides/glosar-robotica/",
+      "editorialBytes": 17038,
+      "stylesheetRequests": 1
     }
   ]
 }

@@ -21,7 +21,7 @@
  function productFaq(p,lang='ro'){
   const q=productQuestions[p.id];if(!q)return '';
   const en=lang==='en';
-  return `<section class="seo-prose product-buying-questions" data-product-questions="${esc(p.id)}"><h2>${en?'Questions about ':'Întrebări despre '}${esc(p.name)}</h2>${faq(q.faq,lang)}<p class="practical-source">${en?'Technical references':'Referințe tehnice'}: ${q.sources.map(([label,source])=>link(source,label)).join(' · ')}</p><nav class="seo-context" aria-label="${en?'Prepare your quotation':'Pregătește oferta'}"><a href="/#/quote?product=${encodeURIComponent(p.id)}" class="btn light">${en?'Request a quote for ':'Solicită ofertă pentru '}${esc(p.name)}</a>${link('/guides/cat-costa-un-robot',en?'What a robot quotation includes':'Ce include oferta pentru un robot')}${link('/contact',en?'Discuss the required configuration':'Discută configurația necesară')}</nav></section>`;
+  return `<section class="seo-prose product-buying-questions" data-product-questions="${esc(p.id)}"><h2>${en?'Questions about ':'Întrebări despre '}${esc(p.name)}</h2>${faq(q.faq,lang)}<p class="practical-source">${en?'Technical references':'Referințe tehnice'}: ${q.sources.map(([label,source])=>link(source,label)).join(' · ')}</p><nav class="seo-context" aria-label="${en?'Prepare your quotation':'Pregătește oferta'}"><a href="/quote/?product=${encodeURIComponent(p.id)}" class="btn light">${en?'Request a quote for ':'Solicită ofertă pentru '}${esc(p.name)}</a>${link('/guides/cat-costa-un-robot',en?'What a robot quotation includes':'Ce include oferta pentru un robot')}${link('/contact',en?'Discuss the required configuration':'Discută configurația necesară')}</nav></section>`;
  }
  function modelComparison(g,lang){
   if(!g.comparison)return '';

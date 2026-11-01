@@ -6,9 +6,9 @@ import assert from 'node:assert/strict';
 
 export function verifySearchPages(root,dist,pages){
  const catalog=JSON.parse(fs.readFileSync(path.join(root,'public/catalog.json'),'utf8'));
- const expected=['/','/shop/','/contact/',...catalog.products.map(p=>'/product/'+p.id+'/'),'/categories/','/solutions/','/about/',...catalog.categories.map(c=>'/categories/'+c.id+'/'),...catalog.domains.map(d=>'/solutions/'+d.id+'/'),'/guides/roboti-entertainment/','/brands/','/guides/primul-robot/','/robot/','/guides/cat-costa-un-robot/','/guides/','/guides/amr-vs-agv/','/guides/cobot-vs-robot-industrial/','/guides/umanoid-vs-caine-robot/','/guides/robot-programabil-sdk-ros/','/guides/robot-autonom-inteligenta-artificiala/','/guides/mentenanta-robotilor/','/guides/bellabot-vs-keenon-t10/','/guides/pudu-cc1-vs-keenon-c40/','/guides/dobot-nova2-vs-magician-e6/','/guides/unitree-g1-vs-h1/','/compare/roboti-umanoizi/','/service/','/media/','/quote/','/privacy/',...JSON.parse(fs.readFileSync(path.join(root,'public/exhibition.json'),'utf8')).items.filter(x=>x.kind==='video').map(x=>'/media/'+x.id+'/')];
+ const expected=['/','/shop/','/contact/',...catalog.products.map(p=>'/product/'+p.id+'/'),'/categories/','/solutions/','/about/',...catalog.categories.map(c=>'/categories/'+c.id+'/'),...catalog.domains.map(d=>'/solutions/'+d.id+'/'),'/guides/roboti-entertainment/','/brands/','/guides/primul-robot/','/robot/','/guides/cat-costa-un-robot/','/guides/','/guides/amr-vs-agv/','/guides/cobot-vs-robot-industrial/','/guides/umanoid-vs-caine-robot/','/guides/robot-programabil-sdk-ros/','/guides/robot-autonom-inteligenta-artificiala/','/guides/mentenanta-robotilor/','/guides/bellabot-vs-keenon-t10/','/guides/pudu-cc1-vs-keenon-c40/','/guides/dobot-nova2-vs-magician-e6/','/guides/unitree-g1-vs-h1/','/compare/roboti-umanoizi/','/service/','/media/','/quote/','/privacy/',...JSON.parse(fs.readFileSync(path.join(root,'public/exhibition.json'),'utf8')).items.filter(x=>x.kind==='video').map(x=>'/media/'+x.id+'/'),'/guides/glosar-robotica/'];
  const context={window:{ROBOTGO_CATALOG:catalog},URLSearchParams};
- for(const file of ['site-config.js','practical.js','robot-guides.js','robot-topics-data.js','robot-topics.js','exhibition-data.js','seo-improvements.js','humanoid-buying.js','seo.js','routing.js'])vm.runInNewContext(fs.readFileSync(path.join(root,'public',file),'utf8'),context);
+ for(const file of ['site-config.js','practical.js','robot-guides.js','robot-topics-data.js','robot-topics.js','exhibition-data.js','seo-improvements.js','humanoid-buying.js','discovery.js','content-updates.js','seo.js','routing.js'])vm.runInNewContext(fs.readFileSync(path.join(root,'public',file),'utf8'),context);
  const seo=context.window.ROBOTGO_SEO,links=new Map(),titles=new Set(),descriptions=new Set();
  for(const lang of ['ro','en']){
   const brands=seo.renderLanding('/brands',lang);
@@ -96,7 +96,7 @@ export function verifySearchPages(root,dist,pages){
    assert.ok(context.window.ROBOTGO_PRACTICAL.product(product,lang).includes(body),'Product uses the shared buying answers in '+lang);
    if(lang==='ro')assert.ok(html.includes(body),'Buying answers are readable before JavaScript');
    assert.ok(body.includes('href="/contact/"'),'Buying answers lead to quotation contact');
-   assert.ok(body.includes('href="/#/quote?product='+id+'"'),'Buying answers retain the selected model in the quote');
+   assert.ok(body.includes('href="/quote/?product='+id+'"'),'Buying answers retain the selected model in the quote');
    for(const row of q.faq){
     assert.equal(row.length,4,'Question and answer exist in both languages');
     assert.ok(row.every(text=>typeof text==='string'&&text.trim().length>20),'Buying content is complete in both languages');
@@ -114,7 +114,7 @@ export function verifySearchPages(root,dist,pages){
   for(const [,target]of reading.matchAll(/href="([^"]+)"/g))assert.ok(seo.pages[target.replace(/\/$/,'')],'Product reading has no broken internal target');
  }
  const guideCollection=seo.schema('/guides')['@graph'].find(x=>x['@type']==='CollectionPage');
- assert.equal(guideCollection.mainEntity.numberOfItems,15,'Guide directory includes the humanoid comparison');
+ assert.equal(guideCollection.mainEntity.numberOfItems,16,'Guide directory includes the comparison and glossary');
  const buying=context.window.ROBOTGO_BUYING;
  assert.equal(buying.products.length,8,'Comparison covers every current humanoid');
  assert.equal(buying.select('unitree').length,2,'Brand filter keeps G1 and H1');
@@ -143,7 +143,7 @@ export function verifySearchPages(root,dist,pages){
  assert.ok(seo.renderIntro().includes('href="/guides/"'),'Guide hub is reachable from Home');
  assert.ok(seo.renderDirectory().includes('href="/guides/"'),'Guide hub is reachable from the catalogue');
  const sitemap=fs.readFileSync(path.join(dist,'sitemap.xml'),'utf8');
- assert.deepEqual([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]),expected.map(p=>'https://robotgo.ro'+p));
+ assert.deepEqual([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]),expected.filter(p=>!seo.pages[p.replace(/\/$/,'')||'/'].noindex).map(p=>'https://robotgo.ro'+p));
  for(const page of pages){
   const html=fs.readFileSync(path.join(dist,page.route,'index.html'),'utf8');
   const main=html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)?.[1];
@@ -161,7 +161,7 @@ export function verifySearchPages(root,dist,pages){
   links.set(page.route,[]);
   assert.ok(html.includes('<base href="/">'),'Nested assets use the site root');
   assert.ok(html.includes('rel="canonical" href="https://robotgo.ro'+page.route+'"'));
-  assert.ok(!/noindex|nofollow/i.test(html));
+  assert.ok(html.includes('name="robots" content="'+(entry.noindex?'noindex,follow':'index,follow,max-image-preview:large')+'"'),'Intentional per-page indexing policy');
   assert.ok(html.indexOf('src="catalog.js')<html.indexOf('src="routing.js')&&html.indexOf('src="routing.js')<html.indexOf('src="app.js'));
   for(const [,attrs,body]of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)){
    if(/\bsrc=/.test(attrs))continue;
