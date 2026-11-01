@@ -61,3 +61,48 @@ Fișierele cu date private Search Console din audit nu se publică în repositor
 - Unitree G1 a trecut retestarea live fără problema Product, cu BreadcrumbList valid; solicitarea de indexare a fost acceptată. Google afișa încă pagina ca descoperită, neindexată în raportul istoric.
 - Testul formularului a identificat CLS 0,375 (subsolul era vizibil înainte de încărcarea formularului). S-a rezervat spațiu de la primul HTML pentru zona cererii; titlurile formularelor și galeriei folosesc niveluri consecutive. Se verifică printr-o nouă măsurare după publicare.
 - Playerul de pe pagina video a redat materialul cu readyState 4, fără eroare și durată 13,568 s; testul nu validează drepturile sau identitatea modelului.
+
+## Predare și verificare finală
+
+Versiune publicată: `e2a152e91b0ea7bb0abb825e2a035b3098b0991b`, Render live la **1 noiembrie 2026, 19:36:07 Europe/Bucharest**. Backendul cererilor este activ în Workerul existent.
+
+| Pagină / măsurare mobil | Performanță | Accesibilitate | Bune practici | SEO | LCP | TBT | CLS |
+| --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Home, 19:29 | 96 | 100 | 100 | 100 | 2,3 s | 10 ms | 0 |
+| Categorie coboți, 19:30 | 100 | 100 | 100 | 100 | 1,8 s | 0 ms | 0 |
+| Formular ofertă, 19:37, după corecție | 100 | 100 | 100 | 100 | 1,2 s | 0 ms | 0 |
+
+Teste de laborator PageSpeed, nu poziții Google și nu Core Web Vitals reale; CrUX afișa „Fără date”. Scorurile variază între rulări.
+
+- Home: https://pagespeed.web.dev/analysis/https-robotgo-ro/4iavgw5jy9?form_factor=mobile
+- Coboți: https://pagespeed.web.dev/analysis/https-robotgo-ro-categories-coboti/l8wnx31to9?form_factor=mobile
+- Formular: https://pagespeed.web.dev/analysis/https-robotgo-ro-quote/jx94wrwin5?form_factor=mobile
+- Canonical randat verificat public pentru `/shop/?domain=educatie&category=coboti`: `https://robotgo.ro/shop/`. Canonicalul ales ulterior de Google nu este presupus.
+- Administratorul citește cererile în contul existent (`/#/account`); nu primește email automat. Permisiunile serverului au fost testate prin integrare; interfața administrativă nu a fost testată autentificat în producție.
+- Verificare programată: **8 noiembrie 2026, dimineața**, recitire sitemap și indexare. Reevaluare programată: **4 ianuarie 2027, dimineața**, două perioade disponibile de 28 zile, România, aceleași filtre și separare pe dispozitive.
+
+### Starea celor 19 acțiuni din raport
+
+| Nr. | Măsură | Stare / limită |
+| --- | --- | --- |
+| 1 | Test live și indexare `/robot/` | Test trecut; cerere acceptată. Indexarea efectivă este decizia Google. |
+| 2 | Test live și accesare Unitree G1 | Test trecut după corecția schema; cerere acceptată. |
+| 3 | Sitemap și recitire | 70 URL-uri publicate; retrimitere acceptată; Last read încă 30 octombrie, de reverificat. |
+| 4 | Măsurarea cererilor | Primire reală în D1, etape administrative și agregate separate de clicuri, cu acord pentru analiza opțională. |
+| 5 | URL-uri cu parametri | Canonical, rutare și linkuri verificate; alegerea canonicalului de către Google rămâne de urmărit. |
+| 6 | Experiență mobilă | Patru tipuri de pagină verificate vizual; rezultate de laborator consemnate mai sus. |
+| 7 | Restaurant și hotel | Conținut extins și brief pentru ofertă; cazurile de client reale necesită dovezi. |
+| 8 | Curățenie profesională | Conținut extins despre spațiu, pardoseală, stație, consumabile și rolul operatorului. |
+| 9 | Logistică și manipulare | Conținut extins, flux punct-la-punct versus raft-la-persoană, cerințe WMS/ERP. |
+| 10 | Informații comerciale | Clarificări pe toate cele 26 de produse; termenele, configurația și acoperirea se confirmă în oferta reală. |
+| 11 | Validarea cuvintelor cheie | 582 expresii mapate; CSV pregătit. Fără cont Google Ads disponibil, volumele Keyword Planner și validarea statistică pe clustere rămân neefectuate. |
+| 12 | Proiecte și demonstrații proprii | Galeria de expoziție este publicată și descrisă corect; studii de caz la clienți rămân dependente de documente și rezultate reale. |
+| 13 | `/service/` indexabil | Pagină HTML și formular real publicate; disponibilitatea intervenției se confirmă individual. |
+| 14 | Product / date comerciale | Evaluat în Google; marcaj incomplet retras. Reintroducere doar cu ofertă/recenzii reale eligibile. |
+| 15 | Video și imagini | Galerie, pagini video, player verificat. Modelul exact, data și drepturile neconfirmate rămân de documentat. |
+| 16 | Autoritate și prezență locală | Necesită eligibilitate Business Profile și relații reale. Fără înscrieri, mesaje sau promisiuni de acreditare inventate. |
+| 17 | Reevaluare după istoric | Programată pentru 4 ianuarie 2027; rezultate viitoare nepresupuse. |
+| 18 | URL-uri engleze distincte | Condiționat de o piață țintă confirmată; interfața bilingvă existentă se păstrează. |
+| 19 | Închiriere / SEAP / leasing | Condiționat de servicii și procese reale; nu este publicat ca ofertă disponibilă. |
+
+**Limită de măsurare pentru produs:** PageSpeed pentru Unitree G1 nu a furnizat un rezultat de laborator la momentul predării, inclusiv după o nouă analiză. Nu se atribuie un scor din rezultatele altor pagini. Pagina a fost verificată vizual pe mobil, metadatele au fost citite live, iar testul live Search Console a trecut. Rulare fără scor disponibil: https://pagespeed.web.dev/analysis/https-robotgo-ro-product-unitree-g1/86l4yayqmd?form_factor=mobile
