@@ -14,3 +14,8 @@ body.on-request{padding-bottom:20px}
 /* Contrast fixes verified against the production Lighthouse findings. */
 .discovery-cats .pill{background:#142a33;color:#dbedf2;border-color:#3c5962}
 .learning-index{color:#b9d1db}
+
+/* Reserve the request area before hydration so the footer never jumps from the first viewport. */
+body.on-request #main{min-height:calc(100vh - 80px)}
+.request-layout .panel>h2{font-size:23px;line-height:1.22;margin-bottom:15px}
+.request-layout .summary-card>h2{font-size:23px;line-height:1.22;margin-bottom:17px}

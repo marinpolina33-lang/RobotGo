@@ -59,6 +59,7 @@ export function generateSearchPages(root,dist,template){
    .replace('<main id="main" tabindex="-1"></main>',`<main id="main" tabindex="-1">${page.body}</main>`)
    .replace(/<noscript>[\s\S]*?<\/noscript>/,'<noscript><p class="wrap">Activează JavaScript pentru filtre, comparație și galeria interactivă.</p></noscript>')
    .replace('<div id="footer"></div>',`<div id="footer">${footer}</div>`);
+  if(['/quote','/service'].includes(pagePath))html=html.replace('<body>','<body class="on-request">');
   const imagePath=meta.image||visuals.hero;
   const imageAlt=product?product.name:meta.image?meta.label:'RobotGo — ilustrație de concept';
   html=html.replace('name="twitter:card" content="summary"','name="twitter:card" content="summary_large_image"')

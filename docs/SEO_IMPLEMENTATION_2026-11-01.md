@@ -55,3 +55,9 @@ Fișierele cu date private Search Console din audit nu se publică în repositor
 - Contul Google selectat nu are un cont Google Ads; volumele Keyword Planner nu au fost validate. Fișierul CSV de import este pregătit, fără inventarea volumelor.
 
 - Testul live Google pentru Unitree G1 a confirmat indexabilitatea, dar a marcat `Product` fără `Offer`/`Review` ca neeligibil pentru product snippets. Marcajul Product incomplet a fost retras; rămân WebPage și BreadcrumbList. Datele comerciale din conținut rămân vizibile. Reintroducerea Product este condiționată de date comerciale reale care îndeplinesc cerințele Google.
+
+- Corecțiile suplimentare au fost publicate la 17:28 UTC. PageSpeed mobil ulterior: home 96/100/100/100 (performanță/accesibilitate/bune practici/SEO), LCP 2,3 s, TBT 10 ms, CLS 0; categorie coboți 100/100/100/100, LCP 1,8 s, CLS 0.
+- Sitemap retrimis cu succes la 1 noiembrie. Search Console afișa încă ultima citire din 30 octombrie și 46 URL-uri descoperite; acestea sunt datele precedente, nu numărul de 70 URL-uri al sitemapului publicat.
+- Unitree G1 a trecut retestarea live fără problema Product, cu BreadcrumbList valid; solicitarea de indexare a fost acceptată. Google afișa încă pagina ca descoperită, neindexată în raportul istoric.
+- Testul formularului a identificat CLS 0,375 (subsolul era vizibil înainte de încărcarea formularului). S-a rezervat spațiu de la primul HTML pentru zona cererii; titlurile formularelor și galeriei folosesc niveluri consecutive. Se verifică printr-o nouă măsurare după publicare.
+- Playerul de pe pagina video a redat materialul cu readyState 4, fără eroare și durată 13,568 s; testul nu validează drepturile sau identitatea modelului.
