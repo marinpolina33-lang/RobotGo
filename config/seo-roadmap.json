@@ -1,0 +1,622 @@
+{
+  "date": "2026-11-01",
+  "scope": "Expanded editorial SEO plan; planned work is not represented as deployed content.",
+  "baseline": {
+    "public_pages": 60,
+    "catalogue_products": 26,
+    "categories": 7,
+    "applications": 7,
+    "guide_pages": 12,
+    "products_with_specific_questions": 6,
+    "published_model_questions": 18,
+    "previous_keyword_groups": 51,
+    "previous_unique_terms": 267
+  },
+  "target_map": {
+    "page_groups": 60,
+    "unique_queries": 353,
+    "new_queries": 86,
+    "primary_query_file": "docs/SEO_QUERY_MAP.csv"
+  },
+  "measurement": {
+    "gsc_export_used": false,
+    "search_volume": null,
+    "keyword_difficulty": null,
+    "current_rankings": null,
+    "priority_basis": "Editorial relevance, commercial intent and readiness of evidence; revise using observed Search Console data.",
+    "comparison": "Last 28 complete days versus preceding 28 complete days when both intervals contain useful data; otherwise extend the observation window."
+  },
+  "phases": [
+    {
+      "id": "A",
+      "name": "Ofertare și diagnostic",
+      "tasks": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ]
+    },
+    {
+      "id": "B",
+      "name": "Acoperire de catalog și demonstrații",
+      "tasks": [
+        "P06",
+        "P07",
+        "P08",
+        "P09",
+        "P10"
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Măsurare și dovezi comerciale",
+      "tasks": [
+        "P11",
+        "P12",
+        "P13"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "P01",
+      "priority": "P1",
+      "status": "planned",
+      "title": "Stabilește datele de referință Google",
+      "type": "measurement",
+      "existing_target_paths": [
+        "/",
+        "/shop/"
+      ],
+      "deliverable": "Export Search Console pentru pagini și interogări, țară România și dispozitive.",
+      "acceptance": "Raport cu perioada exactă, impresii, clicuri, CTR și poziție; lipsa datelor se notează ca necunoscut.",
+      "evidence_needed": "Date reale din proprietatea robotgo.ro; accesul/exportul nu a fost folosit în această extindere."
+    },
+    {
+      "id": "P02",
+      "priority": "P1",
+      "status": "planned",
+      "title": "Extinde cele șase modele comerciale prioritare",
+      "type": "product_content",
+      "existing_target_paths": [
+        "/product/keenon-w3/",
+        "/product/pudu-t300/",
+        "/product/geekplus-p-series/",
+        "/product/dobot-nova2/",
+        "/product/rokae-cr/",
+        "/product/siasun-gcr5/"
+      ],
+      "deliverable": "Două întrebări utile pe model, configurație, integrare și informațiile necesare ofertei.",
+      "acceptance": "12 răspunsuri distincte, RO/EN, surse tehnice, HTML inițial și legătură spre solicitarea ofertei.",
+      "evidence_needed": "Fișa oficială a versiunii, accesoriile și responsabilitățile confirmate; fără preț sau termen inventat."
+    },
+    {
+      "id": "P03",
+      "priority": "P1",
+      "status": "planned",
+      "title": "Clarifică livrarea în hoteluri",
+      "type": "application_content",
+      "existing_target_paths": [
+        "/solutions/horeca/",
+        "/product/keenon-w3/"
+      ],
+      "deliverable": "Secțiune despre traseu, încărcare, acces la compartimente, lift și uși.",
+      "acceptance": "Vizitatorul poate pregăti un brief pentru clădire; trimitere către W3 și condițiile configurației.",
+      "evidence_needed": "Documentație W3 și informații de integrare pentru clădire; nu se presupune compatibilitate universală."
+    },
+    {
+      "id": "P04",
+      "priority": "P1",
+      "status": "planned",
+      "title": "Diferențiază transportul de materiale de marfa-la-persoană",
+      "type": "application_content",
+      "existing_target_paths": [
+        "/solutions/logistica/",
+        "/product/pudu-t300/",
+        "/product/geekplus-p-series/"
+      ],
+      "deliverable": "Explică punctele de transfer, încărcătura, rafturile și sistemele de gestiune.",
+      "acceptance": "Două fluxuri desenate și explicate cu cerințe de intrare și criterii de probă.",
+      "evidence_needed": "Versiunea T300, sistemul Geek+ și interfețele confirmate; imaginile nu validează capacitatea unei instalații."
+    },
+    {
+      "id": "P05",
+      "priority": "P1",
+      "status": "planned",
+      "title": "Pregătește alegerea brațului robotic",
+      "type": "application_content",
+      "existing_target_paths": [
+        "/categories/coboti/",
+        "/solutions/industrie/"
+      ],
+      "deliverable": "Exemplu de dimensionare: piesă, sculă, rază, poziții, ritm și acceptarea aplicației.",
+      "acceptance": "O listă de date pentru ofertă și legături către Nova 2, CR și GCR5-910, fără a echivala brațul cu celula completă.",
+      "evidence_needed": "Parametri de versiune și documentație tehnică. Evaluarea aplicației se face separat de textul editorial."
+    },
+    {
+      "id": "P06",
+      "priority": "P2",
+      "status": "planned",
+      "title": "Completează cele 14 modele de cercetare și integrare",
+      "type": "product_content",
+      "existing_target_paths": [
+        "/product/dobot-magician-e6/",
+        "/product/agilex-scout-mini/",
+        "/product/deep-x30/",
+        "/product/deep-lynx-m20/",
+        "/product/inspire-rh56bfx/",
+        "/product/brainco-revo2/",
+        "/product/rokae-ar/",
+        "/product/rokae-helios/",
+        "/product/rokae-human-x/",
+        "/product/leju-kuavo-4pro/",
+        "/product/leju-kuavo-5/",
+        "/product/leju-roban-2/",
+        "/product/ubtech-walker-s2/",
+        "/product/unitree-h1/"
+      ],
+      "deliverable": "Aplică briefurile de model din acest plan.",
+      "acceptance": "28 de răspunsuri distincte, cu versiune și surse; toate cele 26 de fișe au întrebări specifice.",
+      "evidence_needed": "Documentația modelului; delimitarea componentelor de roboți compleți și a demonstrațiilor de funcții livrate."
+    },
+    {
+      "id": "P07",
+      "priority": "P2",
+      "status": "planned",
+      "title": "Consolidează alegerea pentru laborator",
+      "type": "application_content",
+      "existing_target_paths": [
+        "/solutions/educatie/",
+        "/guides/robot-programabil-sdk-ros/"
+      ],
+      "deliverable": "Leagă obiectivele didactice de mobilitate, percepție, manipulare și acces software.",
+      "acceptance": "Scenarii distincte pentru E6, ROBAN 2, G1 EDU și SCOUT MINI; exemplele software sunt confirmate pe versiune.",
+      "evidence_needed": "Licențe, SDK, versiuni ROS și accesorii confirmate; fără compatibilități presupuse."
+    },
+    {
+      "id": "P08",
+      "priority": "P2",
+      "status": "planned",
+      "title": "Clarifică inspecția și integrarea mâinilor robotice",
+      "type": "application_content",
+      "existing_target_paths": [
+        "/solutions/inspectie/",
+        "/categories/accesorii/"
+      ],
+      "deliverable": "Explică traseul, datele colectate, senzori și raportare; separat, montaj și control pentru componente.",
+      "acceptance": "Întrebări de calificare pentru X30/M20 și RH56BFX/Revo 2; linkuri către fișele potrivite.",
+      "evidence_needed": "Senzori și interfețe de versiune; domeniul rămâne inspecție civilă și cercetare robotică."
+    },
+    {
+      "id": "P09",
+      "priority": "P2",
+      "status": "planned",
+      "title": "Pregătește o adresă indexabilă pentru servicii",
+      "type": "technical_content",
+      "existing_target_paths": [
+        "/guides/mentenanta-robotilor/"
+      ],
+      "deliverable": "Transformă accesul actual /#/service într-o pagină publică /service/ cu descrierea evaluării și formularul păstrat.",
+      "acceptance": "Pagină HTML distinctă, canonical, sitemap, linkuri și navigare veche compatibilă; serviciile sunt descrise în limitele confirmate.",
+      "evidence_needed": "Confirmarea acoperirii comerciale; fără acreditări, SLA, garanții sau intervale universale inventate."
+    },
+    {
+      "id": "P10",
+      "priority": "P2",
+      "status": "planned",
+      "title": "Pregătește SEO pentru demonstrațiile video reale",
+      "type": "video",
+      "existing_target_paths": [
+        "/guides/roboti-entertainment/"
+      ],
+      "deliverable": "Inventariază filmele, modelul exact, sursa, drepturile de utilizare și data; selectează demonstrațiile cu utilitate clară.",
+      "acceptance": "Pentru fiecare film aprobat: pagină de vizionare cu video principal, titlu specific, descriere, poster stabil și metadate concordante.",
+      "evidence_needed": "Identificare și utilizare confirmate. Data publicării și VideoObject se stabilesc numai pentru filmul efectiv publicat."
+    },
+    {
+      "id": "P11",
+      "priority": "P2",
+      "status": "planned",
+      "title": "Măsoară solicitările utile, distinct de clicuri",
+      "type": "measurement",
+      "existing_target_paths": [
+        "/contact/",
+        "/shop/"
+      ],
+      "deliverable": "Definește separat accesul la WhatsApp, deschiderea formularului, cererea transmisă și calificarea comercială.",
+      "acceptance": "Raport care nu confundă apăsarea butonului cu o cerere primită; identificare minimă prin model și canal.",
+      "evidence_needed": "Capabilitățile formularului și ale instrumentului de analiză; datele personale nu se trimit în URL-uri sau evenimente de analiză."
+    },
+    {
+      "id": "P12",
+      "priority": "P3",
+      "status": "planned",
+      "title": "Publică dovezi din proiecte realizate",
+      "type": "evidence",
+      "existing_target_paths": [
+        "/about/",
+        "/solutions/"
+      ],
+      "deliverable": "Documentează numai proiecte și relații comerciale reale, cu acord pentru materialele publicate.",
+      "acceptance": "Studiu de caz cu sarcină, model, condiții și rezultat documentat; mențiuni de la parteneri reali dacă există.",
+      "evidence_needed": "Proiect finalizat, date verificabile și permisiunea de folosire a materialelor; nu se inițiază contacte sau postări prin acest plan."
+    },
+    {
+      "id": "P13",
+      "priority": "P1",
+      "status": "planned",
+      "title": "Ajustează paginile după interogările observate",
+      "type": "measurement",
+      "existing_target_paths": [
+        "/guides/",
+        "/shop/"
+      ],
+      "deliverable": "Folosește mapa de pagină principală pentru a verifica ce URL apare pentru fiecare intenție.",
+      "acceptance": "Modificările de titlu/conținut au motiv și perioadă de comparație; mai multe URL-uri pentru aceeași interogare sunt analizate, nu declarate automat problemă.",
+      "evidence_needed": "Date Search Console suficiente; prioritățile actuale sunt editoriale și comerciale, fără volume estimate."
+    }
+  ],
+  "product_briefs": [
+    {
+      "product_id": "keenon-w3",
+      "path": "/product/keenon-w3/",
+      "priority": "P1",
+      "status": "planned",
+      "topic": "Livrare în hoteluri",
+      "questions": [
+        "Ce informații despre lift și uși sunt necesare înainte de oferta W3?",
+        "Cum organizezi încărcarea, preluarea și accesul la compartimente?"
+      ],
+      "additional_queries": [
+        "BUTLERBOT W3 integrare lift",
+        "robot livrare articole camere hotel",
+        "KEENON W3 compartimente"
+      ]
+    },
+    {
+      "product_id": "pudu-t300",
+      "path": "/product/pudu-t300/",
+      "priority": "P1",
+      "status": "planned",
+      "topic": "Transport intern",
+      "questions": [
+        "Cum alegi între T300 Standard și o variantă cu ridicare?",
+        "Cum verifici încărcătura, punctele de transfer și traseul?"
+      ],
+      "additional_queries": [
+        "PUDU T300 Standard vs Lifting",
+        "robot transport materiale 300 kg",
+        "T300 puncte transfer materiale"
+      ]
+    },
+    {
+      "product_id": "geekplus-p-series",
+      "path": "/product/geekplus-p-series/",
+      "priority": "P1",
+      "status": "planned",
+      "topic": "Depozit marfa-la-persoană",
+      "questions": [
+        "Ce trebuie să includă proiectul pe lângă robotul din P Series?",
+        "Cum se definesc interfețele dintre WMS, rafturi și posturile de lucru?"
+      ],
+      "additional_queries": [
+        "Geekplus P Series rafturi",
+        "robot marfa la persoană depozit",
+        "Geekplus integrare WMS"
+      ]
+    },
+    {
+      "product_id": "dobot-nova2",
+      "path": "/product/dobot-nova2/",
+      "priority": "P1",
+      "status": "planned",
+      "topic": "Manipulare compactă",
+      "questions": [
+        "Cum calculezi încărcătura cu tot cu dispozitivul de prindere?",
+        "Ce suport, sculă și programare se verifică în oferta Nova 2?"
+      ],
+      "additional_queries": [
+        "DOBOT Nova 2 gripper",
+        "cobot compact obiecte ușoare",
+        "DOBOT Nova 2 integrare"
+      ]
+    },
+    {
+      "product_id": "rokae-cr",
+      "path": "/product/rokae-cr/",
+      "priority": "P1",
+      "status": "planned",
+      "topic": "Coboți pentru producție",
+      "questions": [
+        "Cum alegi modelul CR după piesă și pozițiile de lucru?",
+        "Ce operații trebuie demonstrate înainte de acceptarea aplicației?"
+      ],
+      "additional_queries": [
+        "ROKAE CR sarcină utilă",
+        "ROKAE CR rază de lucru",
+        "cobot ROKAE transfer piese"
+      ]
+    },
+    {
+      "product_id": "siasun-gcr5",
+      "path": "/product/siasun-gcr5/",
+      "priority": "P1",
+      "status": "planned",
+      "topic": "Celulă de manipulare",
+      "questions": [
+        "Cum verifici dacă piesa și scula se încadrează în sarcina aplicației?",
+        "Ce date despre post sunt necesare pentru o ofertă GCR5-910?"
+      ],
+      "additional_queries": [
+        "DUCO GCR5-910 aplicații",
+        "cobot 5 kg manipulare piese",
+        "SIASUN GCR5 integrare"
+      ]
+    },
+    {
+      "product_id": "dobot-magician-e6",
+      "path": "/product/dobot-magician-e6/",
+      "priority": "P2",
+      "status": "planned",
+      "topic": "Laborator și instruire",
+      "questions": [
+        "Ce exerciții de cinematică și manipulare intră în proiectul didactic?",
+        "Ce accesorii și acces software sunt necesare laboratorului?"
+      ],
+      "additional_queries": [
+        "DOBOT Magician E6 laborator",
+        "braț robotic didactic șase axe",
+        "Magician E6 accesorii educație"
+      ]
+    },
+    {
+      "product_id": "agilex-scout-mini",
+      "path": "/product/agilex-scout-mini/",
+      "priority": "P2",
+      "status": "planned",
+      "topic": "Prototip mobil civil",
+      "questions": [
+        "Ce lipsește unei baze mobile pentru a deveni aplicația cerută?",
+        "Cum verifici alimentarea, montajul senzorilor și pachetele software?"
+      ],
+      "additional_queries": [
+        "SCOUT MINI integrare senzori",
+        "AgileX SCOUT MINI ROS",
+        "bază mobilă robotică prototipare"
+      ]
+    },
+    {
+      "product_id": "deep-x30",
+      "path": "/product/deep-x30/",
+      "priority": "P2",
+      "status": "planned",
+      "topic": "Inspecție tehnică civilă",
+      "questions": [
+        "Ce senzori trebuie incluși pentru măsurătoarea cerută?",
+        "Ce date despre traseu și mediu se verifică înainte de ofertă?"
+      ],
+      "additional_queries": [
+        "DEEP X30 inspecție tehnică",
+        "X30 cameră termică configurație",
+        "robot patruped inspecție infrastructură"
+      ]
+    },
+    {
+      "product_id": "deep-lynx-m20",
+      "path": "/product/deep-lynx-m20/",
+      "priority": "P2",
+      "status": "planned",
+      "topic": "Mobilitate pe trasee mixte",
+      "questions": [
+        "Ce suprafețe și tranziții trebuie incluse într-o probă LYNX M20?",
+        "Cum se verifică echiparea pentru datele de inspecție dorite?"
+      ],
+      "additional_queries": [
+        "LYNX M20 roți picioare",
+        "DEEP LYNX M20 inspecție",
+        "robot hibrid traseu mixt"
+      ]
+    },
+    {
+      "product_id": "inspire-rh56bfx",
+      "path": "/product/inspire-rh56bfx/",
+      "priority": "P2",
+      "status": "planned",
+      "topic": "Prindere robotică",
+      "questions": [
+        "Cum alegi versiunea stânga/dreapta și prinderea mecanică?",
+        "Ce interfețe și alimentare cere integrarea RH56BFX?"
+      ],
+      "additional_queries": [
+        "RH56BFX mână stângă dreaptă",
+        "INSPIRE RH56BFX integrare",
+        "mână robotică interfețe control"
+      ]
+    },
+    {
+      "product_id": "brainco-revo2",
+      "path": "/product/brainco-revo2/",
+      "priority": "P2",
+      "status": "planned",
+      "topic": "Cercetarea prinderii",
+      "questions": [
+        "Ce date despre obiecte sunt necesare pentru alegerea mâinii Revo 2?",
+        "Ce hardware și software trebuie definite pentru teleoperare?"
+      ],
+      "additional_queries": [
+        "BrainCo Revo 2 integrare",
+        "Revo 2 cercetare prindere",
+        "mână robotică teleoperare laborator"
+      ]
+    },
+    {
+      "product_id": "rokae-ar",
+      "path": "/product/rokae-ar/",
+      "priority": "P2",
+      "status": "planned",
+      "topic": "Brațe pentru integrare",
+      "questions": [
+        "Ce controler, prindere și bază sunt necesare pentru AR Series?",
+        "Cum se verifică compatibilitatea cu platforma aleasă?"
+      ],
+      "additional_queries": [
+        "ROKAE AR Series controler",
+        "braț robotic integrare platformă",
+        "ROKAE AR prindere mecanică"
+      ]
+    },
+    {
+      "product_id": "rokae-helios",
+      "path": "/product/rokae-helios/",
+      "priority": "P2",
+      "status": "planned",
+      "topic": "Manipulare mobilă cu două brațe",
+      "questions": [
+        "Ce versiune Helios este descrisă în oferta tehnică?",
+        "Cum definești transferul obiectelor și punctele de lucru în interior?"
+      ],
+      "additional_queries": [
+        "ROKAE Helios II",
+        "robot mobil cu două brațe",
+        "Helios manipulare interior"
+      ]
+    },
+    {
+      "product_id": "rokae-human-x",
+      "path": "/product/rokae-human-x/",
+      "priority": "P2",
+      "status": "planned",
+      "topic": "Dezvoltare umanoidă",
+      "questions": [
+        "Ce funcții de manipulare trebuie demonstrate pentru proiect?",
+        "Ce interfețe și resurse sunt incluse pentru echipa de dezvoltare?"
+      ],
+      "additional_queries": [
+        "ROKAE Human.X dezvoltare",
+        "Human.X manipulare robotică",
+        "robot umanoid interfețe dezvoltare"
+      ]
+    },
+    {
+      "product_id": "leju-kuavo-4pro",
+      "path": "/product/leju-kuavo-4pro/",
+      "priority": "P2",
+      "status": "planned",
+      "topic": "Cercetare și date",
+      "questions": [
+        "Ce date trebuie colectate și prin ce interfețe?",
+        "Ce echipare este necesară pentru obiectele manipulate în laborator?"
+      ],
+      "additional_queries": [
+        "KUAVO 4Pro colectare date",
+        "LEJU KUAVO cercetare manipulare",
+        "KUAVO 4Pro configurație laborator"
+      ]
+    },
+    {
+      "product_id": "leju-kuavo-5",
+      "path": "/product/leju-kuavo-5/",
+      "priority": "P2",
+      "status": "planned",
+      "topic": "Variante bipede și pe roți",
+      "questions": [
+        "Cum diferențiezi KUAVO 5 de KUAVO 5-W?",
+        "Ce cerințe de mobilitate și manipulare trebuie comparate între variante?"
+      ],
+      "additional_queries": [
+        "LEJU KUAVO 5-W",
+        "KUAVO 5 vs 5-W",
+        "KUAVO robot pe roți"
+      ]
+    },
+    {
+      "product_id": "leju-roban-2",
+      "path": "/product/leju-roban-2/",
+      "priority": "P2",
+      "status": "planned",
+      "topic": "Educație umanoidă",
+      "questions": [
+        "Ce obiective didactice sunt potrivite configurației ROBAN 2?",
+        "Ce documentație și echipamente trebuie pregătite în laborator?"
+      ],
+      "additional_queries": [
+        "ROBAN 2 laborator robotică",
+        "LEJU ROBAN 2 educație",
+        "robot umanoid instruire laborator"
+      ]
+    },
+    {
+      "product_id": "ubtech-walker-s2",
+      "path": "/product/ubtech-walker-s2/",
+      "priority": "P2",
+      "status": "planned",
+      "topic": "Proiect industrial umanoid",
+      "questions": [
+        "Ce infrastructură cere schimbul bateriei în configurația propusă?",
+        "Cum se stabilește proba pentru operația industrială solicitată?"
+      ],
+      "additional_queries": [
+        "Walker S2 schimb baterie",
+        "UBTECH Walker S2 integrare industrială",
+        "Walker S2 manipulare proiect"
+      ]
+    },
+    {
+      "product_id": "unitree-h1",
+      "path": "/product/unitree-h1/",
+      "priority": "P2",
+      "status": "planned",
+      "topic": "Cercetarea mobilității",
+      "questions": [
+        "Ce diferențe de versiune trebuie verificate între H1 și H1-2?",
+        "Cum definești spațiul și funcțiile necesare proiectului de cercetare?"
+      ],
+      "additional_queries": [
+        "Unitree H1 vs H1-2",
+        "Unitree H1 laborator",
+        "H1 cercetare mobilitate"
+      ]
+    }
+  ],
+  "primary_query_overrides": {
+    "humanoid robot": "/categories/umanoizi/",
+    "robot dog": "/categories/patrupezi/",
+    "unitree go2 romania": "/product/unitree-go2/",
+    "robot colaborativ": "/categories/coboti/",
+    "pick and place": "/solutions/industrie/",
+    "robot ros 2": "/guides/robot-programabil-sdk-ros/",
+    "agilex scout mini": "/product/agilex-scout-mini/",
+    "celula robotizata": "/solutions/industrie/",
+    "robot programabil": "/guides/robot-programabil-sdk-ros/",
+    "robot interactiv": "/solutions/evenimente/"
+  },
+  "sources": [
+    {
+      "id": "google-helpful",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "use": "Principii pentru conținut util și relevant"
+    },
+    {
+      "id": "google-performance",
+      "url": "https://support.google.com/webmasters/answer/7576553?hl=en",
+      "use": "Indicatori și dimensiuni pentru măsurare"
+    },
+    {
+      "id": "google-query-analysis",
+      "url": "https://support.google.com/webmasters/answer/17010961?hl=en",
+      "use": "Analiza căutărilor și a paginilor afișate"
+    },
+    {
+      "id": "google-video",
+      "url": "https://developers.google.com/search/docs/appearance/video",
+      "use": "Pagini dedicate pentru vizionare și descoperirea videoclipurilor"
+    },
+    {
+      "id": "keenon-w3",
+      "url": "https://www.keenon.com/en/product/W3",
+      "use": "Livrare în hoteluri; integrarea exactă se verifică pentru fiecare proiect"
+    }
+  ]
+}

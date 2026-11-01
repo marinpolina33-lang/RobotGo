@@ -1,5 +1,11 @@
 # RobotGo — audit și implementare SEO
 
+## Planul de extindere și măsurare — 1 noiembrie 2026
+
+[Planul SEO](PLAN_SEO_ROBOTGO.md) acoperă acum 60 pagini țintă și 353 expresii editoriale (86 noi), cu o singură pagină principală desemnată pentru fiecare expresie. Include 13 acțiuni și briefuri cu 40 de întrebări pentru cele 20 de produse fără FAQ propriu. Acțiunile și întrebările noi sunt marcate **planificate**, nu implementate. Cele 60 de pagini și 18 întrebări deja publicate constituie baza de comparație. Nu s-au folosit date Search Console sau volume de căutare; planul consemnează explicit aceste limite și criteriile de evaluare.
+
+Această revizie modifică documentația și configurația editorială, fără un nou build public sau o retrimitere de sitemap. Mapa detaliată este în `SEO_QUERY_MAP.csv`, iar lista structurată de acțiuni în `config/seo-roadmap.json`.
+
 ## Extindere pe modele și comparații comerciale — 1 noiembrie 2026
 
 Două ghiduri distincte compară BellaBot cu DINERBOT T10 și PUDU CC1 cu KLEENBOT C40. Tabelele au câte o coloană pentru fiecare model, folosesc parametri confirmați în paginile producătorilor și disting recomandările de alegere de teste efectuate. Nu se inventează prețuri, reduceri, rezultate de productivitate ori amortizare. Versiunile Pro și alte generații nu sunt amestecate.

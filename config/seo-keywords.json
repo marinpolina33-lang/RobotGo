@@ -1,6 +1,6 @@
 {
   "date": "2026-11-01",
-  "purpose": "Editorial and Search Console monitoring map. Not measured search volume or guaranteed ranking.",
+  "purpose": "Editorial targets with primary-page ownership and implementation priorities; not measured volume, difficulty, rankings or guaranteed traffic.",
   "groups": [
     {
       "path": "/robot/",
@@ -12,7 +12,11 @@
         "ce este un robot",
         "tipuri de roboți",
         "robot pentru firmă"
-      ]
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/shop/",
@@ -23,7 +27,11 @@
         "magazin roboți",
         "catalog roboți România",
         "ofertă robot"
-      ]
+      ],
+      "priority": "P1",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/guides/cat-costa-un-robot/",
@@ -34,7 +42,11 @@
         "cost robot",
         "preț roboți România",
         "buget robotizare"
-      ]
+      ],
+      "priority": "P1",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/categories/umanoizi/",
@@ -47,7 +59,11 @@
         "humanoid robot",
         "robot umanoid educațional",
         "robot umanoid industrial"
-      ]
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/categories/patrupezi/",
@@ -60,7 +76,11 @@
         "quadruped robot",
         "robot de inspecție",
         "Unitree Go2 România"
-      ]
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/categories/hibrizi/",
@@ -71,7 +91,11 @@
         "wheeled legged robot",
         "robot teren mixt",
         "LYNX M20"
-      ]
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/categories/amr/",
@@ -83,7 +107,11 @@
         "robot de livrare",
         "robot transport interior",
         "autonomous mobile robot"
-      ]
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/categories/coboti/",
@@ -96,7 +124,11 @@
         "robotic arm",
         "pick and place",
         "robot cu 6 axe"
-      ]
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/categories/ugv-civile/",
@@ -108,7 +140,11 @@
         "șasiu robotic",
         "robot ROS 2",
         "AgileX SCOUT MINI"
-      ]
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/categories/accesorii/",
@@ -120,7 +156,11 @@
         "gripper robotic",
         "prindere robotică",
         "teleoperare robot"
-      ]
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/solutions/horeca/",
@@ -133,7 +173,11 @@
         "robot hotel",
         "robot room service",
         "robot HoReCa"
-      ]
+      ],
+      "priority": "P1",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/solutions/curatenie/",
@@ -145,7 +189,11 @@
         "robot aspirare profesională",
         "robot curățenie birouri",
         "robot curățenie hală"
-      ]
+      ],
+      "priority": "P1",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/solutions/logistica/",
@@ -158,7 +206,11 @@
         "automatizare depozit",
         "goods to person",
         "AMR WMS"
-      ]
+      ],
+      "priority": "P1",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/solutions/industrie/",
@@ -171,7 +223,11 @@
         "robot asamblare",
         "pick and place",
         "deservire utilaj"
-      ]
+      ],
+      "priority": "P1",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/solutions/educatie/",
@@ -184,7 +240,11 @@
         "robot cercetare",
         "robot Python",
         "robot ROS 2"
-      ]
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/solutions/inspectie/",
@@ -196,7 +256,11 @@
         "robot cu cameră termică",
         "robot infrastructură",
         "patruped industrial"
-      ]
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/solutions/evenimente/",
@@ -209,7 +273,11 @@
         "robot interactiv",
         "robot dans",
         "robot întâmpinare"
-      ]
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/guides/amr-vs-agv/",
@@ -221,7 +289,11 @@
         "navigație robot",
         "robot transport intern",
         "intralogistică"
-      ]
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/guides/cobot-vs-robot-industrial/",
@@ -234,7 +306,11 @@
         "celulă robotizată",
         "sarcină utilă robot",
         "rază de lucru robot"
-      ]
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/guides/umanoid-vs-caine-robot/",
@@ -246,7 +322,11 @@
         "robot dog",
         "robot pe roți",
         "robot pentru demonstrații"
-      ]
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/guides/robot-programabil-sdk-ros/",
@@ -259,7 +339,11 @@
         "programare roboți Python",
         "robot C++",
         "robot educațional STEM"
-      ]
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/guides/robot-autonom-inteligenta-artificiala/",
@@ -272,7 +356,11 @@
         "robot interactiv",
         "robot LiDAR",
         "robot conversațional"
-      ]
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/guides/mentenanta-robotilor/",
@@ -285,7 +373,11 @@
         "baterie robot",
         "diagnostic robot",
         "inspecție periodică robot"
-      ]
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/product/unitree-g1/",
@@ -298,7 +390,11 @@
         "G1 standard vs G1 EDU",
         "Unitree G1 SDK",
         "Unitree G1 mâini robotice"
-      ]
+      ],
+      "priority": "P1",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/product/unitree-go2/",
@@ -311,7 +407,11 @@
         "Unitree Go2 versiuni",
         "Go2 inspecție tehnică",
         "Go2 demonstrație eveniment"
-      ]
+      ],
+      "priority": "P1",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/product/leju-kuavo-4pro/",
@@ -320,8 +420,15 @@
         "LEJU KUAVO 4Pro",
         "LEJU KUAVO 4Pro preț",
         "LEJU KUAVO 4Pro specificații",
-        "LEJU KUAVO 4Pro România"
-      ]
+        "LEJU KUAVO 4Pro România",
+        "KUAVO 4Pro colectare date",
+        "LEJU KUAVO cercetare manipulare",
+        "KUAVO 4Pro configurație laborator"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "planned_product_brief"
     },
     {
       "path": "/product/leju-kuavo-5/",
@@ -330,8 +437,15 @@
         "LEJU KUAVO 5 / 5-W",
         "LEJU KUAVO 5 / 5-W preț",
         "LEJU KUAVO 5 / 5-W specificații",
-        "LEJU KUAVO 5 / 5-W România"
-      ]
+        "LEJU KUAVO 5 / 5-W România",
+        "LEJU KUAVO 5-W",
+        "KUAVO 5 vs 5-W",
+        "KUAVO robot pe roți"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "planned_product_brief"
     },
     {
       "path": "/product/leju-roban-2/",
@@ -340,8 +454,15 @@
         "LEJU ROBAN 2",
         "LEJU ROBAN 2 preț",
         "LEJU ROBAN 2 specificații",
-        "LEJU ROBAN 2 România"
-      ]
+        "LEJU ROBAN 2 România",
+        "ROBAN 2 laborator robotică",
+        "LEJU ROBAN 2 educație",
+        "robot umanoid instruire laborator"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "planned_product_brief"
     },
     {
       "path": "/product/rokae-helios/",
@@ -350,8 +471,15 @@
         "ROKAE Helios",
         "ROKAE Helios preț",
         "ROKAE Helios specificații",
-        "ROKAE Helios România"
-      ]
+        "ROKAE Helios România",
+        "ROKAE Helios II",
+        "robot mobil cu două brațe",
+        "Helios manipulare interior"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "planned_product_brief"
     },
     {
       "path": "/product/rokae-human-x/",
@@ -360,8 +488,15 @@
         "ROKAE Human.X",
         "ROKAE Human.X preț",
         "ROKAE Human.X specificații",
-        "ROKAE Human.X România"
-      ]
+        "ROKAE Human.X România",
+        "ROKAE Human.X dezvoltare",
+        "Human.X manipulare robotică",
+        "robot umanoid interfețe dezvoltare"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "planned_product_brief"
     },
     {
       "path": "/product/rokae-ar/",
@@ -370,8 +505,15 @@
         "ROKAE AR Series",
         "ROKAE AR Series preț",
         "ROKAE AR Series specificații",
-        "ROKAE AR Series România"
-      ]
+        "ROKAE AR Series România",
+        "ROKAE AR Series controler",
+        "braț robotic integrare platformă",
+        "ROKAE AR prindere mecanică"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "planned_product_brief"
     },
     {
       "path": "/product/rokae-cr/",
@@ -380,8 +522,15 @@
         "ROKAE CR Series",
         "ROKAE CR Series preț",
         "ROKAE CR Series specificații",
-        "ROKAE CR Series România"
-      ]
+        "ROKAE CR Series România",
+        "ROKAE CR sarcină utilă",
+        "ROKAE CR rază de lucru",
+        "cobot ROKAE transfer piese"
+      ],
+      "priority": "P1",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "planned_product_brief"
     },
     {
       "path": "/product/deep-lynx-m20/",
@@ -390,8 +539,15 @@
         "DEEP Robotics LYNX M20",
         "DEEP Robotics LYNX M20 preț",
         "DEEP Robotics LYNX M20 specificații",
-        "DEEP Robotics LYNX M20 România"
-      ]
+        "DEEP Robotics LYNX M20 România",
+        "LYNX M20 roți picioare",
+        "DEEP LYNX M20 inspecție",
+        "robot hibrid traseu mixt"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "planned_product_brief"
     },
     {
       "path": "/product/deep-x30/",
@@ -400,8 +556,15 @@
         "DEEP Robotics X30",
         "DEEP Robotics X30 preț",
         "DEEP Robotics X30 specificații",
-        "DEEP Robotics X30 România"
-      ]
+        "DEEP Robotics X30 România",
+        "DEEP X30 inspecție tehnică",
+        "X30 cameră termică configurație",
+        "robot patruped inspecție infrastructură"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "planned_product_brief"
     },
     {
       "path": "/product/pudu-bellabot/",
@@ -414,7 +577,11 @@
         "BellaBot preț România",
         "BellaBot capacitate tăvi",
         "BellaBot ofertă restaurant"
-      ]
+      ],
+      "priority": "P1",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/product/pudu-cc1/",
@@ -427,7 +594,11 @@
         "PUDU CC1 aspirare mochetă",
         "PUDU CC1 stație apă",
         "PUDU CC1 ofertă"
-      ]
+      ],
+      "priority": "P1",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/product/keenon-t10/",
@@ -440,7 +611,11 @@
         "DINERBOT T10 culoare înguste",
         "T10 robot promovare",
         "KEENON T10 preț România"
-      ]
+      ],
+      "priority": "P1",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/product/keenon-c40/",
@@ -453,7 +628,11 @@
         "KLEENBOT C40 rezervoare",
         "KLEENBOT C40 consumabile",
         "KEENON C40 ofertă"
-      ]
+      ],
+      "priority": "P1",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/product/keenon-w3/",
@@ -462,8 +641,15 @@
         "KEENON BUTLERBOT W3",
         "KEENON BUTLERBOT W3 preț",
         "KEENON BUTLERBOT W3 specificații",
-        "KEENON BUTLERBOT W3 România"
-      ]
+        "KEENON BUTLERBOT W3 România",
+        "BUTLERBOT W3 integrare lift",
+        "robot livrare articole camere hotel",
+        "KEENON W3 compartimente"
+      ],
+      "priority": "P1",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "planned_product_brief"
     },
     {
       "path": "/product/dobot-nova2/",
@@ -472,8 +658,15 @@
         "DOBOT Nova 2",
         "DOBOT Nova 2 preț",
         "DOBOT Nova 2 specificații",
-        "DOBOT Nova 2 România"
-      ]
+        "DOBOT Nova 2 România",
+        "DOBOT Nova 2 gripper",
+        "cobot compact obiecte ușoare",
+        "DOBOT Nova 2 integrare"
+      ],
+      "priority": "P1",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "planned_product_brief"
     },
     {
       "path": "/product/dobot-magician-e6/",
@@ -482,8 +675,15 @@
         "DOBOT Magician E6",
         "DOBOT Magician E6 preț",
         "DOBOT Magician E6 specificații",
-        "DOBOT Magician E6 România"
-      ]
+        "DOBOT Magician E6 România",
+        "DOBOT Magician E6 laborator",
+        "braț robotic didactic șase axe",
+        "Magician E6 accesorii educație"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "planned_product_brief"
     },
     {
       "path": "/product/inspire-rh56bfx/",
@@ -492,8 +692,15 @@
         "INSPIRE RH56BFX",
         "INSPIRE RH56BFX preț",
         "INSPIRE RH56BFX specificații",
-        "INSPIRE RH56BFX România"
-      ]
+        "INSPIRE RH56BFX România",
+        "RH56BFX mână stângă dreaptă",
+        "INSPIRE RH56BFX integrare",
+        "mână robotică interfețe control"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "planned_product_brief"
     },
     {
       "path": "/product/geekplus-p-series/",
@@ -502,8 +709,15 @@
         "Geek+ P Series",
         "Geek+ P Series preț",
         "Geek+ P Series specificații",
-        "Geek+ P Series România"
-      ]
+        "Geek+ P Series România",
+        "Geekplus P Series rafturi",
+        "robot marfa la persoană depozit",
+        "Geekplus integrare WMS"
+      ],
+      "priority": "P1",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "planned_product_brief"
     },
     {
       "path": "/product/ubtech-walker-s2/",
@@ -512,8 +726,15 @@
         "UBTECH Walker S2",
         "UBTECH Walker S2 preț",
         "UBTECH Walker S2 specificații",
-        "UBTECH Walker S2 România"
-      ]
+        "UBTECH Walker S2 România",
+        "Walker S2 schimb baterie",
+        "UBTECH Walker S2 integrare industrială",
+        "Walker S2 manipulare proiect"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "planned_product_brief"
     },
     {
       "path": "/product/unitree-h1/",
@@ -522,8 +743,15 @@
         "Unitree H1",
         "Unitree H1 preț",
         "Unitree H1 specificații",
-        "Unitree H1 România"
-      ]
+        "Unitree H1 România",
+        "Unitree H1 vs H1-2",
+        "Unitree H1 laborator",
+        "H1 cercetare mobilitate"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "planned_product_brief"
     },
     {
       "path": "/product/agilex-scout-mini/",
@@ -532,8 +760,15 @@
         "AgileX SCOUT MINI",
         "AgileX SCOUT MINI preț",
         "AgileX SCOUT MINI specificații",
-        "AgileX SCOUT MINI România"
-      ]
+        "AgileX SCOUT MINI România",
+        "SCOUT MINI integrare senzori",
+        "AgileX SCOUT MINI ROS",
+        "bază mobilă robotică prototipare"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "planned_product_brief"
     },
     {
       "path": "/product/brainco-revo2/",
@@ -542,8 +777,15 @@
         "BrainCo Revo 2",
         "BrainCo Revo 2 preț",
         "BrainCo Revo 2 specificații",
-        "BrainCo Revo 2 România"
-      ]
+        "BrainCo Revo 2 România",
+        "BrainCo Revo 2 integrare",
+        "Revo 2 cercetare prindere",
+        "mână robotică teleoperare laborator"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "planned_product_brief"
     },
     {
       "path": "/product/siasun-gcr5/",
@@ -552,8 +794,15 @@
         "SIASUN DUCO GCR5-910",
         "SIASUN DUCO GCR5-910 preț",
         "SIASUN DUCO GCR5-910 specificații",
-        "SIASUN DUCO GCR5-910 România"
-      ]
+        "SIASUN DUCO GCR5-910 România",
+        "DUCO GCR5-910 aplicații",
+        "cobot 5 kg manipulare piese",
+        "SIASUN GCR5 integrare"
+      ],
+      "priority": "P1",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "planned_product_brief"
     },
     {
       "path": "/product/pudu-t300/",
@@ -562,8 +811,15 @@
         "PUDU T300 Standard",
         "PUDU T300 Standard preț",
         "PUDU T300 Standard specificații",
-        "PUDU T300 Standard România"
-      ]
+        "PUDU T300 Standard România",
+        "PUDU T300 Standard vs Lifting",
+        "robot transport materiale 300 kg",
+        "T300 puncte transfer materiale"
+      ],
+      "priority": "P1",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "planned_product_brief"
     },
     {
       "path": "/guides/bellabot-vs-keenon-t10/",
@@ -574,7 +830,11 @@
         "comparație roboți ospătari",
         "robot ospătar pentru restaurant",
         "robot servire cu ecran publicitar"
-      ]
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     },
     {
       "path": "/guides/pudu-cc1-vs-keenon-c40/",
@@ -585,7 +845,128 @@
         "comparație roboți curățenie profesională",
         "robot curățenie hotel mochetă",
         "robot curățenie birouri pardoseli"
-      ]
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
+    },
+    {
+      "path": "/",
+      "intent": "Brand RobotGo",
+      "terms": [
+        "RobotGo",
+        "RobotGo România",
+        "robotgo.ro",
+        "catalog RobotGo"
+      ],
+      "priority": "P1",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
+    },
+    {
+      "path": "/categories/",
+      "intent": "Navigare pe tipuri",
+      "terms": [
+        "categorii de roboți",
+        "catalog tipuri roboți"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
+    },
+    {
+      "path": "/solutions/",
+      "intent": "Navigare pe utilizări",
+      "terms": [
+        "aplicații pentru roboți",
+        "soluții robotizate pentru firme"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
+    },
+    {
+      "path": "/brands/",
+      "intent": "Navigare pe producători",
+      "terms": [
+        "branduri de roboți",
+        "producători roboți din catalog",
+        "modele roboți după brand"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
+    },
+    {
+      "path": "/guides/",
+      "intent": "Documentare și alegere",
+      "terms": [
+        "ghiduri despre roboți",
+        "comparații roboți",
+        "ghid cumpărare robot"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
+    },
+    {
+      "path": "/guides/primul-robot/",
+      "intent": "Prima achiziție",
+      "terms": [
+        "cum aleg un robot",
+        "primul robot pentru firmă",
+        "cerințe achiziție robot"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
+    },
+    {
+      "path": "/guides/roboti-entertainment/",
+      "intent": "Demonstrație și promovare",
+      "terms": [
+        "robot dans eveniment",
+        "robot pentru târg expozițional",
+        "robot prezentare produse",
+        "demonstrație robot pentru public"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
+    },
+    {
+      "path": "/about/",
+      "intent": "Identitatea comerciantului",
+      "terms": [
+        "despre RobotGo",
+        "RobotGo ROUTEX LOGISTICA"
+      ],
+      "priority": "P2",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
+    },
+    {
+      "path": "/contact/",
+      "intent": "Contact comercial",
+      "terms": [
+        "RobotGo contact",
+        "RobotGo WhatsApp",
+        "solicită ofertă RobotGo"
+      ],
+      "priority": "P1",
+      "page_status": "published",
+      "query_status": "editorial_targets_not_measured",
+      "extension_status": "existing_content_to_measure"
     }
-  ]
+  ],
+  "version": "2026-11-01-plan-2"
 }
