@@ -17,7 +17,7 @@ export function generateSearchPages(root,dist,template){
  context.window.ROBOTGO_CATALOG=data;
  vm.runInNewContext(fs.readFileSync(path.join(root,'public/practical.js'),'utf8'),context);
  vm.runInNewContext(fs.readFileSync(path.join(root,'public/robot-guides.js'),'utf8'),context);
- for(const file of ['robot-topics-data.js','robot-topics.js','exhibition-data.js','seo-improvements.js','seo.js'])vm.runInNewContext(fs.readFileSync(path.join(root,'public',file),'utf8'),context);
+ for(const file of ['robot-topics-data.js','robot-topics.js','exhibition-data.js','seo-improvements.js','humanoid-buying.js','seo.js'])vm.runInNewContext(fs.readFileSync(path.join(root,'public',file),'utf8'),context);
  const seo=context.window.ROBOTGO_SEO;
  const productUrl=p=>'/product/'+p.id+'/';
  const link=(url,label,cls='')=>`<a href="${esc(url)}" class="${esc(cls)}">${esc(label)}</a>`;
@@ -44,7 +44,7 @@ export function generateSearchPages(root,dist,template){
   const product=data.products.find(p=>'/product/'+p.id===pagePath);
   if(product)page.body=page.body.replace(/<nav aria-label="Navigare ierarhică">[\s\S]*?<\/nav>/,`<nav class="seo-breadcrumbs" aria-label="Navigare ierarhică">${seo.breadcrumbs(meta).map((c,i,a)=>i===a.length-1?esc(c.name):link(seo.route(c.path),c.name)).join(' / ')}</nav>`).replace('<div class="detail-top">',`<nav class="seo-context" aria-label="Explorează aplicațiile">${link('/categories/'+product.category+'/',data.categories.find(c=>c.id===product.category).name.ro)}${product.domains.map(id=>link('/solutions/'+id+'/',data.domains.find(d=>d.id===id).name.ro)).join('')}</nav><div class="detail-top">`);
   if(product){
-   page.body=page.body.replace(/<section class="section"><h2>Exemple de utilizare<\/h2>[\s\S]*?<\/section>/,`<section class="section">${context.window.ROBOTGO_PRACTICAL.product(product)}${context.window.ROBOTGO_IMPROVEMENTS.commercial(product)}${link('/quote/?product='+encodeURIComponent(product.id),'Descrie aplicația ta','btn')}</section>`);
+   page.body=page.body.replace(/<section class="section"><h2>Exemple de utilizare<\/h2>[\s\S]*?<\/section>/,`<section class="section">${context.window.ROBOTGO_PRACTICAL.product(product)}${context.window.ROBOTGO_BUYING.product(product)}${context.window.ROBOTGO_IMPROVEMENTS.commercial(product)}${link('/quote/?product='+encodeURIComponent(product.id),'Descrie aplicația ta','btn')}</section>`);
    const related=data.products.filter(p=>p.id!==product.id&&p.category===product.category).sort((a,b)=>a.priority-b.priority).slice(0,4);
    if(related.length)page.body+=`<section class="wrap section"><h2>Alte modele din aceeași categorie</h2>${cards(related)}</section>`;
   }

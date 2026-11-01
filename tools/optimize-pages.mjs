@@ -32,7 +32,7 @@ export function optimizePages(root,dist,pages){
    if(src.startsWith('auth.js')||src.startsWith('lead-client')||src.startsWith('app.js'))break;
    vm.runInNewContext(fs.readFileSync(path.join(dist,src.split('?')[0]),'utf8'),ctx);
   }
-  if(key.startsWith('/guides/')||key.startsWith('/solutions/')||key.startsWith('/categories/')){
+  if(key.startsWith('/guides/')||key.startsWith('/solutions/')||key.startsWith('/categories/')||key.startsWith('/compare/')){
    for(const lang of ['ro','en'])assert.ok(ctx.window.ROBOTGO_SEO.renderLanding(key,lang),'Page content remains available in both languages');
   }
   if(product)for(const lang of ['ro','en'])assert.ok(ctx.window.ROBOTGO_TOPICS.productFaq(ctx.window.ROBOTGO_CATALOG.products.find(x=>x.id===product),lang).includes(product),'Product buying answers survive route payload selection');

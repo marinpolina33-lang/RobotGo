@@ -6,9 +6,9 @@ import assert from 'node:assert/strict';
 
 export function verifySearchPages(root,dist,pages){
  const catalog=JSON.parse(fs.readFileSync(path.join(root,'public/catalog.json'),'utf8'));
- const expected=['/','/shop/','/contact/',...catalog.products.map(p=>'/product/'+p.id+'/'),'/categories/','/solutions/','/about/',...catalog.categories.map(c=>'/categories/'+c.id+'/'),...catalog.domains.map(d=>'/solutions/'+d.id+'/'),'/guides/roboti-entertainment/','/brands/','/guides/primul-robot/','/robot/','/guides/cat-costa-un-robot/','/guides/','/guides/amr-vs-agv/','/guides/cobot-vs-robot-industrial/','/guides/umanoid-vs-caine-robot/','/guides/robot-programabil-sdk-ros/','/guides/robot-autonom-inteligenta-artificiala/','/guides/mentenanta-robotilor/','/guides/bellabot-vs-keenon-t10/','/guides/pudu-cc1-vs-keenon-c40/','/guides/dobot-nova2-vs-magician-e6/','/guides/unitree-g1-vs-h1/','/service/','/media/','/quote/','/privacy/',...JSON.parse(fs.readFileSync(path.join(root,'public/exhibition.json'),'utf8')).items.filter(x=>x.kind==='video').map(x=>'/media/'+x.id+'/')];
+ const expected=['/','/shop/','/contact/',...catalog.products.map(p=>'/product/'+p.id+'/'),'/categories/','/solutions/','/about/',...catalog.categories.map(c=>'/categories/'+c.id+'/'),...catalog.domains.map(d=>'/solutions/'+d.id+'/'),'/guides/roboti-entertainment/','/brands/','/guides/primul-robot/','/robot/','/guides/cat-costa-un-robot/','/guides/','/guides/amr-vs-agv/','/guides/cobot-vs-robot-industrial/','/guides/umanoid-vs-caine-robot/','/guides/robot-programabil-sdk-ros/','/guides/robot-autonom-inteligenta-artificiala/','/guides/mentenanta-robotilor/','/guides/bellabot-vs-keenon-t10/','/guides/pudu-cc1-vs-keenon-c40/','/guides/dobot-nova2-vs-magician-e6/','/guides/unitree-g1-vs-h1/','/compare/roboti-umanoizi/','/service/','/media/','/quote/','/privacy/',...JSON.parse(fs.readFileSync(path.join(root,'public/exhibition.json'),'utf8')).items.filter(x=>x.kind==='video').map(x=>'/media/'+x.id+'/')];
  const context={window:{ROBOTGO_CATALOG:catalog},URLSearchParams};
- for(const file of ['site-config.js','practical.js','robot-guides.js','robot-topics-data.js','robot-topics.js','exhibition-data.js','seo-improvements.js','seo.js','routing.js'])vm.runInNewContext(fs.readFileSync(path.join(root,'public',file),'utf8'),context);
+ for(const file of ['site-config.js','practical.js','robot-guides.js','robot-topics-data.js','robot-topics.js','exhibition-data.js','seo-improvements.js','humanoid-buying.js','seo.js','routing.js'])vm.runInNewContext(fs.readFileSync(path.join(root,'public',file),'utf8'),context);
  const seo=context.window.ROBOTGO_SEO,links=new Map(),titles=new Set(),descriptions=new Set();
  for(const lang of ['ro','en']){
   const brands=seo.renderLanding('/brands',lang);
@@ -114,7 +114,32 @@ export function verifySearchPages(root,dist,pages){
   for(const [,target]of reading.matchAll(/href="([^"]+)"/g))assert.ok(seo.pages[target.replace(/\/$/,'')],'Product reading has no broken internal target');
  }
  const guideCollection=seo.schema('/guides')['@graph'].find(x=>x['@type']==='CollectionPage');
- assert.equal(guideCollection.mainEntity.numberOfItems,14,'Guide collection includes four model comparisons');
+ assert.equal(guideCollection.mainEntity.numberOfItems,15,'Guide directory includes the humanoid comparison');
+ const buying=context.window.ROBOTGO_BUYING;
+ assert.equal(buying.products.length,8,'Comparison covers every current humanoid');
+ assert.equal(buying.select('unitree').length,2,'Brand filter keeps G1 and H1');
+ assert.equal(buying.select('unitree','logistica').length,0,'Unsupported brand/application has no invented recommendation');
+ assert.equal(buying.validIds('unitree-g1,unitree-g1,not-a-model,unitree-h1,rokae-helios,rokae-human-x').join(','),'unitree-g1,unitree-h1,rokae-helios','Quote selection deduplicates, validates and caps at three');
+ assert.equal(buying.validIds('<script>,__proto__').length,0,'Untrusted query values do not become products');
+ const comparisonGraph=seo.schema(buying.path)['@graph'].find(x=>x['@type']==='CollectionPage');
+ assert.equal(comparisonGraph.mainEntity.numberOfItems,8,'Structured comparison reflects the visible catalogue');
+ for(const lang of ['ro','en']){
+  const body=buying.render(lang);
+  assert.equal((body.match(/<h1>/g)||[]).length,1);
+  assert.equal((body.match(/data-humanoid-row=/g)||[]).length,8,'All comparison rows available before JavaScript');
+  for(const product of buying.products){
+   assert.ok(body.includes('href="/product/'+product.id+'/"'),'Comparison exposes crawlable model links');
+   assert.ok(body.includes(buying.profiles[product.id].source),'Official documentation is linked');
+   assert.ok(buying.product(product,lang).includes(buying.path+'/'),'Every humanoid links back to the comparison');
+  }
+  assert.ok(seo.renderLanding('/categories/umanoizi',lang).includes(buying.path+'/'),'Category links to the comparison');
+  assert.ok(seo.renderLanding('/guides',lang).includes(buying.path+'/'),'Guide directory links to the comparison');
+  const exported=buying.csv(['unitree-g1','ubtech-walker-s2'],lang);
+  assert.equal(exported.split('\r\n').length,3,'CSV contains headers and exactly the chosen models');
+  assert.ok(exported.includes('https://robotgo.ro/product/unitree-g1/'));
+  assert.ok(!exported.includes('Unitree H1'),'Export does not add unselected models');
+  assert.ok(buying.cells(buying.products.find(p=>p.id==='unitree-g1'),lang)[3].includes('/'),'Payload retains its per-arm convention');
+ }
  assert.ok(seo.renderIntro().includes('href="/guides/"'),'Guide hub is reachable from Home');
  assert.ok(seo.renderDirectory().includes('href="/guides/"'),'Guide hub is reachable from the catalogue');
  const sitemap=fs.readFileSync(path.join(dist,'sitemap.xml'),'utf8');
