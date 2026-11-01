@@ -1,5 +1,21 @@
 # RobotGo — audit și implementare SEO
 
+## Revizie de identitate a paginii principale — 1 noiembrie 2026
+
+Canonical-ul, indexarea permisă, conținutul HTML inițial și datele structurate erau deja prezente. Lipsa unui rezultat de brand observat anterior nu demonstrează o eroare de indexare. Această revizie întărește identificarea paginii principale fără a schimba URL-uri, categorii, DNS sau protecțiile conturilor:
+
+- Titlul Home începe cu „RobotGo România” și descrie tipurile principale de roboți. Titlul și descrierea sunt comune între HTML, previzualizările sociale și aplicație.
+- Textul vizibil identifică explicit robotgo.ro drept catalogul operat de ROUTEX LOGISTICA S.R.L., cu legătură spre pagina Despre. Sloganul și imaginea aprobate rămân în prima secțiune.
+- WebSite declară și numele alternativ robotgo.ro. WebPage se leagă explicit de Organization; organizația descrie activitatea și țara deservită fără profiluri sociale sau acreditări inventate.
+- Subsolul fiecăreia dintre cele 47 de pagini publice are o legătură de brand către pagina principală și o legătură spre operatorul site-ului.
+- Build-ul verifică identitatea Home, schema și legăturile de întoarcere, pe lângă verificările existente pentru toate paginile.
+
+Cloudflare: zona activă are Browser Integrity Check pornit, nivel medium, SSL full și nu avea ruleset personalizat de blocare la citirea configurației. Clientul Python implicit a primit 403 cu cod 1010; aplicația de audit identificată explicit ca RobotGoSEOAudit/1.0 a primit 200 pentru Home. Acest rezultat nu este un test al Googlebot autentic și nu dovedește blocarea lui. Nu s-a dezactivat protecția și nu s-a folosit un User-Agent Googlebot fals.
+
+Nu s-a retrimis cererea de indexare sau sitemap-ul. Revizuirea automată a instrumentului de browser pentru căutările Google este distinctă de SEO-ul site-ului și nu poate fi reparată prin metadate. Monitorizarea rămâne în pauză după blocajul comunicat. Nu se declară succes organic până la observarea unui rezultat Google direct către https://robotgo.ro/.
+
+Referințe: https://developers.google.com/search/docs/appearance/site-names ; https://developers.google.com/search/docs/appearance/structured-data/organization ; https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/
+
 Data auditului: 30 octombrie 2026. Domeniu canonic: https://robotgo.ro/.
 
 ## Diagnosticul verificat
