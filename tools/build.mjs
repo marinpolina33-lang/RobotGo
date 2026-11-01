@@ -6,6 +6,7 @@ import {fileURLToPath} from 'node:url';
 import {verify} from './verify.mjs';
 import {generateSearchPages} from './search-pages.mjs';
 import {verifySearchPages} from './verify-search-pages.mjs';
+import {optimizePages} from './optimize-pages.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 try {
  verify();
@@ -23,5 +24,6 @@ try {
  );
  const pages=generateSearchPages(root,dist,html);
  verifySearchPages(root,dist,pages);
+ optimizePages(root,dist,pages);
  console.log('Built dist/ — only the approved public directory is published.');
 } catch(e) {console.error('Build aborted:',e.message);process.exitCode=1;}

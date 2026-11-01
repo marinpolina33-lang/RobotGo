@@ -1,0 +1,12 @@
+/* Keep forms unobstructed and preserve readable mobile tables. */
+body.on-request .contact-floating,body.on-request .mobile-bottom-nav{display:none!important}
+body.on-request{padding-bottom:20px}
+.project-brief,.product-commercial{margin:32px 0;padding:24px;background:#10262e;border:1px solid #31515a;border-radius:18px}
+.project-brief p,.product-commercial p{max-width:78ch}
+.robot-watch{display:block;max-width:100%;width:min(100%,440px);height:auto;max-height:75vh;margin:24px auto;background:#000}
+.request-receipt{padding:18px;border:1px solid #4bd6b7;border-radius:12px;overflow-wrap:anywhere;margin:18px 0}
+.request-error{color:#ffb9b9}.lead-honeypot{position:absolute;left:-10000px;visibility:hidden}
+.lead-card{padding:20px;border:1px solid #3c565e;border-radius:12px;margin:14px 0;overflow-wrap:anywhere}.lead-card pre{white-space:pre-wrap;font:inherit}
+.analytics-choice{margin:24px 0;padding:18px;border:1px solid #31515a;border-radius:12px}.analytics-choice .row{gap:12px}.analytics-choice p{max-width:75ch}
+@media(max-width:600px){.request-layout,.form-grid{min-width:0}.form-field,.request-layout>*{min-width:0}.field{font-size:16px}.btn{min-height:44px}.project-brief,.product-commercial{padding:18px}.seo-prose table{display:block;overflow-x:auto}.lead-card{padding:16px}.contact-whatsapp-float{padding:10px 14px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}

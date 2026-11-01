@@ -25,3 +25,7 @@ Passwords use salted scrypt (N=16384, r=8, p=5, 32-byte derived key), never plai
 - Check `/api/auth/health`, registration, login, logout, session revocation, recovery, admin permissions and mobile UI after a release.
 
 Credentials are not stored in this repository or in public site configuration. The initial administrator credential is delivered privately to the owner and is forced to change on first use.
+
+## Direct requests (SEO release, 1 November 2026)
+
+The same Worker now exposes `/api/auth/capabilities`, `/leads`, `/events`, `/admin/leads`, `/admin/lead-status` and `/admin/metrics`. The existing D1 binding and authentication routes are preserved. Apply the additive `leads` and `event_counts` tables from schema.sql before deploying worker.mjs. The daily cleanup includes the documented 365-day lead and 180-day event retention. Administrators review leads in the existing account UI; there is no automatic email notification provider. See SEO_IMPLEMENTATION_2026-11-01.md.

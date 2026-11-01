@@ -1,9 +1,9 @@
 {
   "name": "robotgo-static",
-  "version": "0.4.8-p1",
+  "version": "0.6.0",
   "private": true,
   "type": "module",
-  "description": "RobotGo \u2014 static preview deployment package, based on v0.4h.",
+  "description": "RobotGo — production catalogue, SEO pages and quotation requests.",
   "engines": {
     "node": ">=20"
   },

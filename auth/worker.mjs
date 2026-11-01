@@ -55,11 +55,27 @@ async function newSession(db,u) {
  if(!inserted)fail(401,'sign_in_required');
  return cookie(raw,age);
 }
-async function cleanup(db) {await db.batch([db.prepare('DELETE FROM sessions WHERE expires_at<=?').bind(now()),db.prepare('DELETE FROM rate_limits WHERE expires_at<=?').bind(now())]);}
+async function cleanup(db) {await db.batch([db.prepare('DELETE FROM sessions WHERE expires_at<=?').bind(now()),db.prepare('DELETE FROM rate_limits WHERE expires_at<=?').bind(now()),db.prepare('DELETE FROM leads WHERE updated_at<?').bind(now()-365*86400),db.prepare('DELETE FROM event_counts WHERE day<?').bind(new Date((now()-180*86400)*1000).toISOString().slice(0,10))]);}
+async function admin(req,db){const u=await current(req,db);if(u.role!=='admin')fail(403,'admin_required');if(u.must_change)fail(403,'change_password_required');return u;}
+function textField(value,max,required=false){const s=typeof value==='string'?value.trim():'';if(s.length>max||(required&&!s))fail(400,'invalid_request');return s;}
+function safePage(value){return typeof value==='string'&&/^\/(?:product\/[a-z0-9-]+\/|categories\/[a-z0-9-]+\/|solutions\/[a-z0-9-]+\/|guides\/[a-z0-9-]+\/|shop\/|robot\/|service\/|quote\/|contact\/)?$/.test(value)?value:'/other/';}
 async function handle(req,env) {
  const db=env.DB,url=new URL(req.url),path=url.pathname.replace(/^\/api\/auth/,'');
  if(req.method==='GET'&&path==='/health'){await db.prepare('SELECT 1').first();return {data:{ok:true,version:'1.0.0',storage:'persistent'}};}
  if(req.method==='GET'&&path==='/session'){const u=await current(req,db,false);return {data:{user:u?publicUser(u):null}};}
+ if(req.method==='GET'&&path==='/capabilities'){await db.prepare('SELECT COUNT(*) AS n FROM leads').first();return {data:{leads:true,analytics:true,version:'1.1.0'}};}
+ if(req.method==='GET'&&path==='/admin/leads'){
+  await admin(req,db);const page=Math.max(0,Math.min(100000,parseInt(url.searchParams.get('page')||'0',10)||0));
+  const {results}=await db.prepare('SELECT id,kind,name,email,phone,company,project,details,status,created_at,updated_at FROM leads ORDER BY created_at DESC,id LIMIT 26 OFFSET ?').bind(page*25).all();
+  const counts=await db.prepare('SELECT status,COUNT(*) AS count FROM leads GROUP BY status').all();
+  return {data:{leads:results.slice(0,25).map(l=>({...l,details:JSON.parse(l.details)})),page,hasMore:results.length>25,counts:counts.results}};
+ }
+ if(req.method==='GET'&&path==='/admin/metrics'){
+  await admin(req,db);const since=new Date(Date.now()-28*86400000).toISOString().slice(0,10);
+  const {results}=await db.prepare('SELECT event,page,device,SUM(count) AS count FROM event_counts WHERE day>=? GROUP BY event,page,device ORDER BY count DESC LIMIT 300').bind(since).all();
+  const leads=await db.prepare('SELECT status,COUNT(*) AS count FROM leads WHERE created_at>=? GROUP BY status').bind(now()-28*86400).all();
+  return {data:{since,events:results,leads:leads.results,notice:'Events are consented interactions, not unique visitors or confirmed leads.'}};
+ }
  if(req.method==='GET'&&path==='/admin/users'){
   const u=await current(req,db);if(u.role!=='admin')fail(403,'admin_required');if(u.must_change)fail(403,'change_password_required');
   const page=Math.max(0,Math.min(100000,parseInt(url.searchParams.get('page')||'0',10)||0));
@@ -69,7 +85,33 @@ async function handle(req,env) {
  }
  if(req.method!=='POST')fail(404,'not_found');
  const data=await body(req),ip=req.headers.get('cf-connecting-ip')||'unknown';
+ if(path==='/events'){
+  if(data.consent!==true||!['product_view','form_start','whatsapp_click','email_click'].includes(data.event)||!['mobile','desktop'].includes(data.device))fail(400,'invalid_request');
+  await limit(db,`events:${ip}`,60,900);
+  await db.prepare('INSERT INTO event_counts(day,event,page,device,count) VALUES(?,?,?,?,1) ON CONFLICT(day,event,page,device) DO UPDATE SET count=count+1').bind(new Date().toISOString().slice(0,10),data.event,safePage(data.page),data.device).run();
+  return {data:{ok:true}};
+ }
  await limit(db,`ip:${ip}`,90,900);
+ if(path==='/leads'){
+  if(data.acceptPrivacy!==true||data.website||!['quotation','purchase','service'].includes(data.type)||!/^[-a-f0-9]{36}$/.test(data.requestKey||''))fail(400,'invalid_request');
+  const name=textField(data.contact?.name,100,true),mail=email(data.contact?.email),phone=textField(data.contact?.phone,100),company=textField(data.contact?.company,100),project=textField(data.project,2500,true);
+  if(project.length<10)fail(400,'project_required');
+  const details={application:textField(data.application,100),timeline:textField(data.timeline,100),model:textField(data.model,180),serviceType:textField(data.serviceType,40),language:data.language==='en'?'en':'ro',source:safePage(data.source),items:[]};
+  if(data.items!==undefined&&(!Array.isArray(data.items)||data.items.length>26))fail(400,'invalid_request');
+  for(const item of data.items||[]){if(!/^[a-z0-9-]{1,80}$/.test(item.id||'')||!Number.isInteger(item.qty)||item.qty<1||item.qty>99)fail(400,'invalid_request');details.items.push({id:item.id,qty:item.qty});}
+  const hash=digest(JSON.stringify({kind:data.type,name,mail,phone,company,project,details}));
+  const old=await db.prepare('SELECT id,payload_hash FROM leads WHERE request_key=?').bind(data.requestKey).first();
+  if(old){if(old.payload_hash!==hash)fail(409,'request_changed');return {data:{id:old.id,received:true}};}
+  await limit(db,`lead-ip:${ip}`,6,3600);await limit(db,`lead-mail:${mail}`,10,86400);
+  const id='RG-'+randomUUID(),t=now();
+  await db.prepare('INSERT INTO leads(id,request_key,payload_hash,kind,name,email,phone,company,project,details,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(request_key) DO NOTHING').bind(id,data.requestKey,hash,data.type,name,mail,phone,company,project,JSON.stringify(details),t,t).run();
+  const saved=await db.prepare('SELECT id,payload_hash FROM leads WHERE request_key=?').bind(data.requestKey).first();if(saved.payload_hash!==hash)fail(409,'request_changed');
+  return {status:201,data:{id:saved.id,received:true}};
+ }
+ if(path==='/admin/lead-status'){
+  await admin(req,db);if(!['new','qualified','quoted','closed'].includes(data.status)||typeof data.id!=='string')fail(400,'invalid_request');
+  const saved=await db.prepare('UPDATE leads SET status=?,updated_at=? WHERE id=? RETURNING id').bind(data.status,now(),data.id).first();if(!saved)fail(404,'not_found');return {data:{ok:true}};
+ }
  if(path==='/register') {
   const mail=email(data.email),pass=password(data.password),name=typeof data.name==='string'?data.name.trim():'';
   if(name.length<2||name.length>100)fail(400,'invalid_name');

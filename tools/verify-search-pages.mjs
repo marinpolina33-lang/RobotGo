@@ -6,9 +6,9 @@ import assert from 'node:assert/strict';
 
 export function verifySearchPages(root,dist,pages){
  const catalog=JSON.parse(fs.readFileSync(path.join(root,'public/catalog.json'),'utf8'));
- const expected=['/','/shop/','/contact/',...catalog.products.map(p=>'/product/'+p.id+'/'),'/categories/','/solutions/','/about/',...catalog.categories.map(c=>'/categories/'+c.id+'/'),...catalog.domains.map(d=>'/solutions/'+d.id+'/'),'/guides/roboti-entertainment/','/brands/','/guides/primul-robot/','/robot/','/guides/cat-costa-un-robot/','/guides/','/guides/amr-vs-agv/','/guides/cobot-vs-robot-industrial/','/guides/umanoid-vs-caine-robot/','/guides/robot-programabil-sdk-ros/','/guides/robot-autonom-inteligenta-artificiala/','/guides/mentenanta-robotilor/','/guides/bellabot-vs-keenon-t10/','/guides/pudu-cc1-vs-keenon-c40/','/guides/dobot-nova2-vs-magician-e6/','/guides/unitree-g1-vs-h1/'];
+ const expected=['/','/shop/','/contact/',...catalog.products.map(p=>'/product/'+p.id+'/'),'/categories/','/solutions/','/about/',...catalog.categories.map(c=>'/categories/'+c.id+'/'),...catalog.domains.map(d=>'/solutions/'+d.id+'/'),'/guides/roboti-entertainment/','/brands/','/guides/primul-robot/','/robot/','/guides/cat-costa-un-robot/','/guides/','/guides/amr-vs-agv/','/guides/cobot-vs-robot-industrial/','/guides/umanoid-vs-caine-robot/','/guides/robot-programabil-sdk-ros/','/guides/robot-autonom-inteligenta-artificiala/','/guides/mentenanta-robotilor/','/guides/bellabot-vs-keenon-t10/','/guides/pudu-cc1-vs-keenon-c40/','/guides/dobot-nova2-vs-magician-e6/','/guides/unitree-g1-vs-h1/','/service/','/media/','/quote/','/privacy/',...JSON.parse(fs.readFileSync(path.join(root,'public/exhibition.json'),'utf8')).items.filter(x=>x.kind==='video').map(x=>'/media/'+x.id+'/')];
  const context={window:{ROBOTGO_CATALOG:catalog},URLSearchParams};
- for(const file of ['site-config.js','practical.js','robot-guides.js','robot-topics-data.js','robot-topics.js','seo.js','routing.js'])vm.runInNewContext(fs.readFileSync(path.join(root,'public',file),'utf8'),context);
+ for(const file of ['site-config.js','practical.js','robot-guides.js','robot-topics-data.js','robot-topics.js','exhibition-data.js','seo-improvements.js','seo.js','routing.js'])vm.runInNewContext(fs.readFileSync(path.join(root,'public',file),'utf8'),context);
  const seo=context.window.ROBOTGO_SEO,links=new Map(),titles=new Set(),descriptions=new Set();
  for(const lang of ['ro','en']){
   const brands=seo.renderLanding('/brands',lang);
@@ -206,7 +206,7 @@ export function verifySearchPages(root,dist,pages){
  const route=context.window.ROBOTGO_ROUTING;
  assert.equal(route.url('/shop?category=umanoizi'),'/shop/?category=umanoizi');
  assert.equal(route.url('/product/'+catalog.products[0].id),'/product/'+catalog.products[0].id+'/');
- assert.equal(route.url('/quote?product=test'),'/#/quote?product=test');
+ assert.equal(route.url('/quote?product=test'),'/quote/?product=test');
  assert.equal(route.read({pathname:'/shop/',search:'?q=G1',hash:''}).params.get('q'),'G1');
  assert.equal(route.read({pathname:'/shop/index.html',search:'',hash:'#main'}).path,'/shop');
  assert.equal(route.read({pathname:'/',hash:'#/product/'+catalog.products[0].id}).path,'/product/'+catalog.products[0].id);
@@ -221,6 +221,6 @@ export function verifySearchPages(root,dist,pages){
  assert.equal(route.redirectLegacy(),true);assert.equal(redirected,'/guides/primul-robot/');
  context.window.location={pathname:'/',search:'',hash:'#/product/'+catalog.products[0].id,replace:value=>{redirected=value;}};
  assert.equal(route.redirectLegacy(),true);assert.equal(redirected,'/product/'+catalog.products[0].id+'/');
- context.window.location.hash='#/quote';assert.equal(route.redirectLegacy(),false);
+ context.window.location.hash='#/quote';assert.equal(route.redirectLegacy(),true);assert.equal(redirected,'/quote/');
  console.log('Search pages: '+pages.length+' HTML pages, sitemap, metadata, links, structured data and legacy routing verified.');
 }

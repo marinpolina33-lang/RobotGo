@@ -1,6 +1,6 @@
 /* Public settings only. Do not store passwords, private keys or API credentials here. */
 window.ROBOTGO_CONFIG = {
-  version: '0.5.0-accounts',
+  version: '0.6.0-seo-leads',
   releaseStage: 'accounts-live',
   domainTarget: 'robotgo.ro', // HTTPS verified on 2026-10-30.
   domainStatus: 'verified',
@@ -26,7 +26,8 @@ window.ROBOTGO_CONFIG = {
   shippingCountryCode: 'RO',
   customerTypes: ['individual', 'business'],
   aiEndpoint: '/api/consult',
-  leadEndpoint: '/api/requests',
+  leadEndpoint: '/api/auth/leads',
+  leadsEnabled: true,
   upgradePreviewImages: true,
   upgradeHeroImages: false
 };
