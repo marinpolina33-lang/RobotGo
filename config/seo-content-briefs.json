@@ -1,0 +1,2168 @@
+{
+  "version": "2026-11-01-plan-3",
+  "status": "editorial_plan_not_publication",
+  "source_commit": "e11c5a1b6cf5a3109272baad21bf35f0b85bb207",
+  "products": [
+    {
+      "product_id": "unitree-g1",
+      "model": "Unitree G1",
+      "path": "/product/unitree-g1/",
+      "priority": "P1",
+      "plan_status": "planned",
+      "existing_faq_status": "published",
+      "buyer_context": [
+        "Educație & cercetare",
+        "Entertainment & evenimente"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "Unitree G1",
+        "Unitree G1 preț",
+        "Unitree G1 specificații",
+        "Unitree G1 România",
+        "G1 standard vs G1 EDU",
+        "Unitree G1 SDK",
+        "Unitree G1 mâini robotice"
+      ],
+      "current_title": "Unitree G1 — robot umanoid | RobotGo",
+      "h1_to_preserve": "Unitree G1",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Laborator: compararea unor comportamente de deplasare într-o zonă controlată."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "versiunea și echiparea brațelor/mâinilor; mișcarea sau manipularea cerută; spațiul, operatorul și accesul software."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Care este diferența dintre G1 standard și G1 EDU pentru programare?",
+        "Sunt incluse mâinile articulate în orice configurație G1?",
+        "Ce trebuie să includă o ofertă pentru Unitree G1 în România?"
+      ],
+      "questions_status": "published_to_review",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/unitree-g1-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/umanoizi/",
+        "/solutions/educatie/",
+        "/solutions/evenimente/",
+        "/guides/umanoid-vs-caine-robot/",
+        "/guides/robot-programabil-sdk-ros/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru Unitree G1",
+      "cta_destination": "/#/quote?product=unitree-g1",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "unitree-go2",
+      "model": "Unitree Go2",
+      "path": "/product/unitree-go2/",
+      "priority": "P1",
+      "plan_status": "planned",
+      "existing_faq_status": "published",
+      "buyer_context": [
+        "Educație & cercetare",
+        "Entertainment & evenimente",
+        "Inspecție tehnică"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "Unitree Go2",
+        "Unitree Go2 preț",
+        "Unitree Go2 specificații",
+        "Unitree Go2 România",
+        "Unitree Go2 versiuni",
+        "Go2 inspecție tehnică",
+        "Go2 demonstrație eveniment"
+      ],
+      "current_title": "Unitree Go2 — câine robot | RobotGo",
+      "h1_to_preserve": "Unitree Go2",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Cercetare: evaluarea percepției într-un traseu de laborator."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "traseul, suprafețele și obstacolele; datele de colectat și senzorii; versiunea, controlul și echiparea."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Cum aleg versiunea de Unitree Go2 pentru proiectul meu?",
+        "Poate Go2 face inspecție tehnică imediat după cumpărare?",
+        "Ce pregătesc pentru o demonstrație Go2 la un eveniment?"
+      ],
+      "questions_status": "published_to_review",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/unitree-go2-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/patrupezi/",
+        "/solutions/educatie/",
+        "/solutions/evenimente/",
+        "/solutions/inspectie/",
+        "/guides/umanoid-vs-caine-robot/",
+        "/guides/robot-autonom-inteligenta-artificiala/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru Unitree Go2",
+      "cta_destination": "/#/quote?product=unitree-go2",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "leju-kuavo-4pro",
+      "model": "LEJU KUAVO 4Pro",
+      "path": "/product/leju-kuavo-4pro/",
+      "priority": "P2",
+      "plan_status": "planned",
+      "existing_faq_status": "not_yet_published",
+      "buyer_context": [
+        "Educație & cercetare",
+        "Entertainment & evenimente",
+        "Producție & asamblare"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "LEJU KUAVO 4Pro",
+        "LEJU KUAVO 4Pro preț",
+        "LEJU KUAVO 4Pro specificații",
+        "LEJU KUAVO 4Pro România",
+        "KUAVO 4Pro colectare date",
+        "LEJU KUAVO cercetare manipulare",
+        "KUAVO 4Pro configurație laborator"
+      ],
+      "current_title": "LEJU KUAVO 4Pro — robot umanoid | RobotGo",
+      "h1_to_preserve": "LEJU KUAVO 4Pro",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Universitate: compararea strategiilor de control într-o aplicație de cercetare."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "versiunea și echiparea brațelor/mâinilor; mișcarea sau manipularea cerută; spațiul, operatorul și accesul software."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Ce date trebuie colectate și prin ce interfețe?",
+        "Ce echipare este necesară pentru obiectele manipulate în laborator?"
+      ],
+      "questions_status": "planned_to_write",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/leju-kuavo-4pro-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/umanoizi/",
+        "/solutions/educatie/",
+        "/solutions/evenimente/",
+        "/solutions/industrie/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru LEJU KUAVO 4Pro",
+      "cta_destination": "/#/quote?product=leju-kuavo-4pro",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "leju-kuavo-5",
+      "model": "LEJU KUAVO 5 / 5-W",
+      "path": "/product/leju-kuavo-5/",
+      "priority": "P2",
+      "plan_status": "planned",
+      "existing_faq_status": "not_yet_published",
+      "buyer_context": [
+        "Producție & asamblare",
+        "Depozite & logistică",
+        "Educație & cercetare"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "LEJU KUAVO 5 / 5-W",
+        "LEJU KUAVO 5 / 5-W preț",
+        "LEJU KUAVO 5 / 5-W specificații",
+        "LEJU KUAVO 5 / 5-W România",
+        "LEJU KUAVO 5-W",
+        "KUAVO 5 vs 5-W",
+        "KUAVO robot pe roți"
+      ],
+      "current_title": "LEJU KUAVO 5 / 5-W — roboți umanoizi | RobotGo",
+      "h1_to_preserve": "LEJU KUAVO 5 / 5-W",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Proiect pilot: manipularea cutiilor între două puncte de lucru."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "versiunea și echiparea brațelor/mâinilor; mișcarea sau manipularea cerută; spațiul, operatorul și accesul software."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Cum diferențiezi KUAVO 5 de KUAVO 5-W?",
+        "Ce cerințe de mobilitate și manipulare trebuie comparate între variante?"
+      ],
+      "questions_status": "planned_to_write",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/leju-kuavo-5-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/umanoizi/",
+        "/solutions/industrie/",
+        "/solutions/logistica/",
+        "/solutions/educatie/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru LEJU KUAVO 5 / 5-W",
+      "cta_destination": "/#/quote?product=leju-kuavo-5",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "leju-roban-2",
+      "model": "LEJU ROBAN 2",
+      "path": "/product/leju-roban-2/",
+      "priority": "P2",
+      "plan_status": "planned",
+      "existing_faq_status": "not_yet_published",
+      "buyer_context": [
+        "Educație & cercetare",
+        "Entertainment & evenimente"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "LEJU ROBAN 2",
+        "LEJU ROBAN 2 preț",
+        "LEJU ROBAN 2 specificații",
+        "LEJU ROBAN 2 România",
+        "ROBAN 2 laborator robotică",
+        "LEJU ROBAN 2 educație",
+        "robot umanoid instruire laborator"
+      ],
+      "current_title": "LEJU ROBAN 2 — robot umanoid educațional | RobotGo",
+      "h1_to_preserve": "LEJU ROBAN 2",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Educație: prezentarea coordonării articulațiilor într-un laborator."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "versiunea și echiparea brațelor/mâinilor; mișcarea sau manipularea cerută; spațiul, operatorul și accesul software."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Ce obiective didactice sunt potrivite configurației ROBAN 2?",
+        "Ce documentație și echipamente trebuie pregătite în laborator?"
+      ],
+      "questions_status": "planned_to_write",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/leju-roban-2-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/umanoizi/",
+        "/solutions/educatie/",
+        "/solutions/evenimente/",
+        "/guides/robot-programabil-sdk-ros/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru LEJU ROBAN 2",
+      "cta_destination": "/#/quote?product=leju-roban-2",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "rokae-helios",
+      "model": "ROKAE Helios",
+      "path": "/product/rokae-helios/",
+      "priority": "P2",
+      "plan_status": "planned",
+      "existing_faq_status": "not_yet_published",
+      "buyer_context": [
+        "Producție & asamblare",
+        "Depozite & logistică",
+        "Educație & cercetare"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "ROKAE Helios",
+        "ROKAE Helios preț",
+        "ROKAE Helios specificații",
+        "ROKAE Helios România",
+        "ROKAE Helios II",
+        "robot mobil cu două brațe",
+        "Helios manipulare interior"
+      ],
+      "current_title": "ROKAE Helios — umanoid pe roți | RobotGo",
+      "h1_to_preserve": "ROKAE Helios",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Atelier: mutarea unor piese între masă și un suport de lucru."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "versiunea și echiparea brațelor/mâinilor; mișcarea sau manipularea cerută; spațiul, operatorul și accesul software."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Ce versiune Helios este descrisă în oferta tehnică?",
+        "Cum definești transferul obiectelor și punctele de lucru în interior?"
+      ],
+      "questions_status": "planned_to_write",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/rokae-helios-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/umanoizi/",
+        "/solutions/industrie/",
+        "/solutions/logistica/",
+        "/solutions/educatie/",
+        "/guides/umanoid-vs-caine-robot/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru ROKAE Helios",
+      "cta_destination": "/#/quote?product=rokae-helios",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "rokae-human-x",
+      "model": "ROKAE Human.X",
+      "path": "/product/rokae-human-x/",
+      "priority": "P2",
+      "plan_status": "planned",
+      "existing_faq_status": "not_yet_published",
+      "buyer_context": [
+        "Producție & asamblare",
+        "Educație & cercetare"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "ROKAE Human.X",
+        "ROKAE Human.X preț",
+        "ROKAE Human.X specificații",
+        "ROKAE Human.X România",
+        "ROKAE Human.X dezvoltare",
+        "Human.X manipulare robotică",
+        "robot umanoid interfețe dezvoltare"
+      ],
+      "current_title": "ROKAE Human.X — robot umanoid | RobotGo",
+      "h1_to_preserve": "ROKAE Human.X",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Proiect pilot: transferul unor obiecte ușoare între posturi."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "versiunea și echiparea brațelor/mâinilor; mișcarea sau manipularea cerută; spațiul, operatorul și accesul software."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Ce funcții de manipulare trebuie demonstrate pentru proiect?",
+        "Ce interfețe și resurse sunt incluse pentru echipa de dezvoltare?"
+      ],
+      "questions_status": "planned_to_write",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/rokae-human-x-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/umanoizi/",
+        "/solutions/industrie/",
+        "/solutions/educatie/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru ROKAE Human.X",
+      "cta_destination": "/#/quote?product=rokae-human-x",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "rokae-ar",
+      "model": "ROKAE AR Series",
+      "path": "/product/rokae-ar/",
+      "priority": "P2",
+      "plan_status": "planned",
+      "existing_faq_status": "not_yet_published",
+      "buyer_context": [
+        "Educație & cercetare",
+        "Producție & asamblare"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "ROKAE AR Series",
+        "ROKAE AR Series preț",
+        "ROKAE AR Series specificații",
+        "ROKAE AR Series România",
+        "ROKAE AR Series controler",
+        "braț robotic integrare platformă",
+        "ROKAE AR prindere mecanică"
+      ],
+      "current_title": "ROKAE AR Series — brațe robotice | RobotGo",
+      "h1_to_preserve": "ROKAE AR Series",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Dezvoltare: integrarea unui braț într-un banc de cercetare."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "obiectele sau sistemul în care se integrează componenta; prinderea mecanică și alimentarea; interfețele și software-ul de control."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Ce controler, prindere și bază sunt necesare pentru AR Series?",
+        "Cum se verifică compatibilitatea cu platforma aleasă?"
+      ],
+      "questions_status": "planned_to_write",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/rokae-ar-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/accesorii/",
+        "/solutions/educatie/",
+        "/solutions/industrie/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru ROKAE AR Series",
+      "cta_destination": "/#/quote?product=rokae-ar",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "rokae-cr",
+      "model": "ROKAE CR Series",
+      "path": "/product/rokae-cr/",
+      "priority": "P1",
+      "plan_status": "planned",
+      "existing_faq_status": "not_yet_published",
+      "buyer_context": [
+        "Producție & asamblare",
+        "Educație & cercetare"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "ROKAE CR Series",
+        "ROKAE CR Series preț",
+        "ROKAE CR Series specificații",
+        "ROKAE CR Series România",
+        "ROKAE CR sarcină utilă",
+        "ROKAE CR rază de lucru",
+        "cobot ROKAE transfer piese"
+      ],
+      "current_title": "ROKAE CR Series — coboți | RobotGo",
+      "h1_to_preserve": "ROKAE CR Series",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Producție: transferul unor piese între dispozitive de fixare."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "masa piesei împreună cu scula; pozițiile de lucru și raza necesară; modul de alimentare și criteriile aplicației."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Cum alegi modelul CR după piesă și pozițiile de lucru?",
+        "Ce operații trebuie demonstrate înainte de acceptarea aplicației?"
+      ],
+      "questions_status": "planned_to_write",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/rokae-cr-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/coboti/",
+        "/solutions/industrie/",
+        "/solutions/educatie/",
+        "/guides/cobot-vs-robot-industrial/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru ROKAE CR Series",
+      "cta_destination": "/#/quote?product=rokae-cr",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "deep-lynx-m20",
+      "model": "DEEP Robotics LYNX M20",
+      "path": "/product/deep-lynx-m20/",
+      "priority": "P2",
+      "plan_status": "planned",
+      "existing_faq_status": "not_yet_published",
+      "buyer_context": [
+        "Inspecție tehnică",
+        "Educație & cercetare"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "DEEP Robotics LYNX M20",
+        "DEEP Robotics LYNX M20 preț",
+        "DEEP Robotics LYNX M20 specificații",
+        "DEEP Robotics LYNX M20 România",
+        "LYNX M20 roți picioare",
+        "DEEP LYNX M20 inspecție",
+        "robot hibrid traseu mixt"
+      ],
+      "current_title": "DEEP Robotics LYNX M20 — robot hibrid | RobotGo",
+      "h1_to_preserve": "DEEP Robotics LYNX M20",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Inspecție: documentarea vizuală a unor zone tehnice pe un traseu aprobat."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "suprafețele și tranzițiile traseului; senzorii și încărcătura suplimentară; funcțiile confirmate de rulare și deplasare."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Ce suprafețe și tranziții trebuie incluse într-o probă LYNX M20?",
+        "Cum se verifică echiparea pentru datele de inspecție dorite?"
+      ],
+      "questions_status": "planned_to_write",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/deep-lynx-m20-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/hibrizi/",
+        "/solutions/inspectie/",
+        "/solutions/educatie/",
+        "/guides/umanoid-vs-caine-robot/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru DEEP Robotics LYNX M20",
+      "cta_destination": "/#/quote?product=deep-lynx-m20",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "deep-x30",
+      "model": "DEEP Robotics X30",
+      "path": "/product/deep-x30/",
+      "priority": "P2",
+      "plan_status": "planned",
+      "existing_faq_status": "not_yet_published",
+      "buyer_context": [
+        "Inspecție tehnică",
+        "Producție & asamblare"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "DEEP Robotics X30",
+        "DEEP Robotics X30 preț",
+        "DEEP Robotics X30 specificații",
+        "DEEP Robotics X30 România",
+        "DEEP X30 inspecție tehnică",
+        "X30 cameră termică configurație",
+        "robot patruped inspecție infrastructură"
+      ],
+      "current_title": "DEEP Robotics X30 — robot patruped de inspecție | RobotGo",
+      "h1_to_preserve": "DEEP Robotics X30",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Fabrică: înregistrarea imaginilor unor puncte de inspecție stabilite."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "traseul, suprafețele și obstacolele; datele de colectat și senzorii; versiunea, controlul și echiparea."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Ce senzori trebuie incluși pentru măsurătoarea cerută?",
+        "Ce date despre traseu și mediu se verifică înainte de ofertă?"
+      ],
+      "questions_status": "planned_to_write",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/deep-x30-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/patrupezi/",
+        "/solutions/inspectie/",
+        "/solutions/industrie/",
+        "/guides/umanoid-vs-caine-robot/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru DEEP Robotics X30",
+      "cta_destination": "/#/quote?product=deep-x30",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "pudu-bellabot",
+      "model": "PUDU BellaBot",
+      "path": "/product/pudu-bellabot/",
+      "priority": "P1",
+      "plan_status": "planned",
+      "existing_faq_status": "published",
+      "buyer_context": [
+        "Restaurante & hoteluri",
+        "Entertainment & evenimente"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "PUDU BellaBot",
+        "PUDU BellaBot preț",
+        "PUDU BellaBot specificații",
+        "PUDU BellaBot România",
+        "BellaBot preț România",
+        "BellaBot capacitate tăvi",
+        "BellaBot ofertă restaurant"
+      ],
+      "current_title": "PUDU BellaBot — robot de servire | RobotGo",
+      "h1_to_preserve": "PUDU BellaBot",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Restaurant: transportul tăvilor din zona bucătăriei spre mesele alese."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "sarcina și punctele de lucru; planul traseului, praguri și culoare; programul, stația și interfețele necesare."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Cum verific dacă BellaBot poate transporta farfuriile restaurantului?",
+        "BellaBot preia comanda și pune singur farfuriile pe masă?",
+        "Ce informații sunt necesare pentru o ofertă BellaBot?"
+      ],
+      "questions_status": "published_to_review",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/pudu-bellabot-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/amr/",
+        "/solutions/horeca/",
+        "/solutions/evenimente/",
+        "/guides/bellabot-vs-keenon-t10/",
+        "/guides/robot-autonom-inteligenta-artificiala/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru PUDU BellaBot",
+      "cta_destination": "/#/quote?product=pudu-bellabot",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "pudu-cc1",
+      "model": "PUDU CC1",
+      "path": "/product/pudu-cc1/",
+      "priority": "P1",
+      "plan_status": "planned",
+      "existing_faq_status": "published",
+      "buyer_context": [
+        "Curățenie profesională",
+        "Restaurante & hoteluri"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "PUDU CC1",
+        "PUDU CC1 preț",
+        "PUDU CC1 specificații",
+        "PUDU CC1 România",
+        "PUDU CC1 aspirare mochetă",
+        "PUDU CC1 stație apă",
+        "PUDU CC1 ofertă"
+      ],
+      "current_title": "PUDU CC1 — robot de curățenie | RobotGo",
+      "h1_to_preserve": "PUDU CC1",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Birouri: trasee programate pentru întreținerea zonelor comune."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "pardoseala și suprafața efectiv accesibilă; echiparea pentru mochetă, dacă este necesară; tipul stației și gestionarea apei."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "PUDU CC1 aspiră și mocheta?",
+        "Stația de apă și încărcare este inclusă în prețul CC1?",
+        "Cum estimez timpul de curățare cu CC1?"
+      ],
+      "questions_status": "published_to_review",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/pudu-cc1-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/amr/",
+        "/solutions/curatenie/",
+        "/solutions/horeca/",
+        "/guides/pudu-cc1-vs-keenon-c40/",
+        "/guides/robot-autonom-inteligenta-artificiala/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru PUDU CC1",
+      "cta_destination": "/#/quote?product=pudu-cc1",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "keenon-t10",
+      "model": "KEENON DINERBOT T10",
+      "path": "/product/keenon-t10/",
+      "priority": "P1",
+      "plan_status": "planned",
+      "existing_faq_status": "published",
+      "buyer_context": [
+        "Restaurante & hoteluri",
+        "Entertainment & evenimente"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "KEENON DINERBOT T10",
+        "KEENON DINERBOT T10 preț",
+        "KEENON DINERBOT T10 specificații",
+        "KEENON DINERBOT T10 România",
+        "DINERBOT T10 culoare înguste",
+        "T10 robot promovare",
+        "KEENON T10 preț România"
+      ],
+      "current_title": "KEENON DINERBOT T10 — robot de servire | RobotGo",
+      "h1_to_preserve": "KEENON DINERBOT T10",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Restaurant: transportul comenzilor între puncte de servire."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "sarcina și punctele de lucru; planul traseului, praguri și culoare; programul, stația și interfețele necesare."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Cum aleg între T10 pentru servire și T10 pentru promovare?",
+        "T10 poate lucra în culoarele înguste ale restaurantului?",
+        "T10 vorbește română și rulează orice reclamă?"
+      ],
+      "questions_status": "published_to_review",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/keenon-t10-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/amr/",
+        "/solutions/horeca/",
+        "/solutions/evenimente/",
+        "/guides/bellabot-vs-keenon-t10/",
+        "/guides/robot-autonom-inteligenta-artificiala/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru KEENON DINERBOT T10",
+      "cta_destination": "/#/quote?product=keenon-t10",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "keenon-c40",
+      "model": "KEENON KLEENBOT C40",
+      "path": "/product/keenon-c40/",
+      "priority": "P1",
+      "plan_status": "planned",
+      "existing_faq_status": "published",
+      "buyer_context": [
+        "Curățenie profesională",
+        "Restaurante & hoteluri"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "KEENON KLEENBOT C40",
+        "KEENON KLEENBOT C40 preț",
+        "KEENON KLEENBOT C40 specificații",
+        "KEENON KLEENBOT C40 România",
+        "KLEENBOT C40 rezervoare",
+        "KLEENBOT C40 consumabile",
+        "KEENON C40 ofertă"
+      ],
+      "current_title": "KEENON KLEENBOT C40 — robot de curățenie | RobotGo",
+      "h1_to_preserve": "KEENON KLEENBOT C40",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Clădire de birouri: întreținerea periodică a zonelor de circulație."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "pardoseala și murdăria reprezentativă; consumabilele, rezervoarele și accesul la stație; intervalul de lucru și operațiile personalului."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Ce trebuie verificat înainte de a alege KLEENBOT C40?",
+        "Câtă apă transportă KLEENBOT C40?",
+        "Ce consumabile cer în oferta pentru C40?"
+      ],
+      "questions_status": "published_to_review",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/keenon-c40-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/amr/",
+        "/solutions/curatenie/",
+        "/solutions/horeca/",
+        "/guides/pudu-cc1-vs-keenon-c40/",
+        "/guides/mentenanta-robotilor/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru KEENON KLEENBOT C40",
+      "cta_destination": "/#/quote?product=keenon-c40",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "keenon-w3",
+      "model": "KEENON BUTLERBOT W3",
+      "path": "/product/keenon-w3/",
+      "priority": "P1",
+      "plan_status": "planned",
+      "existing_faq_status": "not_yet_published",
+      "buyer_context": [
+        "Restaurante & hoteluri"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "KEENON BUTLERBOT W3",
+        "KEENON BUTLERBOT W3 preț",
+        "KEENON BUTLERBOT W3 specificații",
+        "KEENON BUTLERBOT W3 România",
+        "BUTLERBOT W3 integrare lift",
+        "robot livrare articole camere hotel",
+        "KEENON W3 compartimente"
+      ],
+      "current_title": "KEENON BUTLERBOT W3 — robot pentru hoteluri | RobotGo",
+      "h1_to_preserve": "KEENON BUTLERBOT W3",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Hotel: transportul articolelor solicitate de oaspeți."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "planul etajelor, ușile și interfața liftului; articolele transportate și preluarea din compartimente; responsabilitățile hotelului și integrarea."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Ce informații despre lift și uși sunt necesare înainte de oferta W3?",
+        "Cum organizezi încărcarea, preluarea și accesul la compartimente?"
+      ],
+      "questions_status": "planned_to_write",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/keenon-w3-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/amr/",
+        "/solutions/horeca/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru KEENON BUTLERBOT W3",
+      "cta_destination": "/#/quote?product=keenon-w3",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "dobot-nova2",
+      "model": "DOBOT Nova 2",
+      "path": "/product/dobot-nova2/",
+      "priority": "P1",
+      "plan_status": "planned",
+      "existing_faq_status": "not_yet_published",
+      "buyer_context": [
+        "Producție & asamblare",
+        "Restaurante & hoteluri",
+        "Educație & cercetare"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "DOBOT Nova 2",
+        "DOBOT Nova 2 preț",
+        "DOBOT Nova 2 specificații",
+        "DOBOT Nova 2 România",
+        "DOBOT Nova 2 gripper",
+        "cobot compact obiecte ușoare",
+        "DOBOT Nova 2 integrare"
+      ],
+      "current_title": "DOBOT Nova 2 — cobot compact | RobotGo",
+      "h1_to_preserve": "DOBOT Nova 2",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Atelier: sortarea unor obiecte mici pe o masă de lucru."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "masa piesei împreună cu scula; pozițiile de lucru și raza necesară; modul de alimentare și criteriile aplicației."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Cum calculezi încărcătura cu tot cu dispozitivul de prindere?",
+        "Ce suport, sculă și programare se verifică în oferta Nova 2?"
+      ],
+      "questions_status": "planned_to_write",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/dobot-nova2-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/coboti/",
+        "/solutions/industrie/",
+        "/solutions/horeca/",
+        "/solutions/educatie/",
+        "/guides/cobot-vs-robot-industrial/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru DOBOT Nova 2",
+      "cta_destination": "/#/quote?product=dobot-nova2",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "dobot-magician-e6",
+      "model": "DOBOT Magician E6",
+      "path": "/product/dobot-magician-e6/",
+      "priority": "P2",
+      "plan_status": "planned",
+      "existing_faq_status": "not_yet_published",
+      "buyer_context": [
+        "Educație & cercetare"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "DOBOT Magician E6",
+        "DOBOT Magician E6 preț",
+        "DOBOT Magician E6 specificații",
+        "DOBOT Magician E6 România",
+        "DOBOT Magician E6 laborator",
+        "braț robotic didactic șase axe",
+        "Magician E6 accesorii educație"
+      ],
+      "current_title": "DOBOT Magician E6 — braț robotic educațional | RobotGo",
+      "h1_to_preserve": "DOBOT Magician E6",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Laborator: exercițiu de sortare cu obiecte didactice."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "masa piesei împreună cu scula; pozițiile de lucru și raza necesară; modul de alimentare și criteriile aplicației."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Ce exerciții de cinematică și manipulare intră în proiectul didactic?",
+        "Ce accesorii și acces software sunt necesare laboratorului?"
+      ],
+      "questions_status": "planned_to_write",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/dobot-magician-e6-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/coboti/",
+        "/solutions/educatie/",
+        "/guides/cobot-vs-robot-industrial/",
+        "/guides/robot-programabil-sdk-ros/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru DOBOT Magician E6",
+      "cta_destination": "/#/quote?product=dobot-magician-e6",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "inspire-rh56bfx",
+      "model": "INSPIRE RH56BFX",
+      "path": "/product/inspire-rh56bfx/",
+      "priority": "P2",
+      "plan_status": "planned",
+      "existing_faq_status": "not_yet_published",
+      "buyer_context": [
+        "Educație & cercetare",
+        "Producție & asamblare"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "INSPIRE RH56BFX",
+        "INSPIRE RH56BFX preț",
+        "INSPIRE RH56BFX specificații",
+        "INSPIRE RH56BFX România",
+        "RH56BFX mână stângă dreaptă",
+        "INSPIRE RH56BFX integrare",
+        "mână robotică interfețe control"
+      ],
+      "current_title": "INSPIRE RH56BFX — mână robotică | RobotGo",
+      "h1_to_preserve": "INSPIRE RH56BFX",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Cercetare: comparația prizelor pentru obiecte ușoare."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "obiectele sau sistemul în care se integrează componenta; prinderea mecanică și alimentarea; interfețele și software-ul de control."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Cum alegi versiunea stânga/dreapta și prinderea mecanică?",
+        "Ce interfețe și alimentare cere integrarea RH56BFX?"
+      ],
+      "questions_status": "planned_to_write",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/inspire-rh56bfx-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/accesorii/",
+        "/solutions/educatie/",
+        "/solutions/industrie/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru INSPIRE RH56BFX",
+      "cta_destination": "/#/quote?product=inspire-rh56bfx",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "geekplus-p-series",
+      "model": "Geek+ P Series",
+      "path": "/product/geekplus-p-series/",
+      "priority": "P1",
+      "plan_status": "planned",
+      "existing_faq_status": "not_yet_published",
+      "buyer_context": [
+        "Depozite & logistică"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "Geek+ P Series",
+        "Geek+ P Series preț",
+        "Geek+ P Series specificații",
+        "Geek+ P Series România",
+        "Geekplus P Series rafturi",
+        "robot marfa la persoană depozit",
+        "Geekplus integrare WMS"
+      ],
+      "current_title": "Geek+ P Series — roboți pentru depozite | RobotGo",
+      "h1_to_preserve": "Geek+ P Series",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Depozit: aducerea rafturilor către posturile de pregătire a comenzilor."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "tipurile de rafturi și posturile de lucru; fluxul marfa-la-persoană și încărcătura; interfețele cu sistemul de gestiune."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Ce trebuie să includă proiectul pe lângă robotul din P Series?",
+        "Cum se definesc interfețele dintre WMS, rafturi și posturile de lucru?"
+      ],
+      "questions_status": "planned_to_write",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/geekplus-p-series-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/amr/",
+        "/solutions/logistica/",
+        "/guides/amr-vs-agv/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru Geek+ P Series",
+      "cta_destination": "/#/quote?product=geekplus-p-series",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "ubtech-walker-s2",
+      "model": "UBTECH Walker S2",
+      "path": "/product/ubtech-walker-s2/",
+      "priority": "P2",
+      "plan_status": "planned",
+      "existing_faq_status": "not_yet_published",
+      "buyer_context": [
+        "Producție & asamblare",
+        "Depozite & logistică",
+        "Educație & cercetare"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "UBTECH Walker S2",
+        "UBTECH Walker S2 preț",
+        "UBTECH Walker S2 specificații",
+        "UBTECH Walker S2 România",
+        "Walker S2 schimb baterie",
+        "UBTECH Walker S2 integrare industrială",
+        "Walker S2 manipulare proiect"
+      ],
+      "current_title": "UBTECH Walker S2 — robot umanoid industrial | RobotGo",
+      "h1_to_preserve": "UBTECH Walker S2",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Proiect pilot: manipularea cutiilor într-o zonă industrială delimitată."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "versiunea și echiparea brațelor/mâinilor; mișcarea sau manipularea cerută; spațiul, operatorul și accesul software."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Ce infrastructură cere schimbul bateriei în configurația propusă?",
+        "Cum se stabilește proba pentru operația industrială solicitată?"
+      ],
+      "questions_status": "planned_to_write",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/ubtech-walker-s2-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/umanoizi/",
+        "/solutions/industrie/",
+        "/solutions/logistica/",
+        "/solutions/educatie/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru UBTECH Walker S2",
+      "cta_destination": "/#/quote?product=ubtech-walker-s2",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "unitree-h1",
+      "model": "Unitree H1",
+      "path": "/product/unitree-h1/",
+      "priority": "P2",
+      "plan_status": "planned",
+      "existing_faq_status": "not_yet_published",
+      "buyer_context": [
+        "Educație & cercetare",
+        "Entertainment & evenimente"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "Unitree H1",
+        "Unitree H1 preț",
+        "Unitree H1 specificații",
+        "Unitree H1 România",
+        "Unitree H1 vs H1-2",
+        "Unitree H1 laborator",
+        "H1 cercetare mobilitate"
+      ],
+      "current_title": "Unitree H1 — robot umanoid | RobotGo",
+      "h1_to_preserve": "Unitree H1",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Cercetare: evaluarea mersului într-un spațiu de laborator dedicat."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "versiunea și echiparea brațelor/mâinilor; mișcarea sau manipularea cerută; spațiul, operatorul și accesul software."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Ce diferențe de versiune trebuie verificate între H1 și H1-2?",
+        "Cum definești spațiul și funcțiile necesare proiectului de cercetare?"
+      ],
+      "questions_status": "planned_to_write",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/unitree-h1-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/umanoizi/",
+        "/solutions/educatie/",
+        "/solutions/evenimente/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru Unitree H1",
+      "cta_destination": "/#/quote?product=unitree-h1",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "agilex-scout-mini",
+      "model": "AgileX SCOUT MINI",
+      "path": "/product/agilex-scout-mini/",
+      "priority": "P2",
+      "plan_status": "planned",
+      "existing_faq_status": "not_yet_published",
+      "buyer_context": [
+        "Educație & cercetare",
+        "Inspecție tehnică"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "AgileX SCOUT MINI",
+        "AgileX SCOUT MINI preț",
+        "AgileX SCOUT MINI specificații",
+        "AgileX SCOUT MINI România",
+        "SCOUT MINI integrare senzori",
+        "AgileX SCOUT MINI ROS",
+        "bază mobilă robotică prototipare"
+      ],
+      "current_title": "AgileX SCOUT MINI — platformă robotică UGV | RobotGo",
+      "h1_to_preserve": "AgileX SCOUT MINI",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Universitate: laborator de localizare și cartografiere cu senzori integrați."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "masa și montajul echipamentului; alimentarea, calculul și senzorii; software-ul și responsabilitatea integrării."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Ce lipsește unei baze mobile pentru a deveni aplicația cerută?",
+        "Cum verifici alimentarea, montajul senzorilor și pachetele software?"
+      ],
+      "questions_status": "planned_to_write",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/agilex-scout-mini-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/ugv-civile/",
+        "/solutions/educatie/",
+        "/solutions/inspectie/",
+        "/guides/amr-vs-agv/",
+        "/guides/robot-programabil-sdk-ros/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru AgileX SCOUT MINI",
+      "cta_destination": "/#/quote?product=agilex-scout-mini",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "brainco-revo2",
+      "model": "BrainCo Revo 2",
+      "path": "/product/brainco-revo2/",
+      "priority": "P2",
+      "plan_status": "planned",
+      "existing_faq_status": "not_yet_published",
+      "buyer_context": [
+        "Educație & cercetare",
+        "Producție & asamblare"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "BrainCo Revo 2",
+        "BrainCo Revo 2 preț",
+        "BrainCo Revo 2 specificații",
+        "BrainCo Revo 2 România",
+        "BrainCo Revo 2 integrare",
+        "Revo 2 cercetare prindere",
+        "mână robotică teleoperare laborator"
+      ],
+      "current_title": "BrainCo Revo 2 — mână robotică | RobotGo",
+      "h1_to_preserve": "BrainCo Revo 2",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Cercetare: compararea unor prize pe obiecte de forme diferite."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "obiectele sau sistemul în care se integrează componenta; prinderea mecanică și alimentarea; interfețele și software-ul de control."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Ce date despre obiecte sunt necesare pentru alegerea mâinii Revo 2?",
+        "Ce hardware și software trebuie definite pentru teleoperare?"
+      ],
+      "questions_status": "planned_to_write",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/brainco-revo2-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/accesorii/",
+        "/solutions/educatie/",
+        "/solutions/industrie/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru BrainCo Revo 2",
+      "cta_destination": "/#/quote?product=brainco-revo2",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "siasun-gcr5",
+      "model": "SIASUN DUCO GCR5-910",
+      "path": "/product/siasun-gcr5/",
+      "priority": "P1",
+      "plan_status": "planned",
+      "existing_faq_status": "not_yet_published",
+      "buyer_context": [
+        "Producție & asamblare",
+        "Educație & cercetare"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "SIASUN DUCO GCR5-910",
+        "SIASUN DUCO GCR5-910 preț",
+        "SIASUN DUCO GCR5-910 specificații",
+        "SIASUN DUCO GCR5-910 România",
+        "DUCO GCR5-910 aplicații",
+        "cobot 5 kg manipulare piese",
+        "SIASUN GCR5 integrare"
+      ],
+      "current_title": "SIASUN DUCO GCR5-910 — cobot | RobotGo",
+      "h1_to_preserve": "SIASUN DUCO GCR5-910",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Atelier: transferul componentelor între dispozitive de fixare."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "masa piesei împreună cu scula; pozițiile de lucru și raza necesară; modul de alimentare și criteriile aplicației."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Cum verifici dacă piesa și scula se încadrează în sarcina aplicației?",
+        "Ce date despre post sunt necesare pentru o ofertă GCR5-910?"
+      ],
+      "questions_status": "planned_to_write",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/siasun-gcr5-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/coboti/",
+        "/solutions/industrie/",
+        "/solutions/educatie/",
+        "/guides/cobot-vs-robot-industrial/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru SIASUN DUCO GCR5-910",
+      "cta_destination": "/#/quote?product=siasun-gcr5",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    },
+    {
+      "product_id": "pudu-t300",
+      "model": "PUDU T300 Standard",
+      "path": "/product/pudu-t300/",
+      "priority": "P1",
+      "plan_status": "planned",
+      "existing_faq_status": "not_yet_published",
+      "buyer_context": [
+        "Depozite & logistică",
+        "Producție & asamblare"
+      ],
+      "primary_intent": "Verifică modelul, configurația și potrivirea cu sarcina înainte de ofertă.",
+      "queries": [
+        "PUDU T300 Standard",
+        "PUDU T300 Standard preț",
+        "PUDU T300 Standard specificații",
+        "PUDU T300 Standard România",
+        "PUDU T300 Standard vs Lifting",
+        "robot transport materiale 300 kg",
+        "T300 puncte transfer materiale"
+      ],
+      "current_title": "PUDU T300 Standard — robot pentru transport | RobotGo",
+      "h1_to_preserve": "PUDU T300 Standard",
+      "outline": [
+        {
+          "heading": "Rolul modelului în proiect",
+          "instruction": "Explică sarcina pe care o susține modelul, folosind descrierea și aplicațiile confirmate din catalog."
+        },
+        {
+          "heading": "Scenariu concret de evaluat",
+          "instruction": "Fabrică: livrarea componentelor către posturile de lucru."
+        },
+        {
+          "heading": "Versiunea și echiparea necesară",
+          "instruction": "Delimitează modelul de variantele apropiate; precizează ce se confirmă în ofertă."
+        },
+        {
+          "heading": "Datele pentru solicitarea ofertei",
+          "instruction": "varianta Standard sau funcția de ridicare cerută; încărcătura și punctele de transfer; traseul și interfețele cu ușile/liftul."
+        },
+        {
+          "heading": "Întrebări specifice modelului",
+          "instruction": "Păstrează răspunsurile existente verificate; redactează cele planificate numai după verificarea surselor."
+        }
+      ],
+      "questions": [
+        "Cum alegi între T300 Standard și o variantă cu ridicare?",
+        "Cum verifici încărcătura, punctele de transfer și traseul?"
+      ],
+      "questions_status": "planned_to_write",
+      "evidence_required": [
+        "fișa oficială a modelului și versiunii",
+        "lista configurației și accesoriilor ofertate",
+        "sursa și identificarea exactă a imaginilor",
+        "confirmarea distinctă a oricărei funcții software menționate"
+      ],
+      "evidence_status": "verify_before_editing",
+      "current_primary_image": "assets/products/pudu-t300-0.webp",
+      "image_instruction": "Verifică vizual modelul și varianta înainte de descrierea alt; contextul imaginii trebuie să corespundă textului. Imaginea nu dovedește accesoriile incluse.",
+      "context_links": [
+        "/categories/amr/",
+        "/solutions/logistica/",
+        "/solutions/industrie/",
+        "/guides/amr-vs-agv/",
+        "/guides/cat-costa-un-robot/",
+        "/contact/"
+      ],
+      "cta": "Solicită ofertă pentru PUDU T300 Standard",
+      "cta_destination": "/#/quote?product=pudu-t300",
+      "delivery_checks": [
+        "răspunsuri utile și distincte în RO/EN",
+        "titlu și H1 coerente cu modelul",
+        "conținut lizibil în HTML inițial și după JavaScript",
+        "legături către categorie, aplicații și ofertă",
+        "fără preț, stoc, performanță sau compatibilitate presupuse"
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "C01",
+      "title": "DOBOT Nova 2 sau Magician E6: aplicație comercială ori laborator?",
+      "product_ids": [
+        "dobot-nova2",
+        "dobot-magician-e6"
+      ],
+      "proposed_path": "/guides/dobot-nova2-vs-magician-e6/",
+      "decision": "Separă obiectivul de manipulare compactă de obiectivul didactic.",
+      "criteria": [
+        "sarcina și scula",
+        "raza și pozițiile de lucru",
+        "programarea și accesoriile",
+        "resursele de instruire",
+        "integrarea aplicației complete"
+      ],
+      "required_evidence": [
+        "fișele versiunilor Nova 2 și Magician E6",
+        "controlere, scule și software confirmate"
+      ],
+      "supporting_paths": [
+        "/categories/coboti/",
+        "/solutions/educatie/",
+        "/solutions/industrie/"
+      ],
+      "status": "candidate_not_published",
+      "priority": "P2",
+      "publication_gate": "Publică numai după verificarea datelor, evaluarea utilității distincte și completarea ambelor fișe. Nu declara un câștigător fără criterii și dovezi.",
+      "question_candidates": [
+        "DOBOT Nova 2 sau Magician E6: aplicație comercială ori laborator?",
+        "Ce configurație trebuie inclusă în comparație?",
+        "Ce se verifică într-o probă relevantă?"
+      ]
+    },
+    {
+      "id": "C02",
+      "title": "DEEP X30 sau LYNX M20: alegerea platformei pentru inspecție",
+      "product_ids": [
+        "deep-x30",
+        "deep-lynx-m20"
+      ],
+      "proposed_path": "/guides/deep-x30-vs-lynx-m20/",
+      "decision": "Compară mobilitatea patrupedă și cea hibridă în raport cu traseul civil propus.",
+      "criteria": [
+        "suprafețe și tranziții",
+        "echipare cu senzori",
+        "sarcină montată și alimentare",
+        "date colectate și raportare",
+        "proba pe traseul reprezentativ"
+      ],
+      "required_evidence": [
+        "versiunile exacte și limitele publicate",
+        "compatibilitatea senzorilor",
+        "condițiile documentate ale oricărei demonstrații"
+      ],
+      "supporting_paths": [
+        "/categories/patrupezi/",
+        "/categories/hibrizi/",
+        "/solutions/inspectie/"
+      ],
+      "status": "candidate_not_published",
+      "priority": "P2",
+      "publication_gate": "Publică numai după verificarea datelor, evaluarea utilității distincte și completarea ambelor fișe. Nu declara un câștigător fără criterii și dovezi.",
+      "question_candidates": [
+        "DEEP X30 sau LYNX M20: alegerea platformei pentru inspecție",
+        "Ce configurație trebuie inclusă în comparație?",
+        "Ce se verifică într-o probă relevantă?"
+      ]
+    },
+    {
+      "id": "C03",
+      "title": "INSPIRE RH56BFX sau BrainCo Revo 2: integrarea unei mâini robotice",
+      "product_ids": [
+        "inspire-rh56bfx",
+        "brainco-revo2"
+      ],
+      "proposed_path": "/guides/inspire-rh56bfx-vs-brainco-revo2/",
+      "decision": "Alege componenta după obiecte, montaj și controlul disponibil în sistem.",
+      "criteria": [
+        "versiune stânga/dreapta",
+        "prindere mecanică",
+        "alimentare și interfețe",
+        "date și control software",
+        "scenariul de prindere"
+      ],
+      "required_evidence": [
+        "fișe de versiune și interfețe",
+        "accesul software și suportul controlerului",
+        "imaginile componentelor identificate"
+      ],
+      "supporting_paths": [
+        "/categories/accesorii/",
+        "/solutions/educatie/",
+        "/guides/robot-programabil-sdk-ros/"
+      ],
+      "status": "candidate_not_published",
+      "priority": "P2",
+      "publication_gate": "Publică numai după verificarea datelor, evaluarea utilității distincte și completarea ambelor fișe. Nu declara un câștigător fără criterii și dovezi.",
+      "question_candidates": [
+        "INSPIRE RH56BFX sau BrainCo Revo 2: integrarea unei mâini robotice",
+        "Ce configurație trebuie inclusă în comparație?",
+        "Ce se verifică într-o probă relevantă?"
+      ]
+    },
+    {
+      "id": "C04",
+      "title": "Unitree G1 sau H1: ce cere proiectul de cercetare?",
+      "product_ids": [
+        "unitree-g1",
+        "unitree-h1"
+      ],
+      "proposed_path": "/guides/unitree-g1-vs-h1/",
+      "decision": "Compară dimensiunea și obiectivul de cercetare fără a transfera specificații între G1, G1 EDU, H1 și H1-2.",
+      "criteria": [
+        "versiunea exactă",
+        "spațiu și operare",
+        "acces la dezvoltare",
+        "echipare de manipulare",
+        "sarcina demonstrată"
+      ],
+      "required_evidence": [
+        "fișe oficiale pentru versiunile comparate",
+        "confirmarea accesului SDK",
+        "condițiile și echiparea demonstrației"
+      ],
+      "supporting_paths": [
+        "/categories/umanoizi/",
+        "/solutions/educatie/",
+        "/guides/robot-programabil-sdk-ros/"
+      ],
+      "status": "candidate_not_published",
+      "priority": "P2",
+      "publication_gate": "Publică numai după verificarea datelor, evaluarea utilității distincte și completarea ambelor fișe. Nu declara un câștigător fără criterii și dovezi.",
+      "question_candidates": [
+        "Unitree G1 sau H1: ce cere proiectul de cercetare?",
+        "Ce configurație trebuie inclusă în comparație?",
+        "Ce se verifică într-o probă relevantă?"
+      ]
+    }
+  ],
+  "rules": {
+    "preserve_current_urls": true,
+    "keyword_map": "docs/SEO_QUERY_MAP.csv",
+    "query_count": 353,
+    "require_model_version_evidence": true,
+    "new_public_pages": 0
+  }
+}

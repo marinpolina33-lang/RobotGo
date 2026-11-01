@@ -1,5 +1,9 @@
 # RobotGo — audit și implementare SEO
 
+## Plan de execuție pentru întregul catalog — 1 noiembrie 2026
+
+Extinderea 3 adaugă fișe de lucru pentru 26 de modele și patru comparații candidate. Planul are 20 de acțiuni, dependențe și o procedură de măsurare. Cele 353 de expresii, 60 de pagini și 18 întrebări publicate rămân baza existentă. Fișele noi sunt planuri, nu completări publicate. Nu s-a executat un deploy, nu s-a trimis sitemap și nu sunt declarate măsurători Google noi. Vezi [planul principal](PLAN_SEO_ROBOTGO.md), [fișele editoriale](SEO_CONTENT_BRIEFS.md) și [planul de măsurare](SEO_MEASUREMENT_PLAN.md).
+
 ## Planul de extindere și măsurare — 1 noiembrie 2026
 
 [Planul SEO](PLAN_SEO_ROBOTGO.md) acoperă acum 60 pagini țintă și 353 expresii editoriale (86 noi), cu o singură pagină principală desemnată pentru fiecare expresie. Include 13 acțiuni și briefuri cu 40 de întrebări pentru cele 20 de produse fără FAQ propriu. Acțiunile și întrebările noi sunt marcate **planificate**, nu implementate. Cele 60 de pagini și 18 întrebări deja publicate constituie baza de comparație. Nu s-au folosit date Search Console sau volume de căutare; planul consemnează explicit aceste limite și criteriile de evaluare.

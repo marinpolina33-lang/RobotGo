@@ -1,22 +1,32 @@
 # Plan SEO extins — RobotGo
 
-**Versiune: 1 noiembrie 2026 · România · catalog cu solicitare de ofertă**
+**Versiune: 1 noiembrie 2026 · Extinderea 3 · România · catalog cu solicitare de ofertă**
 
 ## Obiectiv și stadiu
 
 Obiectivul este atragerea oamenilor care caută un robot potrivit unei activități și transformarea interesului în solicitări de ofertă clare. Planul păstrează cele 26 de modele/familii din catalog, cele 7 categorii și 7 domenii. Prioritățile de mai jos sunt bazate pe potrivirea cu oferta și utilitatea informației; nu avem în această extindere un export Search Console sau volume măsurate.
 
-Sunt publicate **60 de pagini**, dintre care **12 ghiduri**. Șase produse au deja **18 întrebări specifice** în RO/EN. Această revizie extinde planul la **60 pagini țintă și 353 expresii**, cu **86 expresii noi**. Fișierul cuvinte-cheie descrie ce urmărim editorial; nu confirmă că fiecare răspuns propus este deja pe site.
+Sunt publicate **60 de pagini**, dintre care **12 ghiduri**. Șase produse au deja **18 întrebări specifice** în RO/EN. Etapa anterioară a adăugat **86 de expresii**; această revizie păstrează baza de **60 de pagini țintă și 353 de expresii**. Fișierul cuvinte-cheie descrie ce urmărim editorial; nu confirmă că fiecare răspuns propus este deja pe site.
 
-Planul adaugă **13 acțiuni prioritizate** și briefuri pentru cele **20 de produse** rămase fără întrebări proprii. Cele 40 de întrebări din aceste briefuri sunt propuneri de redactare. După verificare și implementare, catalogul ar avea 58 de întrebări specifice, inclusiv cele 18 existente.
+Planul include acum **20 de acțiuni prioritizate**, fișe de lucru complete pentru toate cele **26 de modele** și **4 comparații candidate**. Cele 20 de produse rămase fără întrebări proprii păstrează briefurile din etapa anterioară. Cele 40 de întrebări din aceste briefuri sunt propuneri de redactare. După verificare și implementare, catalogul ar avea 58 de întrebări specifice, inclusiv cele 18 existente.
+
+
+### Ce aduce extinderea 3
+
+- [SEO_CONTENT_BRIEFS.md](SEO_CONTENT_BRIEFS.md): pentru fiecare model — căutări, titlul actual, structura completării, întrebări, dovezi, imagini, legături și acțiunea cumpărătorului.
+- Patru comparații propuse: Nova 2–Magician E6, X30–LYNX M20, RH56BFX–Revo 2 și G1–H1. Adresele candidate nu sunt publicate.
+- Șapte acțiuni suplimentare pentru comparații, imagini, experiență pe mobil, engleză, date structurate, URL-uri și întreținerea conținutului.
+- [SEO_MEASUREMENT_PLAN.md](SEO_MEASUREMENT_PLAN.md): indicatori, surse, condiții de măsurare și reguli pentru următoarea decizie.
+
+Cele **353 de expresii** și **60 de pagini publice** rămân baza planului. Această extindere adaugă instrucțiuni de execuție și verificare, fără conținut nou publicat sau poziții Google declarate.
 
 ## 1. Ordinea de lucru
 
 | Etapă | Prioritate | Rezultat urmărit | Condiție de trecere |
 |---|---|---|---|
-| A — Ofertare și diagnostic | P1 | Date de referință Google, șase fișe comerciale și aplicațiile hotel/logistică/manipulare | Fiecare pagină răspunde unui proiect concret și duce la oferta potrivită |
-| B — Catalog și demonstrații | P2 | Celelalte 14 fișe, laborator, inspecție, componente, servicii și video | Funcții documentate pentru versiune și conținut distinct față de paginile existente |
-| C — Evaluare și dovezi | P1–P3 | Ajustări bazate pe date, cereri calificate și proiecte reale | Se folosesc rezultate observate; publicarea este distinctă de performanța Google |
+| A — Ofertare și diagnostic | P1 | Date Google, măsurare pe mobil, șase fișe comerciale și aplicațiile hotel/logistică/manipulare | Fiecare pagină răspunde unui proiect concret și duce la oferta potrivită |
+| B — Catalog și demonstrații | P2 | Celelalte 14 fișe, comparații, imagini, video, servicii și verificări tehnice | Funcții documentate pentru versiune și conținut distinct față de paginile existente |
+| C — Evaluare și dovezi | P1–P3 | Ajustări bazate pe date, cereri calificate, proiecte reale, întreținere și evaluarea versiunii EN | Se folosesc rezultate observate; publicarea este distinctă de performanța Google |
 
 Etapele descriu ordinea recomandată. Nu creează programări automate și nu promit un termen de indexare sau un număr de cereri.
 
@@ -152,6 +162,62 @@ Etapele descriu ordinea recomandată. Nu creează programări automate și nu pr
 
 **De confirmat:** Date Search Console suficiente; prioritățile actuale sunt editoriale și comerciale, fără volume estimate.
 
+### P14 · P2 · Pregătește patru comparații suplimentare
+
+**Stadiu: planificat.** Aplică cele patru fișe comparative C01–C04, după verificarea modelelor.
+
+**Finalizat când:** Fiecare comparație are o întrebare de alegere, criterii verificabile și surse; URL-urile propuse rămân în plan până la publicare.
+
+**De confirmat:** Fișele de versiune și confirmarea utilității distincte față de ghidurile actuale.
+
+### P15 · P2 · Verifică descoperirea și contextul imaginilor
+
+**Stadiu: planificat.** Inventariază imaginile principale și galeriile, textul alt, contextul și corespondența cu modelul.
+
+**Finalizat când:** Imagini relevante în elemente HTML, URL-uri accesibile, dimensiuni rezervate și descrieri corecte; sitemap-ul de imagini reflectă paginile reale.
+
+**De confirmat:** Identificarea și sursa imaginilor; se păstrează identitatea vizuală aprobată și se remediază numai probleme observate.
+
+### P16 · P1 · Măsoară și îmbunătățește experiența pe mobil
+
+**Stadiu: planificat.** Obține o măsurare de laborator repetabilă și date de teren dacă sunt disponibile; verifică filtrele, galeria, meniul și cererea de ofertă.
+
+**Finalizat când:** Raport înainte/după pentru pagini și condiții comparabile. LCP, INP și CLS sunt raportate cu sursa; lipsa datelor de teren rămâne explicită.
+
+**De confirmat:** Dispozitiv, conexiune și instrument notate; scorul de laborator nu este declarat rezultat al utilizatorilor reali.
+
+### P17 · P3 · Proiectează indexarea separată a versiunii engleze
+
+**Stadiu: planificat.** Evaluează cererea în engleză și proiectează URL-uri lingvistice distincte, dacă extinderea este justificată.
+
+**Finalizat când:** Traduceri complete, canonical propriu și legături reciproce între limbile publicate; hreflang indică numai variante existente.
+
+**De confirmat:** Date despre public și capacitate de întreținere. Selectorul EN actual folosește aceeași adresă și nu dovedește indexarea separată.
+
+### P18 · P2 · Verifică datele structurate în raport cu oferta reală
+
+**Stadiu: planificat.** Păstrează marcajele existente corecte și verifică eligibilitatea înainte de a adăuga tipuri noi.
+
+**Finalizat când:** Marcajele descriu conținutul vizibil. Nu se introduce preț zero pentru ofertă, recenzie sau stoc fictiv; eventualele erori au corecție documentată.
+
+**De confirmat:** Condițiile Google pentru tipul de rezultat și date comerciale reale. Validarea tehnică nu garantează afișarea unui rezultat îmbogățit.
+
+### P19 · P2 · Reverifică filtrele, URL-urile și paginile private
+
+**Stadiu: planificat.** Revizuiește canonical, parametrii, paginile inexistente și sitemap-ul; păstrează excluderea conturilor și cererilor personale din indexul public.
+
+**Finalizat când:** Catalogul rămâne accesibil prin linkuri HTML, paginile inexistente răspund corect și sitemap-ul conține doar pagini publice canonice.
+
+**De confirmat:** Răspunsuri HTTP și verificarea rutelor; autentificarea se testează separat de regulile SEO și nu se slăbește.
+
+### P20 · P2 · Stabilește revizia conținutului și a versiunilor
+
+**Stadiu: planificat.** Înregistrează sursa, versiunea, data verificării și motivul fiecărei schimbări tehnice sau comerciale.
+
+**Finalizat când:** Modificările de model, accesoriu ori disponibilitate declanșează revizuirea fișei și a comparațiilor care o folosesc.
+
+**De confirmat:** Date reale de la furnizori și oferta comercială; se actualizează data articolului numai când conținutul a fost modificat substanțial.
+
 ## 3. Briefuri pentru cele 20 de modele
 
 Întrebările se completează în fișa produsului. O pagină nouă se justifică doar când răspunde unei nevoi distincte, cu material suficient; nu se publică automat câte un articol pentru fiecare expresie.
@@ -215,12 +281,21 @@ Mapa completă este în [SEO_QUERY_MAP.csv](SEO_QUERY_MAP.csv). Variantele cu ș
 - Prețurile, stocul, recenziile, garanțiile, acreditările și rezultatele din teren se publică numai cu suport real. Oferta comercială rămâne cea deja stabilită pentru RobotGo.
 - Conținutul despre România susține livrarea reală; nu se creează pagini pentru orașe în care nu există informație locală distinctă.
 
-## 7. Fișiere și surse
+## 7. Dependențe și ordinea execuției
+
+Măsurarea Google și documentarea modelelor pot începe independent. Datele din Search Console sunt necesare pentru concluzii despre performanță, nu pentru redactarea unui răspuns tehnic bine documentat. Comparațiile candidate se finalizează după verificarea fișelor celor două modele. Studiile de caz așteaptă proiecte și rezultate documentate.
+
+Primul lot: P01, P16, P02, P03, P04 și P05. Apoi se extind imaginile și restul catalogului. P17, versiunea EN cu URL-uri distincte, rămâne condiționată de necesitate și capacitatea de întreținere; livrarea comercială rămâne în România.
+
+## 8. Fișiere și surse
 
 - [SEO_KEYWORDS.md](SEO_KEYWORDS.md): harta lizibilă a expresiilor și paginilor.
 - [SEO_QUERY_MAP.csv](SEO_QUERY_MAP.csv): o expresie normalizată și o pagină principală pe rând.
 - `config/seo-keywords.json`: grupurile de expresii, prioritatea și stadiul editorial.
-- `config/seo-roadmap.json`: acțiuni, briefuri de model, condiții de finalizare și datele lipsă.
+- `config/seo-roadmap.json`: cele 20 de acțiuni, dependențe și criterii de finalizare.
+- [SEO_CONTENT_BRIEFS.md](SEO_CONTENT_BRIEFS.md): cele 26 de fișe de lucru și patru comparații candidate.
+- [SEO_MEASUREMENT_PLAN.md](SEO_MEASUREMENT_PLAN.md): procedura de măsurare și decizie.
+- `config/seo-content-briefs.json`: fișele de lucru în format structurat.
 
 Referințe consultate la 1 noiembrie 2026:
 
@@ -229,3 +304,8 @@ Referințe consultate la 1 noiembrie 2026:
 - [google-query-analysis](https://support.google.com/webmasters/answer/17010961?hl=en) — Analiza căutărilor și a paginilor afișate
 - [google-video](https://developers.google.com/search/docs/appearance/video) — Pagini dedicate pentru vizionare și descoperirea videoclipurilor
 - [keenon-w3](https://www.keenon.com/en/product/W3) — Livrare în hoteluri; integrarea exactă se verifică pentru fiecare proiect
+- [google-images](https://developers.google.com/search/docs/appearance/google-images) — Descoperirea imaginilor și contextul din pagină
+- [web-vitals](https://web.dev/articles/vitals) — Indicatori de experiență și separarea datelor de laborator de teren
+- [google-language-urls](https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites) — URL-uri distincte pentru versiunile lingvistice
+- [google-product-snippet](https://developers.google.com/search/docs/appearance/structured-data/product-snippet) — Condiții pentru date structurate de produs
+- [google-performance-filters](https://support.google.com/webmasters/answer/17011165?hl=en) — Filtre, comparații și limitele rapoartelor

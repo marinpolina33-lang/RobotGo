@@ -35,7 +35,8 @@
         "P02",
         "P03",
         "P04",
-        "P05"
+        "P05",
+        "P16"
       ]
     },
     {
@@ -46,7 +47,11 @@
         "P07",
         "P08",
         "P09",
-        "P10"
+        "P10",
+        "P14",
+        "P15",
+        "P18",
+        "P19"
       ]
     },
     {
@@ -55,7 +60,9 @@
       "tasks": [
         "P11",
         "P12",
-        "P13"
+        "P13",
+        "P17",
+        "P20"
       ]
     }
   ],
@@ -72,7 +79,10 @@
       ],
       "deliverable": "Export Search Console pentru pagini și interogări, țară România și dispozitive.",
       "acceptance": "Raport cu perioada exactă, impresii, clicuri, CTR și poziție; lipsa datelor se notează ca necunoscut.",
-      "evidence_needed": "Date reale din proprietatea robotgo.ro; accesul/exportul nu a fost folosit în această extindere."
+      "evidence_needed": "Date reale din proprietatea robotgo.ro; accesul/exportul nu a fost folosit în această extindere.",
+      "depends_on": [],
+      "evidence_gate": "Date reale din proprietatea robotgo.ro; accesul/exportul nu a fost folosit în această extindere.",
+      "effort_band": "mediu"
     },
     {
       "id": "P02",
@@ -90,7 +100,10 @@
       ],
       "deliverable": "Două întrebări utile pe model, configurație, integrare și informațiile necesare ofertei.",
       "acceptance": "12 răspunsuri distincte, RO/EN, surse tehnice, HTML inițial și legătură spre solicitarea ofertei.",
-      "evidence_needed": "Fișa oficială a versiunii, accesoriile și responsabilitățile confirmate; fără preț sau termen inventat."
+      "evidence_needed": "Fișa oficială a versiunii, accesoriile și responsabilitățile confirmate; fără preț sau termen inventat.",
+      "depends_on": [],
+      "evidence_gate": "Fișa oficială a versiunii, accesoriile și responsabilitățile confirmate; fără preț sau termen inventat.",
+      "effort_band": "mediu"
     },
     {
       "id": "P03",
@@ -104,7 +117,10 @@
       ],
       "deliverable": "Secțiune despre traseu, încărcare, acces la compartimente, lift și uși.",
       "acceptance": "Vizitatorul poate pregăti un brief pentru clădire; trimitere către W3 și condițiile configurației.",
-      "evidence_needed": "Documentație W3 și informații de integrare pentru clădire; nu se presupune compatibilitate universală."
+      "evidence_needed": "Documentație W3 și informații de integrare pentru clădire; nu se presupune compatibilitate universală.",
+      "depends_on": [],
+      "evidence_gate": "Documentație W3 și informații de integrare pentru clădire; nu se presupune compatibilitate universală.",
+      "effort_band": "mediu"
     },
     {
       "id": "P04",
@@ -119,7 +135,10 @@
       ],
       "deliverable": "Explică punctele de transfer, încărcătura, rafturile și sistemele de gestiune.",
       "acceptance": "Două fluxuri desenate și explicate cu cerințe de intrare și criterii de probă.",
-      "evidence_needed": "Versiunea T300, sistemul Geek+ și interfețele confirmate; imaginile nu validează capacitatea unei instalații."
+      "evidence_needed": "Versiunea T300, sistemul Geek+ și interfețele confirmate; imaginile nu validează capacitatea unei instalații.",
+      "depends_on": [],
+      "evidence_gate": "Versiunea T300, sistemul Geek+ și interfețele confirmate; imaginile nu validează capacitatea unei instalații.",
+      "effort_band": "mediu"
     },
     {
       "id": "P05",
@@ -133,7 +152,10 @@
       ],
       "deliverable": "Exemplu de dimensionare: piesă, sculă, rază, poziții, ritm și acceptarea aplicației.",
       "acceptance": "O listă de date pentru ofertă și legături către Nova 2, CR și GCR5-910, fără a echivala brațul cu celula completă.",
-      "evidence_needed": "Parametri de versiune și documentație tehnică. Evaluarea aplicației se face separat de textul editorial."
+      "evidence_needed": "Parametri de versiune și documentație tehnică. Evaluarea aplicației se face separat de textul editorial.",
+      "depends_on": [],
+      "evidence_gate": "Parametri de versiune și documentație tehnică. Evaluarea aplicației se face separat de textul editorial.",
+      "effort_band": "mediu"
     },
     {
       "id": "P06",
@@ -159,7 +181,10 @@
       ],
       "deliverable": "Aplică briefurile de model din acest plan.",
       "acceptance": "28 de răspunsuri distincte, cu versiune și surse; toate cele 26 de fișe au întrebări specifice.",
-      "evidence_needed": "Documentația modelului; delimitarea componentelor de roboți compleți și a demonstrațiilor de funcții livrate."
+      "evidence_needed": "Documentația modelului; delimitarea componentelor de roboți compleți și a demonstrațiilor de funcții livrate.",
+      "depends_on": [],
+      "evidence_gate": "Documentația modelului; delimitarea componentelor de roboți compleți și a demonstrațiilor de funcții livrate.",
+      "effort_band": "mare"
     },
     {
       "id": "P07",
@@ -173,7 +198,10 @@
       ],
       "deliverable": "Leagă obiectivele didactice de mobilitate, percepție, manipulare și acces software.",
       "acceptance": "Scenarii distincte pentru E6, ROBAN 2, G1 EDU și SCOUT MINI; exemplele software sunt confirmate pe versiune.",
-      "evidence_needed": "Licențe, SDK, versiuni ROS și accesorii confirmate; fără compatibilități presupuse."
+      "evidence_needed": "Licențe, SDK, versiuni ROS și accesorii confirmate; fără compatibilități presupuse.",
+      "depends_on": [],
+      "evidence_gate": "Licențe, SDK, versiuni ROS și accesorii confirmate; fără compatibilități presupuse.",
+      "effort_band": "mediu"
     },
     {
       "id": "P08",
@@ -187,7 +215,10 @@
       ],
       "deliverable": "Explică traseul, datele colectate, senzori și raportare; separat, montaj și control pentru componente.",
       "acceptance": "Întrebări de calificare pentru X30/M20 și RH56BFX/Revo 2; linkuri către fișele potrivite.",
-      "evidence_needed": "Senzori și interfețe de versiune; domeniul rămâne inspecție civilă și cercetare robotică."
+      "evidence_needed": "Senzori și interfețe de versiune; domeniul rămâne inspecție civilă și cercetare robotică.",
+      "depends_on": [],
+      "evidence_gate": "Senzori și interfețe de versiune; domeniul rămâne inspecție civilă și cercetare robotică.",
+      "effort_band": "mediu"
     },
     {
       "id": "P09",
@@ -200,7 +231,10 @@
       ],
       "deliverable": "Transformă accesul actual /#/service într-o pagină publică /service/ cu descrierea evaluării și formularul păstrat.",
       "acceptance": "Pagină HTML distinctă, canonical, sitemap, linkuri și navigare veche compatibilă; serviciile sunt descrise în limitele confirmate.",
-      "evidence_needed": "Confirmarea acoperirii comerciale; fără acreditări, SLA, garanții sau intervale universale inventate."
+      "evidence_needed": "Confirmarea acoperirii comerciale; fără acreditări, SLA, garanții sau intervale universale inventate.",
+      "depends_on": [],
+      "evidence_gate": "Confirmarea acoperirii comerciale; fără acreditări, SLA, garanții sau intervale universale inventate.",
+      "effort_band": "mediu"
     },
     {
       "id": "P10",
@@ -213,7 +247,10 @@
       ],
       "deliverable": "Inventariază filmele, modelul exact, sursa, drepturile de utilizare și data; selectează demonstrațiile cu utilitate clară.",
       "acceptance": "Pentru fiecare film aprobat: pagină de vizionare cu video principal, titlu specific, descriere, poster stabil și metadate concordante.",
-      "evidence_needed": "Identificare și utilizare confirmate. Data publicării și VideoObject se stabilesc numai pentru filmul efectiv publicat."
+      "evidence_needed": "Identificare și utilizare confirmate. Data publicării și VideoObject se stabilesc numai pentru filmul efectiv publicat.",
+      "depends_on": [],
+      "evidence_gate": "Identificare și utilizare confirmate. Data publicării și VideoObject se stabilesc numai pentru filmul efectiv publicat.",
+      "effort_band": "mare"
     },
     {
       "id": "P11",
@@ -227,7 +264,10 @@
       ],
       "deliverable": "Definește separat accesul la WhatsApp, deschiderea formularului, cererea transmisă și calificarea comercială.",
       "acceptance": "Raport care nu confundă apăsarea butonului cu o cerere primită; identificare minimă prin model și canal.",
-      "evidence_needed": "Capabilitățile formularului și ale instrumentului de analiză; datele personale nu se trimit în URL-uri sau evenimente de analiză."
+      "evidence_needed": "Capabilitățile formularului și ale instrumentului de analiză; datele personale nu se trimit în URL-uri sau evenimente de analiză.",
+      "depends_on": [],
+      "evidence_gate": "Capabilitățile formularului și ale instrumentului de analiză; datele personale nu se trimit în URL-uri sau evenimente de analiză.",
+      "effort_band": "mediu"
     },
     {
       "id": "P12",
@@ -241,7 +281,12 @@
       ],
       "deliverable": "Documentează numai proiecte și relații comerciale reale, cu acord pentru materialele publicate.",
       "acceptance": "Studiu de caz cu sarcină, model, condiții și rezultat documentat; mențiuni de la parteneri reali dacă există.",
-      "evidence_needed": "Proiect finalizat, date verificabile și permisiunea de folosire a materialelor; nu se inițiază contacte sau postări prin acest plan."
+      "evidence_needed": "Proiect finalizat, date verificabile și permisiunea de folosire a materialelor; nu se inițiază contacte sau postări prin acest plan.",
+      "depends_on": [
+        "P11"
+      ],
+      "evidence_gate": "Proiect finalizat, date verificabile și permisiunea de folosire a materialelor; nu se inițiază contacte sau postări prin acest plan.",
+      "effort_band": "mediu"
     },
     {
       "id": "P13",
@@ -255,7 +300,196 @@
       ],
       "deliverable": "Folosește mapa de pagină principală pentru a verifica ce URL apare pentru fiecare intenție.",
       "acceptance": "Modificările de titlu/conținut au motiv și perioadă de comparație; mai multe URL-uri pentru aceeași interogare sunt analizate, nu declarate automat problemă.",
-      "evidence_needed": "Date Search Console suficiente; prioritățile actuale sunt editoriale și comerciale, fără volume estimate."
+      "evidence_needed": "Date Search Console suficiente; prioritățile actuale sunt editoriale și comerciale, fără volume estimate.",
+      "depends_on": [
+        "P01"
+      ],
+      "evidence_gate": "Date Search Console suficiente; prioritățile actuale sunt editoriale și comerciale, fără volume estimate.",
+      "effort_band": "mediu"
+    },
+    {
+      "id": "P14",
+      "priority": "P2",
+      "status": "planned",
+      "title": "Pregătește patru comparații suplimentare",
+      "type": "comparison_content",
+      "existing_target_paths": [
+        "/product/unitree-g1/",
+        "/product/deep-lynx-m20/",
+        "/product/deep-x30/",
+        "/product/dobot-nova2/",
+        "/product/dobot-magician-e6/",
+        "/product/inspire-rh56bfx/",
+        "/product/unitree-h1/",
+        "/product/brainco-revo2/"
+      ],
+      "deliverable": "Aplică cele patru fișe comparative C01–C04, după verificarea modelelor.",
+      "acceptance": "Fiecare comparație are o întrebare de alegere, criterii verificabile și surse; URL-urile propuse rămân în plan până la publicare.",
+      "evidence_needed": "Fișele de versiune și confirmarea utilității distincte față de ghidurile actuale.",
+      "depends_on": [
+        "P02",
+        "P06"
+      ],
+      "evidence_gate": "Fișele de versiune și confirmarea utilității distincte față de ghidurile actuale.",
+      "effort_band": "mare"
+    },
+    {
+      "id": "P15",
+      "priority": "P2",
+      "status": "planned",
+      "title": "Verifică descoperirea și contextul imaginilor",
+      "type": "image_seo",
+      "existing_target_paths": [
+        "/product/unitree-g1/",
+        "/product/unitree-go2/",
+        "/product/leju-kuavo-4pro/",
+        "/product/leju-kuavo-5/",
+        "/product/leju-roban-2/",
+        "/product/rokae-helios/",
+        "/product/rokae-human-x/",
+        "/product/rokae-ar/",
+        "/product/rokae-cr/",
+        "/product/deep-lynx-m20/",
+        "/product/deep-x30/",
+        "/product/pudu-bellabot/",
+        "/product/pudu-cc1/",
+        "/product/keenon-t10/",
+        "/product/keenon-c40/",
+        "/product/keenon-w3/",
+        "/product/dobot-nova2/",
+        "/product/dobot-magician-e6/",
+        "/product/inspire-rh56bfx/",
+        "/product/geekplus-p-series/",
+        "/product/ubtech-walker-s2/",
+        "/product/unitree-h1/",
+        "/product/agilex-scout-mini/",
+        "/product/brainco-revo2/",
+        "/product/siasun-gcr5/",
+        "/product/pudu-t300/"
+      ],
+      "deliverable": "Inventariază imaginile principale și galeriile, textul alt, contextul și corespondența cu modelul.",
+      "acceptance": "Imagini relevante în elemente HTML, URL-uri accesibile, dimensiuni rezervate și descrieri corecte; sitemap-ul de imagini reflectă paginile reale.",
+      "evidence_needed": "Identificarea și sursa imaginilor; se păstrează identitatea vizuală aprobată și se remediază numai probleme observate.",
+      "depends_on": [],
+      "evidence_gate": "Identificarea și sursa imaginilor; se păstrează identitatea vizuală aprobată și se remediază numai probleme observate.",
+      "effort_band": "mediu"
+    },
+    {
+      "id": "P16",
+      "priority": "P1",
+      "status": "planned",
+      "title": "Măsoară și îmbunătățește experiența pe mobil",
+      "type": "performance",
+      "existing_target_paths": [
+        "/",
+        "/shop/",
+        "/product/unitree-g1/",
+        "/product/pudu-bellabot/",
+        "/guides/pudu-cc1-vs-keenon-c40/"
+      ],
+      "deliverable": "Obține o măsurare de laborator repetabilă și date de teren dacă sunt disponibile; verifică filtrele, galeria, meniul și cererea de ofertă.",
+      "acceptance": "Raport înainte/după pentru pagini și condiții comparabile. LCP, INP și CLS sunt raportate cu sursa; lipsa datelor de teren rămâne explicită.",
+      "evidence_needed": "Dispozitiv, conexiune și instrument notate; scorul de laborator nu este declarat rezultat al utilizatorilor reali.",
+      "depends_on": [],
+      "evidence_gate": "Dispozitiv, conexiune și instrument notate; scorul de laborator nu este declarat rezultat al utilizatorilor reali.",
+      "effort_band": "mediu"
+    },
+    {
+      "id": "P17",
+      "priority": "P3",
+      "status": "planned",
+      "title": "Proiectează indexarea separată a versiunii engleze",
+      "type": "international",
+      "existing_target_paths": [
+        "/",
+        "/shop/",
+        "/guides/"
+      ],
+      "deliverable": "Evaluează cererea în engleză și proiectează URL-uri lingvistice distincte, dacă extinderea este justificată.",
+      "acceptance": "Traduceri complete, canonical propriu și legături reciproce între limbile publicate; hreflang indică numai variante existente.",
+      "evidence_needed": "Date despre public și capacitate de întreținere. Selectorul EN actual folosește aceeași adresă și nu dovedește indexarea separată.",
+      "depends_on": [
+        "P01"
+      ],
+      "evidence_gate": "Date despre public și capacitate de întreținere. Selectorul EN actual folosește aceeași adresă și nu dovedește indexarea separată.",
+      "effort_band": "mare"
+    },
+    {
+      "id": "P18",
+      "priority": "P2",
+      "status": "planned",
+      "title": "Verifică datele structurate în raport cu oferta reală",
+      "type": "structured_data",
+      "existing_target_paths": [
+        "/shop/",
+        "/guides/",
+        "/product/pudu-bellabot/"
+      ],
+      "deliverable": "Păstrează marcajele existente corecte și verifică eligibilitatea înainte de a adăuga tipuri noi.",
+      "acceptance": "Marcajele descriu conținutul vizibil. Nu se introduce preț zero pentru ofertă, recenzie sau stoc fictiv; eventualele erori au corecție documentată.",
+      "evidence_needed": "Condițiile Google pentru tipul de rezultat și date comerciale reale. Validarea tehnică nu garantează afișarea unui rezultat îmbogățit.",
+      "depends_on": [],
+      "evidence_gate": "Condițiile Google pentru tipul de rezultat și date comerciale reale. Validarea tehnică nu garantează afișarea unui rezultat îmbogățit.",
+      "effort_band": "mediu"
+    },
+    {
+      "id": "P19",
+      "priority": "P2",
+      "status": "planned",
+      "title": "Reverifică filtrele, URL-urile și paginile private",
+      "type": "technical_seo",
+      "existing_target_paths": [
+        "/shop/",
+        "/categories/",
+        "/solutions/"
+      ],
+      "deliverable": "Revizuiește canonical, parametrii, paginile inexistente și sitemap-ul; păstrează excluderea conturilor și cererilor personale din indexul public.",
+      "acceptance": "Catalogul rămâne accesibil prin linkuri HTML, paginile inexistente răspund corect și sitemap-ul conține doar pagini publice canonice.",
+      "evidence_needed": "Răspunsuri HTTP și verificarea rutelor; autentificarea se testează separat de regulile SEO și nu se slăbește.",
+      "depends_on": [],
+      "evidence_gate": "Răspunsuri HTTP și verificarea rutelor; autentificarea se testează separat de regulile SEO și nu se slăbește.",
+      "effort_band": "mediu"
+    },
+    {
+      "id": "P20",
+      "priority": "P2",
+      "status": "planned",
+      "title": "Stabilește revizia conținutului și a versiunilor",
+      "type": "maintenance",
+      "existing_target_paths": [
+        "/product/unitree-g1/",
+        "/product/unitree-go2/",
+        "/product/leju-kuavo-4pro/",
+        "/product/leju-kuavo-5/",
+        "/product/leju-roban-2/",
+        "/product/rokae-helios/",
+        "/product/rokae-human-x/",
+        "/product/rokae-ar/",
+        "/product/rokae-cr/",
+        "/product/deep-lynx-m20/",
+        "/product/deep-x30/",
+        "/product/pudu-bellabot/",
+        "/product/pudu-cc1/",
+        "/product/keenon-t10/",
+        "/product/keenon-c40/",
+        "/product/keenon-w3/",
+        "/product/dobot-nova2/",
+        "/product/dobot-magician-e6/",
+        "/product/inspire-rh56bfx/",
+        "/product/geekplus-p-series/",
+        "/product/ubtech-walker-s2/",
+        "/product/unitree-h1/",
+        "/product/agilex-scout-mini/",
+        "/product/brainco-revo2/",
+        "/product/siasun-gcr5/",
+        "/product/pudu-t300/"
+      ],
+      "deliverable": "Înregistrează sursa, versiunea, data verificării și motivul fiecărei schimbări tehnice sau comerciale.",
+      "acceptance": "Modificările de model, accesoriu ori disponibilitate declanșează revizuirea fișei și a comparațiilor care o folosesc.",
+      "evidence_needed": "Date reale de la furnizori și oferta comercială; se actualizează data articolului numai când conținutul a fost modificat substanțial.",
+      "depends_on": [],
+      "evidence_gate": "Date reale de la furnizori și oferta comercială; se actualizează data articolului numai când conținutul a fost modificat substanțial.",
+      "effort_band": "mediu"
     }
   ],
   "product_briefs": [
@@ -617,6 +851,63 @@
       "id": "keenon-w3",
       "url": "https://www.keenon.com/en/product/W3",
       "use": "Livrare în hoteluri; integrarea exactă se verifică pentru fiecare proiect"
+    },
+    {
+      "id": "google-images",
+      "url": "https://developers.google.com/search/docs/appearance/google-images",
+      "use": "Descoperirea imaginilor și contextul din pagină"
+    },
+    {
+      "id": "web-vitals",
+      "url": "https://web.dev/articles/vitals",
+      "use": "Indicatori de experiență și separarea datelor de laborator de teren"
+    },
+    {
+      "id": "google-language-urls",
+      "url": "https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites",
+      "use": "URL-uri distincte pentru versiunile lingvistice"
+    },
+    {
+      "id": "google-product-snippet",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/product-snippet",
+      "use": "Condiții pentru date structurate de produs"
+    },
+    {
+      "id": "google-performance-filters",
+      "url": "https://support.google.com/webmasters/answer/17011165?hl=en",
+      "use": "Filtre, comparații și limitele rapoartelor"
     }
+  ],
+  "version": "2026-11-01-plan-3",
+  "execution_briefs_file": "config/seo-content-briefs.json",
+  "execution_metrics_file": "docs/SEO_MEASUREMENT_PLAN.md",
+  "expansion_summary": {
+    "task_count": 20,
+    "product_execution_briefs": 26,
+    "comparison_candidates": 4,
+    "unique_queries_unchanged": 353,
+    "new_public_pages": 0
+  },
+  "task_execution_order": [
+    "P01",
+    "P16",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P15",
+    "P06",
+    "P07",
+    "P08",
+    "P09",
+    "P10",
+    "P11",
+    "P18",
+    "P19",
+    "P13",
+    "P14",
+    "P20",
+    "P12",
+    "P17"
   ]
 }
