@@ -10,3 +10,7 @@ body.on-request{padding-bottom:20px}
 .analytics-choice{margin:24px 0;padding:18px;border:1px solid #31515a;border-radius:12px}.analytics-choice .row{gap:12px}.analytics-choice p{max-width:75ch}
 @media(max-width:600px){.request-layout,.form-grid{min-width:0}.form-field,.request-layout>*{min-width:0}.field{font-size:16px}.btn{min-height:44px}.project-brief,.product-commercial{padding:18px}.seo-prose table{display:block;overflow-x:auto}.lead-card{padding:16px}.contact-whatsapp-float{padding:10px 14px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Contrast fixes verified against the production Lighthouse findings. */
+.discovery-cats .pill{background:#142a33;color:#dbedf2;border-color:#3c5962}
+.learning-index{color:#b9d1db}

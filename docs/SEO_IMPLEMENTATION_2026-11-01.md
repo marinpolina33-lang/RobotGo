@@ -5,7 +5,7 @@
 - 70 de documente HTML: cele 62 existente, `/service/`, `/quote/`, `/privacy/`, `/media/` și patru pagini dedicate filmărilor existente.
 - Secțiuni bilingve despre restaurant/hotel, curățenie profesională, intralogistică, coboți și laboratoare de robotică. Linkuri de ofertare păstrează domeniul sau modelul.
 - Informații de ofertare, configurație, elemente incluse/excluse, instalare, suport și livrare pe toate cele 26 de modele. Condițiile neconfirmate sunt formulate ca elemente de clarificat în ofertă.
-- `Product` semantic pentru 26 de produse, fără preț, stoc, recenzii sau rating inventat. Nu se declară eligibilitate Google pentru product snippets.
+- Cele 26 de produse păstrează WebPage și BreadcrumbList. Marcajul Product este amânat până când există oferte sau recenzii reale care îndeplinesc cerințele Google; nu se inventează preț, stoc sau rating.
 - Sitemap generat cu 70 de adrese canonice și imagini. Pagini noi accesibile prin legături HTML. Adresele vechi `/#/service`, `/#/media`, `/#/quote` sunt redirecționate de aplicație spre documentele publice.
 - Datele editoriale livrate pe fiecare pagină includ numai articolul / întrebările modelului necesare și metadatele navigării. Scripturi `defer`; zece CSS sursă grupate într-un fișier versionat prin hash. Dimensiuni în `SEO_ASSET_BUDGET.json`; nu sunt scoruri Lighthouse.
 - Formularele ascund butoanele flotante și bara de navigare de jos; câmpuri lizibile, acțiuni cu înălțime minimă, tabele derulabile, imagini cu dimensiuni, respectarea mișcării reduse.
@@ -44,3 +44,14 @@ Acestea nu pot fi înlocuite cu afirmații inventate sau marcate ca îndeplinite
 - Previziune prin Sites: verificare vizuală și funcțională a paginilor publice; API-ul direct se validează separat în producție.
 
 Fișierele cu date private Search Console din audit nu se publică în repository sau în site.
+
+## Verificări după publicare — 1 noiembrie 2026
+
+- Publicarea inițială a fost confirmată live pe Render la 17:16 UTC.
+- Formularul public a salvat o cerere sintetică în D1; retrimiterea a păstrat aceeași referință, fără duplicat. Înregistrarea de test a fost eliminată ulterior prin identificator exact; nu au fost trimise mesaje externe.
+- Google Search Console a confirmat accesul și eligibilitatea pentru indexare a `/robot/`; solicitarea de indexare a fost acceptată. Acest rezultat nu dovedește indexarea sau creșterea pozițiilor.
+- Prima măsurare PageSpeed după publicare: mobil Performanță 96, Accesibilitate 95, Bune practici 96, SEO 100; LCP 2,2 s, TBT 20 ms, CLS 0. Desktop: Performanță 100, LCP 0,5 s, TBT 0, CLS 0. Fără date reale CrUX disponibile.
+- Testul a identificat două fundaluri rezolvate relativ la noul fișier CSS, contrast insuficient la etichetele de categorii/numerele ghidului și niveluri de titlu în subsol. Corecție suplimentară: URL-uri absolute pentru fundaluri, culori contrastante și titluri H2 în subsol. Prima măsurare de mai sus precede această corecție.
+- Contul Google selectat nu are un cont Google Ads; volumele Keyword Planner nu au fost validate. Fișierul CSV de import este pregătit, fără inventarea volumelor.
+
+- Testul live Google pentru Unitree G1 a confirmat indexabilitatea, dar a marcat `Product` fără `Offer`/`Review` ca neeligibil pentru product snippets. Marcajul Product incomplet a fost retras; rămân WebPage și BreadcrumbList. Datele comerciale din conținut rămân vizibile. Reintroducerea Product este condiționată de date comerciale reale care îndeplinesc cerințele Google.

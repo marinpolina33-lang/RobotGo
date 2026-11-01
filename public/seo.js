@@ -146,7 +146,7 @@
    const article={'@type':'Article','@id':url+'#article',headline:p.title,description:p.description,inLanguage:'ro-RO',datePublished:p.date||'2026-10-31',dateModified:p.date||'2026-10-31',author:{'@type':'Organization',name:'RobotGo',url:origin+'/'},publisher:organization,mainEntityOfPage:{'@id':page['@id']},image:origin+'/'+p.image};
    page.mainEntity={'@id':article['@id']};graph.push(article);
   }
-  if(p.productId){const model=D.products.find(x=>x.id===p.productId);const entity={'@type':'Product','@id':url+'#product',name:model.name,description:model.description.ro,image:origin+'/'+model.localImage,brand:{'@type':'Brand',name:model.brand},category:model.type.ro,url,mainEntityOfPage:{'@id':page['@id']}};page.mainEntity={'@id':entity['@id']};graph.push(entity);}
+  // Keep product pages as WebPage until verified Offer or Review data supports Google's Product requirements.
   graph.push(page);return {'@context':'https://schema.org','@graph':graph};
  }
  window.ROBOTGO_SEO={pages,renderLanding,renderIntro,renderDirectory,schema,breadcrumbs,origin,route};
