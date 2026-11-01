@@ -99,3 +99,11 @@ Aceste puncte nu pot fi completate corect doar prin copierea unui site concurent
 Verifică dacă interogările de comparație ajung la comparator, cele comerciale generale la categorie, iar cele de model la fișa relevantă. Urmărește cererile primite efectiv separat de clicurile de contact. Nu atribui unei modificări un câștig de poziție fără date suficiente și fără a considera locația, dispozitivul, perioada și mixul interogărilor.
 
 Nu au fost făcute solicitări repetitive de indexare în această etapă. Sitemapul existent include automat noul document. Indexarea și pozițiile finale sunt stabilite de Google.
+
+## Confirmarea publicării
+
+Actualizarea este activă pe [comparatorul RobotGo](https://robotgo.ro/compare/roboti-umanoizi/). Publicarea finală a codului s-a încheiat la **1 noiembrie 2026, 20:46:35, ora României** (18:46:35 UTC), commit `32f529c9d62e40a974e636b3d5da7f9eb292599d`, deploy Render `dep-dbjohvm7bikc7383u5rg`.
+
+Verificarea live a confirmat filtrarea Unitree (2 din 8 modele), URL-ul canonical corect și formularul real cu întrebările ajutătoare și butonul de trimitere directă. La prima publicare, tabelul era vizibil, dar extensia interactivă nu se inițializa în browserul de verificare. Corecția livrează extensia și aplicația într-un singur fișier cu nume bazat pe conținut (`application.db12ce46d8bd.js`), eliminând încărcarea separată a celor două. Comportamentul final a fost reverificat în producție.
+
+Nu s-au modificat parole, drepturi de acces, DNS sau protecțiile Cloudflare. Invalidarea punctuală a cache-ului nu a fost tratată drept dovadă de remediere; confirmarea finală provine din funcționarea interfeței publice.
