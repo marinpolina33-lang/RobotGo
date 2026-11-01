@@ -1,5 +1,21 @@
 # RobotGo — audit și implementare SEO
 
+## Căutarea „robot” și intenția de cumpărare — 1 noiembrie 2026
+
+Extinderea adaugă două pagini editoriale distincte și întărește pagina comercială existentă:
+
+| Căutare / intenție | Pagină | Conținut |
+|---|---|---|
+| robot, ce este un robot, tipuri de roboți | `/robot/` | Explicație, comparație între șase tipuri, utilizări, modele existente și întrebări despre autonomie și alegere |
+| cât costă un robot, preț robot | `/guides/cat-costa-un-robot/` | Echipament, integrare, software, exploatare, trei exemple și pregătirea ofertei; fără prețuri inventate |
+| roboți de vânzare, robot de cumpărat în România | `/shop/` | Titlu, descriere și H1 comercial, cu preț și disponibilitate confirmate prin ofertă |
+
+Ghidurile au HTML inițial complet, aceeași sursă de conținut în aplicație, titluri și descrieri proprii, canonical, BreadcrumbList și Article cu autor RobotGo și data publicării. Sunt disponibile în RO/EN prin selectorul existent, fără a inventa URL-uri lingvistice separate. Sunt legate din Home, catalog, paginile de categorii/aplicații, ghidul pentru primul robot, meniu și subsol. Sitemap-ul generat are acum **51 de pagini canonice**. Sloganul și imaginea principală Home, identitatea de brand și autentificarea reală sunt păstrate.
+
+Validare: build-ul verifică toate paginile și cele două ghiduri înainte/după JavaScript, canonical, linkuri, modelul Article, data și accesibilitatea din Home/catalog. Confirmarea publicării se face separat pe domeniul live. Nu se declară volume de căutare măsurate, poziții Google sau un termen garantat de indexare. IndexNow notifică doar motoarele participante și nu confirmă indexarea în Google.
+
+Referințe consultate: https://ifr.org/service-robots ; https://developers.google.com/search/docs/fundamentals/seo-starter-guide ; https://developers.google.com/search/docs/fundamentals/creating-helpful-content ; https://developers.google.com/search/docs/essentials/spam-policies
+
 ## Descoperirea conținutului și consolidarea Home — 1 noiembrie 2026
 
 Auditul suplimentar a găsit paginile Branduri și Ghid pentru prima vizită accesibile numai prin fragmente, deci fără documente HTML distincte pentru Google. Sunt acum publicate la `/brands/` și `/guides/primul-robot/`, în același sistem de conținut RO/EN folosit înainte și după JavaScript. Catalogul de branduri are legături directe către toate cele 26 de modele și filtre corecte pentru cele 13 branduri; ghidul explică sarcina, spațiul, echiparea, software-ul și pregătirea ofertei. Linkurile din meniu, subsol și Home folosesc adresele normale. Adresa veche `/#/learn` deschide ghidul nou. Sitemap-ul conține 49 de pagini, fără o nouă trimitere în Search Console.

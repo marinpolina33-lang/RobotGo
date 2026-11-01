@@ -6,9 +6,9 @@ import assert from 'node:assert/strict';
 
 export function verifySearchPages(root,dist,pages){
  const catalog=JSON.parse(fs.readFileSync(path.join(root,'public/catalog.json'),'utf8'));
- const expected=['/','/shop/','/contact/',...catalog.products.map(p=>'/product/'+p.id+'/'),'/categories/','/solutions/','/about/',...catalog.categories.map(c=>'/categories/'+c.id+'/'),...catalog.domains.map(d=>'/solutions/'+d.id+'/'),'/guides/roboti-entertainment/','/brands/','/guides/primul-robot/'];
+ const expected=['/','/shop/','/contact/',...catalog.products.map(p=>'/product/'+p.id+'/'),'/categories/','/solutions/','/about/',...catalog.categories.map(c=>'/categories/'+c.id+'/'),...catalog.domains.map(d=>'/solutions/'+d.id+'/'),'/guides/roboti-entertainment/','/brands/','/guides/primul-robot/','/robot/','/guides/cat-costa-un-robot/'];
  const context={window:{ROBOTGO_CATALOG:catalog},URLSearchParams};
- for(const file of ['site-config.js','practical.js','seo.js','routing.js'])vm.runInNewContext(fs.readFileSync(path.join(root,'public',file),'utf8'),context);
+ for(const file of ['site-config.js','practical.js','robot-guides.js','seo.js','routing.js'])vm.runInNewContext(fs.readFileSync(path.join(root,'public',file),'utf8'),context);
  const seo=context.window.ROBOTGO_SEO,links=new Map(),titles=new Set(),descriptions=new Set();
  for(const lang of ['ro','en']){
   const brands=seo.renderLanding('/brands',lang);
@@ -26,6 +26,23 @@ export function verifySearchPages(root,dist,pages){
   assert.equal(new Set(blurbs).size,catalog.products.length,'Cards explain individual models rather than repeating a category slogan');
  }
  assert.deepEqual(pages.map(p=>p.route),expected);
+ // New guides must be useful HTML documents, with matching interactive content.
+ for(const [route,article] of Object.entries(context.window.ROBOTGO_GUIDES.articles)){
+  for(const lang of ['ro','en']){
+   const rendered=seo.renderLanding(route,lang);
+   assert.equal((rendered.match(/<h1>/g)||[]).length,1,'One article heading in '+lang);
+   assert.ok(rendered.includes('href="/shop/"')&&rendered.includes('href="/contact/"'),'Guides lead to models and quotation');
+   assert.ok(rendered.includes('href="/product/'),'Guide links to actual catalogue models');
+   assert.ok(!/undefined|NaN/.test(rendered),'Guide has no missing catalogue data');
+  }
+  const graph=seo.schema(route)['@graph'];
+  const structuredArticle=graph.find(x=>x['@type']==='Article');
+  assert.ok(structuredArticle,'Guide has Article data');
+  assert.equal(structuredArticle.headline,article.title);
+  assert.equal(structuredArticle.datePublished,article.date);
+  assert.ok(seo.renderIntro().includes('href="'+route+'/"'),'Guide discoverable from homepage');
+  assert.ok(seo.renderDirectory().includes('href="'+route+'/"'),'Guide discoverable from catalogue');
+ }
  const sitemap=fs.readFileSync(path.join(dist,'sitemap.xml'),'utf8');
  assert.deepEqual([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]),expected.map(p=>'https://robotgo.ro'+p));
  for(const page of pages){
