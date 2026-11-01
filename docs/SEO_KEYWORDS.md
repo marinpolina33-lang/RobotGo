@@ -1,6 +1,6 @@
 # RobotGo — harta cuvintelor și intențiilor de căutare
 
-Data: 1 noiembrie 2026. 49 grupuri și 239 expresii distincte pentru paginile canonice. Expresiile descriu subiecte relevante; nu sunt volume de căutare măsurate sau poziții obținute.
+Data: 1 noiembrie 2026. 51 grupuri și 267 expresii distincte pentru paginile canonice. Expresiile descriu subiecte relevante; nu sunt volume de căutare măsurate sau poziții obținute.
 
 Cuvintele sunt folosite în titluri, explicații, întrebări și legături către modele. Variantele fără diacritice, singular/plural și termenii englezești se urmăresc împreună cu formele naturale în română. Nu se creează câte o pagină pentru fiecare variantă și nu se adaugă blocuri ascunse ori meta keywords.
 
@@ -63,3 +63,18 @@ Termenii despre programare, senzori, AI și integrare descriu criterii de selec�
 În Search Console se urmăresc impresiile, clicurile, CTR-ul și poziția pentru paginile și grupurile de mai sus. Comparația se face pe intervale cu suficiente date, separat pentru interogări de brand, modele și aplicații. Publicarea și primirea IndexNow nu dovedesc indexare sau poziționare Google.
 
 Surse pentru principii SEO: https://developers.google.com/search/docs/fundamentals/creating-helpful-content ; https://developers.google.com/search/docs/appearance/title-link ; https://developers.google.com/search/docs/essentials/spam-policies
+
+## Extindere pe modele și comparații
+
+Comparațiile pentru servire și curățenie au pagini proprii. Întrebările despre cele șase modele îmbogățesc fișele existente; nu generează pagini pentru fiecare expresie. Datele despre volum și poziție rămân necunoscute până la măsurare în Search Console.
+
+| Pagină | Expresii suplimentare |
+|---|---|
+| `/guides/bellabot-vs-keenon-t10/` | BellaBot vs T10, BellaBot sau DINERBOT T10, comparație roboți ospătari, robot ospătar pentru restaurant, robot servire cu ecran publicitar |
+| `/guides/pudu-cc1-vs-keenon-c40/` | PUDU CC1 vs KLEENBOT C40, CC1 sau C40, comparație roboți curățenie profesională, robot curățenie hotel mochetă, robot curățenie birouri pardoseli |
+| `/product/pudu-bellabot/` | BellaBot preț România, BellaBot capacitate tăvi, BellaBot ofertă restaurant |
+| `/product/keenon-t10/` | DINERBOT T10 culoare înguste, T10 robot promovare, KEENON T10 preț România |
+| `/product/pudu-cc1/` | PUDU CC1 aspirare mochetă, PUDU CC1 stație apă, PUDU CC1 ofertă |
+| `/product/keenon-c40/` | KLEENBOT C40 rezervoare, KLEENBOT C40 consumabile, KEENON C40 ofertă |
+| `/product/unitree-g1/` | G1 standard vs G1 EDU, Unitree G1 SDK, Unitree G1 mâini robotice |
+| `/product/unitree-go2/` | Unitree Go2 versiuni, Go2 inspecție tehnică, Go2 demonstrație eveniment |

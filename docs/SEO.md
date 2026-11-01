@@ -1,5 +1,15 @@
 # RobotGo — audit și implementare SEO
 
+## Extindere pe modele și comparații comerciale — 1 noiembrie 2026
+
+Două ghiduri distincte compară BellaBot cu DINERBOT T10 și PUDU CC1 cu KLEENBOT C40. Tabelele au câte o coloană pentru fiecare model, folosesc parametri confirmați în paginile producătorilor și disting recomandările de alegere de teste efectuate. Nu se inventează prețuri, reduceri, rezultate de productivitate ori amortizare. Versiunile Pro și alte generații nu sunt amestecate.
+
+Șase fișe de produs (cele patru modele comparate, Unitree G1 și Go2) primesc 18 întrebări și răspunsuri specifice, în RO/EN, prezente și în HTML-ul inițial. Subiectele includ configurația, accesul SDK, tăvile, culoarele, mochetă, stații, consumabile și pregătirea ofertei. Linkurile către comparațiile directe au prioritate în fișele celor patru produse și în paginile HoReCa / curățenie. Directorul conține 12 ghiduri, sitemap-ul 60 de pagini, iar harta editorială 51 de grupuri / 267 de expresii. Nu sunt volume sau poziții măsurate.
+
+Validare: conținut comun înainte/după JavaScript, întrebări distincte în ambele limbi, relații produs–comparație, tabele cu antet accesibil, canonical, sitemap și schema Article. FAQ-urile sunt conținut vizibil; nu se promite un rezultat îmbogățit Google și nu se adaugă marcaje FAQPage comerciale. Publicarea live se verifică separat.
+
+Surse de documentare: https://www.pudurobotics.com/en/products/bellabot ; https://www.keenon.com/en/product/T10 ; https://www.pudurobotics.com/en/products/puducc1 ; https://www.keenon.com/en/product/C40 ; https://www.unitree.com/g1/ ; https://www.unitree.com/go2/ ; https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
 ## Extindere pe tipuri, aplicații și întrebări tehnice — 1 noiembrie 2026
 
 Au fost îmbogățite cele 7 pagini de categorie și 7 pagini de domeniu cu explicații distincte, termeni uzuali, criterii și răspunsuri specifice. Categoriile răspund despre tipul echipamentului; domeniile răspund despre fluxul de lucru. Exemplele includ robot ospătar, livrare în hotel, spălat pardoseli, intralogistică, manipulare, STEM, inspecție și promovare.

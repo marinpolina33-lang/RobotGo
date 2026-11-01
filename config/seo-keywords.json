@@ -294,7 +294,10 @@
         "Unitree G1",
         "Unitree G1 preț",
         "Unitree G1 specificații",
-        "Unitree G1 România"
+        "Unitree G1 România",
+        "G1 standard vs G1 EDU",
+        "Unitree G1 SDK",
+        "Unitree G1 mâini robotice"
       ]
     },
     {
@@ -304,7 +307,10 @@
         "Unitree Go2",
         "Unitree Go2 preț",
         "Unitree Go2 specificații",
-        "Unitree Go2 România"
+        "Unitree Go2 România",
+        "Unitree Go2 versiuni",
+        "Go2 inspecție tehnică",
+        "Go2 demonstrație eveniment"
       ]
     },
     {
@@ -404,7 +410,10 @@
         "PUDU BellaBot",
         "PUDU BellaBot preț",
         "PUDU BellaBot specificații",
-        "PUDU BellaBot România"
+        "PUDU BellaBot România",
+        "BellaBot preț România",
+        "BellaBot capacitate tăvi",
+        "BellaBot ofertă restaurant"
       ]
     },
     {
@@ -414,7 +423,10 @@
         "PUDU CC1",
         "PUDU CC1 preț",
         "PUDU CC1 specificații",
-        "PUDU CC1 România"
+        "PUDU CC1 România",
+        "PUDU CC1 aspirare mochetă",
+        "PUDU CC1 stație apă",
+        "PUDU CC1 ofertă"
       ]
     },
     {
@@ -424,7 +436,10 @@
         "KEENON DINERBOT T10",
         "KEENON DINERBOT T10 preț",
         "KEENON DINERBOT T10 specificații",
-        "KEENON DINERBOT T10 România"
+        "KEENON DINERBOT T10 România",
+        "DINERBOT T10 culoare înguste",
+        "T10 robot promovare",
+        "KEENON T10 preț România"
       ]
     },
     {
@@ -434,7 +449,10 @@
         "KEENON KLEENBOT C40",
         "KEENON KLEENBOT C40 preț",
         "KEENON KLEENBOT C40 specificații",
-        "KEENON KLEENBOT C40 România"
+        "KEENON KLEENBOT C40 România",
+        "KLEENBOT C40 rezervoare",
+        "KLEENBOT C40 consumabile",
+        "KEENON C40 ofertă"
       ]
     },
     {
@@ -545,6 +563,28 @@
         "PUDU T300 Standard preț",
         "PUDU T300 Standard specificații",
         "PUDU T300 Standard România"
+      ]
+    },
+    {
+      "path": "/guides/bellabot-vs-keenon-t10/",
+      "intent": "Comparație modele / restaurant",
+      "terms": [
+        "BellaBot vs T10",
+        "BellaBot sau DINERBOT T10",
+        "comparație roboți ospătari",
+        "robot ospătar pentru restaurant",
+        "robot servire cu ecran publicitar"
+      ]
+    },
+    {
+      "path": "/guides/pudu-cc1-vs-keenon-c40/",
+      "intent": "Comparație modele / curățenie",
+      "terms": [
+        "PUDU CC1 vs KLEENBOT C40",
+        "CC1 sau C40",
+        "comparație roboți curățenie profesională",
+        "robot curățenie hotel mochetă",
+        "robot curățenie birouri pardoseli"
       ]
     }
   ]

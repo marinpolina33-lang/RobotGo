@@ -6,7 +6,7 @@ import assert from 'node:assert/strict';
 
 export function verifySearchPages(root,dist,pages){
  const catalog=JSON.parse(fs.readFileSync(path.join(root,'public/catalog.json'),'utf8'));
- const expected=['/','/shop/','/contact/',...catalog.products.map(p=>'/product/'+p.id+'/'),'/categories/','/solutions/','/about/',...catalog.categories.map(c=>'/categories/'+c.id+'/'),...catalog.domains.map(d=>'/solutions/'+d.id+'/'),'/guides/roboti-entertainment/','/brands/','/guides/primul-robot/','/robot/','/guides/cat-costa-un-robot/','/guides/','/guides/amr-vs-agv/','/guides/cobot-vs-robot-industrial/','/guides/umanoid-vs-caine-robot/','/guides/robot-programabil-sdk-ros/','/guides/robot-autonom-inteligenta-artificiala/','/guides/mentenanta-robotilor/'];
+ const expected=['/','/shop/','/contact/',...catalog.products.map(p=>'/product/'+p.id+'/'),'/categories/','/solutions/','/about/',...catalog.categories.map(c=>'/categories/'+c.id+'/'),...catalog.domains.map(d=>'/solutions/'+d.id+'/'),'/guides/roboti-entertainment/','/brands/','/guides/primul-robot/','/robot/','/guides/cat-costa-un-robot/','/guides/','/guides/amr-vs-agv/','/guides/cobot-vs-robot-industrial/','/guides/umanoid-vs-caine-robot/','/guides/robot-programabil-sdk-ros/','/guides/robot-autonom-inteligenta-artificiala/','/guides/mentenanta-robotilor/','/guides/bellabot-vs-keenon-t10/','/guides/pudu-cc1-vs-keenon-c40/'];
  const context={window:{ROBOTGO_CATALOG:catalog},URLSearchParams};
  for(const file of ['site-config.js','practical.js','robot-guides.js','robot-topics-data.js','robot-topics.js','seo.js','routing.js'])vm.runInNewContext(fs.readFileSync(path.join(root,'public',file),'utf8'),context);
  const seo=context.window.ROBOTGO_SEO,links=new Map(),titles=new Set(),descriptions=new Set();
@@ -71,14 +71,46 @@ export function verifySearchPages(root,dist,pages){
   assert.equal(article.headline,g.title);assert.equal(article.datePublished,g.date);
   const html=fs.readFileSync(path.join(dist,route,'index.html'),'utf8');
   assert.ok(html.includes('property="og:type" content="article"'));
+  if(g.comparison){
+   assert.equal(g.comparison.columns.length,3,'Model comparison has criterion and two models');
+   assert.equal(g.products.length,2,'Each model comparison has exactly two catalogue models');
+   for(const row of g.comparison.rows)assert.equal(row.length,3,'Comparison rows align with headers');
+   for(const lang of ['ro','en']){
+    const body=seo.renderLanding(route,lang);
+    for(const col of g.comparison.columns)assert.ok(body.includes(col[lang==='en'?1:0]),'Comparison headings are translated');
+    for(const id of g.products){
+     const reading=topics.productLinks(catalog.products.find(p=>p.id===id),lang);
+     assert.ok(reading.includes('href="'+route+'/"'),'Both products link back to their direct comparison');
+    }
+   }
+  }
  }
+ const allQuestions={ro:new Set(),en:new Set()};
+ for(const [id,q]of Object.entries(topics.productQuestions)){
+  const product=catalog.products.find(p=>p.id===id);
+  assert.ok(product,'Buying questions belong to an existing model');
+  const html=fs.readFileSync(path.join(dist,'product',id,'index.html'),'utf8');
+  for(const lang of ['ro','en']){
+   const body=topics.productFaq(product,lang);
+   assert.ok(context.window.ROBOTGO_PRACTICAL.product(product,lang).includes(body),'Product uses the shared buying answers in '+lang);
+   if(lang==='ro')assert.ok(html.includes(body),'Buying answers are readable before JavaScript');
+   assert.ok(body.includes('href="/contact/"'),'Buying answers lead to quotation contact');
+   for(const row of q.faq){
+    assert.equal(row.length,4,'Question and answer exist in both languages');
+    const question=row[lang==='en'?1:0];
+    assert.ok(!allQuestions[lang].has(question),'Model questions are distinct');allQuestions[lang].add(question);
+   }
+  }
+  for(const [,source]of q.sources)assert.ok(source.startsWith('https://'),'Technical references use HTTPS');
+ }
+ assert.equal(allQuestions.ro.size,18,'Six model pages carry 18 specific buying questions');
  for(const product of catalog.products){
   const reading=topics.productLinks(product);
   assert.ok(reading.includes('href="/guides/'),'Every product offers contextual explanation');
   for(const [,target]of reading.matchAll(/href="([^"]+)"/g))assert.ok(seo.pages[target.replace(/\/$/,'')],'Product reading has no broken internal target');
  }
  const guideCollection=seo.schema('/guides')['@graph'].find(x=>x['@type']==='CollectionPage');
- assert.equal(guideCollection.mainEntity.numberOfItems,10,'Guide collection covers six specialist guides and four introductory guides');
+ assert.equal(guideCollection.mainEntity.numberOfItems,12,'Guide collection includes the two model comparisons');
  assert.ok(seo.renderIntro().includes('href="/guides/"'),'Guide hub is reachable from Home');
  assert.ok(seo.renderDirectory().includes('href="/guides/"'),'Guide hub is reachable from the catalogue');
  const sitemap=fs.readFileSync(path.join(dist,'sitemap.xml'),'utf8');

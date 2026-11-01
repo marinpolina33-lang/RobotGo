@@ -256,6 +256,7 @@ window.ROBOTGO_TOPIC_DATA = {
         ]
       ],
       "guides": [
+        "bellabot-vs-keenon-t10",
         "amr-vs-agv",
         "robot-autonom-inteligenta-artificiala"
       ]
@@ -292,6 +293,7 @@ window.ROBOTGO_TOPIC_DATA = {
         ]
       ],
       "guides": [
+        "pudu-cc1-vs-keenon-c40",
         "robot-autonom-inteligenta-artificiala",
         "amr-vs-agv",
         "mentenanta-robotilor"
@@ -1156,6 +1158,560 @@ window.ROBOTGO_TOPIC_DATA = {
         ]
       ],
       "date": "2026-11-01"
+    },
+    "/guides/bellabot-vs-keenon-t10": {
+      "title": "BellaBot vs DINERBOT T10: robot ospătar | RobotGo",
+      "description": "Compară PUDU BellaBot și KEENON DINERBOT T10 pentru restaurant: tăvi, traseu, interacțiune și ecran de promovare. Criterii pentru o ofertă utilă.",
+      "label": [
+        "BellaBot vs DINERBOT T10: ce robot ospătar alegi?",
+        "BellaBot vs DINERBOT T10: choosing a restaurant robot"
+      ],
+      "intro": [
+        "PUDU BellaBot și KEENON DINERBOT T10 pot intra în aceeași listă de selecție pentru transportul preparatelor. Alegerea devine mai clară când separi trei obiective: cursele între bucătărie și sală, experiența clientului și comunicarea promoțiilor. Comparația de mai jos privește modelele BellaBot și T10, nu BellaBot Pro sau T11.",
+        "PUDU BellaBot and KEENON DINERBOT T10 can share a shortlist for transporting dishes. The decision becomes clearer when you separate three objectives: trips between kitchen and dining room, the guest experience and promotional messaging. This comparison covers BellaBot and T10, not BellaBot Pro or T11."
+      ],
+      "sections": [
+        [
+          "Începe cu un traseu complet de servire",
+          "Start with a complete delivery route",
+          "Desenează traseul de la punctul de încărcare până la două sau trei mese reprezentative. Include întoarcerea, locul în care robotul așteaptă și persoana care preia farfuriile. Un robot ospătar poate fi util pentru transportul repetitiv, dar rezultatul depinde de organizarea echipei. Timpul petrecut la încărcare și descărcare face parte din ciclu, la fel ca deplasarea.",
+          "Draw the route from the loading point to two or three representative tables. Include the return trip, the waiting area and the person collecting dishes. A serving robot can support repetitive transport, but the result depends on the team workflow. Loading and unloading time belong in the cycle alongside travel."
+        ],
+        [
+          "Interacțiune la masă sau ecran de campanie",
+          "Table-side interaction or a campaign screen",
+          "BellaBot folosește expresii, lumini și feedback la atingere. DINERBOT T10 combină un cap mobil cu un ecran de promovare de 23,8 inchi. Pentru alegere, pregătește două scenarii: o livrare obișnuită și o comunicare către client. Verifică în demonstrație mesajele, sunetul și modul de preluare, fără a presupune conversație liberă în română.",
+          "BellaBot uses expressions, lights and touch feedback. DINERBOT T10 combines a movable head with a 23.8-inch advertising screen. Prepare two scenarios for selection: an ordinary delivery and a customer-facing message. Check prompts, sound and collection instructions during a demonstration without assuming open-ended Romanian conversation."
+        ],
+        [
+          "Evaluează culoarele cu mobilierul în poziție reală",
+          "Assess aisles with furniture in its real position",
+          "Lățimea carcasei nu este egală cu spațiul necesar pentru viraj sau întâlnirea cu un client. Măsoară punctele înguste cu scaunele ocupate și observă ușile, pragurile și zona de acces în bucătărie. Cere confirmarea traseului pentru configurația propusă. O valoare minimă din fișa tehnică nu descrie singură un restaurant aglomerat.",
+          "Body width is not the space needed for turning or passing a guest. Measure narrow points with occupied chairs and consider doors, thresholds and kitchen access. Ask for route confirmation for the proposed configuration. A minimum technical clearance alone does not describe a busy restaurant."
+        ],
+        [
+          "Compară ofertele pentru aceeași activitate",
+          "Compare quotations for the same task",
+          "Trimite același plan și același scenariu pentru ambele modele. Separă robotul, încărcarea, accesoriile de apelare, configurarea traseelor și instruirea cerută. Pentru evaluare, urmărește cursele finalizate, intervențiile și timpul total al personalului într-un interval comparabil. Nu deduce o economie sau un termen de amortizare numai din numărul de tăvi.",
+          "Send the same plan and task brief for both models. Separate the robot, charging equipment, calling accessories, route setup and requested training. Evaluate completed trips, interventions and total staff time over comparable periods. Do not infer savings or a payback period from tray count alone."
+        ]
+      ],
+      "table": [
+        [
+          "Criteriu",
+          "Criterion",
+          "Ce verifici",
+          "What to check"
+        ]
+      ],
+      "comparison": {
+        "columns": [
+          [
+            "Criteriu",
+            "Criterion"
+          ],
+          [
+            "PUDU BellaBot",
+            "PUDU BellaBot"
+          ],
+          [
+            "KEENON DINERBOT T10",
+            "KEENON DINERBOT T10"
+          ]
+        ],
+        "rows": [
+          [
+            [
+              "Rol principal",
+              "Main role"
+            ],
+            [
+              "Transport de preparate și interacțiune cu clientul",
+              "Dish delivery and guest interaction"
+            ],
+            [
+              "Transport de preparate și promovare pe ecran",
+              "Dish delivery and on-screen promotion"
+            ]
+          ],
+          [
+            [
+              "Sarcină publicată de producător",
+              "Manufacturer-published load"
+            ],
+            [
+              "Maximum 40 kg total, maximum 10 kg pe tavă",
+              "Maximum 40 kg total, maximum 10 kg per tray"
+            ],
+            [
+              "Maximum 40 kg total",
+              "Maximum 40 kg total"
+            ]
+          ],
+          [
+            [
+              "Interacțiune prezentată",
+              "Described interaction"
+            ],
+            [
+              "Expresii, lumini, feedback la atingere",
+              "Expressions, lights, touch feedback"
+            ],
+            [
+              "Cap mobil, ecran de 23,8 inchi",
+              "Movable head, 23.8-inch screen"
+            ]
+          ],
+          [
+            [
+              "Probă utilă în restaurant",
+              "Useful restaurant trial"
+            ],
+            [
+              "Farfurii reale, acces la tăvi și oprire la masă",
+              "Actual dishes, tray access and table-side stop"
+            ],
+            [
+              "Aceleași farfurii și traseu, plus lizibilitatea campaniei",
+              "The same dishes and route, plus campaign readability"
+            ]
+          ],
+          [
+            [
+              "Întrebarea pentru ofertă",
+              "Quotation question"
+            ],
+            [
+              "Ce echipare, configurare și instruire sunt incluse?",
+              "Which equipment, setup and training are included?"
+            ],
+            [
+              "Ce echipare și configurare a conținutului sunt incluse?",
+              "Which equipment and content setup are included?"
+            ]
+          ]
+        ]
+      },
+      "checks": [
+        [
+          "Schiță cu bucătăria, mesele, punctele de așteptare și cele mai înguste treceri.",
+          "A plan showing the kitchen, tables, waiting points and narrowest passages."
+        ],
+        [
+          "Dimensiuni și greutăți pentru farfuriile și tăvile încărcate în mod obișnuit.",
+          "Dimensions and weights of the dishes and trays normally loaded."
+        ],
+        [
+          "Un interval de lucru reprezentativ și criterii de acceptare a demonstrației.",
+          "A representative operating period and demonstration acceptance criteria."
+        ],
+        [
+          "Pentru T10: exemple de materiale promoționale; pentru ambele: limba mesajelor cerută.",
+          "For T10: example promotional materials; for both: the required prompt language."
+        ]
+      ],
+      "faq": [
+        [
+          "Care este cel mai bun robot pentru restaurant?",
+          "Which is the best restaurant robot?",
+          "Nu există un câștigător universal. Dacă obiectivul este transportul, compară traseul și preluarea preparatelor. Dacă promovarea este un obiectiv separat, include vizibilitatea și administrarea conținutului în evaluare. Alege după rezultatul aceleiași probe, în spațiul tău.",
+          "There is no universal winner. If transport is the objective, compare the route and dish collection. If promotion is a separate goal, include content visibility and management in the evaluation. Choose using the outcome of the same trial in your premises."
+        ],
+        [
+          "Pot compara direct autonomia declarată?",
+          "Can I directly compare the stated battery life?",
+          "Numai dacă sunt comparabile condițiile de măsurare. Încărcătura, frecvența curselor, opririle și utilizarea ecranului schimbă consumul. Pentru programul restaurantului, cere un plan de încărcare și o estimare bazată pe activitatea propusă.",
+          "Only when measurement conditions are comparable. Load, trip frequency, stops and screen use affect consumption. Ask for a charging plan and an estimate based on your proposed activity and opening hours."
+        ],
+        [
+          "Cum cer preț pentru BellaBot și T10 în România?",
+          "How do I request BellaBot and T10 pricing in Romania?",
+          "Deschide fișa fiecărui model și solicită oferta pentru același scenariu. RobotGo confirmă configurația, prețul în EUR, disponibilitatea și termenul de livrare prin ofertă. Transportul este inclus în prețul ofertat doar în România.",
+          "Open each model page and request a quotation for the same scenario. RobotGo confirms configuration, EUR pricing, availability and delivery timing in the quotation. Transport is included in the quoted price within Romania only."
+        ]
+      ],
+      "products": [
+        "pudu-bellabot",
+        "keenon-t10"
+      ],
+      "links": [
+        "/solutions/horeca",
+        "/guides/cat-costa-un-robot",
+        "/guides/roboti-entertainment"
+      ],
+      "sources": [
+        [
+          "PUDU BellaBot — funcții și parametri",
+          "https://www.pudurobotics.com/en/products/bellabot"
+        ],
+        [
+          "KEENON DINERBOT T10 — funcții și parametri",
+          "https://www.keenon.com/en/product/T10"
+        ]
+      ],
+      "date": "2026-11-01"
+    },
+    "/guides/pudu-cc1-vs-keenon-c40": {
+      "title": "PUDU CC1 vs KLEENBOT C40: robot de curățenie | RobotGo",
+      "description": "PUDU CC1 sau KEENON KLEENBOT C40? Compară metodele de curățare, pardoseala, rezervoarele, stația și consumabilele înainte de a solicita oferta.",
+      "label": [
+        "PUDU CC1 vs KLEENBOT C40: alegerea unui robot de curățenie",
+        "PUDU CC1 vs KLEENBOT C40: choosing a cleaning robot"
+      ],
+      "intro": [
+        "Pentru un birou, hotel sau magazin, alegerea unui robot de curățenie profesională începe cu suprafața care trebuie întreținută și rezultatul dorit. PUDU CC1 și KEENON KLEENBOT C40 merită comparate pe același traseu și aceeași murdărie. Ghidul se referă la CC1 și C40; specificațiile CC1 Pro, C30 sau C55 nu se transferă acestor modele.",
+        "For an office, hotel or shop, choosing a commercial cleaning robot starts with the floor area and required result. PUDU CC1 and KEENON KLEENBOT C40 should be compared on the same route and dirt. This guide covers CC1 and C40; specifications for CC1 Pro, C30 or C55 do not transfer to these models."
+      ],
+      "sections": [
+        [
+          "Separă suprafața totală de suprafața accesibilă",
+          "Separate total area from accessible area",
+          "Un spațiu de 1.000 m² poate include mobilier, colțuri, scări și încăperi închise. Marchează pe plan zonele accesibile robotului și cele care rămân în rutina personalului. Notează materialul pardoselii, murdăria obișnuită și intervalul disponibil. Astfel, oferta răspunde unei activități măsurabile, nu doar unei suprafețe din contractul clădirii.",
+          "A 1,000 m² premises may include furniture, corners, stairs and closed rooms. Mark robot-accessible zones and areas remaining in the staff routine on the plan. Record floor materials, typical dirt and the available time window. The quotation then addresses a measurable task rather than just the area stated in the building contract."
+        ],
+        [
+          "Pardoseala determină metoda și accesoriile",
+          "Flooring determines the method and accessories",
+          "Ambele modele prezintă funcții pentru curățare uscată și umedă. Pentru PUDU CC1, ansamblul de aspirare a mochetei se achiziționează separat, conform producătorului. KEENON prezintă la C40 un sistem cu trei perii și separarea deșeurilor uscate de cele umede. Aceste descrieri nu înlocuiesc verificarea compatibilității cu finisajul și detergentul din spațiul tău.",
+          "Both models describe dry and wet cleaning functions. PUDU states that the CC1 carpet-vacuuming assembly is purchased separately. KEENON describes a triple-brush system with dry/wet waste separation for C40. These descriptions do not replace checking compatibility with your floor finish and detergent."
+        ],
+        [
+          "Stația și întreținerea fac parte din proiect",
+          "The station and maintenance belong in the project",
+          "Precizează unde va sta robotul și cine gestionează consumabilele. Dacă dorești alimentare și evacuare automată a apei, cere identificarea stației, a racordurilor și a lucrărilor necesare. Pentru CC1, producătorul listează stațiile separat de robot. Oferta pentru C40 trebuie să precizeze la rândul ei echiparea propusă. Automatizarea unei etape nu elimină verificarea periilor, rezervoarelor și rezultatului.",
+          "Specify where the robot will be kept and who manages consumables. If automatic water supply and drainage are required, ask for the station, connections and installation work to be identified. PUDU lists CC1 stations separately from the robot. A C40 quotation must likewise identify the proposed equipment. Automating one stage does not remove checks of brushes, tanks and cleaning results."
+        ],
+        [
+          "Compară rezultate observate, în condiții egale",
+          "Compare observed results under equal conditions",
+          "Pregătește o probă cu același tip de pardoseală, aceleași obstacole și același criteriu de curățenie. Înregistrează suprafața finalizată, timpul cu reumpleri și pauze, intervențiile personalului și zonele neterminate. Valorile de productivitate maximă din broșuri pot avea condiții diferite; nu sunt un termen garantat pentru curățarea clădirii tale.",
+          "Prepare a trial using the same flooring, obstacles and cleanliness criterion. Record completed area, time including refills and pauses, staff interventions and unfinished areas. Maximum productivity figures in brochures may use different conditions; they are not a guaranteed completion time for your building."
+        ]
+      ],
+      "table": [
+        [
+          "Criteriu",
+          "Criterion",
+          "Ce verifici",
+          "What to check"
+        ]
+      ],
+      "comparison": {
+        "columns": [
+          [
+            "Criteriu",
+            "Criterion"
+          ],
+          [
+            "PUDU CC1",
+            "PUDU CC1"
+          ],
+          [
+            "KEENON KLEENBOT C40",
+            "KEENON KLEENBOT C40"
+          ]
+        ],
+        "rows": [
+          [
+            [
+              "Funcții descrise",
+              "Described functions"
+            ],
+            [
+              "Măturare, aspirare, spălare și mop",
+              "Sweeping, vacuuming, scrubbing and mopping"
+            ],
+            [
+              "Măturare, aspirare, spălare și mop uscat",
+              "Sweeping, vacuuming, scrubbing and dust mopping"
+            ]
+          ],
+          [
+            [
+              "Apă curată / apă uzată",
+              "Clean / waste water"
+            ],
+            [
+              "15 L / 15 L",
+              "15 L / 15 L"
+            ],
+            [
+              "16 L / 11 L",
+              "16 L / 11 L"
+            ]
+          ],
+          [
+            [
+              "Echiparea pentru pardoseală",
+              "Floor-specific equipment"
+            ],
+            [
+              "Ansamblu separat pentru aspirarea mochetei",
+              "Separate carpet-vacuuming assembly"
+            ],
+            [
+              "Perii și consumabile de confirmat pentru suprafață",
+              "Brushes and consumables to confirm for the floor"
+            ]
+          ],
+          [
+            [
+              "Stație și alimentare",
+              "Station and supplies"
+            ],
+            [
+              "Stațiile sunt listate separat de producător",
+              "Stations are listed separately by the manufacturer"
+            ],
+            [
+              "Se identifică stația și racordurile în ofertă",
+              "Identify the station and connections in the quotation"
+            ]
+          ],
+          [
+            [
+              "Criteriu de probă",
+              "Trial criterion"
+            ],
+            [
+              "Suprafață finalizată și rezultat acceptat, cu toate pauzele",
+              "Completed area and accepted result, including all pauses"
+            ],
+            [
+              "Aceeași probă, aceleași condiții și aceeași evaluare",
+              "The same trial, conditions and evaluation"
+            ]
+          ]
+        ]
+      },
+      "checks": [
+        [
+          "Plan cu zone accesibile, suprafață efectivă și tipul pardoselii pe fiecare zonă.",
+          "A plan of accessible zones, effective area and flooring in each zone."
+        ],
+        [
+          "Fotografii cu murdăria tipică, pragurile și mobilierul; fără persoane identificabile.",
+          "Photographs of typical dirt, thresholds and furniture, without identifiable people."
+        ],
+        [
+          "Locul stației, sursele de apă și electricitate și posibilitatea de evacuare.",
+          "Station location, water and electricity supplies and drainage options."
+        ],
+        [
+          "Programul de lucru și persoana care verifică rezultatul și întreține consumabilele.",
+          "Operating schedule and the person checking results and maintaining consumables."
+        ]
+      ],
+      "faq": [
+        [
+          "Care robot este potrivit pentru birouri sau hoteluri?",
+          "Which robot suits offices or hotels?",
+          "Compară spațiul accesibil și pardoselile reale, nu numai destinația clădirii. Un hotel cu mochetă și holuri înguste cere altă probă decât un birou cu suprafețe dure deschise. Pentru ambele modele, oferta trebuie să identifice accesoriile și rutina de întreținere.",
+          "Compare the accessible space and actual flooring, not only the building type. A hotel with carpet and narrow corridors requires a different trial from an office with open hard floors. For both models, the quotation should identify accessories and the maintenance routine."
+        ],
+        [
+          "Pot folosi suprafața pe oră pentru a calcula durata exactă?",
+          "Can I use area per hour to calculate an exact duration?",
+          "Este un punct de plecare, nu durata finală. Virajele, obstacolele, revenirea la stație și reluarea zonelor influențează timpul. Cere o estimare pentru planul tău și verific-o printr-o probă cu un criteriu clar de rezultat.",
+          "It is a starting point, not the final duration. Turns, obstacles, station returns and repeat passes affect time. Request an estimate for your floor plan and verify it in a trial with a clear result criterion."
+        ],
+        [
+          "Ce includ în cererea de preț pentru CC1 sau C40?",
+          "What should a CC1 or C40 price request include?",
+          "Indică modelul, suprafața, pardoseala, programul și automatizarea dorită pentru stație. Cere separarea echipamentului, accesoriilor, instalării și consumabilelor. Prețul și disponibilitatea se confirmă prin ofertă; nu există pe această pagină un preț standard al unei soluții complete.",
+          "Specify the model, area, flooring, schedule and required station automation. Ask for equipment, accessories, installation and consumables to be separated. Pricing and availability are confirmed by quotation; this page does not state a standard complete-system price."
+        ]
+      ],
+      "products": [
+        "pudu-cc1",
+        "keenon-c40"
+      ],
+      "links": [
+        "/solutions/curatenie",
+        "/guides/mentenanta-robotilor",
+        "/guides/cat-costa-un-robot"
+      ],
+      "sources": [
+        [
+          "PUDU CC1 — funcții, rezervoare și accesorii",
+          "https://www.pudurobotics.com/en/products/puducc1"
+        ],
+        [
+          "KEENON KLEENBOT C40 — funcții și parametri",
+          "https://www.keenon.com/en/product/C40"
+        ]
+      ],
+      "date": "2026-11-01"
+    }
+  },
+  "productQuestions": {
+    "pudu-bellabot": {
+      "sources": [
+        [
+          "PUDU BellaBot — funcții și parametri",
+          "https://www.pudurobotics.com/en/products/bellabot"
+        ]
+      ],
+      "faq": [
+        [
+          "Cum verific dacă BellaBot poate transporta farfuriile restaurantului?",
+          "How do I check whether BellaBot can carry my restaurant dishes?",
+          "Măsoară farfuriile și tăvile încărcate și pregătește o probă cu distribuția reală a greutății. Verifică accesul la fiecare nivel, stabilitatea pe traseu și spațiul necesar preluării. Sarcina totală permisă nu înlocuiește limita pe tavă.",
+          "Measure loaded dishes and trays and prepare a trial with the actual weight distribution. Check access to each level, stability on the route and collection space. The total permitted load does not replace the per-tray limit."
+        ],
+        [
+          "BellaBot preia comanda și pune singur farfuriile pe masă?",
+          "Does BellaBot take orders and place dishes on the table itself?",
+          "Rolul prezentat aici este transportul între puncte configurate. Încărcarea și preluarea articolelor sunt organizate de personal. Preluarea comenzilor, plățile sau integrarea cu aplicația restaurantului trebuie definite separat și confirmate pentru proiect.",
+          "The role presented here is transport between configured points. Staff organise loading and collection. Order-taking, payments or integration with restaurant software must be separately defined and confirmed for the project."
+        ],
+        [
+          "Ce informații sunt necesare pentru o ofertă BellaBot?",
+          "What information is needed for a BellaBot quotation?",
+          "Trimite planul restaurantului, dimensiunile culoarelor cu scaunele ocupate, încărcătura uzuală și programul de servire. Menționează accesoriile de apelare și instruirea dorită. Astfel poate fi delimitat prețul robotului față de configurarea aplicației.",
+          "Send the restaurant plan, aisle dimensions with occupied chairs, usual load and service schedule. Mention required calling accessories and training. This helps distinguish robot pricing from application setup."
+        ]
+      ]
+    },
+    "keenon-t10": {
+      "sources": [
+        [
+          "KEENON DINERBOT T10 — funcții și parametri",
+          "https://www.keenon.com/en/product/T10"
+        ]
+      ],
+      "faq": [
+        [
+          "Cum aleg între T10 pentru servire și T10 pentru promovare?",
+          "How do I evaluate T10 for serving versus promotion?",
+          "Stabilește separat numărul și traseul curselor, apoi mesajul pe care trebuie să îl vadă clientul. Pentru promovare, pregătește un material de probă și verifică lizibilitatea, sunetul și modul de actualizare. Ecranul nu garantează singur vizibilitatea unei campanii în orice poziție.",
+          "Define delivery routes and frequency separately from the message guests should see. For promotion, prepare sample content and check readability, audio and the update process. A screen alone does not guarantee campaign visibility from every position."
+        ],
+        [
+          "T10 poate lucra în culoarele înguste ale restaurantului?",
+          "Can T10 work in my restaurant’s narrow aisles?",
+          "KEENON publică o lățime minimă de trecere de 59 cm. Aceasta nu este o recomandare de a proiecta toate culoarele la acea limită. Măsoară și virajele, poziția scaunelor și zonele de întâlnire cu oamenii, apoi cere verificarea traseului.",
+          "KEENON publishes a minimum passage width of 59 cm. This is not a recommendation to design every aisle at that limit. Also measure turns, chair positions and passing areas, then request route verification."
+        ],
+        [
+          "T10 vorbește română și rulează orice reclamă?",
+          "Does T10 speak Romanian and play any advertisement?",
+          "Cere confirmarea limbilor, formatelor media și modului de administrare pentru versiunea ofertată. Trimite un exemplu de conținut înainte de comandă. Mesajele predefinite, redarea unei reclame și conversația liberă sunt funcții diferite.",
+          "Ask for confirmation of languages, media formats and management tools for the quoted version. Send sample content before ordering. Preset prompts, playing an advertisement and open-ended conversation are different functions."
+        ]
+      ]
+    },
+    "pudu-cc1": {
+      "sources": [
+        [
+          "PUDU CC1 — funcții, rezervoare și accesorii",
+          "https://www.pudurobotics.com/en/products/puducc1"
+        ]
+      ],
+      "faq": [
+        [
+          "PUDU CC1 aspiră și mocheta?",
+          "Can PUDU CC1 vacuum carpet?",
+          "Producătorul indică un ansamblu pentru aspirarea mochetei, achiziționat separat. Menționează tipul mochetei și suprafața în cerere și solicită identificarea accesoriului compatibil. Nu presupune că o ofertă pentru pardoseală dură include acest ansamblu.",
+          "The manufacturer lists a carpet-vacuuming assembly purchased separately. State the carpet type and area in your request and ask for the compatible accessory to be identified. Do not assume a hard-floor quotation includes that assembly."
+        ],
+        [
+          "Stația de apă și încărcare este inclusă în prețul CC1?",
+          "Is a water and charging station included in the CC1 price?",
+          "Stațiile sunt listate separat de producător. Conținutul comercial se verifică în oferta RobotGo: robot, tipul stației, alimentare cu apă, evacuare și instalare. Specifică dacă dorești numai încărcare sau și gestionarea automată a apei.",
+          "Stations are listed separately by the manufacturer. Check the RobotGo quotation for the robot, station type, water supply, drainage and installation. Specify whether you need charging only or automatic water management as well."
+        ],
+        [
+          "Cum estimez timpul de curățare cu CC1?",
+          "How do I estimate cleaning time with CC1?",
+          "Folosește suprafața accesibilă, metoda de curățare și intervalul de lucru. În estimare intră ocolirea mobilierului, reumplerile, pauzele și întreținerea consumabilelor. O probă pe o zonă reprezentativă este mai utilă decât împărțirea suprafeței totale la o productivitate maximă.",
+          "Use accessible area, cleaning method and operating window. Include furniture detours, refills, pauses and consumable care in the estimate. A trial in a representative area is more useful than dividing total area by maximum productivity."
+        ]
+      ]
+    },
+    "keenon-c40": {
+      "sources": [
+        [
+          "KEENON KLEENBOT C40 — funcții și parametri",
+          "https://www.keenon.com/en/product/C40"
+        ]
+      ],
+      "faq": [
+        [
+          "Ce trebuie verificat înainte de a alege KLEENBOT C40?",
+          "What should I check before choosing KLEENBOT C40?",
+          "Notează tipul pardoselii și murdăriei, spațiul de trecere și poziția stației. Alege o zonă de probă care include obstacolele întâlnite zilnic. Cere confirmarea periilor, consumabilelor și detergentului potrivit pentru suprafața ta.",
+          "Record flooring and dirt types, passage clearance and station location. Choose a trial area containing everyday obstacles. Ask for confirmation of brushes, consumables and detergent suited to your floor."
+        ],
+        [
+          "Câtă apă transportă KLEENBOT C40?",
+          "How much water does KLEENBOT C40 carry?",
+          "Fișa producătorului indică 16 L pentru apă curată și 11 L pentru apă uzată. Frecvența reumplerii depinde de modul de lucru și de dozaj; capacitatea rezervorului nu stabilește singură suprafața curățată într-o tură.",
+          "The manufacturer lists 16 L for clean water and 11 L for waste water. Refill frequency depends on operating mode and dosage; tank capacity alone does not determine the area cleaned in a shift."
+        ],
+        [
+          "Ce consumabile cer în oferta pentru C40?",
+          "Which consumables should I request in a C40 quotation?",
+          "Cere lista compatibilă cu metoda aleasă: perii, elemente de colectare a apei, filtre și saci, după echipare. Solicită codurile și instrucțiunile de înlocuire. Separă consumul estimat de piesele de schimb și precizează cine face întreținerea curentă.",
+          "Request a list matching the selected method: brushes, water-pickup parts, filters and bags, as equipped. Ask for part codes and replacement instructions. Separate estimated consumable use from spare parts and define who performs routine maintenance."
+        ]
+      ]
+    },
+    "unitree-g1": {
+      "sources": [
+        [
+          "Unitree G1 — variante G1 și G1 EDU",
+          "https://www.unitree.com/g1/"
+        ]
+      ],
+      "faq": [
+        [
+          "Care este diferența dintre G1 standard și G1 EDU pentru programare?",
+          "How do standard G1 and G1 EDU differ for programming?",
+          "Unitree distinge versiunea standard de G1 EDU pentru dezvoltare. Dacă proiectul cere cod propriu, precizează accesul SDK și nivelul de control necesar. Nu alege doar după aspect: solicită confirmarea configurației EDU, a interfețelor și a documentației livrate.",
+          "Unitree distinguishes standard G1 from G1 EDU for development. If your project needs custom code, specify SDK access and the required control level. Do not choose by appearance alone: confirm the EDU configuration, interfaces and supplied documentation."
+        ],
+        [
+          "Sunt incluse mâinile articulate în orice configurație G1?",
+          "Are articulated hands included in every G1 configuration?",
+          "Nu. Echiparea mâinilor și gradele de libertate diferă între configurații. Pentru un proiect de prindere, descrie obiectul și mișcarea dorită, apoi cere identificarea mâinii, senzorilor și accesului software. Fotografia unui robot nu stabilește conținutul ofertei.",
+          "No. Hand equipment and degrees of freedom differ by configuration. For a grasping project, describe the object and required motion, then ask for the hand, sensors and software access to be identified. A robot photograph does not establish quotation contents."
+        ],
+        [
+          "Ce trebuie să includă o ofertă pentru Unitree G1 în România?",
+          "What should a Unitree G1 quotation in Romania include?",
+          "Varianta exactă, echiparea brațelor și mâinilor, bateria și încărcătorul, accesul software cerut și responsabilitatea pentru programare. Adaugă scopul: demonstrație, laborator sau dezvoltare. Prețul și disponibilitatea se confirmă pentru ansamblul solicitat.",
+          "The exact variant, arm and hand equipment, battery and charger, required software access and responsibility for programming. State the purpose: demonstration, laboratory or development. Pricing and availability are confirmed for the requested package."
+        ]
+      ]
+    },
+    "unitree-go2": {
+      "sources": [
+        [
+          "Unitree Go2 — versiuni și funcții",
+          "https://www.unitree.com/go2/"
+        ]
+      ],
+      "faq": [
+        [
+          "Cum aleg versiunea de Unitree Go2 pentru proiectul meu?",
+          "How do I choose a Unitree Go2 version for my project?",
+          "Separă demonstrațiile predefinite de dezvoltarea unei aplicații proprii. În cerere, menționează controlul dorit, datele de citit și senzorii necesari. Compară accesul software și echiparea versiunii ofertate; numele Go2 nu înseamnă că toate configurațiile au aceleași funcții.",
+          "Separate preset demonstrations from developing your own application. State the required control, data access and sensors. Compare software access and equipment for the quoted version; the Go2 name does not mean every configuration has identical functions."
+        ],
+        [
+          "Poate Go2 face inspecție tehnică imediat după cumpărare?",
+          "Can Go2 perform a technical inspection immediately after purchase?",
+          "Un proiect de inspecție cere definirea măsurătorii, traseului, senzorilor și raportului. Funcțiile de mobilitate sau demonstrațiile din aplicație nu confirmă singure acest flux. Cere o configurație și o probă pentru datele pe care vrei să le colectezi.",
+          "An inspection project requires a defined measurement, route, sensors and report. Mobility functions or app demonstrations do not establish that workflow by themselves. Request a configuration and trial for the data you need to collect."
+        ],
+        [
+          "Ce pregătesc pentru o demonstrație Go2 la un eveniment?",
+          "What should I prepare for a Go2 event demonstration?",
+          "Descrie pardoseala, spațiul delimitat, durata secvențelor și rolul operatorului. Selectează numai mișcările confirmate pentru versiunea robotului și spațiul evenimentului. Cere și planul de încărcare; autonomia într-o demonstrație nu se deduce dintr-un clip promoțional.",
+          "Describe the flooring, designated area, sequence duration and operator role. Select only motions confirmed for the robot version and venue. Also request a charging plan; demonstration runtime cannot be inferred from a promotional clip."
+        ]
+      ]
     }
   }
 };
