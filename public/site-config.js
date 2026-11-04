@@ -28,6 +28,9 @@ window.ROBOTGO_CONFIG = {
   aiEndpoint: '/api/consult',
   leadEndpoint: '/api/auth/leads',
   leadsEnabled: true,
+  // Public website tracker identifier for the existing RobotGo Metricool brand.
+  // This is not an API token. Tracking requires a new, explicit visitor opt-in.
+  metricoolHash: '55560498b07b2fd1cc4109c96fc58cfd',
   upgradePreviewImages: true,
   upgradeHeroImages: false
 };

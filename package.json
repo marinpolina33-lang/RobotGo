@@ -3,7 +3,7 @@
   "version": "0.6.0",
   "private": true,
   "type": "module",
-  "description": "RobotGo — production catalogue, SEO pages and quotation requests.",
+  "description": "RobotGo \u2014 production catalogue, SEO pages and quotation requests.",
   "engines": {
     "node": ">=20"
   },
@@ -11,6 +11,6 @@
     "check": "node tools/verify.mjs",
     "build": "node tools/build.mjs",
     "preview": "node tools/preview.mjs",
-    "test": "node tools/verify.mjs"
+    "test": "node tools/verify.mjs && node --test tests/metricool.test.mjs"
   }
 }
