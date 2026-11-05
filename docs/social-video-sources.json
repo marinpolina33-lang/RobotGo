@@ -1,0 +1,317 @@
+{
+  "checkedOn": "2026-11-05",
+  "profileSource": "Connected RobotGo brand in Metricool (7815373)",
+  "profiles": [
+    {
+      "network": "youtube",
+      "url": "https://www.youtube.com/channel/UC4CIQNPGrkfKiOeyd9u43Yw"
+    },
+    {
+      "network": "tiktok",
+      "url": "https://www.tiktok.com/@stancuniculae"
+    },
+    {
+      "network": "facebook",
+      "url": "https://www.facebook.com/1340881859117812/"
+    },
+    {
+      "network": "instagram",
+      "url": "https://www.instagram.com/robot_go_/"
+    }
+  ],
+  "videos": [
+    {
+      "product": "unitree-g1",
+      "url": "https://www.youtube.com/shorts/LN_M6Q1zGqM",
+      "publisher": "RobotGo",
+      "scopeNote": null,
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "Robot umanoid Unitree G1 | Demonstrații care atrag atenția",
+      "author": "Robot Go",
+      "authorUrl": "https://www.youtube.com/@RobotGo-x6n"
+    },
+    {
+      "product": "unitree-go2",
+      "url": "https://www.youtube.com/watch?v=6zPvT0ig1VM",
+      "publisher": "Unitree Robotics",
+      "scopeNote": null,
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "Introducing Unitree Go2 - Quadruped Robot of Embodied AI from $1600",
+      "author": "Unitree Robotics",
+      "authorUrl": "https://www.youtube.com/@unitreerobotics"
+    },
+    {
+      "product": "leju-kuavo-4pro",
+      "url": "https://www.youtube.com/watch?v=tIuTn9iDvbQ",
+      "publisher": "Leju Robotics",
+      "scopeNote": "This video presents the KUAVO family. The 4Pro configuration and functions are confirmed separately.",
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "A Day in the Life of the Kuavo Humanoid Robot Delivering Express Parcels.",
+      "author": "Leju Robotics",
+      "authorUrl": "https://www.youtube.com/@LejuRobotics",
+      "modelContextUrl": "https://robotservicemap.com/robots/leju-kuavo-4-pro/"
+    },
+    {
+      "product": "leju-kuavo-5",
+      "url": "https://www.youtube.com/watch?v=nPA2NmH1lJs",
+      "publisher": "Kazumichi Moriyama",
+      "scopeNote": "This clip shows the wheeled 5-W version.",
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "YATOMIエンジブース Leju  KUAVO-5W デモ RTJ2026",
+      "author": "Kazumichi Moriyama",
+      "authorUrl": "https://www.youtube.com/@KazumichiMoriyama",
+      "modelContextUrl": "https://robodromo.com/pages/leju-kuavo-5-w"
+    },
+    {
+      "product": "leju-roban-2",
+      "url": "https://www.youtube.com/watch?v=FMYwsXXIRJk",
+      "publisher": "Leju Robotics",
+      "scopeNote": null,
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "ROBAN2 Teaser Begins | More Updates Coming Soon…",
+      "author": "Leju Robotics",
+      "authorUrl": "https://www.youtube.com/@LejuRobotics",
+      "modelContextUrl": "https://robodromo.com/pages/leju-roban-2"
+    },
+    {
+      "product": "rokae-helios",
+      "url": "https://www.youtube.com/watch?v=us8YOvKPiH0",
+      "publisher": "ROKAE Robotics",
+      "scopeNote": null,
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "Meet Helios - ROKAE’s wheeled humanoid robot in real industrial action. #robot #humanoidrobots",
+      "author": "ROKAE Robotics",
+      "authorUrl": "https://www.youtube.com/@ROKAERobotics"
+    },
+    {
+      "product": "rokae-human-x",
+      "url": "https://www.youtube.com/watch?v=XLqVmoWwHV4",
+      "publisher": "ROKAE Robotics",
+      "scopeNote": null,
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "ROKAE Humanoid #Robot - Human.X steps into the factory. Will it be the future of smart factories?",
+      "author": "ROKAE Robotics",
+      "authorUrl": "https://www.youtube.com/@ROKAERobotics"
+    },
+    {
+      "product": "rokae-ar",
+      "url": "https://www.youtube.com/watch?v=Ozm5yqTw8Qk",
+      "publisher": "ROKAE Robotics",
+      "scopeNote": null,
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "ROKAE Robotics Humanoid Force-Control Arm | Position Stability",
+      "author": "ROKAE Robotics",
+      "authorUrl": "https://www.youtube.com/@ROKAERobotics",
+      "modelContextUrl": "https://robotopian.com/pages/guide/rokae-ar-series-humanoid-force-controlled-arm"
+    },
+    {
+      "product": "rokae-cr",
+      "url": "https://www.youtube.com/watch?v=ZJVUrUnrwak",
+      "publisher": "Aurovis AG",
+      "scopeNote": null,
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "ROKAE xMate CR Serie",
+      "author": "Aurovis AG",
+      "authorUrl": "https://www.youtube.com/@aurovisag5106",
+      "modelContextUrl": "https://aurovis.ch/news/rokae-cobots/"
+    },
+    {
+      "product": "deep-lynx-m20",
+      "url": "https://www.youtube.com/watch?v=NAcanWv_2Z8",
+      "publisher": "DEEP Robotics",
+      "scopeNote": null,
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "LYNX M20 Launch | For Extreme Environments",
+      "author": "DEEP Robotics",
+      "authorUrl": "https://www.youtube.com/@deeprobotics8601"
+    },
+    {
+      "product": "deep-x30",
+      "url": "https://www.youtube.com/watch?v=zxGwOEYYFVo",
+      "publisher": "DEEP Robotics",
+      "scopeNote": null,
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "Introducing X30, industrial flagship quadruped robot",
+      "author": "DEEP Robotics",
+      "authorUrl": "https://www.youtube.com/@deeprobotics8601"
+    },
+    {
+      "product": "pudu-bellabot",
+      "url": "https://www.youtube.com/shorts/XnuYEJsRNIA",
+      "publisher": "RobotGo",
+      "scopeNote": null,
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "Robot ospătar BellaBot | Mai puține drumuri pentru echipă",
+      "author": "Robot Go",
+      "authorUrl": "https://www.youtube.com/@RobotGo-x6n"
+    },
+    {
+      "product": "pudu-cc1",
+      "url": "https://www.youtube.com/shorts/SfmkM3auKCc",
+      "publisher": "RobotGo",
+      "scopeNote": null,
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "Robot de curățenie PUDU CC1 | Un ajutor pentru echipa ta",
+      "author": "Robot Go",
+      "authorUrl": "https://www.youtube.com/@RobotGo-x6n"
+    },
+    {
+      "product": "keenon-t10",
+      "url": "https://www.youtube.com/watch?v=khnZ4v-5Lqg",
+      "publisher": "KEENON Robotics",
+      "scopeNote": null,
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "DINERBOT T10｜Ultimate robot for delivery and advertising that comes with all the perks",
+      "author": "KEENON ROBOTICS",
+      "authorUrl": "https://www.youtube.com/@KEENONRobotics"
+    },
+    {
+      "product": "keenon-c40",
+      "url": "https://www.youtube.com/watch?v=Gd4mC4TcF6s",
+      "publisher": "KEENON Robotics",
+      "scopeNote": null,
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "KLEENBOT C40 –  professional 4-in-1 robot cleaner",
+      "author": "KEENON ROBOTICS",
+      "authorUrl": "https://www.youtube.com/@KEENONRobotics"
+    },
+    {
+      "product": "keenon-w3",
+      "url": "https://www.youtube.com/watch?v=hDVr_RCuxMs",
+      "publisher": "KEENON Robotics",
+      "scopeNote": null,
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "BUTLERBOT W3 | Ultra Hotel Robot for Private,Hygienic and Multi-floor Services",
+      "author": "KEENON ROBOTICS",
+      "authorUrl": "https://www.youtube.com/@KEENONRobotics"
+    },
+    {
+      "product": "dobot-nova2",
+      "url": "https://www.youtube.com/watch?v=RzlBlom3jlE",
+      "publisher": "UptimeFab",
+      "scopeNote": null,
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "Dobot Nova 2 | Cobot testing and pick & place demo",
+      "author": "UptimeFab",
+      "authorUrl": "https://www.youtube.com/@uptimefab7412",
+      "modelContextUrl": "https://www.dobot.nu/en/video/nova-2/"
+    },
+    {
+      "product": "dobot-magician-e6",
+      "url": "https://www.youtube.com/watch?v=9TnsdJWzHds",
+      "publisher": "Dobot Robotics",
+      "scopeNote": null,
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "Introducing the New Magician E6 Product Video! 🌟",
+      "author": "Dobot Robotics",
+      "authorUrl": "https://www.youtube.com/@DobotRobotics"
+    },
+    {
+      "product": "inspire-rh56bfx",
+      "url": "https://www.youtube.com/watch?v=mq6zM-lvy0Y",
+      "publisher": "INSPIRE-ROBOTS",
+      "scopeNote": "A robotic hand range presentation, also featured in the distributor’s RH56BFX listing. Functions depend on the model.",
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "The Dexterous Hands Product  Introduction",
+      "author": "INSPIRE-ROBOTS",
+      "authorUrl": "https://www.youtube.com/@inspire-robots1939",
+      "modelContextUrl": "https://www.toneart-shop.de/inspire-robots-dexterous-robotic-hands-rh56bfx.html"
+    },
+    {
+      "product": "geekplus-p-series",
+      "url": "https://www.youtube.com/watch?v=mBqf7h8Ubsw",
+      "publisher": "Geekplus",
+      "scopeNote": "The clip shows P800. Equipment and capacity vary across P series models.",
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "Geek+ P-800 System Picking Robot Product Video",
+      "author": "Geekplus - Logistics & Warehouse Automation",
+      "authorUrl": "https://www.youtube.com/@geekplusrobotics"
+    },
+    {
+      "product": "ubtech-walker-s2",
+      "url": "https://www.youtube.com/watch?v=mHP1WGlw5Wk",
+      "publisher": "UBTECH Robotics",
+      "scopeNote": null,
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "Walker S2 - The World's First Humanoid Robot Capable of Autonomous Battery Swapping",
+      "author": "UBTECH Robotics",
+      "authorUrl": "https://www.youtube.com/@ubtechrobotics"
+    },
+    {
+      "product": "unitree-h1",
+      "url": "https://www.youtube.com/watch?v=GtPs_ygfaEA",
+      "publisher": "Unitree Robotics",
+      "scopeNote": null,
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "Introducing Unitree H1: Its First General-purpose Humanoid Robot| Embodied AI Price below $90k",
+      "author": "Unitree Robotics",
+      "authorUrl": "https://www.youtube.com/@unitreerobotics"
+    },
+    {
+      "product": "agilex-scout-mini",
+      "url": "https://www.youtube.com/watch?v=VBj374lFOp0",
+      "publisher": "AgileX Robotics",
+      "scopeNote": null,
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "SCOUT MINI | AgileX Robitics Smallest UGV",
+      "author": "AgileX Robotics",
+      "authorUrl": "https://www.youtube.com/@agilexrobotics",
+      "modelContextUrl": "https://global.agilex.ai/products/scout-mini"
+    },
+    {
+      "product": "brainco-revo2",
+      "url": "https://www.brainco-hz.com/docs/revolimb-hand/ecology/mechanical_revo2.html",
+      "publisher": "BrainCo",
+      "scopeNote": "The manufacturer’s page contains two videos, for the basic and tactile versions. The interface is in Chinese.",
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "evidence": "Manufacturer documentation contains two HTML video elements for Revo 2 basic and touch demonstrations."
+    },
+    {
+      "product": "siasun-gcr5",
+      "url": "https://www.youtube.com/watch?v=OPA4NBbLm50",
+      "publisher": "DUCO Robots",
+      "scopeNote": "The clip presents the GCR series, which includes GCR5-910; configurations vary by model.",
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "DUCO GCR series collaborative robots",
+      "author": "DUCO Robots",
+      "authorUrl": "https://www.youtube.com/@ducorobots",
+      "modelContextUrl": "https://www.ducorobots.com/productlist/20.html"
+    },
+    {
+      "product": "pudu-t300",
+      "url": "https://www.youtube.com/shorts/LRvsGNN_g88",
+      "publisher": "RobotGo",
+      "scopeNote": null,
+      "checkedOn": "2026-11-05",
+      "verified": true,
+      "videoTitle": "Robot de transport PUDU T300 Standard | Până la 300 kg",
+      "author": "Robot Go",
+      "authorUrl": "https://www.youtube.com/@RobotGo-x6n"
+    }
+  ]
+}
