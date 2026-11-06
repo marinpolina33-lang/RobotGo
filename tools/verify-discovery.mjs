@@ -5,7 +5,7 @@ import vm from 'node:vm';
 import assert from 'node:assert/strict';
 export function verifyDiscovery(root,dist,pages){
  const ctx={window:{}};
- for(const name of ['site-config','catalog','practical','robot-guides','robot-topics-data','robot-topics','exhibition-data','seo-improvements','humanoid-buying','discovery','content-updates','seo'])vm.runInNewContext(fs.readFileSync(path.join(root,'public',name+'.js'),'utf8'),ctx);
+ for(const name of ['site-config','catalog','practical','robot-guides','robot-topics-data','robot-topics','exhibition-data','seo-improvements','humanoid-buying','discovery','content-updates','video-pages','seo'])vm.runInNewContext(fs.readFileSync(path.join(root,'public',name+'.js'),'utf8'),ctx);
  const discovery=ctx.window.ROBOTGO_DISCOVERY,seo=ctx.window.ROBOTGO_SEO;
  const htmlByPath=new Map(pages.map(p=>[p.route,fs.readFileSync(path.join(dist,p.route,'index.html'),'utf8')]));
  const idsByPath=new Map([...htmlByPath].map(([route,html])=>[route,new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]))]));

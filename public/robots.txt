@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://robotgo.ro/sitemap.xml
+Sitemap: https://robotgo.ro/video-sitemap.xml

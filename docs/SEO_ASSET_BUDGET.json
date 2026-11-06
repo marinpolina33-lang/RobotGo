@@ -361,6 +361,31 @@
       "path": "/guides/glosar-robotica/",
       "editorialBytes": 17038,
       "stylesheetRequests": 1
+    },
+    {
+      "path": "/video/",
+      "editorialBytes": 17038,
+      "stylesheetRequests": 1
+    },
+    {
+      "path": "/video/pudu-cc1/",
+      "editorialBytes": 17038,
+      "stylesheetRequests": 1
+    },
+    {
+      "path": "/video/pudu-bellabot/",
+      "editorialBytes": 17038,
+      "stylesheetRequests": 1
+    },
+    {
+      "path": "/video/pudu-t300/",
+      "editorialBytes": 17038,
+      "stylesheetRequests": 1
+    },
+    {
+      "path": "/video/unitree-g1/",
+      "editorialBytes": 17038,
+      "stylesheetRequests": 1
     }
   ]
 }

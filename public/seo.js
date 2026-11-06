@@ -95,7 +95,7 @@
  const productsFor=p=>p.kind==='category'?D.products.filter(x=>x.category===p.id):p.kind==='solution'?D.products.filter(x=>x.domains.includes(p.id)):p.path==='/shop'?D.products:[];
  function breadcrumbs(p){const out=[{name:'Acasă',path:'/'}];if(p.parent){const parent=pages[p.parent];if(parent.parent)out.push(p.productId?{name:'Catalog',path:'/shop'}:{name:pages[parent.parent].label,path:parent.parent});out.push({name:parent.label,path:parent.path});}if(p.path!=='/')out.push({name:p.label,path:p.path});return out;}
  function renderLanding(path,lang='ro'){
-  const p=pages[path];if(!p?.kind)return null;if(p.kind==='glossary')return window.ROBOTGO_DISCOVERY.glossary(lang);if(p.kind==='auditPage')return R.render(path,lang);
+  const p=pages[path];if(!p?.kind)return null;if(['videoIndex','videoWatch'].includes(p.kind))return window.ROBOTGO_VIDEO.render(path,lang);if(p.kind==='glossary')return window.ROBOTGO_DISCOVERY.glossary(lang);if(p.kind==='auditPage')return R.render(path,lang);
   const en=lang==='en',tr=(ro,enText)=>en?enText:ro,local=o=>o?.[en?'en':'ro']||o?.ro||'';
   if(p.kind==='humanoidComparison')return B.render(lang);
   if(p.kind==='guideIndex')return T.renderIndex(lang).replace('</header>','</header>'+B.hub(lang));
@@ -133,6 +133,9 @@
  for(const m of window.ROBOTGO_EXHIBITION.items.filter(m=>m.kind==='video'))add('/media/'+m.id,m.title.ro+' — video de expoziție | RobotGo',m.description.ro,m.title.ro,{kind:'auditPage',parent:'/media',image:m.poster});
  add(window.ROBOTGO_DISCOVERY.glossaryPath,window.ROBOTGO_DISCOVERY.meta.title,window.ROBOTGO_DISCOVERY.meta.description,window.ROBOTGO_DISCOVERY.meta.label,window.ROBOTGO_DISCOVERY.meta);
  for(const [path,date]of Object.entries(window.ROBOTGO_CONTENT_UPDATES||{}))if(pages[path])pages[path].modified=date;
+ const V=window.ROBOTGO_VIDEO;
+ add('/video',V.meta.title,V.meta.description,'Video',{kind:'videoIndex',modified:'2026-11-06'});
+ for(const v of V.videos){const product=D.products.find(p=>p.id===v.product);add(V.route(v).replace(/\/$/,''),v.title.ro+' | RobotGo',v.description.ro,product.name,{kind:'videoWatch',parent:'/video',videoProduct:v.product,image:product.localImage,modified:'2026-11-06'});}
  pages['/quote'].noindex=true;
  function schema(path){
   const p=pages[path];if(!p)return null;
@@ -141,7 +144,7 @@
   organization.sameAs=(window.ROBOTGO_SOCIAL_DATA?.profiles||[]).map(p=>p.url);
   if(['/', '/about','/contact'].includes(path))graph.push(organization);
   if(path==='/')graph.push({'@type':'WebSite','@id':origin+'/#website',name:'RobotGo',alternateName:['RobotGo România','robotgo.ro'],url:origin+'/',inLanguage:'ro-RO',publisher:{'@id':origin+'/#organization'}});
-  const collection=['brands','categories','solutions','category','solution','guideIndex','humanoidComparison'].includes(p.kind)||path==='/shop';
+  const collection=['brands','categories','solutions','category','solution','guideIndex','humanoidComparison','videoIndex'].includes(p.kind)||path==='/shop';
   const page={'@type':collection?'CollectionPage':path==='/about'?'AboutPage':path==='/contact'?'ContactPage':'WebPage','@id':url+'#webpage',url,name:p.title,description:p.description,inLanguage:'ro-RO',isPartOf:{'@id':origin+'/#website'}};
   if(path==='/'){page.about={'@id':origin+'/#organization'};page.mainEntity={'@id':origin+'/#organization'};}
   if(p.modified)page.dateModified=p.modified;
@@ -154,6 +157,8 @@
    const article={'@type':'Article','@id':url+'#article',headline:p.title,description:p.description,inLanguage:'ro-RO',datePublished:p.date||'2026-10-31',dateModified:p.modified||p.date||'2026-10-31',author:{'@type':'Organization',name:'RobotGo',url:origin+'/'},publisher:organization,mainEntityOfPage:{'@id':page['@id']},image:origin+'/'+p.image};
    page.mainEntity={'@id':article['@id']};graph.push(article);
   }
+  if(p.kind==='videoWatch'){const video=V.schema(V.byProduct(p.videoProduct));page.mainEntity={'@id':video['@id']};graph.push(video);}
+  if(p.kind==='videoIndex')page.mainEntity={'@type':'ItemList',numberOfItems:V.videos.length,itemListElement:V.videos.map((v,i)=>({'@type':'ListItem',position:i+1,name:v.title.ro,url:origin+V.route(v)}))};
   // Keep product pages as WebPage until verified Offer or Review data supports Google's Product requirements.
   graph.push(page);return {'@context':'https://schema.org','@graph':graph};
  }
