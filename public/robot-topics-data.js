@@ -2,8 +2,8 @@
 window.ROBOTGO_TOPIC_DATA = {
   "topics": {
     "/categories/umanoizi": {
-      "title": "Roboți umanoizi: modele bipede și pe roți | RobotGo",
-      "description": "Roboți umanoizi bipezi și pe roți: Unitree, LEJU, ROKAE și UBTECH. Compară aplicațiile, programarea și configurațiile pentru România.",
+      "title": "Roboți umanoizi în România: modele și ofertă | RobotGo",
+      "description": "Compară 8 modele de roboți umanoizi Unitree, LEJU, ROKAE și UBTECH. Aplicații, programare și configurații; solicită preț și ofertă pentru România.",
       "heading": [
         "Robot umanoid, android sau robot biped?",
         "Humanoid, android or biped robot?"

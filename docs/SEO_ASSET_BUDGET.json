@@ -1,390 +1,390 @@
 {
   "unit": "uncompressed source bytes, not measured network traffic",
-  "beforeEditorialBytes": 171948,
+  "beforeEditorialBytes": 171968,
   "pages": [
     {
       "path": "/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/shop/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/contact/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/product/unitree-g1/",
-      "editorialBytes": 19123,
+      "editorialBytes": 19143,
       "stylesheetRequests": 1
     },
     {
       "path": "/product/unitree-go2/",
-      "editorialBytes": 19095,
+      "editorialBytes": 19115,
       "stylesheetRequests": 1
     },
     {
       "path": "/product/leju-kuavo-4pro/",
-      "editorialBytes": 18725,
+      "editorialBytes": 18745,
       "stylesheetRequests": 1
     },
     {
       "path": "/product/leju-kuavo-5/",
-      "editorialBytes": 18572,
+      "editorialBytes": 18592,
       "stylesheetRequests": 1
     },
     {
       "path": "/product/leju-roban-2/",
-      "editorialBytes": 18744,
+      "editorialBytes": 18764,
       "stylesheetRequests": 1
     },
     {
       "path": "/product/rokae-helios/",
-      "editorialBytes": 18704,
+      "editorialBytes": 18724,
       "stylesheetRequests": 1
     },
     {
       "path": "/product/rokae-human-x/",
-      "editorialBytes": 18777,
+      "editorialBytes": 18797,
       "stylesheetRequests": 1
     },
     {
       "path": "/product/rokae-ar/",
-      "editorialBytes": 18659,
+      "editorialBytes": 18679,
       "stylesheetRequests": 1
     },
     {
       "path": "/product/rokae-cr/",
-      "editorialBytes": 18651,
+      "editorialBytes": 18671,
       "stylesheetRequests": 1
     },
     {
       "path": "/product/deep-lynx-m20/",
-      "editorialBytes": 18721,
+      "editorialBytes": 18741,
       "stylesheetRequests": 1
     },
     {
       "path": "/product/deep-x30/",
-      "editorialBytes": 18729,
-      "stylesheetRequests": 1
-    },
-    {
-      "path": "/product/pudu-bellabot/",
-      "editorialBytes": 19019,
-      "stylesheetRequests": 1
-    },
-    {
-      "path": "/product/pudu-cc1/",
-      "editorialBytes": 18987,
-      "stylesheetRequests": 1
-    },
-    {
-      "path": "/product/keenon-t10/",
-      "editorialBytes": 18989,
-      "stylesheetRequests": 1
-    },
-    {
-      "path": "/product/keenon-c40/",
-      "editorialBytes": 18862,
-      "stylesheetRequests": 1
-    },
-    {
-      "path": "/product/keenon-w3/",
-      "editorialBytes": 18751,
-      "stylesheetRequests": 1
-    },
-    {
-      "path": "/product/dobot-nova2/",
       "editorialBytes": 18749,
       "stylesheetRequests": 1
     },
     {
+      "path": "/product/pudu-bellabot/",
+      "editorialBytes": 19039,
+      "stylesheetRequests": 1
+    },
+    {
+      "path": "/product/pudu-cc1/",
+      "editorialBytes": 19007,
+      "stylesheetRequests": 1
+    },
+    {
+      "path": "/product/keenon-t10/",
+      "editorialBytes": 19009,
+      "stylesheetRequests": 1
+    },
+    {
+      "path": "/product/keenon-c40/",
+      "editorialBytes": 18882,
+      "stylesheetRequests": 1
+    },
+    {
+      "path": "/product/keenon-w3/",
+      "editorialBytes": 18771,
+      "stylesheetRequests": 1
+    },
+    {
+      "path": "/product/dobot-nova2/",
+      "editorialBytes": 18769,
+      "stylesheetRequests": 1
+    },
+    {
       "path": "/product/dobot-magician-e6/",
-      "editorialBytes": 18774,
+      "editorialBytes": 18794,
       "stylesheetRequests": 1
     },
     {
       "path": "/product/inspire-rh56bfx/",
-      "editorialBytes": 18734,
+      "editorialBytes": 18754,
       "stylesheetRequests": 1
     },
     {
       "path": "/product/geekplus-p-series/",
-      "editorialBytes": 18814,
+      "editorialBytes": 18834,
       "stylesheetRequests": 1
     },
     {
       "path": "/product/ubtech-walker-s2/",
-      "editorialBytes": 18811,
+      "editorialBytes": 18831,
       "stylesheetRequests": 1
     },
     {
       "path": "/product/unitree-h1/",
-      "editorialBytes": 18742,
+      "editorialBytes": 18762,
       "stylesheetRequests": 1
     },
     {
       "path": "/product/agilex-scout-mini/",
-      "editorialBytes": 18695,
+      "editorialBytes": 18715,
       "stylesheetRequests": 1
     },
     {
       "path": "/product/brainco-revo2/",
-      "editorialBytes": 18684,
+      "editorialBytes": 18704,
       "stylesheetRequests": 1
     },
     {
       "path": "/product/siasun-gcr5/",
-      "editorialBytes": 18690,
+      "editorialBytes": 18710,
       "stylesheetRequests": 1
     },
     {
       "path": "/product/pudu-t300/",
-      "editorialBytes": 18699,
+      "editorialBytes": 18719,
       "stylesheetRequests": 1
     },
     {
       "path": "/categories/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/solutions/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/about/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/categories/umanoizi/",
-      "editorialBytes": 19215,
+      "editorialBytes": 19235,
       "stylesheetRequests": 1
     },
     {
       "path": "/categories/patrupezi/",
-      "editorialBytes": 19060,
+      "editorialBytes": 19080,
       "stylesheetRequests": 1
     },
     {
       "path": "/categories/hibrizi/",
-      "editorialBytes": 18624,
+      "editorialBytes": 18644,
       "stylesheetRequests": 1
     },
     {
       "path": "/categories/amr/",
-      "editorialBytes": 18778,
+      "editorialBytes": 18798,
       "stylesheetRequests": 1
     },
     {
       "path": "/categories/coboti/",
-      "editorialBytes": 18808,
+      "editorialBytes": 18828,
       "stylesheetRequests": 1
     },
     {
       "path": "/categories/ugv-civile/",
-      "editorialBytes": 18630,
+      "editorialBytes": 18650,
       "stylesheetRequests": 1
     },
     {
       "path": "/categories/accesorii/",
-      "editorialBytes": 18718,
+      "editorialBytes": 18738,
       "stylesheetRequests": 1
     },
     {
       "path": "/solutions/horeca/",
-      "editorialBytes": 19068,
+      "editorialBytes": 19088,
       "stylesheetRequests": 1
     },
     {
       "path": "/solutions/curatenie/",
-      "editorialBytes": 19184,
+      "editorialBytes": 19204,
       "stylesheetRequests": 1
     },
     {
       "path": "/solutions/logistica/",
-      "editorialBytes": 18714,
-      "stylesheetRequests": 1
-    },
-    {
-      "path": "/solutions/industrie/",
-      "editorialBytes": 18785,
-      "stylesheetRequests": 1
-    },
-    {
-      "path": "/solutions/educatie/",
-      "editorialBytes": 18806,
-      "stylesheetRequests": 1
-    },
-    {
-      "path": "/solutions/inspectie/",
-      "editorialBytes": 18752,
-      "stylesheetRequests": 1
-    },
-    {
-      "path": "/solutions/evenimente/",
       "editorialBytes": 18734,
       "stylesheetRequests": 1
     },
     {
+      "path": "/solutions/industrie/",
+      "editorialBytes": 18805,
+      "stylesheetRequests": 1
+    },
+    {
+      "path": "/solutions/educatie/",
+      "editorialBytes": 18826,
+      "stylesheetRequests": 1
+    },
+    {
+      "path": "/solutions/inspectie/",
+      "editorialBytes": 18772,
+      "stylesheetRequests": 1
+    },
+    {
+      "path": "/solutions/evenimente/",
+      "editorialBytes": 18754,
+      "stylesheetRequests": 1
+    },
+    {
       "path": "/guides/roboti-entertainment/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/brands/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/guides/primul-robot/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/robot/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/guides/cat-costa-un-robot/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/guides/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/guides/amr-vs-agv/",
-      "editorialBytes": 22315,
+      "editorialBytes": 22335,
       "stylesheetRequests": 1
     },
     {
       "path": "/guides/cobot-vs-robot-industrial/",
-      "editorialBytes": 22110,
+      "editorialBytes": 22130,
       "stylesheetRequests": 1
     },
     {
       "path": "/guides/umanoid-vs-caine-robot/",
-      "editorialBytes": 21942,
+      "editorialBytes": 21962,
       "stylesheetRequests": 1
     },
     {
       "path": "/guides/robot-programabil-sdk-ros/",
-      "editorialBytes": 22149,
+      "editorialBytes": 22169,
       "stylesheetRequests": 1
     },
     {
       "path": "/guides/robot-autonom-inteligenta-artificiala/",
-      "editorialBytes": 22065,
+      "editorialBytes": 22085,
       "stylesheetRequests": 1
     },
     {
       "path": "/guides/mentenanta-robotilor/",
-      "editorialBytes": 22487,
+      "editorialBytes": 22507,
       "stylesheetRequests": 1
     },
     {
       "path": "/guides/bellabot-vs-keenon-t10/",
-      "editorialBytes": 24268,
+      "editorialBytes": 24288,
       "stylesheetRequests": 1
     },
     {
       "path": "/guides/pudu-cc1-vs-keenon-c40/",
-      "editorialBytes": 24561,
+      "editorialBytes": 24581,
       "stylesheetRequests": 1
     },
     {
       "path": "/guides/dobot-nova2-vs-magician-e6/",
-      "editorialBytes": 23516,
+      "editorialBytes": 23536,
       "stylesheetRequests": 1
     },
     {
       "path": "/guides/unitree-g1-vs-h1/",
-      "editorialBytes": 23689,
+      "editorialBytes": 23709,
       "stylesheetRequests": 1
     },
     {
       "path": "/compare/roboti-umanoizi/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/service/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/media/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/quote/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/privacy/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/media/umanoid-demonstratie/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/media/manipulare-mobila-demo/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/media/brate-mainile-demo/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/media/umanoizi-expusi/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/guides/glosar-robotica/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/video/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/video/pudu-cc1/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/video/pudu-bellabot/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/video/pudu-t300/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     },
     {
       "path": "/video/unitree-g1/",
-      "editorialBytes": 17038,
+      "editorialBytes": 17058,
       "stylesheetRequests": 1
     }
   ]

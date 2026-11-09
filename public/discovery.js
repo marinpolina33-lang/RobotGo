@@ -67,6 +67,20 @@
  ];
  function termLinks(ids,lang){return `<nav class="seo-context discovery-terms" aria-label="${lang==='en'?'Technical terms explained':'Termeni tehnici explicați'}">${ids.map(id=>{const t=terms.find(t=>t[0]===id);return a(glossaryPath+'/#'+id,t[lang==='en'?2:1]);}).join('')}</nav>`;}
  function table(rows,lang,caption){const en=lang==='en';return `<div class="robot-table-scroll discovery-table" tabindex="0" role="region" aria-label="${esc(caption)}"><table class="robot-table"><caption>${esc(caption)}</caption><thead><tr><th scope="col">${en?'Your requirement':'Ce urmărești'}</th><th scope="col">${en?'What to check':'Ce verifici concret'}</th></tr></thead><tbody>${rows.map(r=>`<tr><th scope="row">${esc(r[en?1:0])}</th><td>${esc(r[en?3:2])}</td></tr>`).join('')}</tbody></table></div>`;}
+ function cobotShortlist(lang='ro'){
+  const en=lang==='en';
+  const checks={
+   'dobot-nova2':['Masa obiectului și a gripperului, spațiul de lucru și programarea.','Object and gripper mass, workspace and programming.'],
+   'dobot-magician-e6':['Exercițiile de predare, accesoriile didactice și accesul la software.','Teaching exercises, educational accessories and software access.'],
+   'siasun-gcr5':['Masa ansamblului piesă–sculă și pozițiile de preluare și depunere.','Combined part and tool mass, and pickup and placement positions.'],
+   'rokae-cr':['Varianta exactă din serie; sarcina și raza se confirmă pentru acel model.','The exact series variant; payload and reach are confirmed for that model.']
+  };
+  const rows=Object.entries(checks).map(([id,check])=>{
+   const p=D.products.find(p=>p.id===id);
+   return `<tr><th scope="row">${a('/product/'+p.id+'/',p.name)}<br><small>${esc(p.type[en?'en':'ro'])}</small></th><td>${esc(p.examples[en?'en':'ro'][0])}</td><td>${esc(text(check,lang))}<p>${a('/quote/?product='+p.id,en?'Request a quote for this model':'Cere ofertă pentru acest model')}</p></td></tr>`;
+  }).join('');
+  return `<section class="seo-prose" id="compara-modelele"><h2>${en?'Compare collaborative and educational arms':'Compară coboții și brațele educaționale'}</h2><p>${en?'Start with the operation you need. These catalogue examples help prepare a shortlist; the complete application is confirmed during project evaluation.':'Pornește de la operația de care ai nevoie. Exemplele din catalog ajută la selectarea modelelor; aplicația completă se confirmă la evaluarea proiectului.'}</p><div class="robot-table-scroll" tabindex="0" role="region" aria-label="${en?'Compare arm models':'Comparație modele de brațe'}"><table class="robot-table"><caption>${en?'Model, example task and quotation requirements':'Model, exemplu de utilizare și cerințe pentru ofertă'}</caption><thead><tr><th scope="col">${en?'Model and type':'Model și tip'}</th><th scope="col">${en?'Example application':'Exemplu de utilizare'}</th><th scope="col">${en?'What to specify':'Ce precizezi în cerere'}</th></tr></thead><tbody>${rows}</tbody></table></div><p>${a('/guides/dobot-nova2-vs-magician-e6/',en?'Nova 2 or Magician E6?':'Nova 2 sau Magician E6?')} · ${a('/guides/cobot-vs-robot-industrial/',en?'Cobot or industrial robot?':'Cobot sau robot industrial?')}</p></section>`;
+ }
  function extra(path,lang='ro'){
   const en=lang==='en',kind=path.split('/')[1],id=path.split('/')[2];
   if(kind==='categories'&&categories[id]){const c=categories[id];return `<section class="wrap section discovery-section" data-selection="${id}"><h2>${en?'Match the robot to the task':'Alege configurația după sarcina concretă'}</h2>${table(c.rows,lang,en?'Selection criteria, not measured test results':'Criterii de selecție, nu rezultate ale unor teste')}${termLinks(c.terms,lang)}<p>${a('/guides/primul-robot/',en?'Prepare a pilot project':'Pregătește un proiect pilot')} · ${a('/guides/cat-costa-un-robot/',en?'Plan the complete budget':'Planifică bugetul complet')}</p></section>`;}
@@ -90,5 +104,5 @@
  function decorate(html,path,lang='ro'){if(!html)return html;return toc(html+extra(path,lang)+(['/', '/guides','/robot','/shop'].includes(path)?glossaryCard(lang):''),path,lang);}
  function product(p,lang='ro'){return `<section class="wrap discovery-product-terms"><h2>${lang==='en'?'Understand the specifications of ':'Înțelege specificațiile pentru '}${esc(p.name)}</h2>${termLinks(categories[p.category]?.terms||['sarcina-utila','sdk'],lang)}</section>`;}
  const meta={title:'Glosar robotică: AMR, cobot, SDK, ROS și sarcină utilă | RobotGo',description:'Explicații simple pentru 18 termeni de robotică: robot, AMR, AGV, cobot, SDK, ROS, SLAM, sarcină utilă și TCO. Ghiduri și exemple din catalog.',label:'Glosar de robotică',kind:'glossary',parent:'/guides',date:'2026-11-01'};
- window.ROBOTGO_DISCOVERY={categories,applications,terms,glossaryPath,meta,extra,glossary,glossaryCard,decorate,product,toc};
+ window.ROBOTGO_DISCOVERY={categories,applications,terms,glossaryPath,meta,extra,glossary,glossaryCard,decorate,product,toc,cobotShortlist};
 })();

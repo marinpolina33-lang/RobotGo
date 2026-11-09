@@ -9,6 +9,19 @@ export function verifyDiscovery(root,dist,pages){
  const discovery=ctx.window.ROBOTGO_DISCOVERY,seo=ctx.window.ROBOTGO_SEO;
  const htmlByPath=new Map(pages.map(p=>[p.route,fs.readFileSync(path.join(dist,p.route,'index.html'),'utf8')]));
  const idsByPath=new Map([...htmlByPath].map(([route,html])=>[route,new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]))]));
+ for(const lang of ['ro','en']){
+  const humanoids=seo.renderLanding('/categories/umanoizi',lang);
+  assert.ok(humanoids.includes('<a class="btn" href="/compare/roboti-umanoizi/">'),'Main humanoid comparison CTA opens the comparison, not a filter');
+  const cobots=seo.renderLanding('/categories/coboti',lang);
+  assert.ok(cobots.includes('href="/categories/coboti/#compara-modelele"'));
+  assert.ok(cobots.includes('id="compara-modelele"'));
+  const table=discovery.cobotShortlist(lang);
+  for(const id of ['dobot-nova2','dobot-magician-e6','siasun-gcr5','rokae-cr']){
+   assert.ok(table.includes('href="/product/'+id+'/"'));
+   assert.ok(table.includes('href="/quote/?product='+id+'"'),'Quote retains the selected model');
+  }
+  assert.ok(!/undefined|NaN/.test(table));
+ }
  for(const category of ctx.window.ROBOTGO_CATALOG.categories){
   for(const lang of ['ro','en']){
    const html=seo.renderLanding('/categories/'+category.id,lang);
