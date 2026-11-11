@@ -3,7 +3,7 @@ window.ROBOTGO_SOCIAL_DATA={
  profiles:[
   {network:'youtube',url:'https://www.youtube.com/channel/UC4CIQNPGrkfKiOeyd9u43Yw'},
   {network:'tiktok',url:'https://www.tiktok.com/@stancuniculae'},
-  {network:'facebook',url:'https://www.facebook.com/1340881859117812/'},
+  {network:'facebook',url:'https://www.facebook.com/profile.php?id=61596209581264'},
   {network:'instagram',url:'https://www.instagram.com/robot_go_/'}
  ],
  videos:{
@@ -18,7 +18,7 @@ window.ROBOTGO_SOCIAL_DATA={
   'rokae-cr':{platform:'youtube',url:'https://www.youtube.com/watch?v=ZJVUrUnrwak',publisher:'Aurovis AG',title:{ro:'Prezentarea seriei de coboți ROKAE xMate CR.',en:'An introduction to the ROKAE xMate CR cobot series.'}},
   'deep-lynx-m20':{platform:'youtube',url:'https://www.youtube.com/watch?v=NAcanWv_2Z8',publisher:'DEEP Robotics',title:{ro:'LYNX M20 în demonstrațiile de lansare ale producătorului.',en:'LYNX M20 in the manufacturer’s launch demonstrations.'}},
   'deep-x30':{platform:'youtube',url:'https://www.youtube.com/watch?v=zxGwOEYYFVo',publisher:'DEEP Robotics',title:{ro:'Descoperă platforma patrupedă industrială X30.',en:'Discover the X30 industrial quadruped platform.'}},
-  'pudu-bellabot':{platform:'youtube',url:'https://www.youtube.com/shorts/XnuYEJsRNIA',publisher:'RobotGo',title:{ro:'BellaBot: descoperă robotul de servire în prezentarea RobotGo.',en:'BellaBot: explore the delivery robot in the RobotGo presentation.'},alternatives:[{network:'tiktok',url:'https://www.tiktok.com/@stancuniculae/video/7704560279954246945'},{network:'facebook',url:'https://www.facebook.com/reel/2701764480283051'},{network:'instagram',url:'https://www.instagram.com/reel/DfWUayuAsqM/'}]},
+  'pudu-bellabot':{platform:'youtube',url:'https://www.youtube.com/shorts/XnuYEJsRNIA',publisher:'RobotGo',title:{ro:'BellaBot: descoperă robotul de servire în prezentarea RobotGo.',en:'BellaBot: explore the delivery robot in the RobotGo presentation.'},alternatives:[{network:'tiktok',url:'https://www.tiktok.com/@stancuniculae/video/7704560279954246945'},{network:'facebook',url:'https://www.facebook.com/reel/1788054848915937'},{network:'instagram',url:'https://www.instagram.com/robot_go_/reel/DfmGnKDRdvm/'}]},
   'pudu-cc1':{platform:'youtube',url:'https://www.youtube.com/shorts/SfmkM3auKCc',publisher:'RobotGo',title:{ro:'CC1: descoperă robotul de curățenie în prezentarea RobotGo.',en:'CC1: explore the cleaning robot in the RobotGo presentation.'},alternatives:[{network:'tiktok',url:'https://www.tiktok.com/@stancuniculae/video/7704560020628802848'},{network:'facebook',url:'https://www.facebook.com/reel/1484772353512738'},{network:'instagram',url:'https://www.instagram.com/reel/DfWUOOoARuw/'}]},
   'keenon-t10':{platform:'youtube',url:'https://www.youtube.com/watch?v=khnZ4v-5Lqg',publisher:'KEENON Robotics',title:{ro:'DINERBOT T10: prezentarea robotului pentru livrare și comunicare vizuală.',en:'DINERBOT T10: a presentation of the delivery and visual communication robot.'}},
   'keenon-c40':{platform:'youtube',url:'https://www.youtube.com/watch?v=Gd4mC4TcF6s',publisher:'KEENON Robotics',title:{ro:'KLEENBOT C40 în prezentarea producătorului.',en:'KLEENBOT C40, presented by its manufacturer.'}},
