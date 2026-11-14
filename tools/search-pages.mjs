@@ -23,7 +23,7 @@ export function generateSearchPages(root,dist,template){
  const prices=context.window.ROBOTGO_PRICES;
  const productUrl=p=>'/product/'+p.id+'/';
  const link=(url,label,cls='')=>`<a href="${esc(url)}" class="${esc(cls)}">${esc(label)}</a>`;
- const image=(p,eager=false)=>`<span class="media has-image"><img src="/${esc(p.localImage)}" alt="${esc(p.name+' — '+ro(p.type))}" width="640" height="480" decoding="async" ${eager?'fetchpriority="high"':'loading="lazy"'}></span>`;
+ const image=(p,eager=false)=>`<span class="media has-image"><img src="${esc(eager&&context.window.ROBOTGO_HOME.productContext(p.id)||'/'+p.localImage)}" alt="${esc(p.name+' — '+ro(p.type))}" width="640" height="480" decoding="async" ${eager?'fetchpriority="high"':'loading="lazy"'}></span>`;
  const cards=products=>`<div class="product-grid">${products.map(p=>`<article class="product-card"><a class="product-photo-link" href="${productUrl(p)}">${image(p)}</a><div class="product-info"><span class="product-brand">${esc(p.brand)}</span><h2>${link(productUrl(p),p.name)}</h2><p>${esc(ro(p.description))}</p>${prices.render(p)}${link(productUrl(p),'Vezi modelul','btn sm')}${link('/quote/?product='+encodeURIComponent(p.id),'Solicită ofertă','card-quote-link')}${social.link(p)}</div></article>`).join('')}</div>`;
  const header=`<header class="ap-header"><div class="wrap ap-header-top">${link('/','RobotGo','logo')}</div><div class="ap-nav-wrap"><nav class="wrap ap-nav" aria-label="Navigare principală">${link('/','Acasă')}${link('/shop/','Catalog')}${link('/categories/','Tipuri de roboți')}${link('/solutions/','Domenii')}${link('/brands/','Branduri')}${link('/guides/','Ghiduri și comparații')}${link('/guides/primul-robot/','Primul robot')}${link('/service/','Service')}${link('/media/','Foto și video')}${link('/video/','Prezentări video')}${link('/contact/','Contact')}${link('/quote/','Solicită ofertă','ap-nav-quote')}</nav></div></header>`;
  const contact=`<p>${esc(cfg.companyName)} · CUI ${esc(cfg.vatId)}</p><p>${esc(cfg.address)}</p><p>${link('tel:'+cfg.phoneNumber,cfg.phoneNumber)} · ${link('mailto:'+cfg.email,cfg.email)}</p><p>${esc(cfg.openingHours)}</p>`;
@@ -64,9 +64,9 @@ export function generateSearchPages(root,dist,template){
    .replace('<div id="footer"></div>',`<div id="footer">${footer}</div>`);
   if(meta.noindex)html=html.replace('name="robots" content="index,follow,max-image-preview:large"','name="robots" content="noindex,follow"');
   if(['/quote','/service'].includes(pagePath))html=html.replace('<body>','<body class="on-request">');
-  const shareImage='assets/home/share-robot-delivery.jpg';
+  const shareImage='assets/home/share-robotgo-in-actiune.jpg';
   const imagePath=product?(meta.image||shareImage):shareImage;
-  const imageAlt=product?product.name+' — '+ro(product.type):'Robot de livrare cu compartimente, în fața unui restaurant';
+  const imageAlt=product?product.name+' — '+ro(product.type):'Roboți de recepție, servire, transport și patrulare în mediile lor de lucru';
   html=html.replace('name="twitter:card" content="summary"','name="twitter:card" content="summary_large_image"')
    .replace('<a class="skip" href="#main">',`<a class="skip" href="${page.route}#main">`)
    .replace('</head>',`<meta property="og:image" content="${origin}/${imagePath}"><meta property="og:image:alt" content="${esc(imageAlt)}"><meta name="twitter:image" content="${origin}/${imagePath}"><script id="robotgo-schema" type="application/ld+json">${json(seo.schema(pagePath))}</script></head>`);
