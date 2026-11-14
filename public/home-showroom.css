@@ -69,3 +69,17 @@
 
 .rg-carousel:not([data-ready]) .rg-carousel-arrows,.rg-carousel:not([data-ready]) .rg-carousel-play,.rg-carousel:not([data-ready]) .rg-carousel-categories{visibility:hidden}
 @media(prefers-reduced-motion:reduce){.rg-home-photo img,.rg-home-card{transition:none}}
+
+.rg-page-image{height:clamp(220px,32vw,425px);background:#dce8ef}
+.rg-page-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.rg-page-product{background:#efefef}
+.rg-page-product img{object-fit:contain}
+.rg-use-cases{padding-top:30px;padding-bottom:36px}
+.rg-use-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.rg-use-grid article{overflow:hidden;border:1px solid #34515c;border-radius:9px;background:#102b35}
+.rg-use-grid img{display:block;width:100%;aspect-ratio:16/10;height:auto;object-fit:cover}
+.rg-use-grid article>div{padding:18px}
+.rg-use-grid h3{margin:0 0 8px}
+.rg-use-grid p{color:#c1d3db;line-height:1.55}
+.rg-use-credit{font-size:11px}
+@media(max-width:700px){.rg-use-grid{grid-template-columns:1fr}.rg-page-image{height:clamp(205px,62vw,300px)}}

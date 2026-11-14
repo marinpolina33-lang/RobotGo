@@ -59,7 +59,7 @@ export function generateSearchPages(root,dist,template){
    .replace(/(<meta property="og:url" content=")[^"]*(">)/,`$1${canonical}$2`)
    .replace(/(<link rel="canonical" href=")[^"]*(">)/,`$1${canonical}$2`)
    .replace('<div id="header"></div>',`<div id="header">${header}</div>`)
-   .replace('<main id="main" tabindex="-1"></main>',`<main id="main" tabindex="-1">${page.body}</main>`)
+   .replace('<main id="main" tabindex="-1"></main>',`<main id="main" tabindex="-1">${context.window.ROBOTGO_HOME.pageImage(page.route)}${page.body}${page.route.replace(/\/$/,'')==='/solutions'?context.window.ROBOTGO_HOME.contextCards():''}</main>`)
    .replace(/<noscript>[\s\S]*?<\/noscript>/,'<noscript><p class="wrap">Activează JavaScript pentru filtre, comparație și galeria interactivă.</p></noscript>')
    .replace('<div id="footer"></div>',`<div id="footer">${footer}</div>`);
   if(meta.noindex)html=html.replace('name="robots" content="index,follow,max-image-preview:large"','name="robots" content="noindex,follow"');
