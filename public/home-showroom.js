@@ -141,11 +141,11 @@
   const parts=path.split('/').filter(Boolean);
   if(!parts.length)return '';
   const product=parts[0]==='product'&&D.products.find(p=>p.id===parts[1]);
-  const images={solutions:'products/scenario-amy-reception',contact:'products/scenario-amy-reception',about:'home/reception-lineup',service:'home/context-factory',shop:'home/delivery-lineup',categories:'home/reception-lineup',media:'products/scenario-panda-delivery',brands:'home/reception-lineup'};
+  const images={solutions:'home/delivery-lineup',guides:'home/context-factory',learn:'home/context-factory',contact:'products/scenario-amy-reception',about:'home/reception-lineup',service:'home/context-factory',shop:'home/delivery-lineup',categories:'home/reception-lineup',media:'products/scenario-panda-delivery',brands:'home/reception-lineup'};
   const domains={horeca:'products/scenario-panda-hotel',logistica:'home/context-factory',industrie:'home/context-factory',evenimente:'products/scenario-amy-reception'};
   const scene=parts[0]==='solutions'&&domains[parts[1]];
-  const src=product?.localImage||'assets/'+(scene||images[parts[0]]||'home/robot-stage')+'.webp';
-  return `<div class="rg-page-image${product?' rg-page-product':''}"><img src="/${esc(src)}" alt="${product?esc(product.name):''}" width="1450" height="700" fetchpriority="high" decoding="async"></div>`;
+  const src=product?.localImage||'assets/'+(scene||images[parts[0]]||'home/reception-lineup')+'.webp';
+  return `<div class="rg-page-image${product?' rg-page-product':''}${src.includes('-lineup.webp')?' rg-page-lineup':''}"><img src="/${esc(src)}" alt="${product?esc(product.name):''}" width="1450" height="700" fetchpriority="high" decoding="async"></div>`;
  }
  window.ROBOTGO_HOME={render,mount,unmount,matches,groups,slides,contextCards,pageImage};
 })();

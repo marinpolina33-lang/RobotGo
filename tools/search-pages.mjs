@@ -64,11 +64,12 @@ export function generateSearchPages(root,dist,template){
    .replace('<div id="footer"></div>',`<div id="footer">${footer}</div>`);
   if(meta.noindex)html=html.replace('name="robots" content="index,follow,max-image-preview:large"','name="robots" content="noindex,follow"');
   if(['/quote','/service'].includes(pagePath))html=html.replace('<body>','<body class="on-request">');
-  const imagePath=meta.image||visuals.hero;
-  const imageAlt=product?product.name+' — '+ro(product.type):meta.image?meta.label:'RobotGo — ilustrație de concept';
+  const shareImage='assets/home/share-robot-delivery.jpg';
+  const imagePath=product?(meta.image||shareImage):shareImage;
+  const imageAlt=product?product.name+' — '+ro(product.type):'Robot de livrare cu compartimente, în fața unui restaurant';
   html=html.replace('name="twitter:card" content="summary"','name="twitter:card" content="summary_large_image"')
    .replace('<a class="skip" href="#main">',`<a class="skip" href="${page.route}#main">`)
-   .replace('</head>',`<meta property="og:image" content="${origin}/${imagePath}"><meta property="og:image:alt" content="${esc(imageAlt)}"><meta name="twitter:image" content="${origin}/${imagePath}">${pagePath==='/'||product||['guide','robotGuide','deepGuide'].includes(meta.kind)?`<link rel="preload" as="image" href="/${imagePath}" fetchpriority="high">`:''}<script id="robotgo-schema" type="application/ld+json">${json(seo.schema(pagePath))}</script></head>`);
+   .replace('</head>',`<meta property="og:image" content="${origin}/${imagePath}"><meta property="og:image:alt" content="${esc(imageAlt)}"><meta name="twitter:image" content="${origin}/${imagePath}"><script id="robotgo-schema" type="application/ld+json">${json(seo.schema(pagePath))}</script></head>`);
   const target=path.join(dist,page.route,'index.html');fs.mkdirSync(path.dirname(target),{recursive:true});fs.writeFileSync(target,html);
  }
  fs.writeFileSync(path.join(dist,'sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'+pages.filter(p=>!seo.pages[p.route.replace(/\/+$/,'')||'/'].noindex).map(p=>{const meta=seo.pages[p.route.replace(/\/+$/,'')||'/'];return `  <url><loc>${origin}${p.route}</loc>${meta.modified?`<lastmod>${meta.modified}</lastmod>`:''}${meta.image?`<image:image><image:loc>${origin}/${meta.image}</image:loc></image:image>`:''}</url>`;}).join('\n')+'\n</urlset>\n');

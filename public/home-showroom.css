@@ -83,3 +83,5 @@
 .rg-use-grid p{color:#c1d3db;line-height:1.55}
 .rg-use-credit{font-size:11px}
 @media(max-width:700px){.rg-use-grid{grid-template-columns:1fr}.rg-page-image{height:clamp(205px,62vw,300px)}}
+.rg-page-lineup{background:#dce8ef url('/assets/home/robot-stage.webp') center / cover no-repeat}
+.rg-page-lineup img{object-fit:contain;padding:12px 12px 13%;padding-bottom:clamp(34px,6vw,90px)}
