@@ -106,8 +106,8 @@ export function verifySearchPages(root,dist,pages){
   }
   for(const [,source]of q.sources)assert.ok(source.startsWith('https://'),'Technical references use HTTPS');
  }
- assert.equal(allQuestions.ro.size,58,'All 26 model pages carry 58 specific buying questions');
- assert.equal(allQuestions.en.size,58,'English retains every buying question');
+ assert.equal(allQuestions.ro.size,70,'All 32 model pages carry 70 specific buying questions');
+ assert.equal(allQuestions.en.size,70,'English retains every buying question');
  for(const product of catalog.products){
   const reading=topics.productLinks(product);
   assert.ok(reading.includes('href="/guides/'),'Every product offers contextual explanation');
@@ -147,7 +147,7 @@ export function verifySearchPages(root,dist,pages){
  for(const page of pages){
   const html=fs.readFileSync(path.join(dist,page.route,'index.html'),'utf8');
   const main=html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)?.[1];
-  assert.ok(main&&/<h1>/.test(main),'Readable heading before JavaScript: '+page.route);
+  assert.ok(main&&/<h1(?:\s[^>]*)?>/.test(main),'Readable heading before JavaScript: '+page.route);
   assert.equal((main.match(/<h1[ >]/g)||[]).length,1,'One main heading: '+page.route);
   const entry=seo.pages[page.route.replace(/\/+$/,'')||'/'];
   assert.equal(page.title,entry.title,'Shared title must survive JavaScript rendering');

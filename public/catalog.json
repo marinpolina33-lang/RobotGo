@@ -278,7 +278,7 @@
           "Event: an operator-supervised movement demonstration in a designated space."
         ]
       },
-      "image": "https://www.unitree.com/images/a20ba1ebc0724df8a8135744dee8bbea_2740x1720.jpg",
+      "image": "https://www.unitree.com/images/ee3fc23204054aa491c7950bfa399c1a_2740x1720.jpg",
       "fallback": "assets/unitree-g1.webp",
       "price": null,
       "currency": "EUR",
@@ -319,6 +319,14 @@
       },
       "gallery": [
         {
+          "url": "https://www.unitree.com/images/ee3fc23204054aa491c7950bfa399c1a_2740x1720.jpg",
+          "label": {
+            "ro": "Poziție dinamică",
+            "en": "Dynamic pose"
+          },
+          "localImage": "assets/products/unitree-g1-2.webp"
+        },
+        {
           "url": "https://www.unitree.com/images/a20ba1ebc0724df8a8135744dee8bbea_2740x1720.jpg",
           "label": {
             "ro": "Imagine de produs",
@@ -335,14 +343,6 @@
           "localImage": "assets/products/unitree-g1-1.webp"
         },
         {
-          "url": "https://www.unitree.com/images/ee3fc23204054aa491c7950bfa399c1a_2740x1720.jpg",
-          "label": {
-            "ro": "Poziție dinamică",
-            "en": "Dynamic pose"
-          },
-          "localImage": "assets/products/unitree-g1-2.webp"
-        },
-        {
           "url": "https://www.unitree.com/images/8992fd91eed0495696ca876f86699523_2740x1720.jpg",
           "label": {
             "ro": "Poziție joasă",
@@ -351,7 +351,7 @@
           "localImage": "assets/products/unitree-g1-3.webp"
         }
       ],
-      "localImage": "assets/products/unitree-g1-0.webp"
+      "localImage": "assets/products/unitree-g1-2.webp"
     },
     {
       "id": "unitree-go2",
@@ -388,7 +388,7 @@
           "Entertainment: an operator presents a dance sequence or gestures available in the app."
         ]
       },
-      "image": "https://www.unitree.com/images/e41651fe455e463bb25f1ef33ece3809_1920x1370.jpg?x-oss-process=image%2Fformat%2Cwebp",
+      "image": "https://www.unitree.com/images/1c36f0b03cfd445fbcad12b4b1eb3a29_3840x3266.jpg?x-oss-process=image%2Fformat%2Cwebp",
       "fallback": "assets/unitree-go2.webp",
       "price": null,
       "currency": "EUR",
@@ -411,6 +411,14 @@
       },
       "gallery": [
         {
+          "url": "https://www.unitree.com/images/1c36f0b03cfd445fbcad12b4b1eb3a29_3840x3266.jpg?x-oss-process=image%2Fformat%2Cwebp",
+          "label": {
+            "ro": "Go2 în exterior",
+            "en": "Go2 outdoors"
+          },
+          "localImage": "assets/products/unitree-go2-outdoors.webp"
+        },
+        {
           "url": "https://www.unitree.com/images/e41651fe455e463bb25f1ef33ece3809_1920x1370.jpg?x-oss-process=image%2Fformat%2Cwebp",
           "label": {
             "ro": "Imagine de produs",
@@ -419,7 +427,7 @@
           "localImage": "assets/products/unitree-go2-0.webp"
         }
       ],
-      "localImage": "assets/products/unitree-go2-0.webp"
+      "localImage": "assets/products/unitree-go2-outdoors.webp"
     },
     {
       "id": "leju-kuavo-4pro",
@@ -2060,6 +2068,487 @@
         }
       ],
       "localImage": "assets/products/pudu-t300-0.webp"
+    },
+    {
+      "id": "alpha-timo",
+      "name": "Alpha Timo",
+      "brand": "Alpha Robotics",
+      "brandId": "alpha-robotics",
+      "category": "amr",
+      "type": {
+        "ro": "Robot de recepție pe roți",
+        "en": "Wheeled reception robot"
+      },
+      "domains": [
+        "evenimente",
+        "horeca"
+      ],
+      "tasks": [
+        "interaction"
+      ],
+      "description": {
+        "ro": "Robot de recepție pentru întâmpinarea vizitatorilor, ghidare și prezentări interactive pe ecranul de 13,3 inci. Navighează în interior și revine automat la încărcare.",
+        "en": "Reception robot for welcoming visitors, guiding them and presenting interactive content on a 13.3-inch screen. It navigates indoors and returns to its charging station."
+      },
+      "examples": {
+        "ro": [
+          "Primire la eveniment: întâmpină vizitatorii și îi ghidează către puncte configurate.",
+          "Prezentare: afișează informații pe ecranul de 13,3 inci."
+        ],
+        "en": [
+          "Event welcome: greet visitors and guide them to configured destinations.",
+          "Presentation: display information on the 13.3-inch screen."
+        ]
+      },
+      "cardBrief": {
+        "ro": "Întâmpină și ghidează vizitatorii, cu ecran de 13,3 inci.",
+        "en": "Welcome and guide visitors with a 13.3-inch screen."
+      },
+      "image": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/701276d6b14db6ca86250f708004d676.webp",
+      "fallback": "assets/products/alpha-timo-0.webp",
+      "localImage": "assets/products/alpha-timo-0.webp",
+      "price": null,
+      "currency": "EUR",
+      "heightCm": 120,
+      "payloadKg": null,
+      "dof": 6,
+      "speed": 1.2,
+      "specs": {
+        "configuration": {
+          "ro": "Configurația, limbile și disponibilitatea se confirmă prin ofertă.",
+          "en": "Configuration, languages and availability are confirmed by quotation."
+        },
+        "dimensions": {
+          "ro": "460 × 460 × 1200 mm (L × l × h)",
+          "en": "460 × 460 × 1200 mm (L × W × H)"
+        },
+        "screen": {
+          "ro": "13,3 inci",
+          "en": "13.3 inches"
+        }
+      },
+      "priority": 30,
+      "productType": "robot",
+      "compatibility": "integration",
+      "isFamily": false,
+      "imageStatus": "local_verified",
+      "imageNote": {
+        "ro": "Imagine oficială Alpha Robotics. Echiparea se confirmă în ofertă.",
+        "en": "Official Alpha Robotics image. Equipment is confirmed in the quotation."
+      },
+      "gallery": [
+        {
+          "url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/701276d6b14db6ca86250f708004d676.webp",
+          "label": {
+            "ro": "Imagine oficială de produs",
+            "en": "Official product image"
+          },
+          "localImage": "assets/products/alpha-timo-0.webp"
+        }
+      ],
+      "sourcePage": "https://www.alpharobotics.ai/product-detail1/timo-ai-service-robot.html"
+    },
+    {
+      "id": "alpha-amy",
+      "name": "Alpha Amy",
+      "brand": "Alpha Robotics",
+      "brandId": "alpha-robotics",
+      "category": "amr",
+      "type": {
+        "ro": "Robot de recepție pe roți",
+        "en": "Wheeled reception robot"
+      },
+      "domains": [
+        "evenimente",
+        "horeca"
+      ],
+      "tasks": [
+        "interaction"
+      ],
+      "description": {
+        "ro": "Robot de recepție cu ecran de 21,5 inci pentru orientarea vizitatorilor, informații despre servicii și conținut promoțional. Combină navigația LiDAR cu interacțiunea vocală.",
+        "en": "Reception robot with a 21.5-inch screen for visitor guidance, service information and promotional content. It combines LiDAR navigation with voice interaction."
+      },
+      "examples": {
+        "ro": [
+          "Recepție: prezintă serviciile și orientează vizitatorii.",
+          "Showroom: afișează informații și conținut promoțional pe ecranul de 21,5 inci."
+        ],
+        "en": [
+          "Reception: introduce services and guide visitors.",
+          "Showroom: display information and promotional content on the 21.5-inch screen."
+        ]
+      },
+      "cardBrief": {
+        "ro": "Orientează vizitatorii și prezintă servicii pe un ecran de 21,5 inci.",
+        "en": "Guide visitors and introduce services on a 21.5-inch screen."
+      },
+      "image": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/7689e6519f01f7e7905095ca84242073.webp",
+      "fallback": "assets/products/alpha-amy-0.webp",
+      "localImage": "assets/products/alpha-amy-0.webp",
+      "price": null,
+      "currency": "EUR",
+      "heightCm": 150,
+      "payloadKg": null,
+      "dof": null,
+      "speed": 1.2,
+      "specs": {
+        "configuration": {
+          "ro": "Configurația, limbile și disponibilitatea se confirmă prin ofertă.",
+          "en": "Configuration, languages and availability are confirmed by quotation."
+        },
+        "dimensions": {
+          "ro": "650 × 560 × 1500 mm (L × l × h)",
+          "en": "650 × 560 × 1500 mm (L × W × H)"
+        },
+        "screen": {
+          "ro": "21,5 inci",
+          "en": "21.5 inches"
+        }
+      },
+      "priority": 31,
+      "productType": "robot",
+      "compatibility": "integration",
+      "isFamily": false,
+      "imageStatus": "local_verified",
+      "imageNote": {
+        "ro": "Imagine oficială Alpha Robotics. Echiparea se confirmă în ofertă.",
+        "en": "Official Alpha Robotics image. Equipment is confirmed in the quotation."
+      },
+      "gallery": [
+        {
+          "url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/7689e6519f01f7e7905095ca84242073.webp",
+          "label": {
+            "ro": "Imagine oficială de produs",
+            "en": "Official product image"
+          },
+          "localImage": "assets/products/alpha-amy-0.webp"
+        }
+      ],
+      "sourcePage": "https://www.alpharobotics.ai/product-detail1/amy-ai-service-robot.html"
+    },
+    {
+      "id": "alpha-alice",
+      "name": "Alpha Alice",
+      "brand": "Alpha Robotics",
+      "brandId": "alpha-robotics",
+      "category": "amr",
+      "type": {
+        "ro": "Robot de recepție pe roți",
+        "en": "Wheeled reception robot"
+      },
+      "domains": [
+        "evenimente",
+        "horeca"
+      ],
+      "tasks": [
+        "interaction"
+      ],
+      "description": {
+        "ro": "Robot cu aspect umanoid și bază mobilă pe roți, pentru recepție, ghidare și prezentări multimedia. Ecranul de 13,3 inci și funcțiile vocale susțin informarea vizitatorilor.",
+        "en": "Human-shaped robot on a wheeled mobile base for reception, guidance and multimedia presentations. Its 13.3-inch screen and voice features support visitor information."
+      },
+      "examples": {
+        "ro": [
+          "Expoziție: ghidează vizitatorii între puncte configurate.",
+          "Recepție: oferă prezentări multimedia și interacțiune vocală configurată."
+        ],
+        "en": [
+          "Exhibition: guide visitors between configured destinations.",
+          "Reception: provide multimedia presentations and configured voice interaction."
+        ]
+      },
+      "cardBrief": {
+        "ro": "Recepție și prezentări multimedia, cu aspect umanoid și deplasare pe roți.",
+        "en": "Reception and multimedia presentations with a human-shaped, wheeled robot."
+      },
+      "image": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/0a305aae31d4e46c46e9187b81965702.webp",
+      "fallback": "assets/products/alpha-alice-0.webp",
+      "localImage": "assets/products/alpha-alice-0.webp",
+      "price": null,
+      "currency": "EUR",
+      "heightCm": 150,
+      "payloadKg": null,
+      "dof": 3,
+      "speed": 1.2,
+      "specs": {
+        "configuration": {
+          "ro": "Configurația, limbile și disponibilitatea se confirmă prin ofertă.",
+          "en": "Configuration, languages and availability are confirmed by quotation."
+        },
+        "dimensions": {
+          "ro": "580 × 550 × 1500 mm (L × l × h)",
+          "en": "580 × 550 × 1500 mm (L × W × H)"
+        },
+        "screen": {
+          "ro": "13,3 inci",
+          "en": "13.3 inches"
+        }
+      },
+      "priority": 32,
+      "productType": "robot",
+      "compatibility": "integration",
+      "isFamily": false,
+      "imageStatus": "local_verified",
+      "imageNote": {
+        "ro": "Imagine oficială Alpha Robotics. Echiparea se confirmă în ofertă.",
+        "en": "Official Alpha Robotics image. Equipment is confirmed in the quotation."
+      },
+      "gallery": [
+        {
+          "url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/0a305aae31d4e46c46e9187b81965702.webp",
+          "label": {
+            "ro": "Imagine oficială de produs",
+            "en": "Official product image"
+          },
+          "localImage": "assets/products/alpha-alice-0.webp"
+        }
+      ],
+      "sourcePage": "https://www.alpharobotics.ai/product-detail1/alice-ai-service-robot.html"
+    },
+    {
+      "id": "alpha-panda",
+      "name": "Alpha Panda",
+      "brand": "Alpha Robotics",
+      "brandId": "alpha-robotics",
+      "category": "amr",
+      "type": {
+        "ro": "Robot de livrare",
+        "en": "Delivery robot"
+      },
+      "domains": [
+        "horeca",
+        "logistica"
+      ],
+      "tasks": [
+        "delivery",
+        "logistics"
+      ],
+      "description": {
+        "ro": "Robot cu tăvi pentru transportul preparatelor în restaurante și hoteluri. Navighează între puncte configurate, evită obstacolele și revine automat la stația de încărcare.",
+        "en": "Tray-based robot for transporting food in restaurants and hotels. It navigates between configured destinations, avoids obstacles and returns automatically to its charging station."
+      },
+      "examples": {
+        "ro": [
+          "Restaurant: transportă preparatele de la bucătărie la punctul de preluare.",
+          "Hotel: livrează articole pe tăvi între destinații interioare configurate."
+        ],
+        "en": [
+          "Restaurant: carry food from the kitchen to a collection point.",
+          "Hotel: deliver items on trays between configured indoor destinations."
+        ]
+      },
+      "cardBrief": {
+        "ro": "Transportă preparate pe tăvi, cu o sarcină totală de până la 30 kg.",
+        "en": "Transport food on trays, with a total payload of up to 30 kg."
+      },
+      "image": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/fc56bb101832e800cdbb2b6fe4dd071d.webp",
+      "fallback": "assets/products/alpha-panda-0.webp",
+      "localImage": "assets/products/alpha-panda-0.webp",
+      "price": null,
+      "currency": "EUR",
+      "heightCm": 120,
+      "payloadKg": 30,
+      "dof": null,
+      "speed": 2,
+      "specs": {
+        "configuration": {
+          "ro": "Configurația, limbile și disponibilitatea se confirmă prin ofertă.",
+          "en": "Configuration, languages and availability are confirmed by quotation."
+        },
+        "dimensions": {
+          "ro": "510 × 430 × 1200 mm (L × l × h)",
+          "en": "510 × 430 × 1200 mm (L × W × H)"
+        },
+        "screen": {
+          "ro": "10,1 inci",
+          "en": "10.1 inches"
+        },
+        "payload": {
+          "ro": "30 kg total; distribuția pe tăvi se confirmă.",
+          "en": "30 kg total; distribution across trays must be confirmed."
+        }
+      },
+      "priority": 33,
+      "productType": "robot",
+      "compatibility": "integration",
+      "isFamily": false,
+      "imageStatus": "local_verified",
+      "imageNote": {
+        "ro": "Imagine oficială Alpha Robotics. Echiparea se confirmă în ofertă.",
+        "en": "Official Alpha Robotics image. Equipment is confirmed in the quotation."
+      },
+      "gallery": [
+        {
+          "url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/fc56bb101832e800cdbb2b6fe4dd071d.webp",
+          "label": {
+            "ro": "Imagine oficială de produs",
+            "en": "Official product image"
+          },
+          "localImage": "assets/products/alpha-panda-0.webp"
+        }
+      ],
+      "sourcePage": "https://www.alpharobotics.ai/product-detail1/panda-delivery-robot.html"
+    },
+    {
+      "id": "alpha-speedybot-max",
+      "name": "Alpha Speedybot Max",
+      "brand": "Alpha Robotics",
+      "brandId": "alpha-robotics",
+      "category": "amr",
+      "type": {
+        "ro": "Robot de livrare",
+        "en": "Delivery robot"
+      },
+      "domains": [
+        "horeca",
+        "logistica"
+      ],
+      "tasks": [
+        "delivery",
+        "logistics"
+      ],
+      "description": {
+        "ro": "Robot de livrare cu patru compartimente independente, LiDAR 3D și cameră panoramică. Conceput pentru transportul obiectelor și coletelor între puncte de livrare configurate.",
+        "en": "Delivery robot with four independent compartments, 3D LiDAR and a panoramic camera. Designed to transport items and parcels between configured delivery points."
+      },
+      "examples": {
+        "ro": [
+          "Clădire de birouri: transportă obiecte în patru compartimente independente.",
+          "Hotel: livrează articole pe trasee configurate; accesul la lift necesită integrare."
+        ],
+        "en": [
+          "Office building: transport items in four independent compartments.",
+          "Hotel: deliver items on configured routes; elevator access requires integration."
+        ]
+      },
+      "cardBrief": {
+        "ro": "Livrează obiecte și colete în patru compartimente independente.",
+        "en": "Deliver items and parcels in four independent compartments."
+      },
+      "image": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/24d4a0677ab7d71717cc371cab61337f.webp",
+      "fallback": "assets/products/alpha-speedybot-max-0.webp",
+      "localImage": "assets/products/alpha-speedybot-max-0.webp",
+      "price": null,
+      "currency": "EUR",
+      "heightCm": null,
+      "payloadKg": null,
+      "dof": null,
+      "speed": null,
+      "specs": {
+        "configuration": {
+          "ro": "Configurația, limbile și disponibilitatea se confirmă prin ofertă.",
+          "en": "Configuration, languages and availability are confirmed by quotation."
+        },
+        "compartments": {
+          "ro": "4 compartimente independente",
+          "en": "4 independent compartments"
+        }
+      },
+      "priority": 34,
+      "productType": "robot",
+      "compatibility": "integration",
+      "isFamily": false,
+      "imageStatus": "local_verified",
+      "imageNote": {
+        "ro": "Imagine oficială Alpha Robotics. Echiparea se confirmă în ofertă.",
+        "en": "Official Alpha Robotics image. Equipment is confirmed in the quotation."
+      },
+      "gallery": [
+        {
+          "url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/24d4a0677ab7d71717cc371cab61337f.webp",
+          "label": {
+            "ro": "Imagine oficială de produs",
+            "en": "Official product image"
+          },
+          "localImage": "assets/products/alpha-speedybot-max-0.webp"
+        }
+      ],
+      "sourcePage": "https://www.alpharobotics.ai/product-detail1/speedybot-max.html"
+    },
+    {
+      "id": "alpha-panda-hotel",
+      "name": "Alpha Panda Hotel",
+      "brand": "Alpha Robotics",
+      "brandId": "alpha-robotics",
+      "category": "amr",
+      "type": {
+        "ro": "Robot de livrare",
+        "en": "Delivery robot"
+      },
+      "domains": [
+        "horeca",
+        "logistica"
+      ],
+      "tasks": [
+        "delivery",
+        "logistics"
+      ],
+      "description": {
+        "ro": "Robot de livrare pentru hoteluri, cu compartimente închise pentru obiecte destinate oaspeților. Poate naviga între puncte configurate și se poate întoarce automat la încărcare.",
+        "en": "Hotel delivery robot with enclosed compartments for guest items. It can navigate between configured destinations and return automatically to its charging station."
+      },
+      "examples": {
+        "ro": [
+          "Hotel: transportă articole pentru oaspeți în compartimente închise.",
+          "Livrare între etaje: folosește liftul numai după verificarea compatibilității și integrare."
+        ],
+        "en": [
+          "Hotel: transport guest items in enclosed compartments.",
+          "Delivery between floors: use the elevator only after compatibility checks and integration."
+        ]
+      },
+      "cardBrief": {
+        "ro": "Livrează articole pentru oaspeți în compartimente închise.",
+        "en": "Deliver guest items in enclosed compartments."
+      },
+      "image": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/796af0c00fe3e3517653378383853646.webp",
+      "fallback": "assets/products/alpha-panda-hotel-0.webp",
+      "localImage": "assets/products/alpha-panda-hotel-0.webp",
+      "price": null,
+      "currency": "EUR",
+      "heightCm": 106,
+      "payloadKg": null,
+      "dof": null,
+      "speed": 2,
+      "specs": {
+        "configuration": {
+          "ro": "Configurația, limbile și disponibilitatea se confirmă prin ofertă.",
+          "en": "Configuration, languages and availability are confirmed by quotation."
+        },
+        "dimensions": {
+          "ro": "510 × 430 × 1060 mm (L × l × h)",
+          "en": "510 × 430 × 1060 mm (L × W × H)"
+        },
+        "screen": {
+          "ro": "10,1 inci",
+          "en": "10.1 inches"
+        },
+        "integration": {
+          "ro": "Lifturile și ușile necesită sisteme compatibile și integrare.",
+          "en": "Elevators and doors require compatible systems and integration."
+        }
+      },
+      "priority": 35,
+      "productType": "robot",
+      "compatibility": "integration",
+      "isFamily": false,
+      "imageStatus": "local_verified",
+      "imageNote": {
+        "ro": "Imagine oficială Alpha Robotics. Echiparea se confirmă în ofertă.",
+        "en": "Official Alpha Robotics image. Equipment is confirmed in the quotation."
+      },
+      "gallery": [
+        {
+          "url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/796af0c00fe3e3517653378383853646.webp",
+          "label": {
+            "ro": "Imagine oficială de produs",
+            "en": "Official product image"
+          },
+          "localImage": "assets/products/alpha-panda-hotel-0.webp"
+        }
+      ],
+      "sourcePage": "https://www.alpharobotics.ai/product-detail1/speedybot-delivery-robot.html"
     }
   ],
   "brands": [
@@ -2114,6 +2603,10 @@
     {
       "id": "siasun",
       "name": "SIASUN / DUCO"
+    },
+    {
+      "id": "alpha-robotics",
+      "name": "Alpha Robotics"
     }
   ]
 }

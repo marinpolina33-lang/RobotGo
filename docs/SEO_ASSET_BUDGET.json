@@ -1,6 +1,6 @@
 {
   "unit": "uncompressed source bytes, not measured network traffic",
-  "beforeEditorialBytes": 171968,
+  "beforeEditorialBytes": 179397,
   "pages": [
     {
       "path": "/",
@@ -145,6 +145,36 @@
     {
       "path": "/product/pudu-t300/",
       "editorialBytes": 18719,
+      "stylesheetRequests": 1
+    },
+    {
+      "path": "/product/alpha-timo/",
+      "editorialBytes": 18049,
+      "stylesheetRequests": 1
+    },
+    {
+      "path": "/product/alpha-amy/",
+      "editorialBytes": 18091,
+      "stylesheetRequests": 1
+    },
+    {
+      "path": "/product/alpha-alice/",
+      "editorialBytes": 18078,
+      "stylesheetRequests": 1
+    },
+    {
+      "path": "/product/alpha-panda/",
+      "editorialBytes": 18131,
+      "stylesheetRequests": 1
+    },
+    {
+      "path": "/product/alpha-speedybot-max/",
+      "editorialBytes": 18142,
+      "stylesheetRequests": 1
+    },
+    {
+      "path": "/product/alpha-panda-hotel/",
+      "editorialBytes": 18174,
       "stylesheetRequests": 1
     },
     {

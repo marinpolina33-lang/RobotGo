@@ -2563,3 +2563,139 @@ window.ROBOTGO_TOPIC_DATA = {
     }
   }
 };
+
+/* Alpha Robotics: official model documentation checked 14 November 2026. */
+Object.assign(window.ROBOTGO_TOPIC_DATA.productQuestions,{
+  "alpha-timo": {
+    "sources": [
+      [
+        "Alpha Robotics — Timo",
+        "https://www.alpharobotics.ai/product-detail1/timo-ai-service-robot.html"
+      ]
+    ],
+    "faq": [
+      [
+        "Ce poate prezenta Timo la recepție?",
+        "What can Timo present at reception?",
+        "Timo poate afișa informații pe ecranul de 13,3 inci și poate ghida vizitatorii către puncte configurate. Conținutul și traseele se pregătesc pentru locația ta.",
+        "Timo can display information on its 13.3-inch screen and guide visitors to configured destinations. Content and routes are prepared for your venue."
+      ],
+      [
+        "Timo poate vorbi în limba română?",
+        "Can Timo speak Romanian?",
+        "Pagina producătorului descrie interacțiunea vocală, dar nu confirmă limba română. Cere o demonstrație a limbilor și a funcțiilor disponibile în configurația ofertată înainte de alegere.",
+        "The manufacturer describes voice interaction but does not confirm Romanian. Request a demonstration of the languages and features available in the quoted configuration before choosing."
+      ]
+    ]
+  },
+  "alpha-amy": {
+    "sources": [
+      [
+        "Alpha Robotics — Amy",
+        "https://www.alpharobotics.ai/product-detail1/amy-ai-service-robot.html"
+      ]
+    ],
+    "faq": [
+      [
+        "Amy este același robot cu Amy Delivery?",
+        "Is Amy the same robot as Amy Delivery?",
+        "Nu. Modelul prezentat aici este Amy pentru recepție și ghidare, cu ecran de 21,5 inci. Amy Delivery este un model distinct; funcțiile de livrare nu se presupun pentru această fișă.",
+        "No. This page presents Amy for reception and guidance, with a 21.5-inch screen. Amy Delivery is a separate model; delivery functions should not be assumed for this product."
+      ],
+      [
+        "Ce trebuie pregătit pentru o recepție cu Amy?",
+        "What must be prepared for reception with Amy?",
+        "Pregătește informațiile pentru vizitatori, conținutul ecranului, destinațiile de ghidare și schița spațiului. Limbile, conexiunile software și traseele se confirmă în proiect.",
+        "Prepare visitor information, screen content, guidance destinations and a floor plan. Languages, software connections and routes are confirmed for the project."
+      ]
+    ]
+  },
+  "alpha-alice": {
+    "sources": [
+      [
+        "Alpha Robotics — Alice",
+        "https://www.alpharobotics.ai/product-detail1/alice-ai-service-robot.html"
+      ]
+    ],
+    "faq": [
+      [
+        "Alice merge pe picioare sau pe roți?",
+        "Does Alice walk on legs or move on wheels?",
+        "Alice are un aspect umanoid, dar se deplasează pe o bază mobilă cu roți. Nu este un robot biped; traseele trebuie evaluate pentru pardoseală, praguri și spațiu liber.",
+        "Alice has a human-shaped appearance but moves on a wheeled mobile base. It is not a bipedal robot; routes must be assessed for flooring, thresholds and clearance."
+      ],
+      [
+        "Cum se pregătește Alice pentru o expoziție?",
+        "How is Alice prepared for an exhibition?",
+        "Se configurează harta spațiului, opririle, materialele multimedia și scenariile de interacțiune. Confirmă limbile disponibile și testează traseul cu organizatorul înainte de eveniment.",
+        "Configure the venue map, stops, multimedia content and interaction scenarios. Confirm available languages and test the route with the organiser before the event."
+      ]
+    ]
+  },
+  "alpha-panda": {
+    "sources": [
+      [
+        "Alpha Robotics — Panda",
+        "https://www.alpharobotics.ai/product-detail1/panda-delivery-robot.html"
+      ]
+    ],
+    "faq": [
+      [
+        "Sarcina de 30 kg a robotului Panda este pe fiecare tavă?",
+        "Is the Panda robot’s 30 kg payload per tray?",
+        "Nu. Producătorul indică o sarcină totală de 30 kg. Distribuția greutății, limitele fiecărei tăvi și stabilitatea încărcăturii trebuie confirmate pentru configurația utilizată.",
+        "No. The manufacturer specifies a total payload of 30 kg. Weight distribution, individual tray limits and load stability must be confirmed for the configuration used."
+      ],
+      [
+        "Panda așază singur preparatele pe masă?",
+        "Does Panda place dishes on the table itself?",
+        "Panda transportă preparatele între puncte configurate. Personalul încarcă tăvile și organizează preluarea; accesul între mese și circulația în restaurant trebuie testate la locație.",
+        "Panda transports dishes between configured destinations. Staff load the trays and organise collection; access between tables and restaurant traffic must be tested on site."
+      ]
+    ]
+  },
+  "alpha-speedybot-max": {
+    "sources": [
+      [
+        "Alpha Robotics — Speedybot Max",
+        "https://www.alpharobotics.ai/product-detail1/speedybot-max.html"
+      ]
+    ],
+    "faq": [
+      [
+        "Ce transportă Speedybot Max în cele patru compartimente?",
+        "What does Speedybot Max carry in its four compartments?",
+        "Producătorul prezintă patru compartimente independente pentru obiecte și colete. Dimensiunile interioare, sarcina utilă și autonomia se solicită pentru configurația ofertată.",
+        "The manufacturer presents four independent compartments for items and parcels. Request internal dimensions, payload and operating time for the quoted configuration."
+      ],
+      [
+        "Speedybot Max poate folosi orice lift?",
+        "Can Speedybot Max use any elevator?",
+        "Utilizarea liftului necesită verificarea compatibilității și integrarea cu sistemul clădirii. Solicită evaluarea lifturilor, ușilor și traseului complet înainte de confirmarea aplicației.",
+        "Elevator use requires compatibility checks and integration with the building system. Request assessment of elevators, doors and the complete route before confirming the application."
+      ]
+    ]
+  },
+  "alpha-panda-hotel": {
+    "sources": [
+      [
+        "Alpha Robotics — Panda Hotel",
+        "https://www.alpharobotics.ai/product-detail1/speedybot-delivery-robot.html"
+      ]
+    ],
+    "faq": [
+      [
+        "Cum livrează Panda Hotel articolele către oaspeți?",
+        "How does Panda Hotel deliver items to guests?",
+        "Articolele sunt încărcate în compartimente închise, apoi robotul circulă către destinațiile configurate. Procedura de încărcare, notificare și preluare se stabilește cu hotelul.",
+        "Items are loaded into enclosed compartments and the robot travels to configured destinations. Loading, notification and collection procedures are agreed with the hotel."
+      ],
+      [
+        "Ce trebuie verificat înainte de instalarea Panda Hotel?",
+        "What must be checked before installing Panda Hotel?",
+        "Verifică traseele, pragurile, lifturile și ușile automate, precum și sarcina utilă a configurației ofertate. Integrarea cu sistemele hotelului și disponibilitatea se confirmă prin ofertă.",
+        "Check routes, thresholds, elevators and automatic doors, as well as the payload of the quoted configuration. Hotel system integration and availability are confirmed by quotation."
+      ]
+    ]
+  }
+});

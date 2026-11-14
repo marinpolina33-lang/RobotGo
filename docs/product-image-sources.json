@@ -238,7 +238,7 @@
     },
     {
       "id": "unitree-g1",
-      "slot": 0,
+      "slot": 1,
       "source": "https://www.unitree.com/images/a20ba1ebc0724df8a8135744dee8bbea_2740x1720.jpg",
       "path": "assets/products/unitree-g1-0.webp",
       "width": 1600,
@@ -248,7 +248,7 @@
     },
     {
       "id": "unitree-g1",
-      "slot": 1,
+      "slot": 2,
       "source": "https://www.unitree.com/images/5e100d4349924287869c7f1ff6c0316b_2740x1720.jpg",
       "path": "assets/products/unitree-g1-1.webp",
       "width": 1600,
@@ -258,7 +258,7 @@
     },
     {
       "id": "unitree-g1",
-      "slot": 2,
+      "slot": 0,
       "source": "https://www.unitree.com/images/ee3fc23204054aa491c7950bfa399c1a_2740x1720.jpg",
       "path": "assets/products/unitree-g1-2.webp",
       "width": 1600,
@@ -278,7 +278,7 @@
     },
     {
       "id": "unitree-go2",
-      "slot": 0,
+      "slot": 1,
       "source": "https://www.unitree.com/images/e41651fe455e463bb25f1ef33ece3809_1920x1370.jpg?x-oss-process=image%2Fformat%2Cwebp",
       "path": "assets/products/unitree-go2-0.webp",
       "width": 1600,
@@ -295,6 +295,84 @@
       "height": 576,
       "bytes": 78134,
       "sha256": "2ae68fcff6a303ac997f6a615c75edaccc81238f860a6be16c51deda6b3f8753"
+    },
+    {
+      "id": "alpha-timo",
+      "slot": 0,
+      "source": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/701276d6b14db6ca86250f708004d676.webp",
+      "sourcePage": "https://www.alpharobotics.ai/product-detail1/timo-ai-service-robot.html",
+      "path": "assets/products/alpha-timo-0.webp",
+      "width": 377,
+      "height": 430,
+      "bytes": 6560,
+      "sha256": "d883f50f8423a7255b474ab1fb6456123cc33b7b459ae550277e826d9784ee8d"
+    },
+    {
+      "id": "alpha-amy",
+      "slot": 0,
+      "source": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/7689e6519f01f7e7905095ca84242073.webp",
+      "sourcePage": "https://www.alpharobotics.ai/product-detail1/amy-ai-service-robot.html",
+      "path": "assets/products/alpha-amy-0.webp",
+      "width": 377,
+      "height": 430,
+      "bytes": 10190,
+      "sha256": "9b675b508d5fe675224936cf45ab05c00017cfb8f7d582ec0dd28eed339fdc7b"
+    },
+    {
+      "id": "alpha-alice",
+      "slot": 0,
+      "source": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/0a305aae31d4e46c46e9187b81965702.webp",
+      "sourcePage": "https://www.alpharobotics.ai/product-detail1/alice-ai-service-robot.html",
+      "path": "assets/products/alpha-alice-0.webp",
+      "width": 377,
+      "height": 430,
+      "bytes": 8142,
+      "sha256": "57045ad96c2cc9502624f02c47eb1c1f31561cd7b2a9a75e2b228310988f5831"
+    },
+    {
+      "id": "alpha-panda",
+      "slot": 0,
+      "source": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/fc56bb101832e800cdbb2b6fe4dd071d.webp",
+      "sourcePage": "https://www.alpharobotics.ai/product-detail1/panda-delivery-robot.html",
+      "path": "assets/products/alpha-panda-0.webp",
+      "width": 377,
+      "height": 430,
+      "bytes": 5910,
+      "sha256": "02993ac1f89bc9ea904bed1ecf43ed5a73d8f6330c7180bbf1e024aa2608db1e"
+    },
+    {
+      "id": "alpha-speedybot-max",
+      "slot": 0,
+      "source": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/24d4a0677ab7d71717cc371cab61337f.webp",
+      "sourcePage": "https://www.alpharobotics.ai/product-detail1/speedybot-max.html",
+      "path": "assets/products/alpha-speedybot-max-0.webp",
+      "width": 377,
+      "height": 430,
+      "bytes": 13638,
+      "sha256": "d469c175f7f75f4c91b1a0eb6a80a6c2008c444a3aa21048d17705df211df0f9"
+    },
+    {
+      "id": "alpha-panda-hotel",
+      "slot": 0,
+      "source": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/796af0c00fe3e3517653378383853646.webp",
+      "sourcePage": "https://www.alpharobotics.ai/product-detail1/speedybot-delivery-robot.html",
+      "path": "assets/products/alpha-panda-hotel-0.webp",
+      "width": 377,
+      "height": 430,
+      "bytes": 4160,
+      "sha256": "cd0e774ca6f290658ddca294e8f7b34e29bb27d4f9a9c13fd673aefa6128bfa4"
+    },
+    {
+      "id": "unitree-go2",
+      "slot": 0,
+      "source": "https://www.unitree.com/images/1c36f0b03cfd445fbcad12b4b1eb3a29_3840x3266.jpg?x-oss-process=image%2Fformat%2Cwebp",
+      "sourcePage": "https://www.unitree.com/go2",
+      "path": "assets/products/unitree-go2-outdoors.webp",
+      "width": 1600,
+      "height": 1361,
+      "bytes": 78020,
+      "sha256": "08f97149fcea5c4fb4a96a1bfbe40a02f69a8cc8615fbd612b09f5063c6c1011"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-14"
 }

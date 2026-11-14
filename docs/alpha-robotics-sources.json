@@ -1,0 +1,555 @@
+{
+  "verified_at": "2026-11-14",
+  "source": "Official Alpha Robotics product pages and directly referenced image assets",
+  "notes": [
+    "No public numerical prices were found on the six official product pages. Use price on request, not an invented price.",
+    "All six clean catalog images are 377×430 RGB WebP with light grey backgrounds, not transparent.",
+    "Larger detail images have real transparency but include technical callout labels. They are unsuitable for a clean hero lineup.",
+    "No clean larger product cut was found among the product-page assets.",
+    "Manufacturer use-case imagery must be attributed to Alpha Robotics and must not imply a RobotGo client project.",
+    "No images were generated, backgrounds removed, or objects altered. Scenario variants only resize/re-encode the original image."
+  ],
+  "products": [
+    {
+      "id": "timo",
+      "name": "Timo",
+      "brand": "Alpha Robotics",
+      "source_page_url": "https://www.alpharobotics.ai/product-detail1/timo-ai-service-robot.html",
+      "price": null,
+      "currency": null,
+      "price_label_ro": "La cerere",
+      "price_label_en": "On request",
+      "distributor_relationship_confirmed": false,
+      "category": "reception",
+      "description_ro": "Robot de recepție pentru întâmpinarea vizitatorilor, ghidare și prezentări interactive pe ecranul de 13,3 inci. Navighează în interior și revine automat la încărcare.",
+      "description_en": "Reception robot for welcoming visitors, guiding them and presenting interactive content on a 13.3-inch screen. It navigates indoors and returns to its charging station.",
+      "features_ro": [
+        "Recepție și ghidare",
+        "Interacțiune vocală",
+        "Ecran de 13,3 inci"
+      ],
+      "features_en": [
+        "Reception and guidance",
+        "Voice interaction",
+        "13.3-inch screen"
+      ],
+      "dimensions_mm": {
+        "length": 460,
+        "width": 460,
+        "height": 1200
+      },
+      "weight_kg": 19,
+      "payload_kg": null,
+      "height_m": 1.2,
+      "dof": 6,
+      "screen_inches": 13.3,
+      "max_speed_m_s": 1.2,
+      "caveats_ro": [
+        "Conținutul, harta spațiului și limbile disponibile se confirmă pentru configurația ofertată; româna nu este confirmată în sursă."
+      ],
+      "source_notes": [
+        "Runtime table states ≤8 h; charge time 3–4 h."
+      ],
+      "images": {
+        "catalog": {
+          "source_image_url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/701276d6b14db6ca86250f708004d676.webp",
+          "role": "clean single robot catalog image on light grey; not transparent",
+          "width": 377,
+          "height": 430,
+          "format": "WEBP",
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "transparent": false,
+          "alpha_extrema": null,
+          "bytes": 6560,
+          "sha256": "d883f50f8423a7255b474ab1fb6456123cc33b7b459ae550277e826d9784ee8d"
+        },
+        "technical": {
+          "source_image_url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260413/e4ed15a285755e86c807c0e5ce2010f0.webp",
+          "role": "technical callout diagram with embedded labels; exclude from homepage hero",
+          "width": 1030,
+          "height": 632,
+          "format": "WEBP",
+          "mode": "RGBA",
+          "has_alpha_channel": true,
+          "transparent": true,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bytes": 33930,
+          "sha256": "6412b9d577077edf6f0efe2c03cf9aa811909cec4ffa837b8e62b712c2baf50b"
+        }
+      }
+    },
+    {
+      "id": "amy",
+      "name": "Amy",
+      "brand": "Alpha Robotics",
+      "source_page_url": "https://www.alpharobotics.ai/product-detail1/amy-ai-service-robot.html",
+      "price": null,
+      "currency": null,
+      "price_label_ro": "La cerere",
+      "price_label_en": "On request",
+      "distributor_relationship_confirmed": false,
+      "category": "reception",
+      "description_ro": "Robot de recepție cu ecran de 21,5 inci pentru orientarea vizitatorilor, informații despre servicii și conținut promoțional. Combină navigația LiDAR cu interacțiunea vocală.",
+      "description_en": "Reception robot with a 21.5-inch screen for visitor guidance, service information and promotional content. It combines LiDAR navigation with voice interaction.",
+      "features_ro": [
+        "Ecran de 21,5 inci",
+        "Ghidarea vizitatorilor",
+        "Navigație LiDAR"
+      ],
+      "features_en": [
+        "21.5-inch screen",
+        "Visitor guidance",
+        "LiDAR navigation"
+      ],
+      "dimensions_mm": {
+        "length": 650,
+        "width": 560,
+        "height": 1500
+      },
+      "weight_kg": 49,
+      "payload_kg": null,
+      "height_m": 1.5,
+      "dof": null,
+      "screen_inches": 21.5,
+      "max_speed_m_s": 1.2,
+      "caveats_ro": [
+        "Acesta este modelul Amy pentru recepție, distinct de Amy Delivery.",
+        "Limbile, conținutul și integrările se confirmă pentru configurația ofertată."
+      ],
+      "source_notes": [
+        "Runtime table states ≤10 h; charge time 3–4 h."
+      ],
+      "images": {
+        "catalog": {
+          "source_image_url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/7689e6519f01f7e7905095ca84242073.webp",
+          "role": "clean single robot catalog image on light grey; not transparent",
+          "width": 377,
+          "height": 430,
+          "format": "WEBP",
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "transparent": false,
+          "alpha_extrema": null,
+          "bytes": 10190,
+          "sha256": "9b675b508d5fe675224936cf45ab05c00017cfb8f7d582ec0dd28eed339fdc7b"
+        },
+        "technical": {
+          "source_image_url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260408/7be8aee91950c42a585b8a4d4a465530.webp",
+          "role": "technical callout diagram with embedded labels; exclude from homepage hero",
+          "width": 1075,
+          "height": 800,
+          "format": "WEBP",
+          "mode": "RGBA",
+          "has_alpha_channel": true,
+          "transparent": true,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bytes": 48844,
+          "sha256": "6511a9d8b5cdaeeec0fc238ed5c0cc0929648cfa379ec20a6752ea6bc9ba39fb"
+        }
+      }
+    },
+    {
+      "id": "alice",
+      "name": "Alice",
+      "brand": "Alpha Robotics",
+      "source_page_url": "https://www.alpharobotics.ai/product-detail1/alice-ai-service-robot.html",
+      "price": null,
+      "currency": null,
+      "price_label_ro": "La cerere",
+      "price_label_en": "On request",
+      "distributor_relationship_confirmed": false,
+      "category": "reception",
+      "description_ro": "Robot cu aspect umanoid și bază mobilă pe roți, pentru recepție, ghidare și prezentări multimedia. Ecranul de 13,3 inci și funcțiile vocale susțin informarea vizitatorilor.",
+      "description_en": "Human-shaped robot on a wheeled mobile base for reception, guidance and multimedia presentations. Its 13.3-inch screen and voice features support visitor information.",
+      "features_ro": [
+        "Recepție și prezentări",
+        "Ecran de 13,3 inci",
+        "Bază mobilă pe roți"
+      ],
+      "features_en": [
+        "Reception and presentations",
+        "13.3-inch screen",
+        "Wheeled mobile base"
+      ],
+      "dimensions_mm": {
+        "length": 580,
+        "width": 550,
+        "height": 1500
+      },
+      "weight_kg": 45,
+      "payload_kg": null,
+      "height_m": 1.5,
+      "dof": 3,
+      "screen_inches": 13.3,
+      "max_speed_m_s": 1.2,
+      "caveats_ro": [
+        "Aspectul este umanoid; deplasarea se face pe roți.",
+        "Limbile, conținutul și traseele necesită configurare."
+      ],
+      "source_notes": [
+        "Runtime table states ≤10 h; charge time 3–4 h."
+      ],
+      "images": {
+        "catalog": {
+          "source_image_url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/0a305aae31d4e46c46e9187b81965702.webp",
+          "role": "clean single robot catalog image on light grey; not transparent",
+          "width": 377,
+          "height": 430,
+          "format": "WEBP",
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "transparent": false,
+          "alpha_extrema": null,
+          "bytes": 8142,
+          "sha256": "57045ad96c2cc9502624f02c47eb1c1f31561cd7b2a9a75e2b228310988f5831"
+        },
+        "technical": {
+          "source_image_url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260414/fed87261520929858bededd674a77ccc.webp",
+          "role": "technical callout diagram with embedded labels; exclude from homepage hero",
+          "width": 1108,
+          "height": 588,
+          "format": "WEBP",
+          "mode": "RGBA",
+          "has_alpha_channel": true,
+          "transparent": true,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bytes": 30318,
+          "sha256": "e29d61a517979581b7e40b3e4ee204b585f551131f89e2145fec18b8e9d12fe7"
+        }
+      }
+    },
+    {
+      "id": "panda",
+      "name": "Panda",
+      "brand": "Alpha Robotics",
+      "source_page_url": "https://www.alpharobotics.ai/product-detail1/panda-delivery-robot.html",
+      "price": null,
+      "currency": null,
+      "price_label_ro": "La cerere",
+      "price_label_en": "On request",
+      "distributor_relationship_confirmed": false,
+      "category": "delivery",
+      "description_ro": "Robot cu tăvi pentru transportul preparatelor în restaurante și hoteluri. Navighează între puncte configurate, evită obstacolele și revine automat la stația de încărcare.",
+      "description_en": "Tray-based robot for transporting food in restaurants and hotels. It navigates between configured destinations, avoids obstacles and returns automatically to its charging station.",
+      "features_ro": [
+        "Livrare pe tăvi",
+        "Sarcină totală de 30 kg",
+        "Încărcare automată"
+      ],
+      "features_en": [
+        "Tray-based delivery",
+        "30 kg total payload",
+        "Automatic charging"
+      ],
+      "dimensions_mm": {
+        "length": 510,
+        "width": 430,
+        "height": 1200
+      },
+      "weight_kg": 43,
+      "payload_kg": 30,
+      "height_m": 1.2,
+      "dof": null,
+      "screen_inches": 10.1,
+      "max_speed_m_s": 2,
+      "caveats_ro": [
+        "Sarcina de 30 kg este totală, nu pe fiecare tavă.",
+        "Încărcarea și preluarea produselor necesită intervenție umană; traseele se verifică la locație."
+      ],
+      "source_notes": [
+        "Runtime conflict: parameter table states ≥8 h; body claims about 12 h. Avoid runtime in cards. Charge time 2–3 h."
+      ],
+      "images": {
+        "catalog": {
+          "source_image_url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/fc56bb101832e800cdbb2b6fe4dd071d.webp",
+          "role": "clean single robot catalog image on light grey; not transparent",
+          "width": 377,
+          "height": 430,
+          "format": "WEBP",
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "transparent": false,
+          "alpha_extrema": null,
+          "bytes": 5910,
+          "sha256": "02993ac1f89bc9ea904bed1ecf43ed5a73d8f6330c7180bbf1e024aa2608db1e"
+        },
+        "technical": {
+          "source_image_url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260414/838677682eda06463490f88b4dd9b5c9.webp",
+          "role": "technical callout diagram with embedded labels; exclude from homepage hero",
+          "width": 1141,
+          "height": 623,
+          "format": "WEBP",
+          "mode": "RGBA",
+          "has_alpha_channel": true,
+          "transparent": true,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bytes": 35634,
+          "sha256": "879bb0cf43a29abd5e6a05a9a18eab91258e980fc93aa7e881eae5998987f0e9"
+        }
+      }
+    },
+    {
+      "id": "speedybot-max",
+      "name": "Speedybot Max",
+      "brand": "Alpha Robotics",
+      "source_page_url": "https://www.alpharobotics.ai/product-detail1/speedybot-max.html",
+      "price": null,
+      "currency": null,
+      "price_label_ro": "La cerere",
+      "price_label_en": "On request",
+      "distributor_relationship_confirmed": false,
+      "category": "delivery",
+      "description_ro": "Robot de livrare cu patru compartimente independente, LiDAR 3D și cameră panoramică. Conceput pentru transportul obiectelor și coletelor între puncte de livrare configurate.",
+      "description_en": "Delivery robot with four independent compartments, 3D LiDAR and a panoramic camera. Designed to transport items and parcels between configured delivery points.",
+      "features_ro": [
+        "Patru compartimente",
+        "Navigație LiDAR 3D",
+        "Cameră panoramică"
+      ],
+      "features_en": [
+        "Four compartments",
+        "3D LiDAR navigation",
+        "Panoramic camera"
+      ],
+      "dimensions_mm": null,
+      "weight_kg": null,
+      "payload_kg": null,
+      "height_m": null,
+      "dof": null,
+      "screen_inches": null,
+      "max_speed_m_s": null,
+      "caveats_ro": [
+        "Folosirea liftului depinde de integrarea cu un sistem compatibil.",
+        "Dimensiunile, sarcina utilă și autonomia necesită fișa configurației ofertate."
+      ],
+      "source_notes": [
+        "Official product page has no numeric parameter table. Distinct from Speedybot Max-E and Pro."
+      ],
+      "images": {
+        "catalog": {
+          "source_image_url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/24d4a0677ab7d71717cc371cab61337f.webp",
+          "role": "clean single robot catalog image on light grey; not transparent",
+          "width": 377,
+          "height": 430,
+          "format": "WEBP",
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "transparent": false,
+          "alpha_extrema": null,
+          "bytes": 13638,
+          "sha256": "d469c175f7f75f4c91b1a0eb6a80a6c2008c444a3aa21048d17705df211df0f9"
+        },
+        "technical": {
+          "source_image_url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260507/5f59516db86e5dbe328e64524a24afcf.webp",
+          "role": "technical callout diagram with embedded labels; exclude from homepage hero",
+          "width": 1300,
+          "height": 543,
+          "format": "WEBP",
+          "mode": "RGBA",
+          "has_alpha_channel": true,
+          "transparent": true,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bytes": 37178,
+          "sha256": "73a57f970683558c9c4798c417478cf09742fe929ec5d30ab5c808f731880418"
+        }
+      }
+    },
+    {
+      "id": "panda-hotel",
+      "name": "Panda Hotel",
+      "brand": "Alpha Robotics",
+      "source_page_url": "https://www.alpharobotics.ai/product-detail1/speedybot-delivery-robot.html",
+      "price": null,
+      "currency": null,
+      "price_label_ro": "La cerere",
+      "price_label_en": "On request",
+      "distributor_relationship_confirmed": false,
+      "category": "delivery",
+      "description_ro": "Robot de livrare pentru hoteluri, cu compartimente închise pentru obiecte destinate oaspeților. Poate naviga între puncte configurate și se poate întoarce automat la încărcare.",
+      "description_en": "Hotel delivery robot with enclosed compartments for guest items. It can navigate between configured destinations and return automatically to its charging station.",
+      "features_ro": [
+        "Livrare în hotel",
+        "Compartimente închise",
+        "Încărcare automată"
+      ],
+      "features_en": [
+        "Hotel delivery",
+        "Enclosed compartments",
+        "Automatic charging"
+      ],
+      "dimensions_mm": {
+        "length": 510,
+        "width": 430,
+        "height": 1060
+      },
+      "weight_kg": 59,
+      "payload_kg": 100,
+      "height_m": 1.06,
+      "dof": null,
+      "screen_inches": 10.1,
+      "max_speed_m_s": 2,
+      "caveats_ro": [
+        "Lifturile și ușile automate necesită verificarea compatibilității și integrare.",
+        "Sarcina maximă de 100 kg este valoarea din tabelul producătorului; confirmați-o pentru configurația ofertată înainte de promovare."
+      ],
+      "source_notes": [
+        "Official URL/title says Speedybot Delivery Robot, but homepage link and product body identify Panda Hotel.",
+        "Runtime conflict: table states ≤10 h; body states 11 h. Avoid runtime in cards. Charge time 2–3 h."
+      ],
+      "images": {
+        "catalog": {
+          "source_image_url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260825/796af0c00fe3e3517653378383853646.webp",
+          "role": "clean single robot catalog image on light grey; not transparent",
+          "width": 377,
+          "height": 430,
+          "format": "WEBP",
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "transparent": false,
+          "alpha_extrema": null,
+          "bytes": 4160,
+          "sha256": "cd0e774ca6f290658ddca294e8f7b34e29bb27d4f9a9c13fd673aefa6128bfa4"
+        },
+        "technical": {
+          "source_image_url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260414/3457a39cf4917dce696d2325e65c2c1f.webp",
+          "role": "technical callout diagram with embedded labels; exclude from homepage hero",
+          "width": 1222,
+          "height": 630,
+          "format": "WEBP",
+          "mode": "RGBA",
+          "has_alpha_channel": true,
+          "transparent": true,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bytes": 25364,
+          "sha256": "08afe3f1ded849b8a548d4a4bb435d77126cd4a492fe751435205013fca5c06d"
+        }
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "scenario-panda-hotel",
+      "model": "Panda Hotel",
+      "source_page_url": "https://www.alpharobotics.ai/",
+      "caption_ro": "Panda Hotel într-un lift — exemplu de utilizare prezentat de Alpha Robotics.",
+      "caption_en": "Panda Hotel in an elevator — usage example presented by Alpha Robotics.",
+      "attribution": "Alpha Robotics",
+      "robotgo_client_claim": false,
+      "asset": {
+        "source_image_url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260409/d96de33878f61d6edcb29707125a7c3e.webp",
+        "role": "manufacturer scenario image; does not establish a RobotGo deployment",
+        "width": 800,
+        "height": 491,
+        "format": "WEBP",
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "transparent": false,
+        "alpha_extrema": null,
+        "bytes": 31538,
+        "sha256": "9303b5abbf0382811aaa182c6ab4a9b605b75b57f4d4a557f290a1d599f8872d"
+      },
+      "original": {
+        "source_image_url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260409/d96de33878f61d6edcb29707125a7c3e.webp",
+        "role": "unmodified manufacturer original",
+        "width": 800,
+        "height": 491,
+        "format": "WEBP",
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "transparent": false,
+        "alpha_extrema": null,
+        "bytes": 31538,
+        "sha256": "9303b5abbf0382811aaa182c6ab4a9b605b75b57f4d4a557f290a1d599f8872d"
+      }
+    },
+    {
+      "id": "scenario-amy-reception",
+      "model": "Amy",
+      "source_page_url": "https://www.alpharobotics.ai/product-detail1/amy-ai-service-robot.html",
+      "caption_ro": "Amy la recepție — imagine de prezentare Alpha Robotics.",
+      "caption_en": "Amy at reception — Alpha Robotics presentation image.",
+      "attribution": "Alpha Robotics",
+      "robotgo_client_claim": false,
+      "asset": {
+        "source_image_url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260509/c8bd99e20aeda23d3814d474d801e003.webp",
+        "role": "manufacturer scenario image; does not establish a RobotGo deployment",
+        "width": 1200,
+        "height": 850,
+        "format": "WEBP",
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "transparent": false,
+        "alpha_extrema": null,
+        "bytes": 61988,
+        "sha256": "10100ffd6c237f8a956d389a6ad6bb8faa04175c6f5d8ab70a269851648b0655"
+      },
+      "original": {
+        "source_image_url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260509/c8bd99e20aeda23d3814d474d801e003.webp",
+        "role": "unmodified manufacturer original",
+        "width": 2433,
+        "height": 1723,
+        "format": "WEBP",
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "transparent": false,
+        "alpha_extrema": null,
+        "bytes": 242162,
+        "sha256": "e6d7478bc02bf682252bd3fedab99ca0f32b77fa8241a2cef958bc9a9e877322"
+      }
+    },
+    {
+      "id": "scenario-panda-delivery",
+      "model": "Panda",
+      "source_page_url": "https://www.alpharobotics.ai/product-detail1/panda-delivery-robot.html",
+      "caption_ro": "Panda într-un restaurant — exemplu de utilizare prezentat de Alpha Robotics.",
+      "caption_en": "Panda in a restaurant — usage example presented by Alpha Robotics.",
+      "attribution": "Alpha Robotics",
+      "robotgo_client_claim": false,
+      "asset": {
+        "source_image_url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260509/bb5805ac473338809edae6f1ac55eda9.webp",
+        "role": "manufacturer scenario image; does not establish a RobotGo deployment",
+        "width": 1200,
+        "height": 644,
+        "format": "WEBP",
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "transparent": false,
+        "alpha_extrema": null,
+        "bytes": 78096,
+        "sha256": "020405bf4ae81ffc57bd36c9278187d0388c338438c197d6d0b0aeaf543d01b0"
+      },
+      "original": {
+        "source_image_url": "https://www.alpharobotics.ai/storage/watermark/f_imgs/20260509/bb5805ac473338809edae6f1ac55eda9.webp",
+        "role": "unmodified manufacturer original",
+        "width": 1563,
+        "height": 839,
+        "format": "WEBP",
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "transparent": false,
+        "alpha_extrema": null,
+        "bytes": 151616,
+        "sha256": "345c48ebd96904062ce9d0c2ab969612b2c698434f4d6bd8f06cb4f9b3b4da95"
+      }
+    }
+  ]
+}

@@ -21,9 +21,9 @@ export function verify() {
  const cfg=context.window.ROBOTGO_CONFIG,cat=context.window.ROBOTGO_CATALOG,vis=context.window.ROBOTGO_VISUALS,ex=context.window.ROBOTGO_EXHIBITION;
  check('Real account release; unrelated lead/AI backend stays disabled', cfg.demo===false&&cfg.releaseStage==='accounts-live'&&cfg.backendEnabled===false);
  check('Verified production domain configured',cfg.domainTarget==='robotgo.ro'&&cfg.domainStatus==='verified');
- check('26 product records preserved',cat.products.length===26);
+ check('32 product records available',cat.products.length===32);
  check('7 categories preserved',cat.categories.length===7);
- check('13 brand records preserved',cat.brands.length===13);
+ check('14 brand records available',cat.brands.length===14);
  check('Product IDs unique',new Set(cat.products.map(p=>p.id)).size===cat.products.length);
  check('Product category and brand references valid',cat.products.every(p=>cat.categories.some(c=>c.id===p.category)&&cat.brands.some(b=>b.id===p.brandId)));
  check('Product application references valid',cat.products.every(p=>p.domains.every(id=>cat.domains.some(d=>d.id===id))));
