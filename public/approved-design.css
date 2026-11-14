@@ -39,3 +39,20 @@ html{background:#031015;scroll-padding-top:126px}body{background:#031015;font-fa
 }
 
 @media(max-width:480px){.ap-header-actions a[href$="/account"]{display:none}}
+
+/* Source-labelled prices use the same component in initial HTML and the live catalogue. */
+.market-price{display:grid;gap:5px;min-width:0;line-height:1.45}
+.market-price-label{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#94dace}
+.market-price .market-price-amount{font-size:23px;line-height:1.2;color:#80f0d9;white-space:nowrap}
+.market-price-config{font-size:12px;font-weight:600;color:#e3f0ed}
+.market-price small{font-size:11px;color:#bed1cb}
+.market-price .market-price-note{color:#a4bfb7}
+.market-price-detail{gap:7px}
+.market-price-detail .market-price-amount{font-size:34px}
+.market-price-detail p{margin:4px 0 0;line-height:1.65;font-size:13px}
+.market-price-detail .market-price-config{font-size:14px}
+.market-price-source a{color:#80f0d9;text-decoration:underline;text-underline-offset:3px}
+.ux-card-bottom:has(.market-price-amount){align-items:flex-start;flex-wrap:wrap;gap:12px}
+.ux-card-bottom:has(.market-price-amount) .market-price{flex:1 1 180px}
+.quick-price .market-price-detail{padding:16px;border:1px solid #28665f;border-radius:12px}
+@media(max-width:480px){.market-price-detail .market-price-amount{font-size:30px}.market-price-detail p{font-size:12px}}
