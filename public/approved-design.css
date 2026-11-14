@@ -23,3 +23,19 @@ html{background:#031015;scroll-padding-top:126px}body{background:#031015;font-fa
 @media(min-width:375px) and (max-width:480px){.ap-scene{height:534px}.ap-robot{top:180px}}
 .ap-cinematic:after{mask-image:linear-gradient(transparent,#000 20%,#000 74%,transparent);-webkit-mask-image:linear-gradient(transparent,#000 20%,#000 74%,transparent)}
 .ap-cinematic:before{content:'';position:absolute;inset:0;pointer-events:none;z-index:-1;background:linear-gradient(90deg,transparent 65%,#00c7b11a 70%,transparent 73%,transparent 82%,#00d4ce29 84%,transparent 86%,transparent 95%,#00c5c22a 97%,transparent);filter:blur(9px)}
+/* Clear paths from discovery to a tailored quotation. */
+.ap-nav{gap:28px}
+.ap-nav .ap-nav-quote{margin-left:auto;flex-shrink:0;min-height:44px;height:44px;padding:0 15px;border-radius:9px;background:#00d6b4;color:#021b18;font-weight:700;gap:8px}
+.ap-nav .ap-nav-quote:hover{background:#51efd5;color:#021b18}
+.ap-nav-quote .icon{width:17px;height:17px}
+.card-quote-link{display:flex;align-items:center;justify-content:center;min-height:44px;margin-top:10px;border:1px solid #28665f;border-radius:8px;color:#8bf5e0;font-size:13px;font-weight:700;text-decoration:none}
+.card-quote-link:hover{background:#123a35;color:#fff;border-color:#00d6b4}
+.ux-feature-band .section-head>.row{flex-wrap:wrap;gap:20px}
+@media(max-width:800px){
+  .ap-nav{gap:22px}
+  .ap-nav .ap-nav-quote{position:sticky;left:0;z-index:1;order:-1;margin-left:0;background:#00d6b4;min-height:40px;height:40px;font-size:12px;padding:0 11px}
+  .ap-nav .ap-nav-quote .icon{display:none}
+  .ux-feature-band .section-head>.row{width:100%;justify-content:space-between}
+}
+
+@media(max-width:480px){.ap-header-actions a[href$="/account"]{display:none}}
